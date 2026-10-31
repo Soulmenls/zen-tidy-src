@@ -9,26 +9,37 @@
 // It counts tokens first (free), prints a cost estimate, asks before spending, and enforces a hard
 // USD cap on every attempt, retries included. Results go to ...\bench\results-<ts>.json.
 //
+// --make-gold <n> (with --send): instead of benchmarking, a stronger model labels the tabs n times with the topic each
+// belongs to (scripts/lib/gold.js), into ...\bench\gold-<ts>-<k>.json. --gold <file> then scores every run against
+// those labels: misfiled tabs, merged topics, tabs left loose. Counts only, never titles or topic names.
+//
 //   node scripts/bench.mjs [--fixture <file>] [--configs a,b] [--repeats N] [--limit N] [--out-dir <dir>]
-//   pwsh -File scripts\bench.ps1 [same flags] [--cap-usd X] [--yes] [--quality]
+//   pwsh -File scripts\bench.ps1 [same flags] [--cap-usd X] [--yes] [--quality] [--gold <file> | --make-gold <n>]
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { createInterface } from "node:readline/promises";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
-import { buildPayload, buildRequestBody } from "../extension/background/payload.js";
+import { DEFAULT_MODEL, buildPayload, buildRequestBody, buildCheckBody } from "../extension/background/payload.js";
+import { CHECK_MODEL, DEFAULT_PRECISION, PRECISION_LEVELS, checkRule } from "../extension/background/check.js";
 import { planTidy } from "../extension/background/pipeline.js";
 import { API_BASE, API_VERSION, TidyApiError, errorKind, requestPlan } from "../extension/background/anthropic.js";
 import { redact } from "../extension/background/log.js";
 import { DEFAULT_SENSITIVE } from "../extension/shared/sensitive-defaults.js";
 import { devDataDir, fileStamp, isInside } from "./lib/dev-paths.js";
 import { parseJsonQuietly } from "./lib/quiet-json.js";
+import {
+  GOLD_EFFORT, GOLD_MAX_TOKENS, GOLD_MODEL, GOLD_TIMEOUT_MS,
+  buildGoldRequestBody, goldLabels, goldQuality, parseGold, tabsFingerprint,
+} from "./lib/gold.js";
 
-export const MODEL = "claude-haiku-5-5";
+// The extension's default; --model picks another priced model.
+export const MODEL = DEFAULT_MODEL;
 export const MAX_TOKENS = 16000;
 export const DEFAULT_REPEATS = 3;
-// m1-contracts.md. The default 12-call matrix reserves roughly $0.12 at worst, so this is ample.
+// m1-contracts.md. On Haiku 5.5 the default 12-tidy matrix fits; on Sonnet 5.5, the default model, a tidy costs about
+// $0.11 and the cap stops a default run after a few tidies: raise it with --cap-usd.
 export const DEFAULT_CAP_USD = 0.5;
 // Longer than the extension's 90 s so the bench measures tail latency instead of cutting it off.
 export const BENCH_TIMEOUT_MS = 180000;
@@ -56,6 +67,24 @@ export const PRICING = Object.freeze({
     cacheWrite5m: 1.25,
     cacheWrite1h: 2,
   }),
+  // The extension's default. One rate card; cache reads $0.20 (0.1x).
+  "claude-sonnet-5-5": Object.freeze({
+    longPromptAbove: Infinity,
+    base: Object.freeze({ input: 2, output: 10 }),
+    long: Object.freeze({ input: 2, output: 10 }),
+    cacheRead: 0.1,
+    cacheWrite5m: 1.25,
+    cacheWrite1h: 2,
+  }),
+  // The --make-gold labeller. One rate card; cache reads $0.20 (0.05x).
+  "claude-opus-5-5": Object.freeze({
+    longPromptAbove: Infinity,
+    base: Object.freeze({ input: 4, output: 20 }),
+    long: Object.freeze({ input: 4, output: 20 }),
+    cacheRead: 0.05,
+    cacheWrite5m: 1.25,
+    cacheWrite1h: 2,
+  }),
 });
 
 // These won't fix themselves between calls, so the run stops instead of burning through the matrix.
@@ -64,15 +93,24 @@ const FATAL_KINDS = new Set(["auth", "workspace-scope", "spend-limit", "billing"
 const USAGE = `Usage: node scripts/bench.mjs [options]
   --fixture <file>   tabs file (default: %LOCALAPPDATA%\\zen-tidy-dev\\real-tabs.json)
   --configs <list>   comma-separated subset of: ${MATRIX.map((c) => c.name).join(", ")}
+  --model <id>       the model to benchmark (default ${MODEL}): ${Object.keys(PRICING).join(", ")}
   --repeats <n>      calls per config with --send (default ${DEFAULT_REPEATS})
   --limit <n>        use only the first n tabs
   --passes <1|2>     with --send: 2 (default) adds the leftover sweep, as the extension does
+  --precision <1-5>  with --send: the precision setting's level, which decides the group check (default ${DEFAULT_PRECISION});
+                     the estimate covers the passes only, the cap every call
+  --variant <file>   try a local module instead of the shipped prompt or pipeline: it may export
+                     transformBody(body) and planTidy; results name the variant
   --out-dir <dir>    output directory (default: %LOCALAPPDATA%\\zen-tidy-dev\\bench)
   --send             call the API (key from ${KEY_ENV}; run it through scripts\\bench.ps1)
   --cap-usd <x>      hard spending cap for --send (default $${DEFAULT_CAP_USD.toFixed(2)})
   --yes              with --send: skip the confirmation prompt
   --quality          with --send: add grouping metrics per run (coverage, loose tabs on a grouped
-                     site, copies of one page split up, icon reuse); counts only, never titles`;
+                     site, copies of one page split up, icon reuse); counts only, never titles
+  --gold <file>      with --send: also score each run against a reference from --make-gold (same
+                     tabs file and --limit); implies --quality
+  --make-gold <n>    with --send: label the tabs n times with ${GOLD_MODEL} (effort ${GOLD_EFFORT}) to make
+                     a reference, instead of benchmarking; --configs and --repeats don't apply`;
 
 function positiveInt(flag, value) {
   const n = Number(value);
@@ -81,7 +119,7 @@ function positiveInt(flag, value) {
 }
 
 export function parseArgs(argv) {
-  const opts = { send: false, yes: false, help: false, quality: false, fixture: null, outDir: null, configs: MATRIX, repeats: DEFAULT_REPEATS, capUsd: DEFAULT_CAP_USD, limit: null, passes: 2 };
+  const opts = { send: false, yes: false, help: false, quality: false, fixture: null, outDir: null, configs: MATRIX, repeats: DEFAULT_REPEATS, capUsd: DEFAULT_CAP_USD, limit: null, passes: 2, gold: null, makeGold: null, variant: null, model: MODEL, precision: DEFAULT_PRECISION };
   const valueOf = (i, flag) => {
     const value = argv[i];
     if (value === undefined || value.startsWith("--")) throw new Error(`${flag} needs a value`);
@@ -95,9 +133,24 @@ export function parseArgs(argv) {
       case "--quality": opts.quality = true; break;
       case "--help": case "-h": opts.help = true; break;
       case "--fixture": opts.fixture = valueOf(++i, arg); break;
+      case "--variant": opts.variant = valueOf(++i, arg); break;
+      case "--model": {
+        const model = valueOf(++i, arg);
+        if (!Object.hasOwn(PRICING, model)) throw new Error(`No pricing for ${model}; choose from ${Object.keys(PRICING).join(", ")}`);
+        opts.model = model;
+        break;
+      }
       case "--out-dir": opts.outDir = valueOf(++i, arg); break;
+      case "--precision": {
+        const level = Number(valueOf(++i, arg));
+        if (!PRECISION_LEVELS.includes(level)) throw new Error(`--precision needs one of ${PRECISION_LEVELS.join(", ")}`);
+        opts.precision = level;
+        break;
+      }
       case "--repeats": opts.repeats = positiveInt(arg, valueOf(++i, arg)); break;
       case "--limit": opts.limit = positiveInt(arg, valueOf(++i, arg)); break;
+      case "--gold": opts.gold = valueOf(++i, arg); opts.quality = true; break;
+      case "--make-gold": opts.makeGold = positiveInt(arg, valueOf(++i, arg)); break;
       case "--passes": {
         const passes = Number(valueOf(++i, arg));
         if (passes !== 1 && passes !== 2) throw new Error("--passes needs 1 or 2");
@@ -211,12 +264,12 @@ export function toSnapshot(rawTabs, takenAt = Date.now()) {
 }
 
 // Builds the payload and one request body per config, exactly as the extension would.
-export function buildBench(rawTabs, configs, { takenAt } = {}) {
+export function buildBench(rawTabs, configs, { takenAt, transformBody = (body) => body, model = MODEL } = {}) {
   const snapshot = toSnapshot(rawTabs, takenAt);
   const payload = buildPayload(snapshot, { sensitive: DEFAULT_SENSITIVE });
   const bodies = configs.map((c) => ({
     ...c,
-    body: buildRequestBody(payload, { model: MODEL, effort: c.effort, thinking: c.thinking, maxTokens: MAX_TOKENS }),
+    body: transformBody(buildRequestBody(payload, { model, effort: c.effort, thinking: c.thinking, maxTokens: MAX_TOKENS })),
   }));
   return { snapshot, payload, bodies };
 }
@@ -239,6 +292,19 @@ function payloadSummary(source, rawCount, payload) {
   return `Tabs: ${rawCount} loaded from ${source}; ${s.tabs} in the payload (${s.private} private), ${s.excluded?.length ?? 0} excluded, ${s.groups} existing groups; message ${int(s.chars)} chars.`;
 }
 
+// --variant <file>: a local module tried against the shipped code without editing it. It may export
+// transformBody(body), which returns the request body to send (another system prompt, schema or effort), and
+// planTidy, a pipeline to run instead of pipeline.js's (its options also carry requestBody(body), which sends any
+// request through the meter). Anything it leaves out is the shipped code.
+async function loadVariant(file) {
+  const mod = file ? await import(pathToFileURL(path.resolve(file)).href) : {};
+  return {
+    name: file ? path.basename(file) : null,
+    transformBody: typeof mod.transformBody === "function" ? mod.transformBody : (body) => body,
+    planTidy: typeof mod.planTidy === "function" ? mod.planTidy : planTidy,
+  };
+}
+
 // ---- Dry run -------------------------------------------------------------------------------
 
 export async function dryRun(opts, { env, log, now }) {
@@ -247,7 +313,8 @@ export async function dryRun(opts, { env, log, now }) {
   const loaded = rawTabs.length;
   if (opts.limit) rawTabs = rawTabs.slice(0, opts.limit);
   const started = now();
-  const { payload, bodies } = buildBench(rawTabs, opts.configs, { takenAt: started.getTime() });
+  const variant = await loadVariant(opts.variant);
+  const { payload, bodies } = buildBench(rawTabs, opts.configs, { takenAt: started.getTime(), transformBody: variant.transformBody, model: opts.model });
 
   const configs = bodies.map((c) => ({
     name: c.name,
@@ -259,12 +326,12 @@ export async function dryRun(opts, { env, log, now }) {
     body: c.body,
   }));
   const calls = configs.length * opts.repeats;
-  const worst = configs.reduce((sum, c) => sum + reserveUsd(c.estimatedInputTokens, MAX_TOKENS), 0) * opts.repeats;
+  const worst = configs.reduce((sum, c) => sum + reserveUsd(c.estimatedInputTokens, MAX_TOKENS, c.body.model), 0) * opts.repeats;
 
   const doc = {
     kind: "zen-tidy-bench-dry-run",
     createdAt: started.toISOString(),
-    model: MODEL,
+    model: configs[0]?.body.model ?? MODEL,
     source: path.basename(tabsFile),
     tabsLoaded: loaded,
     tabsUsed: rawTabs.length,
@@ -279,6 +346,10 @@ export async function dryRun(opts, { env, log, now }) {
   log("Dry run: nothing was sent.");
   log(payloadSummary(path.basename(tabsFile), rawTabs.length, payload) + (opts.limit ? ` (first ${rawTabs.length} of ${loaded})` : ""));
   for (const c of configs) log(`  ${c.name.padEnd(16)} ~${int(c.estimatedInputTokens)} input tokens (estimate: chars/3)`);
+  if (opts.makeGold) {
+    const goldTokens = estimateTokens(buildGoldRequestBody(payload));
+    log(`  gold (${GOLD_MODEL}) ~${int(goldTokens)} input tokens; ${opts.makeGold} runs, rough worst case ${usd(reserveUsd(goldTokens, GOLD_MAX_TOKENS, GOLD_MODEL) * opts.makeGold)}.`);
+  }
   log(`A --send run would make ${calls} calls (${configs.length} configs x ${opts.repeats}); rough worst case ${usd(worst)} at max_tokens ${MAX_TOKENS}; cap ${usd(opts.capUsd)}.`);
   log(`Wrote ${outFile}`);
   return { code: 0, outFile };
@@ -366,17 +437,31 @@ function isFreeRequest(url) {
 // reserves that worst case while the attempt runs, then settles it to the billed usage. An attempt
 // that never returns usage (timeout, network drop, unreadable body) stays charged at worst case,
 // because the API may have billed it anyway.
-export function createMeter({ fetchImpl, capUsd, model = MODEL, now = Date.now }) {
-  const meter = { spentUsd: 0, capHit: false, inputTokens: 0, attempts: [] };
+// inputTokens is the counted size of the run's main request; inputChars, when set, that request's body length. A
+// longer body (a --variant's own request) reserves input in proportion, so the counted size is never an undercount.
+// Each attempt is priced as the model its body names. A body the meter can't price (unreadable, an unpriced model, no
+// positive max_tokens) is refused before anything is sent: the cap fails closed.
+export function createMeter({ fetchImpl, capUsd, now = Date.now }) {
+  const meter = { spentUsd: 0, capHit: false, inputTokens: 0, inputChars: 0, attempts: [] };
   meter.fetch = async (url, init = {}) => {
     if (isFreeRequest(url)) return fetchImpl(url, init);
-    let maxTokens = MAX_TOKENS;
+    let sent = null;
     try {
-      maxTokens = Number(JSON.parse(init.body).max_tokens) || MAX_TOKENS;
+      sent = JSON.parse(init.body);
     } catch {
-      // Keep the default.
+      // Refused below.
     }
-    const worst = reserveUsd(meter.inputTokens, maxTokens, model);
+    const maxTokens = Number(sent?.max_tokens);
+    const sentModel = sent?.model;
+    if (!Object.hasOwn(PRICING, sentModel) || !Number.isInteger(maxTokens) || maxTokens <= 0) {
+      meter.capHit = true;
+      throw new CapReachedError("The cost cap can't price this request (its model or max_tokens), so it was not sent.");
+    }
+    const bodyChars = typeof init.body === "string" ? init.body.length : 0;
+    const inputTokens = meter.inputChars && bodyChars > meter.inputChars
+      ? Math.ceil((meter.inputTokens * bodyChars) / meter.inputChars)
+      : meter.inputTokens;
+    const worst = reserveUsd(inputTokens, maxTokens, sentModel);
     if (meter.spentUsd + worst > capUsd + 1e-12) {
       meter.capHit = true;
       throw new CapReachedError(`Next attempt could cost ${usd(worst)}; ${usd(meter.spentUsd)} of the ${usd(capUsd)} cap is spent.`);
@@ -405,7 +490,7 @@ export function createMeter({ fetchImpl, capUsd, model = MODEL, now = Date.now }
     let actual = worst;
     if (!response.ok) actual = 0; // failed requests aren't billed
     else if (data?.usage && typeof data.usage === "object") {
-      actual = usageCostUsd(data.usage, model);
+      actual = usageCostUsd(data.usage, sentModel);
       attempt.usage = data.usage;
       attempt.stopReason = data.stop_reason ?? null;
       attempt.settled = true;
@@ -504,9 +589,26 @@ export function summarizeCalls(calls, configs) {
       meanOutputTokens: mean(mine.filter((r) => Number.isFinite(r.usage?.output_tokens)).map((r) => r.usage.output_tokens)),
       meanGroups: mean(ok.map((r) => r.validation.groupCount)),
       meanLeftovers: mean(ok.map((r) => r.validation.leftoverCount)),
+      meanGold: meanGold(ok.map((r) => r.validation.gold).filter(Boolean)),
       costUsd: mine.reduce((sum, r) => sum + r.costUsd, 0),
     };
   });
+}
+
+// Each --gold metric averaged over the runs that have one (a ratio with no pairs counts as 0).
+function meanGold(golds) {
+  if (!golds.length) return null;
+  return Object.fromEntries(Object.keys(golds[0]).map((key) => [key, mean(golds.map((gold) => gold[key] ?? 0))]));
+}
+
+const pct = (x) => `${(100 * (x ?? 0)).toFixed(1)}%`;
+// Per-run counts are whole; means get one decimal.
+const count = (x) => (Number.isInteger(x) ? String(x) : x.toFixed(1));
+
+function describeGold(g) {
+  return `gold: ${pct(g.coverage)} grouped in ${count(g.groups)} groups, ${count(g.offTopic)} off-topic (${count(g.offArea)} unrelated), ` +
+    `${count(g.mixedGroups)} merged groups, ${count(g.missed)} missed, ${count(g.scattered)} scattered topics, ` +
+    `pairs P ${pct(g.pairPrecision)} R ${pct(g.pairRecall)} F1 ${pct(g.pairF1)}`;
 }
 
 function describeCall(r) {
@@ -519,7 +621,8 @@ function describeCall(r) {
   const quality = q
     ? `, coverage ${(100 * q.coverage).toFixed(1)}%, ${q.looseOnGroupedSite} loose on a grouped site, ${q.splitCopyPages} split copies, ${q.looseCopies} loose copies, icons ${q.distinctIcons}/${v.groupCount}`
     : "";
-  return `${head}, ${v.groupCount} groups, ${v.leftoverCount} leftover, ${issues} issue entries${quality}, stop ${r.stopReason}`;
+  const gold = v.gold ? `; ${describeGold(v.gold)}` : "";
+  return `${head}, ${v.groupCount} groups, ${v.leftoverCount} leftover, ${issues} issue entries${quality}, stop ${r.stopReason}${gold}`;
 }
 
 export function checkKey(raw) {
@@ -539,6 +642,8 @@ function pendingRetryAfterMs(error) {
 
 export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = realSleep }) {
   const apiKey = checkKey(env[KEY_ENV]);
+  // Out of the environment before a --variant module is imported, so its code can't read the key from there.
+  delete env[KEY_ENV];
   if (!apiKey) {
     log(`Refusing to send: ${KEY_ENV} is not set (or not a valid key). Run it through scripts\\bench.ps1.`);
     return { code: 2 };
@@ -548,8 +653,16 @@ export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = re
   let rawTabs = await loadTabs(tabsFile);
   if (opts.limit) rawTabs = rawTabs.slice(0, opts.limit);
   const started = now();
-  const { payload, bodies } = buildBench(rawTabs, opts.configs, { takenAt: started.getTime() });
+  const variant = await loadVariant(opts.makeGold ? null : opts.variant);
+  const { snapshot, payload, bodies } = buildBench(rawTabs, opts.configs, { takenAt: started.getTime(), transformBody: variant.transformBody, model: opts.model });
   log(payloadSummary(path.basename(tabsFile), rawTabs.length, payload));
+  const tabIds = snapshot.tabs.map((tab) => tab.id);
+  const positions = new Map(tabIds.map((id, index) => [id, index]));
+  if (opts.makeGold) {
+    return makeGold(opts, { apiKey, fetchImpl, log, now, confirm, rawTabs, payload, tabIds, positions, tabsFile, outDir, started });
+  }
+  // Checked before anything is spent: a reference only fits the tabs it was made from.
+  const labels = opts.gold ? await loadGold(opts.gold, rawTabs, tabIds) : null;
 
   // Free: count each config's prompt so the estimate and the cap use real numbers.
   const counted = [];
@@ -559,17 +672,18 @@ export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = re
   }
 
   const calls = counted.length * opts.repeats;
-  const inputUsd = counted.reduce((sum, c) => sum + usageCostUsd({ input_tokens: c.inputTokens }), 0) * opts.repeats;
-  const worstUsd = counted.reduce((sum, c) => sum + reserveUsd(c.inputTokens, MAX_TOKENS), 0) * opts.repeats;
+  const inputUsd = counted.reduce((sum, c) => sum + usageCostUsd({ input_tokens: c.inputTokens }, c.body.model), 0) * opts.repeats;
+  const worstUsd = counted.reduce((sum, c) => sum + reserveUsd(c.inputTokens, MAX_TOKENS, c.body.model), 0) * opts.repeats;
   log("Cost estimate:");
   for (const c of counted) {
-    log(`  ${c.name.padEnd(16)} ${int(c.inputTokens)} input tokens${c.approximate ? " (approximate)" : ""}; worst case ${usd(reserveUsd(c.inputTokens, MAX_TOKENS))} per call`);
+    log(`  ${c.name.padEnd(16)} ${int(c.inputTokens)} input tokens${c.approximate ? " (approximate)" : ""}; worst case ${usd(reserveUsd(c.inputTokens, MAX_TOKENS, c.body.model))} per call`);
   }
   log(`  ${calls} calls: input ${usd(inputUsd)}; worst case ${usd(worstUsd)} if every call used max_tokens ${MAX_TOKENS}. Hard cap ${usd(opts.capUsd)}.`);
+  if (checkRule(opts.precision)) log(`  Precision ${opts.precision}: each tidy also sends a ${CHECK_MODEL} check per large group (about $0.006 for 250 tabs), not in this estimate; the cap holds them too.`);
   if (worstUsd > opts.capUsd) log("  The worst case exceeds the cap: the run stops before any attempt that could cross it.");
 
   if (!opts.yes) {
-    const ok = typeof confirm === "function" ? await confirm(`Send ${calls} requests to ${MODEL}? [y/N] `) : false;
+    const ok = typeof confirm === "function" ? await confirm(`Send ${calls} requests to ${[...new Set(counted.map((c) => c.body.model))].join(", ")}? [y/N] `) : false;
     if (!ok) {
       log("Not confirmed; nothing was sent to /v1/messages. (Pass --yes to skip the prompt.)");
       return { code: 2 };
@@ -582,14 +696,17 @@ export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = re
   const results = {
     kind: "zen-tidy-bench-results",
     createdAt: started.toISOString(),
-    model: MODEL,
+    model: counted[0]?.body.model ?? MODEL,
     apiVersion: API_VERSION,
     maxTokens: MAX_TOKENS,
     timeoutMs: BENCH_TIMEOUT_MS,
-    pricing: PRICING[MODEL],
+    pricing: PRICING[counted[0]?.body.model] ?? PRICING[MODEL],
     source: path.basename(tabsFile),
     tabsUsed: rawTabs.length,
     payloadStats: payload.stats,
+    gold: opts.gold ? path.basename(opts.gold) : null,
+    variant: variant.name,
+    precision: opts.precision,
     capUsd: opts.capUsd,
     repeats: opts.repeats,
     configs: counted.map(({ name, effort, thinking, inputTokens, approximate }) => ({ name, effort, thinking, countedInputTokens: inputTokens, approximate })),
@@ -609,7 +726,7 @@ export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = re
   outer: for (let repeat = 1; repeat <= opts.repeats; repeat++) {
     // Interleave configs so drift over time (load, caching) doesn't favour one config.
     for (const c of counted) {
-      if (meter.spentUsd + reserveUsd(c.inputTokens, MAX_TOKENS) > opts.capUsd) {
+      if (meter.spentUsd + reserveUsd(c.inputTokens, MAX_TOKENS, c.body.model) > opts.capUsd) {
         results.stopped = "cap";
         break outer;
       }
@@ -621,24 +738,43 @@ export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = re
       }
       n += 1;
       meter.inputTokens = c.inputTokens;
+      meter.inputChars = JSON.stringify(c.body).length;
       const firstAttempt = meter.attempts.length;
       const callStarted = now();
       let result = null;
       let error = null;
       const refusalCategories = [];
+      // The group check's refusals and attempts, apart: a refused check is not a refused tidy, and the tidy's stop
+      // reason is its passes' (the checks come after them, from this attempt on).
+      const checkRefusals = [];
+      let checkFrom = null;
       try {
         // The product's planning path: pass 1, then (with --passes 2) the leftover sweep.
-        const requestOutput = async (tabs, existingGroups) => {
-          const body = buildRequestBody({ ...payload, tabs, existingGroups }, { effort: c.effort, thinking: c.thinking, maxTokens: MAX_TOKENS });
-          const r = await requestPlan(body, { apiKey, fetchImpl: meter.fetch, timeoutMs: BENCH_TIMEOUT_MS });
-          if (r.refusal) refusalCategories.push(r.category ?? null);
+        // Any request body, through the meter; a variant's own planTidy gets it as options.requestBody.
+        // callOptions.timeoutMs (the extra sweep's time box) bounds the call as run.js bounds it in the extension.
+        const requestBody = async (body, callOptions, refusals = refusalCategories) => {
+          const box = callOptions?.timeoutMs;
+          const timeouts = Number.isFinite(box) && box > 0 ? { timeoutMs: box, totalTimeoutMs: box } : { timeoutMs: BENCH_TIMEOUT_MS };
+          const r = await requestPlan(body, { apiKey, fetchImpl: meter.fetch, ...timeouts });
+          if (r.refusal) refusals.push(r.category ?? null);
           return r.refusal ? { refusal: true, category: r.category ?? null } : { output: r.output };
         };
-        result = await planTidy(payload, requestOutput, { sweep: opts.passes === 2 });
+        const requestOutput = (tabs, existingGroups, callOptions) =>
+          requestBody(variant.transformBody(buildRequestBody({ ...payload, tabs, existingGroups }, { model: opts.model, effort: c.effort, thinking: c.thinking, maxTokens: MAX_TOKENS })), callOptions);
+        // The group check, as run.js sends it (no custom instructions in the bench).
+        const requestCheck = (tabs, callOptions) => {
+          checkFrom ??= meter.attempts.length;
+          return requestBody(buildCheckBody(tabs), callOptions, checkRefusals);
+        };
+        result = await variant.planTidy(payload, requestOutput, { sweep: opts.passes === 2, requestBody, requestCheck, precision: opts.precision });
       } catch (err) {
         error = err;
       }
       const attempts = meter.attempts.slice(firstAttempt);
+      const passAttempts = checkFrom === null ? attempts : meter.attempts.slice(firstAttempt, checkFrom);
+      // The check swallows its own failures, the cost cap's included, so a run the cap cut short there ends without an
+      // error: it is recorded as stopped, not scored as a whole tidy.
+      if (!error && meter.capHit) error = new CapReachedError("stopped by the cost cap during the group check");
       const record = {
         config: c.name,
         repeat,
@@ -647,8 +783,9 @@ export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = re
         attempts: attempts.map(({ settled: _s, ...a }) => a),
         usage: sumUsage(attempts),
         costUsd: attempts.reduce((sum, a) => sum + a.costUsd, 0),
-        stopReason: result?.refusedTabIds?.length ? "refusal" : attempts.at(-1)?.stopReason ?? null,
+        stopReason: result?.refusedTabIds?.length ? "refusal" : passAttempts.at(-1)?.stopReason ?? null,
         refusal: refusalCategories.length ? { refusedTabs: result?.refusedTabIds?.length ?? 0, categories: refusalCategories } : null,
+        checkRefusals: checkRefusals.length ? checkRefusals : null,
         passes: result?.passes ?? null,
         error: null,
         validation: null,
@@ -662,6 +799,9 @@ export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = re
         // A run where every tab was refused has no plan to summarize.
         record.validation = summarizePlan(result.plan);
         if (opts.quality) record.validation.quality = planQuality(result.plan, payload);
+        if (labels) record.validation.gold = goldQuality(result.plan, payload, labels);
+        // Tab positions per group, so a run can be scored again later against another reference.
+        record.groupTabs = result.plan.groups.map((group) => group.tabIds.map((id) => positions.get(id)));
       }
       results.calls.push(record);
       await save();
@@ -690,11 +830,111 @@ export async function send(opts, { env, fetchImpl, log, now, confirm, sleep = re
     const latency = s.medianLatencyMs === null ? "-" : `${(s.medianLatencyMs / 1000).toFixed(1)} s median`;
     const groups = s.meanGroups === null ? "-" : s.meanGroups.toFixed(1);
     log(`  ${s.config.padEnd(16)} ${s.ok}/${s.calls} ok, ${s.refusals} refused, ${s.errors} errors; ${latency}; ${groups} groups; ${usd(s.costUsd)}`);
+    if (s.meanGold) log(`  ${"".padEnd(16)} mean ${describeGold(s.meanGold)}`);
   }
   log(`Total ${usd(meter.spentUsd)} of the ${usd(opts.capUsd)} cap.${results.stopped ? ` Stopped early (${results.stopped}).` : ""}`);
   log(`Wrote ${outFile}`);
   const fatal = results.stopped && results.stopped !== "cap";
   return { code: fatal ? 1 : 0, outFile, results };
+}
+
+// ---- Reference labels (--make-gold, --gold) --------------------------------------------------
+
+export const GOLD_KIND = "zen-tidy-bench-gold";
+
+async function loadGold(file, rawTabs, tabIds) {
+  const name = path.basename(file);
+  const gold = parseJsonQuietly(await readFile(path.resolve(file), "utf8"), name);
+  if (gold?.kind !== GOLD_KIND) throw new Error(`${name} is not a --make-gold reference.`);
+  if (gold.fingerprint !== tabsFingerprint(rawTabs)) {
+    throw new Error(`${name} was made from other tabs (another export, or another --limit).`);
+  }
+  return goldLabels(gold, (index) => tabIds[index]);
+}
+
+// A reference read as a plan, every topic a group (single tabs too), to compare two references.
+const goldAsPlan = (gold, tabIds) => ({ groups: gold.topics.map((topic) => ({ tabIds: topic.tabs.map((i) => tabIds[i]) })) });
+
+// Labels the tabs opts.makeGold times. Each run is saved as it lands; from the second on, the log shows how far it
+// agrees with the first, which is the ceiling a tidy can be expected to reach against either one.
+export async function makeGold(opts, { apiKey, fetchImpl, log, now, confirm, rawTabs, payload, tabIds, positions, tabsFile, outDir, started }) {
+  const body = buildGoldRequestBody(payload);
+  const { inputTokens, approximate } = await countTokens(body, { apiKey, fetchImpl, timeoutMs: 30000 });
+  const runs = opts.makeGold;
+  const perRun = reserveUsd(inputTokens, GOLD_MAX_TOKENS, GOLD_MODEL);
+  // requestPlan retries once at twice max_tokens when an answer is cut off.
+  const perRunWorst = perRun + reserveUsd(inputTokens, GOLD_MAX_TOKENS * 2, GOLD_MODEL);
+  log("Cost estimate:");
+  log(`  gold (${GOLD_MODEL}, effort ${GOLD_EFFORT}) ${int(inputTokens)} input tokens${approximate ? " (approximate)" : ""}; worst case ${usd(perRunWorst)} per run, its max_tokens retry included`);
+  log(`  ${runs} runs: input ${usd(usageCostUsd({ input_tokens: inputTokens }, GOLD_MODEL) * runs)}; worst case ${usd(perRunWorst * runs)}. Hard cap ${usd(opts.capUsd)}.`);
+  if (perRunWorst * runs > opts.capUsd) log("  The worst case exceeds the cap: the run stops before any attempt that could cross it.");
+  if (!opts.yes) {
+    const ok = typeof confirm === "function" ? await confirm(`Send ${runs} requests to ${GOLD_MODEL}? [y/N] `) : false;
+    if (!ok) {
+      log("Not confirmed; nothing was sent to /v1/messages. (Pass --yes to skip the prompt.)");
+      return { code: 2 };
+    }
+  }
+
+  await mkdir(outDir, { recursive: true });
+  const meter = createMeter({ fetchImpl, capUsd: opts.capUsd, now: () => now().getTime() });
+  const fingerprint = tabsFingerprint(rawTabs);
+  const made = [];
+  let stopped = null;
+  for (let run = 1; run <= runs && !stopped; run++) {
+    if (meter.spentUsd + perRun > opts.capUsd) {
+      stopped = "cap";
+      break;
+    }
+    meter.inputTokens = inputTokens;
+    meter.inputChars = JSON.stringify(body).length;
+    const firstAttempt = meter.attempts.length;
+    const callStarted = now();
+    let result;
+    try {
+      result = await requestPlan(body, { apiKey, fetchImpl: meter.fetch, timeoutMs: GOLD_TIMEOUT_MS });
+    } catch (error) {
+      stopped = meter.capHit ? "cap" : `error: ${error.kind ?? error.name}`;
+      log(`Gold #${run}: ${meter.capHit ? "stopped by the cost cap" : `error ${error.kind ?? error.name}${error.status ? ` (${error.status})` : ""}`}.`);
+      break;
+    }
+    const attempts = meter.attempts.slice(firstAttempt);
+    const costUsd = attempts.reduce((sum, a) => sum + a.costUsd, 0);
+    const latencyMs = now().getTime() - callStarted.getTime();
+    if (result.refusal) {
+      log(`Gold #${run}: refused (${result.category ?? "no category"}), ${usd(costUsd)}.`);
+      continue;
+    }
+    const { topics, unlabeled } = parseGold(result.output, payload, (id) => positions.get(id));
+    const doc = {
+      kind: GOLD_KIND,
+      createdAt: callStarted.toISOString(),
+      model: GOLD_MODEL,
+      effort: GOLD_EFFORT,
+      apiVersion: API_VERSION,
+      source: path.basename(tabsFile),
+      tabsUsed: rawTabs.length,
+      fingerprint,
+      latencyMs,
+      usage: sumUsage(attempts),
+      costUsd,
+      topics,
+      unlabeled,
+    };
+    const outFile = path.join(outDir, `gold-${fileStamp(started)}-${run}.json`);
+    await writeFile(outFile, JSON.stringify(doc, null, 1) + "\n", "utf8");
+    made.push(doc);
+    const multi = topics.filter((topic) => topic.tabs.length >= 2);
+    log(`Gold #${run}: ${topics.length} topics (${multi.length} with 2+ tabs, holding ${multi.reduce((n, t) => n + t.tabs.length, 0)} tabs), ` +
+      `${new Set(topics.map((topic) => topic.area)).size} areas, ${unlabeled.length} unlabeled; ${(latencyMs / 1000).toFixed(1)} s, ${usd(costUsd)}.`);
+    log(`  Wrote ${outFile}`);
+    if (made.length > 1) {
+      const agreement = goldQuality(goldAsPlan(doc, tabIds), payload, goldLabels(made[0], (index) => tabIds[index]));
+      log(`  Agreement with gold #1: ${describeGold(agreement)}`);
+    }
+  }
+  log(`Total ${usd(meter.spentUsd)} of the ${usd(opts.capUsd)} cap.${stopped ? ` Stopped early (${stopped}).` : ""}`);
+  return { code: made.length ? 0 : 1, made };
 }
 
 // ---- Entry point -----------------------------------------------------------------------------

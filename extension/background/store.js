@@ -6,6 +6,7 @@
 
 import { DEFAULT_MODEL, DEFAULT_EFFORT, DEFAULT_THINKING, MODEL_PROFILES } from "./payload.js";
 import { DEFAULT_SENSITIVE } from "../shared/sensitive-defaults.js";
+import { DEFAULT_PRECISION, PRECISION_LEVELS } from "./check.js";
 import { REDACTED } from "./log.js";
 
 export const DEFAULT_STALE_DAYS = 14;
@@ -59,7 +60,7 @@ const KEY_RE = /sk-ant-[A-Za-z0-9_-]+/g;
 // the defaults of the version that wrote it, so a model, effort or sensitive entry that a later version
 // changes or adds would never reach anyone who had saved a setting. Reads merge the choices with the
 // current defaults.
-const SCALAR_FIELDS = ["model", "effort", "thinking", "preferences", "staleDays"];
+const SCALAR_FIELDS = ["model", "effort", "thinking", "preferences", "staleDays", "precision"];
 // What resetSettings can put back: a scalar field, or one sensitive list.
 const RESETTABLE_FIELDS = [...SCALAR_FIELDS, ...SENSITIVE_LISTS.map((list) => `sensitive.${list}`)];
 // Builds up to the first M2 commit stored a full copy: every field and both lists whole, defaults
@@ -93,6 +94,7 @@ export function defaultSettings(sensitiveDefaults = DEFAULT_SENSITIVE) {
     preferences: "",
     sensitive: Object.fromEntries(SENSITIVE_LISTS.map((list) => [list, [...sensitiveDefaults[list]]])),
     staleDays: DEFAULT_STALE_DAYS,
+    precision: DEFAULT_PRECISION,
   };
 }
 
@@ -178,6 +180,8 @@ const SCALAR_CHECKS = {
     Number.isInteger(value) && value >= 0 && value <= MAX_STALE_DAYS
       ? null
       : `Stale days must be a whole number from 0 to ${MAX_STALE_DAYS}.`,
+  precision: (value) =>
+    PRECISION_LEVELS.includes(value) ? null : `Precision must be a whole number from 1 to ${PRECISION_LEVELS.length}.`,
 };
 
 // A save is held to more than a read: the model must be one of MODEL_PROFILES, not only a model id's shape.

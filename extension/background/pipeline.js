@@ -3,17 +3,19 @@
 // listed as existing groups, so tabs the first pass skipped can join them or form small new groups.
 // The M1 benchmark found pass 1 alone grouped 44-77% of the tabs and the sweep raised that to 81-96%.
 // When the sweep still leaves many tabs loose, one extra sweep runs over what is left (the coverage
-// tail; see EXTRA_SWEEP_LEFTOVER_SHARE). Every pass goes through the refusal split. Last, regroupTwins
+// tail; see EXTRA_SWEEP_LEFTOVER_SHARE). Every pass goes through the refusal split, and a new group from any pass
+// needs 2 tabs (plan.js). The sweep used to need 3 for its own groups, while the prompt asked for broad groups; with
+// the one-subject prompt that floor left small subjects loose (Sonnet 5.5, 257 real tabs: 34 tabs per tidy loose that
+// had a subject-mate, against 21 without it, for about 4 more tabs from unrelated fields). Then the group check
+// (check.js) sorts each large group's tabs by subject again, as far as the precision setting asks. Last, regroupTwins
 // puts copies of one page (same host and title) in one group, since the model sometimes splits them,
 // and groupPrivateBySite groups the private tabs the model left loose by their site.
 
 import { planWithRefusalSplit } from "./split.js";
-import { validatePlan, mergePartialPlans, regroupTwins, groupPrivateBySite, nameKey } from "./plan.js";
+import { validatePlan, mergePartialPlans, regroupTwins, groupPrivateBySite } from "./plan.js";
+import { checkGroups, DEFAULT_PRECISION } from "./check.js";
 
 export const SWEEP_MIN_LEFTOVERS = 5;
-// The sweep sees only leftovers, so it tends to make many 2-tab groups; in the M1 benchmark they
-// pushed a 257-tab tidy past 30 groups. A group the sweep creates needs at least this many tabs.
-export const SWEEP_MIN_NEW_GROUP_TABS = 3;
 // The sweep decides from these samples whether a leftover fits a pass-1 group. With 3, the live run
 // left clear fits loose next to large groups, so a group now shows up to this many.
 export const SWEEP_SAMPLE_COUNT = 6;
@@ -30,13 +32,20 @@ export const EXTRA_SWEEP_LEFTOVER_SHARE = 0.12;
 // a handful of tabs, and a 23-tab re-tidy spent a third call on 6 of them to place 1.
 export const EXTRA_SWEEP_MIN_LOOSE = 10;
 // The extra sweep is skipped once pass 1 and the sweep have taken this long (a slow API, retries), so
-// a tidy stays inside the 30 s target. The two passes normally take about 10 s.
+// a tidy stays inside the 30 s target. The two passes normally take about 10 s on Haiku 5.5 and 17-21 s on Sonnet 5.5,
+// the default, which then runs the extra sweep in about 4 of 5 tidies that call for one.
 export const EXTRA_SWEEP_MAX_ELAPSED_MS = 20000;
 // The guard above only decides whether the extra sweep starts, so its one call is time-boxed too: it
 // may take what is left until this long after the tidy started, and never less than the minimum. A call
 // that runs out fails like any other, and the two-pass plan stands.
 export const EXTRA_SWEEP_DEADLINE_MS = 28000;
 export const EXTRA_SWEEP_MIN_TIMEOUT_MS = 5000;
+// The group checks take about 3 s together after the passes (17 Haiku 5.5 calls for 257 tabs, 8 at a time). Each one
+// may take what is left until this long after the tidy started, and never less than the minimum; one that runs out
+// leaves its group unchecked. A check starts only before this deadline, except the first ones (as many as run at once,
+// the largest groups) when the passes ran past it, so a slow tidy ends at most about the minimum later.
+export const CHECK_DEADLINE_MS = 34000;
+export const CHECK_MIN_TIMEOUT_MS = 5000;
 
 const hostOf = (site) => (typeof site === "string" ? site.split("/")[0] : "");
 
@@ -75,23 +84,6 @@ function virtualGroups(plan, payload) {
     }));
 }
 
-// New groups that only a sweep created and that are below the sweep minimum go back to loose tabs.
-// namesBefore holds the names of the groups the plan had before that sweep.
-function dropSmallSweepGroups(plan, namesBefore, stripOrder) {
-  const dropped = [];
-  const groups = plan.groups.filter((group) => {
-    const sweepOnly = group.kind === "new" && !namesBefore.has(nameKey(group.name));
-    if (sweepOnly && group.tabIds.length < SWEEP_MIN_NEW_GROUP_TABS) {
-      dropped.push(...group.tabIds);
-      return false;
-    }
-    return true;
-  });
-  if (!dropped.length) return plan;
-  const loose = new Set([...plan.leftoverTabIds, ...dropped]);
-  return { ...plan, groups, leftoverTabIds: stripOrder.filter((id) => loose.has(id)) };
-}
-
 async function runPass(tabs, baseGroups, payload, requestOutput, splitOptions, callOptions) {
   const split = await planWithRefusalSplit(
     { tabs, existingGroups: baseGroups },
@@ -116,17 +108,22 @@ function countGrouped(plan, tabIds) {
 //   { output }, and throws a TidyApiError on failure (the run then rejects). callOptions is undefined,
 //   except on the extra sweep: { timeoutMs }, the most its call may take, retries included.
 // - options: { sweep = true, extraSweep = true, split: options for planWithRefusalSplit, onPass,
-//   now = Date.now }. now only times the extra sweep's latency guard and time box.
-// - onPass(index) is called just before each pass starts (0 = pass 1, 1 = sweep, 2 = extra sweep), for
-//   progress only: it is not awaited, and a throw or a rejected promise from it never affects the plan.
-// - passes holds one entry per pass that ran: { kind: "pass1" | "sweep" | "extra", tabs, grouped,
+//   now = Date.now, requestCheck, precision = DEFAULT_PRECISION }. now times the extra sweep's latency guard and the
+//   time boxes. requestCheck(tabs, callOptions) is the group check's call (check.js), answering as requestOutput does;
+//   without it nothing is checked.
+// - onPass(index) is called just before each pass starts (0 = pass 1, 1 = sweep, 2 = extra sweep, 3 = the
+//   group check), for progress only: it is not awaited, and a throw or a rejected promise from it never affects the plan.
+// - passes holds one entry per pass that ran: { kind: "pass1" | "sweep" | "extra" | "check", tabs, grouped,
 //   calls, stoppedEarly }. tabs is how many tabs the pass was sent, and grouped how many of those were
-//   in a group once its answer was merged (with sweep-only groups below the minimum dropped). An extra
-//   sweep whose call failed is listed with grouped 0 and failed: true.
+//   in a group once its answer was merged. An extra sweep whose call failed is listed with grouped 0 and
+//   failed: true; a check pass with a failed call has stoppedEarly true.
 // refusedTabIds and unsentTabIds hold real tab ids; refused tabs stay loose and should be sent as
 // private next time. plan.leftoverTabIds are loose tabs that no pass grouped.
 export async function planTidy(payload, requestOutput, options = {}) {
-  const { sweep = true, extraSweep = true, split: splitOptions = {}, onPass, now = Date.now } = options ?? {};
+  const {
+    sweep = true, extraSweep = true, split: splitOptions = {}, onPass, now = Date.now, requestCheck,
+    precision = DEFAULT_PRECISION,
+  } = options ?? {};
   const base = Array.isArray(payload.existingGroups) ? payload.existingGroups : [];
   const toReal = (shortIds) => shortIds.map((id) => payload.idMap[id]).filter((id) => id !== undefined);
   const stripOrder = payload.tabs.map((tab) => payload.idMap[tab.id]);
@@ -161,15 +158,13 @@ export async function planTidy(payload, requestOutput, options = {}) {
   };
 
   // One leftover pass: the plan's new groups so far go to the model as virtual existing groups, and its
-  // answer is merged into the plan as it stands. Merging into the plan, not into the earlier passes'
-  // raw answers, matters for the extra sweep: a tab that the sweep put in a dropped 2-tab group would
-  // otherwise keep that first claim and lose its new group.
+  // answer is merged into the plan as it stands (not into the earlier passes' raw answers), so the extra
+  // sweep builds on the groups the sweep left.
   const sweepPass = async (index, tabs, passSplit, callOptions) => {
     const sweepBase = [...base, ...virtualGroups(plan, payload)];
     reportPass(index);
     const result = await runPass(tabs, sweepBase, payload, requestOutput, passSplit, callOptions);
-    const namesBefore = new Set(plan.groups.map((group) => nameKey(group.name)));
-    plan = dropSmallSweepGroups(mergePartialPlans([plan, ...result.plans]), namesBefore, stripOrder);
+    plan = mergePartialPlans([plan, ...result.plans]);
     calls += result.split.calls;
     const record = {
       tabs: tabs.length, grouped: countGrouped(plan, tabs.map((tab) => payload.idMap[tab.id])),
@@ -203,6 +198,23 @@ export async function planTidy(payload, requestOutput, options = {}) {
         calls += 1;
         passes.push({ kind: "extra", tabs: extraTabs.length, grouped: 0, calls: 1, stoppedEarly: true, failed: true });
       }
+    }
+  }
+
+  if (typeof requestCheck === "function") {
+    let startBy = null;
+    const checkOptions = () => {
+      const elapsed = now() - startedAt;
+      startBy ??= Math.max(CHECK_DEADLINE_MS, elapsed + 1);
+      return elapsed >= startBy ? null : { timeoutMs: Math.max(CHECK_MIN_TIMEOUT_MS, CHECK_DEADLINE_MS - elapsed) };
+    };
+    const checked = await checkGroups(plan, payload, requestCheck, {
+      precision, callOptions: checkOptions, onStart: () => reportPass(3),
+    });
+    plan = checked.plan;
+    if (checked.pass) {
+      passes.push(checked.pass);
+      calls += checked.pass.calls;
     }
   }
 

@@ -2,21 +2,27 @@
 // the model's short ids back into real tab and group ids. Pure: no browser, fetch, timers or storage.
 // When in doubt this module sends less (notes/implementation-notes.md, "Payload redaction").
 
-import { SYSTEM_PROMPT, buildUserMessage } from "../shared/prompt.js";
+import { SYSTEM_PROMPT, CHECK_PROMPT, buildUserMessage, buildCheckMessage } from "../shared/prompt.js";
 import { PLAN_SCHEMA } from "../shared/schema.js";
 import { DEFAULT_ICON } from "../shared/icons.js";
 import { DEFAULT_SENSITIVE } from "../shared/sensitive-defaults.js";
+import { CHECK_MODEL } from "./check.js";
 
 export const MAX_DISPLAY_LENGTH = 60;
 export const MAX_TITLE_LENGTH = 120;
 export const MAX_SAMPLES = 3;
 
-export const DEFAULT_MODEL = "claude-haiku-5-5";
+// Sonnet 5.5 since the accuracy round (notes/accuracy-2026-10-31.md): on 257 real tabs with the current prompt it
+// grouped 84% of them at pair F1 76% against an Opus reference (the old prompt on Haiku: 38%). Haiku 5.5 with the
+// same prompt keeps groups as clean but groups only 66% (F1 64%). About 22 s and $0.11 per tidy, against $0.007.
+export const DEFAULT_MODEL = "claude-sonnet-5-5";
 export const DEFAULT_EFFORT = "low";
 // Thinking off: in the M1 benchmark, two passes at effort low without thinking took ~10 s and grouped
 // ~90% of 257 real tabs; adaptive thinking was 2-4x slower for a small quality gain.
 export const DEFAULT_THINKING = "disabled";
 export const DEFAULT_MAX_TOKENS = 16000;
+// A group check answers for one group of at most a few dozen tabs.
+export const CHECK_MAX_TOKENS = 8000;
 const EFFORTS = ["low", "medium", "high", "xhigh", "max"];
 // Thinking turned off ("disabled" on Haiku 5.5, "between_tools" on Sonnet 5.5) is refused above effort high.
 const EFFORTS_WITHOUT_THINKING = ["low", "medium", "high"];
@@ -578,6 +584,20 @@ export function buildRequestBody(payload, options = {}) {
     system: SYSTEM_PROMPT,
     messages: [{ role: "user", content }],
     output_config: { effort, format: { type: "json_schema", schema: PLAN_SCHEMA } },
+    ...(thinkingParam ? { thinking: thinkingParam } : {}),
+  };
+}
+
+// Body for one group check (check.js): CHECK_MODEL whatever model the tidy uses, effort low, thinking off, and the
+// tidy's own schema. The tabs are payload tabs, so a sensitive tab goes as its site only, as in the tidy.
+export function buildCheckBody(tabs, options = {}) {
+  const thinkingParam = thinkingField(CHECK_MODEL, "disabled");
+  return {
+    model: CHECK_MODEL,
+    max_tokens: CHECK_MAX_TOKENS,
+    system: CHECK_PROMPT,
+    messages: [{ role: "user", content: buildCheckMessage({ tabs, preferences: cleanPreferences(options.preferences) }) }],
+    output_config: { effort: "low", format: { type: "json_schema", schema: PLAN_SCHEMA } },
     ...(thinkingParam ? { thinking: thinkingParam } : {}),
   };
 }

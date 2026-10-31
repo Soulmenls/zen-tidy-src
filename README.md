@@ -4,8 +4,10 @@ Zen Tidy is a Firefox WebExtension for [Zen Browser](https://zen-browser.app). I
 groups with Claude, using your own Anthropic API key.
 
 1. Click the Zen Tidy toolbar button.
-2. It sends your loose tabs to Claude (`claude-haiku-5-5` by default): title, site and a short path. Tabs that look
-   sensitive send only the site.
+2. It sends your loose tabs to Claude (`claude-sonnet-5-5` by default): title, site and a short path. Tabs that look
+   sensitive send only the site. Then `claude-haiku-5-5` checks each larger group on its own and splits any that mixes
+   subjects; how far it goes is the **Precision** setting, from 1 (no check, the most tabs grouped) to 5 (the
+   default: one subject per group, a tab with nothing like it left ungrouped).
 3. You get a **preview** of the groups. Rename them, change their icons, move or untick tabs.
 4. **Apply** moves the tabs into unpinned tab groups. **Undo** puts them back, even after a restart.
 

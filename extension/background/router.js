@@ -87,7 +87,7 @@ const GROUP_UNDO_MESSAGES = Object.freeze({
 // The settings messages (notes/m6-contracts.md, "Messages"). The settings the options page shows and saves; thinking
 // is not one (SPEC F5: the benchmark picks it), so no message reads or changes it. What resetSettings can put back:
 // each of them, the sensitive lists one by one.
-export const PAGE_SETTINGS = Object.freeze(["model", "effort", "preferences", "staleDays", "sensitive"]);
+export const PAGE_SETTINGS = Object.freeze(["model", "effort", "precision", "preferences", "staleDays", "sensitive"]);
 export const RESETTABLE_SETTINGS = Object.freeze([
   ...PAGE_SETTINGS.filter((field) => field !== "sensitive"), ...SENSITIVE_LISTS.map((name) => `sensitive.${name}`),
 ]);
@@ -137,6 +137,7 @@ export function settingsView(settings) {
   return redactKeys({
     model: settings?.model ?? null,
     effort: settings?.effort ?? null,
+    precision: settings?.precision ?? null,
     preferences: settings?.preferences ?? null,
     staleDays: settings?.staleDays ?? null,
     sensitive: Object.fromEntries(SENSITIVE_LISTS.map((name) => [name, list(sensitive[name])])),

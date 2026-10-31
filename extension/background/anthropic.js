@@ -5,7 +5,7 @@ import { redact, REDACTED } from "./log.js";
 
 export const API_BASE = "https://api.anthropic.com";
 export const API_VERSION = "2026-10-21";
-export const DEFAULT_MODEL = "claude-haiku-5-5";
+export const DEFAULT_MODEL = "claude-sonnet-5-5";
 export const MAX_TOKENS_CAP = 64000;
 
 const MESSAGES_TIMEOUT_MS = 90000;
