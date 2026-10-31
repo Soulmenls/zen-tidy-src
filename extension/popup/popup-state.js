@@ -406,6 +406,7 @@ const PHASES = {
   snapshot: "Reading your tabs…",
   pass1: "Sorting your tabs…",
   sweep: "Checking the leftovers…",
+  check: "Checking each group…",
   apply: "Applying your groups…",
 };
 

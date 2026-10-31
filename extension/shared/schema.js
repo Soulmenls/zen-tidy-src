@@ -33,9 +33,13 @@ export const PLAN_SCHEMA = deepFreeze({
             type: "integer",
             description: "For a new group: number of the most related existing group, or 0.",
           },
+          // Before tab_ids on purpose: the model names the group's one subject before it picks the tabs. With Haiku on
+          // 236 real tabs it cut tabs from unrelated fields from 26 to 10 per tidy (fewer tabs grouped, too: 87% to
+          // 71%). plan.js doesn't read it.
+          about: { type: "string", description: "One short sentence: the single subject every tab in this group is about." },
           tab_ids: { type: "array", items: { type: "integer" } },
         },
-        required: ["name", "icon", "existing_group", "place_after", "tab_ids"],
+        required: ["name", "icon", "existing_group", "place_after", "about", "tab_ids"],
         additionalProperties: false,
       },
     },

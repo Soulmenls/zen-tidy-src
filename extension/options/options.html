@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Zen Tidy settings (notes/m6-contracts.md, "Options page"). Five sections, styled as Zen's about:preferences
+<!-- Zen Tidy settings (notes/m6-contracts.md, "Options page"). Six sections, styled as Zen's about:preferences
      groupboxes (notes/zen-design-system.md). No <form>, no inline script or style, no links that navigate this page.
 
      The key field follows implementation-notes, "Key field": a masked text input (never type=password, which makes
@@ -71,13 +71,13 @@
         <label class="field-label" for="model">Model</label>
         <span class="select">
           <select id="model" aria-describedby="model-note model-error" disabled>
-            <option value="claude-haiku-5-5">Haiku 5.5 (recommended)</option>
-            <option value="claude-sonnet-5-5">Sonnet 5.5</option>
+            <option value="claude-sonnet-5-5">Sonnet 5.5 (recommended)</option>
+            <option value="claude-haiku-5-5">Haiku 5.5</option>
             <option value="claude-opus-5-5">Opus 5.5</option>
           </select>
         </span>
       </div>
-      <p id="model-note" class="note">Haiku 5.5 is fast and inexpensive, and Zen Tidy was tuned on it. Larger models cost more per tidy and take longer.</p>
+      <p id="model-note" class="note">Sonnet 5.5 groups tabs more accurately than Haiku 5.5, at about $0.10 for 250 tabs. Haiku 5.5 costs about a fifteenth of that but leaves more tabs ungrouped. Opus 5.5 costs more and takes longer.</p>
       <p id="model-error" class="error" role="alert"></p>
       <div class="field-row">
         <label class="field-label" for="effort">Effort</label>
@@ -93,6 +93,28 @@
       <div class="actions">
         <button id="model-reset" type="button" disabled>Reset to defaults</button>
         <p id="model-status" class="saved" role="status"></p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="precision-heading">
+      <h2 id="precision-heading">Grouping</h2>
+      <div class="field-row">
+        <label class="field-label" for="precision">Precision</label>
+        <span class="select">
+          <select id="precision" aria-describedby="precision-note precision-error" disabled>
+            <option value="1">1: Group the most tabs, no check</option>
+            <option value="2">2: Split mixed groups of 10+ tabs</option>
+            <option value="3">3: Split mixed groups of 5+ tabs</option>
+            <option value="4">4: Also drop odd tabs from groups of 10+</option>
+            <option value="5">5: One subject per group (recommended)</option>
+          </select>
+        </span>
+      </div>
+      <p id="precision-note" class="note">From level 2 up, Haiku 5.5 checks each larger group and splits any that mixes subjects. Levels 4 and 5 also leave a tab ungrouped when nothing else in its group is about the same thing, so more tabs stay loose. The checks add about 3 seconds and under a cent for 250 tabs.</p>
+      <p id="precision-error" class="error" role="alert"></p>
+      <div class="actions">
+        <button id="precision-reset" type="button" disabled>Reset to defaults</button>
+        <p id="precision-status" class="saved" role="status"></p>
       </div>
     </section>
 

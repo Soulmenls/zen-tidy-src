@@ -5,14 +5,14 @@
 // the DOM, an attribute or a log, and it can't be copied, cut or dragged out of the field.
 //
 // The other settings come from getSettings ({ settings, defaults }) and go back through saveSettings ({ patch }: only
-// the fields being changed, a list whole, as edited) and resetSettings ({ fields }). Model, effort and stale days save
-// on change; custom instructions only on Save; a sensitive list on each add, remove, put back or reset. Every settings
+// the fields being changed, a list whole, as edited) and resetSettings ({ fields }). Model, effort, precision and stale
+// days save on change; custom instructions only on Save; a sensitive list on each add, remove, put back or reset. Every settings
 // request waits for the one before it. Text reaches the page through textContent only, and the background's own
 // message is never shown: each failure has a fixed line next to its field. The one exception is Test key, whose line
 // says why the key failed (options-state.js, "The API key's lines").
 
 import {
-  MODELS, EFFORTS, LISTS, MAX_PREFERENCES, resetField, LOAD_FAILED, RESET_FAILED, SAVED, RESTORED,
+  MODELS, EFFORTS, PRECISIONS, LISTS, MAX_PREFERENCES, resetField, LOAD_FAILED, RESET_FAILED, SAVED, RESTORED,
   PREFERENCES_CONFIRM, PREFERENCES_CONFIRM_UNSAVED, STALE_DAYS_INVALID, KEY_FORMAT, KEY_EMPTY, KEY_SAVE_FAILED,
   KEY_CLEAR_FAILED, KEY_WAIT, readSettings, savedSettings, saveErrorText, testFailureText, otherChoice, counterText,
   preferencesProblem, parseStaleDays, entryKey, filterText, addEntry, removeEntry, displayOrder, listEdits, sameEntries,
@@ -267,19 +267,22 @@ function createConfirm(prefix, trigger, onConfirm) {
   };
 }
 
-// ---- Model, effort and stale days: saved on change ----
+// ---- Model, effort, precision and stale days: saved on change ----
 
 const settingsError = $("settings-error");
 const modelSelect = $("model");
 const effortSelect = $("effort");
+const precisionSelect = $("precision");
 const staleInput = $("stale-days");
 const modelReset = $("model-reset");
+const precisionReset = $("precision-reset");
 const staleReset = $("stale-days-reset");
 
 // seq counts the requests made for a field, so only the answer to the latest one changes what the field shows.
 const scalars = {
   model: { input: modelSelect, error: $("model-error"), status: $("model-status"), seq: 0 },
   effort: { input: effortSelect, error: $("effort-error"), status: $("model-status"), seq: 0 },
+  precision: { input: precisionSelect, error: $("precision-error"), status: $("precision-status"), seq: 0 },
   staleDays: { input: staleInput, error: $("stale-days-error"), status: $("stale-days-status"), seq: 0 },
 };
 // The resets out: their buttons stay off until the answer.
@@ -305,6 +308,8 @@ function showScalar(field) {
   const value = state.settings[field];
   if (field === "model") showChoice(modelSelect, MODELS, value);
   else if (field === "effort") showChoice(effortSelect, EFFORTS, value);
+  // The setting is a number; the select's values are text.
+  else if (field === "precision") showChoice(precisionSelect, PRECISIONS, String(value));
   else staleInput.value = String(value);
 }
 
@@ -312,6 +317,7 @@ function updateResets() {
   const { settings, defaults } = state;
   modelReset.disabled = !state.loaded || resetsOut.has("model") ||
     (settings.model === defaults.model && settings.effort === defaults.effort);
+  precisionReset.disabled = !state.loaded || resetsOut.has("precision") || settings.precision === defaults.precision;
   staleReset.disabled = !state.loaded || resetsOut.has("staleDays") || settings.staleDays === defaults.staleDays;
 }
 
@@ -360,6 +366,7 @@ async function resetScalars(fields) {
 
 modelSelect.addEventListener("change", () => saveScalar("model", modelSelect.value));
 effortSelect.addEventListener("change", () => saveScalar("effort", effortSelect.value));
+precisionSelect.addEventListener("change", () => saveScalar("precision", Number(precisionSelect.value)));
 staleInput.addEventListener("change", () => {
   const days = parseStaleDays(staleInput.value);
   if (days === null) {
@@ -371,6 +378,7 @@ staleInput.addEventListener("change", () => {
   saveScalar("staleDays", days);
 });
 modelReset.addEventListener("click", () => resetScalars(["model", "effort"]));
+precisionReset.addEventListener("click", () => resetScalars(["precision"]));
 staleReset.addEventListener("click", () => resetScalars(["staleDays"]));
 
 // ---- Custom instructions: explicit Save and Revert ----
@@ -836,7 +844,7 @@ async function loadSettings() {
   state.loaded = true;
   for (const field of Object.keys(scalars)) showScalar(field);
   prefsInput.value = state.settings.preferences;
-  for (const input of [modelSelect, effortSelect, staleInput, prefsInput]) input.disabled = false;
+  for (const input of [modelSelect, effortSelect, precisionSelect, staleInput, prefsInput]) input.disabled = false;
   for (const editor of editors) {
     editor.defaults = state.defaults.sensitive[editor.field];
     editor.defaultKeys = new Set(editor.defaults.map(entryKey));

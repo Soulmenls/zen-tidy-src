@@ -88,8 +88,8 @@ function nothingToTidy(payload) {
 
 const isCurrent = (run, runId, state) => run?.id === runId && run.state === state;
 
-// Run stats: request attempts and token counts summed over every requestPlan call of a tidy (both
-// passes and every refusal-split chunk), plus the run's wall time. Numbers only: nothing here can hold
+// Run stats: request attempts and token counts summed over every requestPlan call of a tidy (every pass, every
+// refusal-split chunk and every group check), plus the run's wall time. Numbers only: nothing here can hold
 // a key, a title or a site. The live end-to-end test reports cost from it. The extension sets no
 // cache_control today; both cache fields are kept so the cost stays right if it ever does.
 export function emptyStats() {
@@ -118,15 +118,21 @@ export function addStats(stats, source, { failed = false, sent = 0 } = {}) {
 }
 
 // Per-pass coverage for a finished tidy, from planTidy's passes: { passes: [{ tabs, grouped, calls }],
-// extraPass }. tabs is what a pass was sent and grouped how many of those it placed, in pass order (pass
-// 1, the sweep, the extra sweep), so the coverage tail can be read from live runs. Numbers and one
-// boolean only. A malformed entry counts as zeros rather than dropping out, so the order stays right.
+// extraPass, check }. tabs is what a pass was sent and grouped how many of those it placed, in pass order (pass
+// 1, the sweep, the extra sweep), so the coverage tail can be read from live runs. The group check places no tab, so
+// it stays out of that sum: check is { tabs, grouped, calls } (the tabs checked and how many of them stay grouped),
+// or null when no check ran. run.js adds the check's own attempts and tokens to it (checkStats), since they are
+// priced on CHECK_MODEL's card, not the tidy's model's. Numbers and one boolean only. A malformed entry counts as zeros rather than dropping
+// out, so the order stays right.
 export function passStats(passes) {
   const list = Array.isArray(passes) ? passes : [];
   const whole = (value) => (Number.isInteger(value) && value > 0 ? value : 0);
+  const numbers = (pass) => ({ tabs: whole(pass?.tabs), grouped: whole(pass?.grouped), calls: whole(pass?.calls) });
+  const check = list.find((pass) => pass?.kind === "check");
   return {
-    passes: list.map((pass) => ({ tabs: whole(pass?.tabs), grouped: whole(pass?.grouped), calls: whole(pass?.calls) })),
+    passes: list.filter((pass) => pass?.kind !== "check").map(numbers),
     extraPass: list.some((pass) => pass?.kind === "extra"),
+    check: check ? numbers(check) : null,
   };
 }
 
@@ -166,9 +172,10 @@ function ownOriginOf(api) {
 //   (store.interruptRun), so Try again never repeats work that is done.
 // - looseStatus(windowId) resolves to { looseCount, canTidy }: the number of tabs a tidy would send now, and
 //   whether start would accept them (the same nothing-to-tidy rule).
-// deps: { api, store, requestPlan, buildPreview, takeSnapshot, buildPayload, buildRequestBody,
+// deps: { api, store, requestPlan, buildPreview, takeSnapshot, buildPayload, buildRequestBody, buildCheckBody,
 //   planTidy, findExtras, apiBase, fetchImpl, now = Date.now, newId, log, blockedSince, keepaliveMs, staleMs,
 //   ownOrigin }.
+//   buildCheckBody(tabs, { preferences }) is payload.js's body for one group check; without it the tidy skips the check.
 //   blockedSince(ms) resolves to true when a connect-src CSP violation happened since ms.
 //   ownOrigin is runtime.getURL("") (default: read from api.runtime, else null); buildPreview leaves the
 //   extension's own pages out of the preview, and findExtras never offers them.
@@ -177,8 +184,8 @@ function ownOriginOf(api) {
 //   only feeds buildPreview (as `extras`, staleDays always included), so nothing it finds is ever sent.
 export function createRunner(deps) {
   const {
-    api, store, requestPlan, buildPreview, takeSnapshot, buildPayload, buildRequestBody, planTidy, findExtras,
-    apiBase, fetchImpl, now = Date.now, newId = () => crypto.randomUUID(), log = SILENT,
+    api, store, requestPlan, buildPreview, takeSnapshot, buildPayload, buildRequestBody, buildCheckBody, planTidy,
+    findExtras, apiBase, fetchImpl, now = Date.now, newId = () => crypto.randomUUID(), log = SILENT,
     blockedSince = async () => false, keepaliveMs = KEEPALIVE_MS, staleMs = STALE_MS,
     ownOrigin = ownOriginOf(api),
   } = deps;
@@ -261,15 +268,10 @@ export function createRunner(deps) {
         .catch((err) => log.warn("could not store the phase", { name: err?.name ?? null }));
     };
     const stats = emptyStats();
-    // callOptions.timeoutMs (the extra sweep's time box) bounds each attempt and, as totalTimeoutMs, the
-    // whole call: requestPlan's max_tokens retry doubles an attempt's timeout, and retries add up.
-    const requestOutput = async (tabs, existingGroups, callOptions) => {
-      const body = buildRequestBody({ ...payload, tabs, existingGroups }, {
-        model: settings.model,
-        effort: settings.effort,
-        thinking: settings.thinking,
-        preferences: settings.preferences,
-      });
+    // callOptions.timeoutMs (the time box of the extra sweep or a group check) bounds each attempt and, as
+    // totalTimeoutMs, the whole call: requestPlan's max_tokens retry doubles an attempt's timeout, and retries add up.
+    // also: a second stats object the call is counted in as well (the group checks' own, checkStats).
+    const send = async (body, callOptions, also = null) => {
       // Counts what this call hands to fetch, so an exception that carries no `calls` still counts the
       // requests already sent. Called unbound, like fetchImpl itself; a missing fetchImpl is passed on as
       // is, so requestPlan still refuses it before anything goes out.
@@ -288,23 +290,40 @@ export function createRunner(deps) {
         result = await requestPlan(body, { apiKey, fetchImpl: countingFetch, apiBase, keepalive, keepaliveMs, ...timeouts });
       } catch (err) {
         addStats(stats, err, { failed: true, sent });
+        if (also) addStats(also, err, { failed: true, sent });
         throw err;
       }
       addStats(stats, result);
+      if (also) addStats(also, result);
       return result.refusal ? { refusal: true, category: result.category ?? null } : { output: result.output };
     };
+    const requestOutput = (tabs, existingGroups, callOptions) => send(buildRequestBody({ ...payload, tabs, existingGroups }, {
+      model: settings.model,
+      effort: settings.effort,
+      thinking: settings.thinking,
+      preferences: settings.preferences,
+    }), callOptions);
+    const checkStats = emptyStats();
+    const requestCheck = typeof buildCheckBody === "function"
+      ? (tabs, callOptions) => send(buildCheckBody(tabs, { preferences: settings.preferences }), callOptions, checkStats)
+      : undefined;
 
     try {
       const tidy = await planTidy(payload, requestOutput, {
-        onPass: (index) => setPhase(index === 0 ? "pass1" : "sweep"),
+        onPass: (index) => setPhase(index === 0 ? "pass1" : index === 3 ? "check" : "sweep"),
         now,
+        requestCheck,
+        precision: settings.precision,
       });
       await rememberRefused(snapshot, tidy.refusedTabIds);
       const at = now();
       const extras = extrasFor(snapshot, settings, at);
       const preview = buildPreview({ snapshot, payload, tidy, now: at, id: String(newId()), ownOrigin, extras });
       stats.ms = now() - startedAt;
-      const doneStats = { ...stats, ...passStats(tidy.passes), privateGrouped: privateGroupedCount(tidy.plan) };
+      const passes = passStats(tidy.passes);
+      const { ms: _ms, calls: attempts, ...checkTokens } = checkStats;
+      const check = passes.check && { ...passes.check, attempts, ...checkTokens };
+      const doneStats = { ...stats, ...passes, check, privateGrouped: privateGroupedCount(tidy.plan) };
       // Written only if this run is still the current one (a restart may have replaced it).
       await store.updateRun((run) =>
         isCurrent(run, runId, "running")

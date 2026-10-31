@@ -5,7 +5,7 @@
 import { API_BASE } from "../shared/config.js";
 import { requestPlan, testKey } from "./anthropic.js";
 import { takeSnapshot } from "./snapshot.js";
-import { buildPayload, buildRequestBody } from "./payload.js";
+import { buildPayload, buildRequestBody, buildCheckBody } from "./payload.js";
 import { planTidy } from "./pipeline.js";
 import { buildPreview, validateApplyRequest } from "./preview.js";
 import { findExtras } from "./extras.js";
@@ -62,8 +62,8 @@ const settling = (operation) => async (...args) => {
   }
 };
 const runner = createRunner({
-  api, store, requestPlan, buildPreview, takeSnapshot, buildPayload, buildRequestBody, planTidy, findExtras,
-  apiBase: API_BASE, fetchImpl, log, blockedSince, ownOrigin: api.runtime.getURL(""),
+  api, store, requestPlan, buildPreview, takeSnapshot, buildPayload, buildRequestBody, buildCheckBody, planTidy,
+  findExtras, apiBase: API_BASE, fetchImpl, log, blockedSince, ownOrigin: api.runtime.getURL(""),
 });
 const router = createRouter({
   api, store, runner, validateApplyRequest, takeSnapshot, planUndo, listGroups, testKey, apiBase: API_BASE, fetchImpl,

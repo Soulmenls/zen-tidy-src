@@ -4,14 +4,22 @@
 
 // The models and efforts the page offers, in the order of options.html's <option>s.
 export const MODELS = Object.freeze([
-  Object.freeze({ id: "claude-haiku-5-5", label: "Haiku 5.5 (recommended)" }),
-  Object.freeze({ id: "claude-sonnet-5-5", label: "Sonnet 5.5" }),
+  Object.freeze({ id: "claude-sonnet-5-5", label: "Sonnet 5.5 (recommended)" }),
+  Object.freeze({ id: "claude-haiku-5-5", label: "Haiku 5.5" }),
   Object.freeze({ id: "claude-opus-5-5", label: "Opus 5.5" }),
 ]);
 export const EFFORTS = Object.freeze([
   Object.freeze({ id: "low", label: "Low (recommended)" }),
   Object.freeze({ id: "medium", label: "Medium" }),
   Object.freeze({ id: "high", label: "High" }),
+]);
+// The precision levels (check.js), as the select's option values: the setting itself is the number.
+export const PRECISIONS = Object.freeze([
+  Object.freeze({ id: "1", label: "1: Group the most tabs, no check" }),
+  Object.freeze({ id: "2", label: "2: Split mixed groups of 10+ tabs" }),
+  Object.freeze({ id: "3", label: "3: Split mixed groups of 5+ tabs" }),
+  Object.freeze({ id: "4", label: "4: Also drop odd tabs from groups of 10+" }),
+  Object.freeze({ id: "5", label: "5: One subject per group (recommended)" }),
 ]);
 
 // SPEC F4: up to 500 characters, counted as a textarea counts them (UTF-16 code units), as store.js does.
@@ -56,6 +64,7 @@ const EMPTY_ENTRY = { domains: "Type a site first.", keywords: "Type a word or p
 const INVALID = {
   model: "Zen Tidy can't use that model. Choose one from the list.",
   effort: "Choose an effort from the list.",
+  precision: "Choose a precision from the list.",
   preferences: `Couldn't save: keep the instructions to ${MAX_PREFERENCES} characters, with no API key in them.`,
   staleDays: STALE_DAYS_INVALID,
   domains: "Couldn't save the sites: one of them isn't a site name like example.com.",
@@ -87,15 +96,15 @@ const LIST_FIELDS = Object.values(LISTS).map((config) => config.field);
 // what the page shows; null when a field is missing or of the wrong type.
 export function readSettingsValue(value) {
   if (!isObject(value) || !isObject(value.sensitive)) return null;
-  const { model, effort, preferences, staleDays } = value;
+  const { model, effort, preferences, staleDays, precision } = value;
   if (typeof model !== "string" || typeof effort !== "string" || typeof preferences !== "string") return null;
-  if (!Number.isInteger(staleDays)) return null;
+  if (!Number.isInteger(staleDays) || !Number.isInteger(precision)) return null;
   const sensitive = {};
   for (const field of LIST_FIELDS) {
     if (!isStringList(value.sensitive[field])) return null;
     sensitive[field] = [...value.sensitive[field]];
   }
-  return { model, effort, preferences, staleDays, sensitive };
+  return { model, effort, preferences, staleDays, precision, sensitive };
 }
 
 // getSettings' { settings, defaults }, or null when the answer is an error or either part can't be read.
@@ -112,13 +121,13 @@ export function savedSettings(response) {
 }
 
 // The fixed line for a save the background refused or that never got an answer. `kind` is the field the page sent:
-// "model", "effort", "preferences", "staleDays", or a list editor ("domains", "keywords", "stems").
+// "model", "effort", "precision", "preferences", "staleDays", or a list editor ("domains", "keywords", "stems").
 export function saveErrorText(kind, response) {
   return isObject(response) && response.error === "invalid-settings" && INVALID[kind] ? INVALID[kind] : SAVE_FAILED;
 }
 
 // ---------------------------------------------------------------------------------------------
-// Model, effort, custom instructions and stale days
+// Model, effort, precision, custom instructions and stale days
 
 // The label of the extra option a select gets for a stored value it doesn't list (a newer model), or null.
 export function otherChoice(choices, value) {

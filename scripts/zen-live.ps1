@@ -15,18 +15,19 @@
   profile is deleted here too if it still exists (after stopping only the Zen processes started on it).
 
   This SPENDS MONEY, far more on Sonnet and Opus than on Haiku. Roughly, per run on
-  test\fixtures\synthetic-tabs.json: Haiku 5.5 (the default) half a cent to a cent; Sonnet 5.5 $0.10 to
-  $0.25; Opus 5.5 $0.25 to $0.60 (its thinking can't be turned off); up to about three times that if a run
-  needs all 12 reserved calls. Per million input / output tokens: Haiku 5.5 $0.10 / $0.50, Sonnet 5.5
-  $2 / $10, Opus 5.5 $4 / $20. zen_live.py keeps the books in
-  %LOCALAPPDATA%\zen-tidy-dev\live-call-ledger.json: it reserves the worst case (6 calls: pass 1, the sweep
-  and the extra sweep, plus a margin for a refusal split or a retry) before each tidy, a chrome-scope
-  request counter cancels anything beyond the reservation, and the run refuses to start without 12 calls
-  per repetition left (2 tidies). Only zen_live.py writes the ledger. It is never created implicitly:
-  this script refuses to decrypt the key until it exists. Create it once, free and without the key:
-    python test\integration\zen_live.py --init-ledger 25
+  test\fixtures\synthetic-tabs.json: Haiku 5.5 (the default) $0.01 to $0.02; Sonnet 5.5 $0.10 to
+  $0.25; Opus 5.5 $0.25 to $0.60 (its thinking can't be turned off); each with under a cent of group checks
+  (Haiku 5.5, the precision setting's); up to about three times that if a run needs all 72 reserved calls.
+  Per million input / output tokens: Haiku 5.5 $0.10 / $0.50, Sonnet 5.5 $2 / $10, Opus 5.5 $4 / $20.
+  zen_live.py keeps the books in %LOCALAPPDATA%\zen-tidy-dev\live-call-ledger.json: it reserves
+  the worst case (36 calls: pass 1, the sweep and the extra sweep, a margin for a refusal split or a retry,
+  and up to 30 group checks) before each tidy, a chrome-scope request counter cancels anything beyond the
+  reservation, and the run refuses to start without 72 calls per repetition left (2 tidies). Only
+  zen_live.py writes the ledger. It is never created implicitly: this script refuses to decrypt the key
+  until it exists. Create it once, free and without the key:
+    python test\integration\zen_live.py --init-ledger 100
   Top it up the same way (free, no key; refused next to --live, so not through this script):
-    python test\integration\zen_live.py --add-budget 10
+    python test\integration\zen_live.py --add-budget 72
   Rehearse first, free: python test\integration\zen_live.py --mock [--headed]
 
   Results land in spike\results\live\ as live-* files (summary, local-only detail, log, screenshots); a mock
@@ -36,7 +37,7 @@
   pwsh -ExecutionPolicy Bypass -File .\scripts\zen-live.ps1
 
 .EXAMPLE
-  pwsh -ExecutionPolicy Bypass -File .\scripts\zen-live.ps1 --headed --repeat 2 --max-calls 24
+  pwsh -ExecutionPolicy Bypass -File .\scripts\zen-live.ps1 --headed --repeat 2 --max-calls 144
 
 .EXAMPLE
   pwsh -ExecutionPolicy Bypass -File .\scripts\zen-live.ps1 --model claude-sonnet-5-5 --tabs-file test\fixtures\synthetic-tabs.json
