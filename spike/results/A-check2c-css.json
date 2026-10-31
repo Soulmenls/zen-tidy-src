@@ -1,0 +1,1931 @@
+{
+ "css": "/* Zen Tidy spike (group A): SIG + 3-char ICON code + visible name */\ntab-group[label^=\"\\002063\\002062\"] > .tab-group-label-container {\n  flex-direction: row !important;\n  align-items: center;\n}\ntab-group[label^=\"\\002063\\002062\"] > .tab-group-label-container::before {\n  content: \"\";\n  display: block;\n  flex: 0 0 16px;\n  width: 16px;\n  height: 16px;\n  margin-inline-end: 6px;\n  background: url(chrome://browser/skin/zen-icons/selectable/folder.svg) center / 16px 16px no-repeat;\n  -moz-context-properties: fill, fill-opacity;\n  fill: currentColor;\n  fill-opacity: 1;\n}\ntab-group[label^=\"\\002063\\002062\\002060\\002060\\002060\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/folder.svg); }\ntab-group[label^=\"\\002063\\002062\\002060\\002060\\002061\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/code.svg); }\ntab-group[label^=\"\\002063\\002062\\002060\\002061\\002064\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/book.svg); }\ntab-group[label^=\"\\002063\\002062\\00180E\\00200B\\002064\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/star.svg); }\ntab-group[label^=\"\\002063\\002062\\00180E\\00180E\\00180E\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/globe.svg); }\n/* collapse fix: Firefox's rule targets direct children, Zen wraps tabs in .tab-group-container */\ntab-group[label^=\"\\002063\\002062\"][collapsed] > .tab-group-container > .tabbrowser-tab:not([selected],[multiselected]) {\n  display: none;\n}\n",
+ "sig": [
+  "U+2063",
+  "U+2062"
+ ],
+ "icon_alphabet": [
+  "U+2060",
+  "U+2061",
+  "U+2064",
+  "U+200B",
+  "U+180E"
+ ],
+ "icons": {
+  "000": "folder",
+  "001": "code",
+  "012": "book",
+  "432": "star",
+  "444": "globe"
+ },
+ "gids": {
+  "I_folder": 1792905129348002,
+  "I_code": 1792905129371073,
+  "I_book": 1792905129388040,
+  "I_star": 1792905129409052,
+  "I_globe": 1792905129428063,
+  "S_sig_no_code": 1792905129449085,
+  "S_sig_unmapped_code": 1792905129464081,
+  "N_icon_no_sig": 1792905129478018,
+  "N_plain": 1792905129494044,
+  "N_reversed_sig": 1792905129510098,
+  "N_sig_half": 1792905129525053,
+  "N_empty": 1792905129545002
+ },
+ "probe_before": [
+  {
+   "id": "1792905129545-2",
+   "label": "​",
+   "labelHex": [
+    "U+200B"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 0,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    239,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129525-53",
+   "label": "⁣⁠⁠⁡Half",
+   "labelHex": [
+    "U+2063",
+    "U+2060",
+    "U+2060",
+    "U+2061",
+    "U+0048",
+    "U+0061",
+    "U+006C",
+    "U+0066"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 26.083328247070312,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    315,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129510-98",
+   "label": "⁢⁣⁠⁠⁡Rev",
+   "labelHex": [
+    "U+2062",
+    "U+2063",
+    "U+2060",
+    "U+2060",
+    "U+2061",
+    "U+0052",
+    "U+0065",
+    "U+0076"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 22.883331298828125,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    391,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129494-44",
+   "label": "Dev",
+   "labelHex": [
+    "U+0044",
+    "U+0065",
+    "U+0076"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 24.583328247070312,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129478-18",
+   "label": "⁠⁠⁡Dev",
+   "labelHex": [
+    "U+2060",
+    "U+2060",
+    "U+2061",
+    "U+0044",
+    "U+0065",
+    "U+0076"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 24.583328247070312,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129464-81",
+   "label": "⁣⁢​​​Unmapped",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+200B",
+    "U+200B",
+    "U+200B",
+    "U+0055",
+    "U+006E",
+    "U+006D",
+    "U+0061",
+    "U+0070",
+    "U+0070",
+    "U+0065",
+    "U+0064"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 55.26666259765625,
+   "labelTextWidth": 70.44999694824219,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    47,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 173,
+   "inkHash": 242256342,
+   "inkAvgRGB": [
+    192,
+    163,
+    203
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129449-85",
+   "label": "⁣⁢Misc",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+004D",
+    "U+0069",
+    "U+0073",
+    "U+0063"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 75.89999389648438,
+   "labelTextWidth": 29.20001220703125,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    68,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 173,
+   "inkHash": 242256342,
+   "inkAvgRGB": [
+    192,
+    163,
+    203
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129428-63",
+   "label": "⁣⁢᠎᠎᠎Web",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+180E",
+    "U+180E",
+    "U+180E",
+    "U+0057",
+    "U+0065",
+    "U+0062"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/globe.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 75.98333740234375,
+   "labelTextWidth": 29.0333251953125,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    68,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 142,
+   "inkHash": 2249380647,
+   "inkAvgRGB": [
+    193,
+    167,
+    205
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129409-52",
+   "label": "⁣⁢᠎​⁤Faves",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+180E",
+    "U+200B",
+    "U+2064",
+    "U+0046",
+    "U+0061",
+    "U+0076",
+    "U+0065",
+    "U+0073"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/star.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 73.33332824707031,
+   "labelTextWidth": 34.333343505859375,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    65,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 98,
+   "inkHash": 4046962517,
+   "inkAvgRGB": [
+    193,
+    165,
+    204
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129388-40",
+   "label": "⁣⁢⁠⁡⁤Reading",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+2060",
+    "U+2061",
+    "U+2064",
+    "U+0052",
+    "U+0065",
+    "U+0061",
+    "U+0064",
+    "U+0069",
+    "U+006E",
+    "U+0067"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/book.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 64.61666870117188,
+   "labelTextWidth": 51.76666259765625,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    57,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 162,
+   "inkHash": 2334575409,
+   "inkAvgRGB": [
+    192,
+    162,
+    203
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129371-73",
+   "label": "⁣⁢⁠⁠⁡Dev",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+2060",
+    "U+2060",
+    "U+2061",
+    "U+0044",
+    "U+0065",
+    "U+0076"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/code.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 78.19999694824219,
+   "labelTextWidth": 24.583343505859375,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    70,
+    474,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 44,
+   "inkHash": 3129107142,
+   "inkAvgRGB": [
+    183,
+    126,
+    192
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129348-2",
+   "label": "⁣⁢⁠⁠⁠Work",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+2060",
+    "U+2060",
+    "U+2060",
+    "U+0057",
+    "U+006F",
+    "U+0072",
+    "U+006B"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 73.46665954589844,
+   "labelTextWidth": 34.066680908203125,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    65,
+    550,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 173,
+   "inkHash": 242256342,
+   "inkAvgRGB": [
+    192,
+    163,
+    203
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  }
+ ],
+ "eval_before": {
+  "all_pass": true,
+  "distinct_icon_ink_patterns": 5,
+  "rows": {
+   "I_folder": {
+    "expect": "folder",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 73.47,
+    "labelTextWidth": 34.067,
+    "ink": 173,
+    "inkHash": 242256342,
+    "inkAvgRGB": [
+     192,
+     163,
+     203
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "I_code": {
+    "expect": "code",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/code.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 78.2,
+    "labelTextWidth": 24.583,
+    "ink": 44,
+    "inkHash": 3129107142,
+    "inkAvgRGB": [
+     183,
+     126,
+     192
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "I_book": {
+    "expect": "book",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/book.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 64.62,
+    "labelTextWidth": 51.767,
+    "ink": 162,
+    "inkHash": 2334575409,
+    "inkAvgRGB": [
+     192,
+     162,
+     203
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "I_star": {
+    "expect": "star",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/star.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 73.33,
+    "labelTextWidth": 34.333,
+    "ink": 98,
+    "inkHash": 4046962517,
+    "inkAvgRGB": [
+     193,
+     165,
+     204
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "I_globe": {
+    "expect": "globe",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/globe.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 75.98,
+    "labelTextWidth": 29.033,
+    "ink": 142,
+    "inkHash": 2249380647,
+    "inkAvgRGB": [
+     193,
+     167,
+     205
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "S_sig_no_code": {
+    "expect": "folder",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 75.9,
+    "labelTextWidth": 29.2,
+    "ink": 173,
+    "inkHash": 242256342,
+    "inkAvgRGB": [
+     192,
+     163,
+     203
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "S_sig_unmapped_code": {
+    "expect": "folder",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 55.27,
+    "labelTextWidth": 70.45,
+    "ink": 173,
+    "inkHash": 242256342,
+    "inkAvgRGB": [
+     192,
+     163,
+     203
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "N_icon_no_sig": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 24.583,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   },
+   "N_plain": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 24.583,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   },
+   "N_reversed_sig": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 22.883,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   },
+   "N_sig_half": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 26.083,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   },
+   "N_empty": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 0,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   }
+  }
+ },
+ "shot_before": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\A-check2c-before.png",
+ "titles_after": {
+  "I_folder": true,
+  "I_code": true,
+  "I_book": true,
+  "I_star": true,
+  "I_globe": true,
+  "S_sig_no_code": true,
+  "S_sig_unmapped_code": true,
+  "N_icon_no_sig": true,
+  "N_plain": true,
+  "N_reversed_sig": true,
+  "N_sig_half": true,
+  "N_empty": true
+ },
+ "probe_after": [
+  {
+   "id": "1792905129545-2",
+   "label": "​",
+   "labelHex": [
+    "U+200B"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 0,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    239,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129525-53",
+   "label": "⁣⁠⁠⁡Half",
+   "labelHex": [
+    "U+2063",
+    "U+2060",
+    "U+2060",
+    "U+2061",
+    "U+0048",
+    "U+0061",
+    "U+006C",
+    "U+0066"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 26.083328247070312,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    315,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129510-98",
+   "label": "⁢⁣⁠⁠⁡Rev",
+   "labelHex": [
+    "U+2062",
+    "U+2063",
+    "U+2060",
+    "U+2060",
+    "U+2061",
+    "U+0052",
+    "U+0065",
+    "U+0076"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 22.883331298828125,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    391,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129494-44",
+   "label": "Dev",
+   "labelHex": [
+    "U+0044",
+    "U+0065",
+    "U+0076"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 24.583328247070312,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129478-18",
+   "label": "⁠⁠⁡Dev",
+   "labelHex": [
+    "U+2060",
+    "U+2060",
+    "U+2061",
+    "U+0044",
+    "U+0065",
+    "U+0076"
+   ],
+   "before": {
+    "content": "none",
+    "display": "inline",
+    "width": "auto",
+    "height": "auto",
+    "backgroundImage": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "marginInlineEnd": "0px"
+   },
+   "labelOffsetX": 0,
+   "labelTextWidth": 24.583328247070312,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "column",
+   "region": [
+    -8,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 128,
+   "inkHash": 2595594304,
+   "inkAvgRGB": [
+    153,
+    0,
+    153
+   ],
+   "bgRGB": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "1792905129464-81",
+   "label": "⁣⁢​​​Unmapped",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+200B",
+    "U+200B",
+    "U+200B",
+    "U+0055",
+    "U+006E",
+    "U+006D",
+    "U+0061",
+    "U+0070",
+    "U+0070",
+    "U+0065",
+    "U+0064"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 55.26666259765625,
+   "labelTextWidth": 70.44999694824219,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    47,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 173,
+   "inkHash": 242256342,
+   "inkAvgRGB": [
+    192,
+    163,
+    203
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129449-85",
+   "label": "⁣⁢Misc",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+004D",
+    "U+0069",
+    "U+0073",
+    "U+0063"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 75.89999389648438,
+   "labelTextWidth": 29.20001220703125,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    68,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 173,
+   "inkHash": 242256342,
+   "inkAvgRGB": [
+    192,
+    163,
+    203
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129428-63",
+   "label": "⁣⁢᠎᠎᠎Web",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+180E",
+    "U+180E",
+    "U+180E",
+    "U+0057",
+    "U+0065",
+    "U+0062"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/globe.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 75.98333740234375,
+   "labelTextWidth": 29.0333251953125,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    68,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 142,
+   "inkHash": 2249380647,
+   "inkAvgRGB": [
+    193,
+    167,
+    205
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129409-52",
+   "label": "⁣⁢᠎​⁤Faves",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+180E",
+    "U+200B",
+    "U+2064",
+    "U+0046",
+    "U+0061",
+    "U+0076",
+    "U+0065",
+    "U+0073"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/star.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 73.33332824707031,
+   "labelTextWidth": 34.333343505859375,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    65,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 98,
+   "inkHash": 4046962517,
+   "inkAvgRGB": [
+    193,
+    165,
+    204
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129388-40",
+   "label": "⁣⁢⁠⁡⁤Reading",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+2060",
+    "U+2061",
+    "U+2064",
+    "U+0052",
+    "U+0065",
+    "U+0061",
+    "U+0064",
+    "U+0069",
+    "U+006E",
+    "U+0067"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/book.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 64.61666870117188,
+   "labelTextWidth": 51.76666259765625,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    57,
+    419,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 162,
+   "inkHash": 2334575409,
+   "inkAvgRGB": [
+    192,
+    162,
+    203
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129371-73",
+   "label": "⁣⁢⁠⁠⁡Dev",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+2060",
+    "U+2060",
+    "U+2061",
+    "U+0044",
+    "U+0065",
+    "U+0076"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/code.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 78.19999694824219,
+   "labelTextWidth": 24.583343505859375,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    70,
+    475,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 44,
+   "inkHash": 3129107142,
+   "inkAvgRGB": [
+    183,
+    126,
+    192
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  },
+  {
+   "id": "1792905129348-2",
+   "label": "⁣⁢⁠⁠⁠Work",
+   "labelHex": [
+    "U+2063",
+    "U+2062",
+    "U+2060",
+    "U+2060",
+    "U+2060",
+    "U+0057",
+    "U+006F",
+    "U+0072",
+    "U+006B"
+   ],
+   "before": {
+    "content": "\"\"",
+    "display": "block",
+    "width": "16px",
+    "height": "16px",
+    "backgroundImage": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "marginInlineEnd": "6px"
+   },
+   "labelOffsetX": 73.46665954589844,
+   "labelTextWidth": 34.066680908203125,
+   "labelColor": "rgb(21, 20, 26)",
+   "containerColor": "rgba(204, 212, 218, 0.9)",
+   "containerFlexDirection": "row",
+   "region": [
+    65,
+    551,
+    16,
+    16
+   ],
+   "inView": true,
+   "ink": 173,
+   "inkHash": 242256342,
+   "inkAvgRGB": [
+    192,
+    163,
+    203
+   ],
+   "bgRGB": [
+    153,
+    0,
+    153
+   ]
+  }
+ ],
+ "eval_after": {
+  "all_pass": true,
+  "distinct_icon_ink_patterns": 5,
+  "rows": {
+   "I_folder": {
+    "expect": "folder",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 73.47,
+    "labelTextWidth": 34.067,
+    "ink": 173,
+    "inkHash": 242256342,
+    "inkAvgRGB": [
+     192,
+     163,
+     203
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "I_code": {
+    "expect": "code",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/code.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 78.2,
+    "labelTextWidth": 24.583,
+    "ink": 44,
+    "inkHash": 3129107142,
+    "inkAvgRGB": [
+     183,
+     126,
+     192
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "I_book": {
+    "expect": "book",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/book.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 64.62,
+    "labelTextWidth": 51.767,
+    "ink": 162,
+    "inkHash": 2334575409,
+    "inkAvgRGB": [
+     192,
+     162,
+     203
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "I_star": {
+    "expect": "star",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/star.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 73.33,
+    "labelTextWidth": 34.333,
+    "ink": 98,
+    "inkHash": 4046962517,
+    "inkAvgRGB": [
+     193,
+     165,
+     204
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "I_globe": {
+    "expect": "globe",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/globe.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 75.98,
+    "labelTextWidth": 29.033,
+    "ink": 142,
+    "inkHash": 2249380647,
+    "inkAvgRGB": [
+     193,
+     167,
+     205
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "S_sig_no_code": {
+    "expect": "folder",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 75.9,
+    "labelTextWidth": 29.2,
+    "ink": 173,
+    "inkHash": 242256342,
+    "inkAvgRGB": [
+     192,
+     163,
+     203
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "S_sig_unmapped_code": {
+    "expect": "folder",
+    "pass": true,
+    "content": "\"\"",
+    "display": "block",
+    "size": [
+     "16px",
+     "16px"
+    ],
+    "bg": "url(\"chrome://browser/skin/zen-icons/selectable/folder.svg\")",
+    "ctxProps": "",
+    "fill": "rgba(204, 212, 218, 0.9)",
+    "labelOffsetX": 55.27,
+    "labelTextWidth": 70.45,
+    "ink": 173,
+    "inkHash": 242256342,
+    "inkAvgRGB": [
+     192,
+     163,
+     203
+    ],
+    "bgRGB": [
+     153,
+     0,
+     153
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "row"
+   },
+   "N_icon_no_sig": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 24.583,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   },
+   "N_plain": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 24.583,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   },
+   "N_reversed_sig": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 22.883,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   },
+   "N_sig_half": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 26.083,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   },
+   "N_empty": {
+    "expect": null,
+    "pass": true,
+    "content": "none",
+    "display": "inline",
+    "size": [
+     "auto",
+     "auto"
+    ],
+    "bg": "none",
+    "ctxProps": "",
+    "fill": "rgb(0, 0, 0)",
+    "labelOffsetX": 0,
+    "labelTextWidth": 0,
+    "ink": 128,
+    "inkHash": 2595594304,
+    "inkAvgRGB": [
+     153,
+     0,
+     153
+    ],
+    "bgRGB": [
+     0,
+     0,
+     0
+    ],
+    "labelColor": "rgb(21, 20, 26)",
+    "inView": true,
+    "flexDir": "column"
+   }
+  }
+ },
+ "shot_after": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\A-check2c-after.png"
+}

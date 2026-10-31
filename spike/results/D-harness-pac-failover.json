@@ -1,0 +1,60 @@
+{
+ "server_port": 36751,
+ "cases": {
+  "A_no_proxy_mapping_control": {
+   "prefs": {
+    "network.proxy.type": 0,
+    "network.dns.localDomains": "failover-probe.example"
+   },
+   "result": {
+    "fetch": {
+     "ok": true,
+     "status": 200,
+     "body": "hello-from-local-server"
+    },
+    "tabDocumentURI": "http://failover-probe.example:36751/A_no_proxy_mapping_control-tab",
+    "proxyType": 0,
+    "failoverDirect": true,
+    "failoverDirectHasUserValue": false
+   },
+   "server_hits": [
+    "GET /A_no_proxy_mapping_control HTTP/1.1",
+    "GET /A_no_proxy_mapping_control-tab HTTP/1.1",
+    "GET /favicon.ico HTTP/1.1"
+   ]
+  },
+  "B_harness_pac_default": {
+   "prefs": {
+    "network.dns.localDomains": "failover-probe.example"
+   },
+   "result": {
+    "fetch": {
+     "ok": false,
+     "error": "TypeError: NetworkError when attempting to fetch resource."
+    },
+    "tabDocumentURI": "about:blank",
+    "proxyType": 2,
+    "failoverDirect": true,
+    "failoverDirectHasUserValue": false
+   },
+   "server_hits": []
+  },
+  "C_harness_pac_failover_direct_false": {
+   "prefs": {
+    "network.dns.localDomains": "failover-probe.example",
+    "network.proxy.failover_direct": false
+   },
+   "result": {
+    "fetch": {
+     "ok": false,
+     "error": "TypeError: NetworkError when attempting to fetch resource."
+    },
+    "tabDocumentURI": "about:blank",
+    "proxyType": 2,
+    "failoverDirect": false,
+    "failoverDirectHasUserValue": true
+   },
+   "server_hits": []
+  }
+ }
+}

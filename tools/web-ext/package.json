@@ -1,0 +1,8 @@
+{
+  "name": "zen-tidy-web-ext",
+  "private": true,
+  "description": "The pinned web-ext that release.mjs lint and sign.ps1 run (install: npm run tools).",
+  "dependencies": {
+    "web-ext": "10.7.0"
+  }
+}

@@ -1,0 +1,950 @@
+{
+ "check9": {
+  "installs": {
+   "D-prod": {
+    "result": "zen-tidy-spike-d@local"
+   },
+   "D-ctl": {
+    "result": "zen-tidy-spike-d-ctl@local"
+   },
+   "D-warn": {
+    "result": "zen-tidy-spike-d-warn@local"
+   },
+   "base": {
+    "result": "zen-tidy-spike@local"
+   }
+  },
+  "addon_info": {
+   "zen-tidy-spike-d@local": {
+    "found": true,
+    "isActive": true,
+    "appDisabled": false,
+    "userDisabled": false,
+    "signedState": 0,
+    "temporarilyInstalled": false,
+    "version": "0.0.1",
+    "permissionsGranted": {
+     "permissions": [
+      "tabs",
+      "tabGroups",
+      "sessions",
+      "storage"
+     ],
+     "origins": [],
+     "data_collection": [
+      "browsingActivity"
+     ]
+    },
+    "extensionWarnings": [],
+    "extensionErrors": [],
+    "manifestVersion": 3,
+    "gecko": {
+     "admin_install_only": null,
+     "data_collection_permissions": {
+      "has_previous_consent": false,
+      "optional": [],
+      "required": [
+       "browsingActivity"
+      ]
+     },
+     "id": "zen-tidy-spike-d@local",
+     "strict_max_version": null,
+     "strict_min_version": "140.0",
+     "update_url": "https://example.com/zen-tidy/updates.json"
+    },
+    "manifestKeys": [
+     "browser_specific_settings",
+     "description",
+     "manifest_version",
+     "name",
+     "version",
+     "background",
+     "content_security_policy",
+     "granted_host_permissions",
+     "hidden",
+     "host_permissions",
+     "icons",
+     "incognito",
+     "optional_host_permissions",
+     "optional_permissions",
+     "options_ui",
+     "permissions",
+     "action",
+     "applications"
+    ],
+    "extensionPageCSP": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests",
+    "baseCSP": "script-src 'self' 'wasm-unsafe-eval';",
+    "policyPermissions": [
+     "tabGroups",
+     "sessions",
+     "storage",
+     "tabs"
+    ],
+    "allowedOrigins": [
+     "https://api.anthropic.com/*",
+     "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/*"
+    ]
+   },
+   "zen-tidy-spike-d-ctl@local": {
+    "found": true,
+    "isActive": true,
+    "appDisabled": false,
+    "userDisabled": false,
+    "signedState": 0,
+    "temporarilyInstalled": false,
+    "version": "0.0.1",
+    "permissionsGranted": {
+     "permissions": [
+      "tabs",
+      "tabGroups",
+      "sessions",
+      "storage"
+     ],
+     "origins": [],
+     "data_collection": [
+      "browsingActivity"
+     ]
+    },
+    "extensionWarnings": [],
+    "extensionErrors": [],
+    "manifestVersion": 3,
+    "gecko": {
+     "admin_install_only": null,
+     "data_collection_permissions": {
+      "has_previous_consent": false,
+      "optional": [],
+      "required": [
+       "browsingActivity"
+      ]
+     },
+     "id": "zen-tidy-spike-d-ctl@local",
+     "strict_max_version": null,
+     "strict_min_version": "140.0",
+     "update_url": "https://example.com/zen-tidy/updates.json"
+    },
+    "manifestKeys": [
+     "browser_specific_settings",
+     "description",
+     "manifest_version",
+     "name",
+     "version",
+     "background",
+     "content_security_policy",
+     "granted_host_permissions",
+     "hidden",
+     "host_permissions",
+     "icons",
+     "incognito",
+     "optional_host_permissions",
+     "optional_permissions",
+     "options_ui",
+     "permissions",
+     "action",
+     "applications"
+    ],
+    "extensionPageCSP": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' http://127.0.0.1:*; connect-src https://api.anthropic.com http://127.0.0.1:* ws://127.0.0.1:*; object-src 'none'; base-uri 'none'; upgrade-insecure-requests",
+    "baseCSP": "script-src 'self' 'wasm-unsafe-eval';",
+    "policyPermissions": [
+     "tabGroups",
+     "sessions",
+     "storage",
+     "tabs"
+    ],
+    "allowedOrigins": [
+     "https://api.anthropic.com/*",
+     "moz-extension://be203edf-0018-4805-a187-4fc562499496/*"
+    ]
+   },
+   "zen-tidy-spike-d-warn@local": {
+    "found": true,
+    "isActive": true,
+    "appDisabled": false,
+    "userDisabled": false,
+    "signedState": 0,
+    "temporarilyInstalled": false,
+    "version": "0.0.1",
+    "permissionsGranted": {
+     "permissions": [
+      "tabs",
+      "tabGroups",
+      "sessions",
+      "storage"
+     ],
+     "origins": [],
+     "data_collection": [
+      "browsingActivity"
+     ]
+    },
+    "extensionWarnings": [
+     "Reading manifest: Warning processing permissions: Error processing permissions.4: Value \"notARealPermission\" must either: must either [must either [be one of [\"idle\"], be one of [\"menus.overrideContext\"], be one of [\"search\"], be one of [\"tabGroups\"], be one of [\"activeTab\"], be one of [\"cookies\"], be one of [\"publicSuffix\"], be one of [\"scripting\"], or be one of [\"webRequest\", \"webRequestAuthProvider\", \"webRequestBlocking\", \"webRequestFilterResponse\", \"webRequestFilterResponse.serviceWorkerScript\"]], must either [be one of [\"mozillaAddons\"], be one of [\"activityLog\"], be one of [\"networkStatus\"], or be one of [\"telemetry\"]], be one of [\"alarms\", \"storage\", \"unlimitedStorage\"], be one of [\"captivePortal\"], be one of [\"contextualIdentities\"], be one of [\"identity\"], be one of [\"menus\", \"contextMenus\"], be one of [\"geckoProfiler\"], be one of [\"declarativeNetRequestWithHostAccess\"], be one of [\"dns\"], or be one of [\"theme\"]], must either [must either [be one of [\"idle\"], be one of [\"menus.overrideContext\"], be one of [\"search\"], be one of [\"tabGroups\"], be one of [\"activeTab\"], be one of [\"cookies\"], be one of [\"publicSuffix\"], be one of [\"scripting\"], or be one of [\"webRequest\", \"webRequestAuthProvider\", \"webRequestBlocking\", \"webRequestFilterResponse\", \"webRequestFilterResponse.serviceWorkerScript\"]], be one of [\"clipboardRead\", \"clipboardWrite\", \"geolocation\", \"notifications\"], be one of [\"bookmarks\"], be one of [\"browsingData\"], be one of [\"devtools\"], be one of [\"find\"], be one of [\"history\"], be one of [\"pkcs11\"], be one of [\"sessions\"], be one of [\"tabs\", \"tabHide\"], be one of [\"topSites\"], be one of [\"browserSettings\"], be one of [\"declarativeNetRequestFeedback\"], be one of [\"downloads\", \"downloads.open\"], be one of [\"management\"], be one of [\"privacy\"], be one of [\"proxy\"], be one of [\"nativeMessaging\"], or be one of [\"webNavigation\"]], be one of [\"declarativeNetRequest\"], or match the pattern /^experiments(\\.\\w+)+$/",
+     "Reading manifest: Warning processing zz_bogus_key: An unexpected property was found in the WebExtension manifest."
+    ],
+    "extensionErrors": [],
+    "manifestVersion": 3,
+    "gecko": {
+     "admin_install_only": null,
+     "data_collection_permissions": {
+      "has_previous_consent": false,
+      "optional": [],
+      "required": [
+       "browsingActivity"
+      ]
+     },
+     "id": "zen-tidy-spike-d-warn@local",
+     "strict_max_version": null,
+     "strict_min_version": "140.0",
+     "update_url": "https://example.com/zen-tidy/updates.json"
+    },
+    "manifestKeys": [
+     "browser_specific_settings",
+     "description",
+     "manifest_version",
+     "name",
+     "version",
+     "background",
+     "content_security_policy",
+     "granted_host_permissions",
+     "hidden",
+     "host_permissions",
+     "icons",
+     "incognito",
+     "optional_host_permissions",
+     "optional_permissions",
+     "options_ui",
+     "permissions",
+     "action",
+     "zz_bogus_key",
+     "applications"
+    ],
+    "extensionPageCSP": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests",
+    "baseCSP": "script-src 'self' 'wasm-unsafe-eval';",
+    "policyPermissions": [
+     "tabGroups",
+     "sessions",
+     "storage",
+     "tabs"
+    ],
+    "allowedOrigins": [
+     "https://api.anthropic.com/*",
+     "moz-extension://4c739dbc-2d81-4fdc-a496-fdd99fe5b2c5/*"
+    ]
+   },
+   "zen-tidy-spike@local": {
+    "found": true,
+    "isActive": true,
+    "appDisabled": false,
+    "userDisabled": false,
+    "signedState": 0,
+    "temporarilyInstalled": false,
+    "version": "0.0.1",
+    "permissionsGranted": {
+     "permissions": [
+      "tabs",
+      "tabGroups",
+      "sessions",
+      "storage"
+     ],
+     "origins": [],
+     "data_collection": [
+      "browsingActivity"
+     ]
+    },
+    "extensionWarnings": [],
+    "extensionErrors": [],
+    "manifestVersion": 3,
+    "gecko": {
+     "admin_install_only": null,
+     "data_collection_permissions": {
+      "has_previous_consent": false,
+      "optional": [],
+      "required": [
+       "browsingActivity"
+      ]
+     },
+     "id": "zen-tidy-spike@local",
+     "strict_max_version": null,
+     "strict_min_version": "140.0",
+     "update_url": null
+    },
+    "manifestKeys": [
+     "browser_specific_settings",
+     "description",
+     "manifest_version",
+     "name",
+     "version",
+     "background",
+     "content_security_policy",
+     "granted_host_permissions",
+     "hidden",
+     "host_permissions",
+     "incognito",
+     "optional_host_permissions",
+     "optional_permissions",
+     "permissions",
+     "applications"
+    ],
+    "extensionPageCSP": "script-src 'self'; connect-src http://127.0.0.1:* https://api.anthropic.com; object-src 'none'; upgrade-insecure-requests",
+    "baseCSP": "script-src 'self' 'wasm-unsafe-eval';",
+    "policyPermissions": [
+     "tabGroups",
+     "sessions",
+     "storage",
+     "tabs"
+    ],
+    "allowedOrigins": [
+     "https://api.anthropic.com/*",
+     "moz-extension://d729b431-2d22-451a-8c4d-2652b531e8f6/*"
+    ]
+   }
+  },
+  "console_reading_manifest": [
+   {
+    "text": "1792906037568\taddons.webextension.zen-tidy-spike-d-warn@local\tWARN\tLoading extension 'zen-tidy-spike-d-warn@local': Reading manifest: Warning processing permissions: Error processing permissions.4: Value \"notARealPermission\" must either: must either [must either [be one of [\"idle\"], be one of [\"menus.overrideContext\"], be one of [\"search\"], be one of [\"tabGroups\"], be one of [\"activeTab\"], be one of [\"cookies\"], be one of [\"publicSuffix\"], be one of [\"scripting\"], or be one of [\"webRequest\", \"webRequestAuthProvider\", \"webRequestBlocking\", \"webRequestFilterResponse\", \"webRequestFilterResponse.s"
+   },
+   {
+    "text": "1792906037568\taddons.webextension.zen-tidy-spike-d-warn@local\tWARN\tLoading extension 'zen-tidy-spike-d-warn@local': Reading manifest: Warning processing zz_bogus_key: An unexpected property was found in the WebExtension manifest."
+   },
+   {
+    "text": "1792906037590\taddons.webextension.zen-tidy-spike-d-warn@local\tWARN\tLoading extension 'zen-tidy-spike-d-warn@local': Reading manifest: Warning processing permissions: Error processing permissions.4: Value \"notARealPermission\" must either: must either [must either [be one of [\"idle\"], be one of [\"menus.overrideContext\"], be one of [\"search\"], be one of [\"tabGroups\"], be one of [\"activeTab\"], be one of [\"cookies\"], be one of [\"publicSuffix\"], be one of [\"scripting\"], or be one of [\"webRequest\", \"webRequestAuthProvider\", \"webRequestBlocking\", \"webRequestFilterResponse\", \"webRequestFilterResponse.s"
+   },
+   {
+    "text": "1792906037590\taddons.webextension.zen-tidy-spike-d-warn@local\tWARN\tLoading extension 'zen-tidy-spike-d-warn@local': Reading manifest: Warning processing zz_bogus_key: An unexpected property was found in the WebExtension manifest."
+   }
+  ],
+  "console_mentions_d_prod": []
+ },
+ "check10": {
+  "prod_bg_env": {
+   "value": {
+    "hasDocument": true,
+    "url": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/_generated_background_page.html"
+   }
+  },
+  "probes": [
+   {
+    "label": "prod/page/fetch example.com",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": false,
+      "errorName": "TypeError",
+      "error": "TypeError: NetworkError when attempting to fetch resource.",
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "https://example.com/",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": [
+     "CONNECT push.services.mozilla.com:443 HTTP/1.1"
+    ]
+   },
+   {
+    "label": "prod/page/fetch 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": false,
+      "errorName": "TypeError",
+      "error": "TypeError: NetworkError when attempting to fetch resource.",
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "http://127.0.0.1:47200/prod-page-fetch",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": []
+   },
+   {
+    "label": "prod/page/fetch api.anthropic.com",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": false,
+      "errorName": "TypeError",
+      "error": "TypeError: NetworkError when attempting to fetch resource.",
+      "violations": [],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": [
+     "CONNECT api.anthropic.com:443 HTTP/1.1"
+    ]
+   },
+   {
+    "label": "prod/page/xhr 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "xhr",
+      "ok": false,
+      "errorName": "xhr-error",
+      "status": 0,
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "http://127.0.0.1:47200/prod-page-xhr",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": []
+   },
+   {
+    "label": "prod/page/ws 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "ws",
+      "ok": false,
+      "errorName": "NS_ERROR_CONTENT_BLOCKED",
+      "error": "[Exception... \"The load for this content was blocked.\"  nsresult: \"0x805e0006 (NS_ERROR_CONTENT_BLOCKED)\"  location: \"JS frame :: moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/spike.js :: probe/r< :: line 64\"  data: no]",
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "ws://127.0.0.1:47200/prod-page-ws",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": []
+   },
+   {
+    "label": "prod/page/beacon 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "beacon",
+      "queued": false,
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "http://127.0.0.1:47200/prod-page-beacon",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": [
+     "CONNECT push.services.mozilla.com:443 HTTP/1.1"
+    ]
+   },
+   {
+    "label": "prod/page/img 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "img",
+      "ok": false,
+      "errorName": "img-error",
+      "violations": [
+       {
+        "directive": "img-src",
+        "effective": "img-src",
+        "blocked": "http://127.0.0.1:47200/img.png?prod-page-img",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": []
+   },
+   {
+    "label": "prod/bg/fetch example.com",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": false,
+      "errorName": "TypeError",
+      "error": "TypeError: NetworkError when attempting to fetch resource.",
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "https://example.com/",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "background"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": []
+   },
+   {
+    "label": "prod/bg/fetch 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": false,
+      "errorName": "TypeError",
+      "error": "TypeError: NetworkError when attempting to fetch resource.",
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "http://127.0.0.1:47200/prod-bg-fetch",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "background"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": []
+   },
+   {
+    "label": "prod/bg/fetch api.anthropic.com",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": false,
+      "errorName": "TypeError",
+      "error": "TypeError: NetworkError when attempting to fetch resource.",
+      "violations": [],
+      "ctx": "background"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": [
+     "CONNECT api.anthropic.com:443 HTTP/1.1"
+    ]
+   },
+   {
+    "label": "prod/bg/xhr 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "xhr",
+      "ok": false,
+      "errorName": "xhr-error",
+      "status": 0,
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "http://127.0.0.1:47200/prod-bg-xhr",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "background"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": []
+   },
+   {
+    "label": "ctl/page/fetch 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": true,
+      "status": 200,
+      "body": "hello-from-local-server",
+      "violations": [],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [
+     {
+      "peer": 47403,
+      "first_line": "GET /ctl-page-fetch HTTP/1.1",
+      "origin": "moz-extension://be203edf-0018-4805-a187-4fc562499496",
+      "upgrade": null,
+      "ua_has_firefox": true,
+      "t": 1792906061.457
+     }
+    ],
+    "proxy_hits": []
+   },
+   {
+    "label": "ctl/page/xhr 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "xhr",
+      "ok": true,
+      "status": 200,
+      "violations": [],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [
+     {
+      "peer": 47409,
+      "first_line": "GET /ctl-page-xhr HTTP/1.1",
+      "origin": "moz-extension://be203edf-0018-4805-a187-4fc562499496",
+      "upgrade": null,
+      "ua_has_firefox": true,
+      "t": 1792906063.468
+     }
+    ],
+    "proxy_hits": [
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT aus5.mozilla.org:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT content-signature-2.cdn.mozilla.net:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1"
+    ]
+   },
+   {
+    "label": "ctl/page/ws 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "ws",
+      "ok": false,
+      "errorName": "ws-timeout",
+      "violations": [],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [
+     {
+      "peer": 47436,
+      "first_line": "<non-http bytes 1603010748010007>",
+      "origin": null,
+      "upgrade": null,
+      "ua_has_firefox": false,
+      "t": 1792906070.513
+     }
+    ],
+    "proxy_hits": [
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1",
+     "CONNECT firefox-settings-attachments.cdn.mozilla.net:443 HTTP/1.1",
+     "",
+     "CONNECT push.services.mozilla.com:443 HTTP/1.1"
+    ]
+   },
+   {
+    "label": "ctl/page/beacon 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "beacon",
+      "queued": true,
+      "violations": [],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [
+     {
+      "peer": 47490,
+      "first_line": "POST /ctl-page-beacon HTTP/1.1",
+      "origin": "moz-extension://be203edf-0018-4805-a187-4fc562499496",
+      "upgrade": null,
+      "ua_has_firefox": true,
+      "t": 1792906071.74
+     }
+    ],
+    "proxy_hits": []
+   },
+   {
+    "label": "ctl/page/img 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "img",
+      "ok": true,
+      "violations": [],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [
+     {
+      "peer": 47526,
+      "first_line": "GET /img.png?ctl-page-img HTTP/1.1",
+      "origin": null,
+      "upgrade": null,
+      "ua_has_firefox": true,
+      "t": 1792906074.842
+     }
+    ],
+    "proxy_hits": []
+   },
+   {
+    "label": "ctl/page/fetch example.com",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": false,
+      "errorName": "TypeError",
+      "error": "TypeError: NetworkError when attempting to fetch resource.",
+      "violations": [
+       {
+        "directive": "connect-src",
+        "effective": "connect-src",
+        "blocked": "https://example.com/",
+        "disposition": "enforce",
+        "policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' http://127.0.0.1:*; connect-src https://api.anthropic.com http://127.0.0.1:* ws://127.0.0.1:*; object-src 'none'; base-uri 'none'; upgrade-insecure-requests"
+       }
+      ],
+      "ctx": "page"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": []
+   },
+   {
+    "label": "ctl/bg/fetch 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": true,
+      "status": 200,
+      "body": "hello-from-local-server",
+      "violations": [],
+      "ctx": "background"
+     }
+    },
+    "local_server_hits": [
+     {
+      "peer": 47554,
+      "first_line": "GET /ctl-bg-fetch HTTP/1.1",
+      "origin": "moz-extension://be203edf-0018-4805-a187-4fc562499496",
+      "upgrade": null,
+      "ua_has_firefox": true,
+      "t": 1792906079.039
+     }
+    ],
+    "proxy_hits": []
+   },
+   {
+    "label": "ctl/bg/xhr 127.0.0.1",
+    "result": {
+     "value": {
+      "kind": "xhr",
+      "ok": true,
+      "status": 200,
+      "violations": [],
+      "ctx": "background"
+     }
+    },
+    "local_server_hits": [
+     {
+      "peer": 47559,
+      "first_line": "GET /ctl-bg-xhr HTTP/1.1",
+      "origin": "moz-extension://be203edf-0018-4805-a187-4fc562499496",
+      "upgrade": null,
+      "ua_has_firefox": true,
+      "t": 1792906080.464
+     }
+    ],
+    "proxy_hits": []
+   },
+   {
+    "label": "ctl/bg/fetch api.anthropic.com",
+    "result": {
+     "value": {
+      "kind": "fetch",
+      "ok": false,
+      "errorName": "TypeError",
+      "error": "TypeError: NetworkError when attempting to fetch resource.",
+      "violations": [],
+      "ctx": "background"
+     }
+    },
+    "local_server_hits": [],
+    "proxy_hits": [
+     "CONNECT api.anthropic.com:443 HTTP/1.1"
+    ]
+   },
+   {
+    "label": "base/page/tryFetch 127.0.0.1",
+    "result": {
+     "value": {
+      "ok": true,
+      "status": 200,
+      "violations": []
+     }
+    },
+    "local_server_hits": [
+     {
+      "peer": 47587,
+      "first_line": "GET /base-page-fetch HTTP/1.1",
+      "origin": "moz-extension://d729b431-2d22-451a-8c4d-2652b531e8f6",
+      "upgrade": null,
+      "ua_has_firefox": true,
+      "t": 1792906083.718
+     }
+    ],
+    "proxy_hits": []
+   },
+   {
+    "label": "base/bg/longFetch 127.0.0.1",
+    "result": {
+     "started": {
+      "value": {
+       "started": true
+      }
+     },
+     "log": [
+      {
+       "t": 1792906084743,
+       "event": "longFetch.start",
+       "label": "D-base-bg"
+      },
+      {
+       "t": 1792906084747,
+       "event": "longFetch.done",
+       "label": "D-base-bg",
+       "ms": 16,
+       "status": 200,
+       "body": "hello-from-local-server"
+      }
+     ]
+    },
+    "local_server_hits": [
+     {
+      "peer": 47589,
+      "first_line": "GET /base-bg-fetch HTTP/1.1",
+      "origin": "moz-extension://d729b431-2d22-451a-8c4d-2652b531e8f6",
+      "upgrade": null,
+      "ua_has_firefox": true,
+      "t": 1792906084.746
+     }
+    ],
+    "proxy_hits": []
+   }
+  ],
+  "console_csp": [
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at https://example.com/ because it violates the following directive: “connect-src https://api.anthropic.com”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/spike.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at http://127.0.0.1:47200/prod-page-fetch because it violates the following directive: “connect-src https://api.anthropic.com”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/spike.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at http://127.0.0.1:47200/prod-page-xhr because it violates the following directive: “connect-src https://api.anthropic.com”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/spike.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at ws://127.0.0.1:47200/prod-page-ws because it violates the following directive: “connect-src https://api.anthropic.com”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/spike.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at http://127.0.0.1:47200/prod-page-beacon because it violates the following directive: “connect-src https://api.anthropic.com”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/spike.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (img-src) at http://127.0.0.1:47200/img.png?prod-page-img because it violates the following directive: “img-src 'self'”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/spike.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at https://example.com/ because it violates the following directive: “connect-src https://api.anthropic.com”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/background.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at http://127.0.0.1:47200/prod-bg-fetch because it violates the following directive: “connect-src https://api.anthropic.com”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/background.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at http://127.0.0.1:47200/prod-bg-xhr because it violates the following directive: “connect-src https://api.anthropic.com”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://0e769052-6805-444a-8c16-f2617b7fde03/background.js",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: Upgrading insecure request ‘ws://127.0.0.1:47200/ctl-page-ws’ to use ‘wss’",
+    "category": "CSP_upgradeInsecureRequest",
+    "flags": 1,
+    "source": "",
+    "inner": 0
+   },
+   {
+    "text": "Content-Security-Policy: The page’s settings blocked the loading of a resource (connect-src) at https://example.com/ because it violates the following directive: “connect-src https://api.anthropic.com http://127.0.0.1:* ws://127.0.0.1:*”",
+    "category": "CSP_CSPGenericViolation",
+    "flags": 0,
+    "source": "moz-extension://be203edf-0018-4805-a187-4fc562499496/spike.js",
+    "inner": 0
+   }
+  ]
+ },
+ "local_server_port": 47200,
+ "sink_proxy_port": 47201
+}

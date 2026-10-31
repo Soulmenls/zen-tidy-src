@@ -1,0 +1,322 @@
+/* Zen Tidy settings page, built on Zen's about:preferences (notes/zen-design-system.md). The shared
+   --zt-* tokens (shared/zen-tokens.css) with the in-content overrides below. Light and dark follow
+   Zen's scheme through light-dark(). */
+
+/* In-content overrides (§2.7, §4.1). about:preferences uses the raw accent, not the Space theme. */
+:root {
+  --zt-zen-primary: AccentColor;
+  --zt-text: light-dark(#15141a, #fbfbfe);
+  --zt-text-secondary: color-mix(in srgb, currentColor 69%, transparent);
+  --zt-bg: light-dark(#fbfbfe, #1c1b22);
+  --zt-input-bg: light-dark(#ffffff, #23222b);
+  --zt-input-border: light-dark(#bfbfc9, #5b5b66);
+  --zt-prefs-button-bg: light-dark(#f1f1f1, #363636);
+  --zt-prefs-button-text: light-dark(#000000, #ffffff);
+  --zt-radius-prefs-button: calc(5px * var(--zt-squircle));
+  --zt-link: var(--zt-branding-reverse);
+  /* --zen-colors-primary-foreground (zen-theme.css:40-43): the accent shows only in dark mode. */
+  --zt-link-hover: light-dark(var(--zt-branding-reverse), color-mix(in srgb, var(--zt-zen-primary) 80%, white 20%));
+  --zt-error: light-dark(oklch(48% .2 15), oklch(83% .14 15));
+  --zt-success-icon: light-dark(oklch(55% .21 145), oklch(83% .14 145));
+  font: message-box;
+  font-size: 15px;
+  background: var(--zt-bg);
+  color: var(--zt-text);
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+/* The key field shows discs instead of characters. It must stay type=text: type=password makes
+   Firefox offer to save (and sync) the key (implementation-notes, "Key field"). ime-mode: disabled keeps
+   an input method's composition window, which draws the text in the clear, off it (m6-contracts, "Key
+   field"); Firefox honours it on inputs, and keys are ASCII. */
+.masked { -webkit-text-security: disc; ime-mode: disabled; }
+
+body { margin: 0; padding-inline: 0.75rem; }
+
+/* .pane-container: 600px column, 64px from the top. */
+.page { width: min(100%, 600px); margin-inline: auto; padding-block: 64px 32px; }
+
+/* No page icon: Zen's preference panes have none. */
+.page-head { margin: 0; }
+h1 { margin: 0 0 1rem; font-size: 24px; font-weight: 600; }
+/* Zen's groupbox h2. */
+h2 { margin: .5rem 0 .125rem; font-size: 15px; font-weight: 600; opacity: .7; }
+/* A list editor's title: a preferences label at Zen's label weight (§1.3), no smaller than the body. */
+h3 { margin: 0; font-size: 15px; font-weight: 600; }
+
+/* A Zen groupbox, not a card. */
+.card { background: none; border: none; padding: 0; margin: 0 0 1.5rem; }
+
+.hint { margin: 0 0 .75rem; color: var(--zt-text-secondary); }
+.hint.small { margin: 1rem 0 0; font-size: .867rem; }
+/* A field's own help line (.description-deemphasized at --font-size-small), right under the field. */
+.note { margin: .25rem 0 0; font-size: .867rem; color: var(--zt-text-secondary); }
+.status { margin: 0 0 .75rem; color: var(--zt-text-secondary); }
+
+.field-label { display: block; margin: 0 0 .25rem; color: inherit; }
+.key-row, .add-row { display: flex; gap: 8px; }
+
+/* A label beside its control, as in Zen's preference rows. */
+.field-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: .75rem 0 0; }
+.field-row .field-label { margin: 0; min-inline-size: 5.5rem; }
+.unit { color: var(--zt-text-secondary); }
+
+/* In-content text input (common-shared.css:401-444): the key field, the textarea, stale days, the filters and the
+   Add fields. */
+.text-field {
+  flex: 1 1 auto;
+  min-width: 0;
+  box-sizing: border-box;
+  min-height: 32px;
+  padding: .5rem;
+  border: 1px solid var(--zt-input-border);
+  border-radius: var(--zt-radius-medium);
+  background-color: var(--zt-input-bg);
+  color: inherit;
+  font: inherit;
+}
+.text-field:focus { border-color: transparent; outline: 2px solid var(--zt-focus); outline-offset: -1px; }
+.text-field:is(:user-invalid, [aria-invalid="true"]) { border-color: transparent; outline: 2px solid var(--zt-error); outline-offset: -1px; }
+.text-field:disabled { opacity: .4; }
+.text-field::placeholder { color: var(--zt-text-secondary); }
+/* Keep: a bespoke field, as Zen's own shortcut fields are. */
+#key-input { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+textarea.text-field { display: block; inline-size: 100%; min-block-size: 6.5em; resize: vertical; }
+.text-field.number { flex: none; inline-size: 6em; }
+/* The filter sits under the Add row, right above the list it filters. */
+.text-field.filter { display: block; inline-size: 100%; margin-top: .75rem; }
+
+/* The live counter under the instructions. Over the limit it turns the error colour, and Save goes off. */
+.counter { margin: .25rem 0 0; font-size: .867rem; color: var(--zt-text-secondary); font-variant-numeric: tabular-nums; text-align: end; }
+.counter[data-over="true"] { color: var(--zt-error); }
+
+:where(:focus-visible) { outline: 2px solid var(--zt-focus); outline-offset: 2px; }
+
+/* Zen's groupbox button over the in-content button. */
+.page button {
+  min-height: 32px;
+  padding: .7em 1em;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: var(--zt-radius-prefs-button);
+  background-color: var(--zt-prefs-button-bg);
+  color: var(--zt-prefs-button-text);
+  font: inherit;
+  font-weight: 500;
+}
+.page button:hover:not(:disabled) { background-color: color-mix(in srgb, currentColor 5%, transparent); }
+.page button:hover:active:not(:disabled) { background-color: color-mix(in srgb, currentColor 10%, transparent); }
+.page button.primary { background-color: var(--zt-accent-primary); color: var(--zt-on-accent-primary); }
+.page button.primary:hover:not(:disabled) { background-color: var(--zt-accent-primary-hover); }
+.page button.primary:hover:active:not(:disabled) { background-color: var(--zt-accent-primary-active); }
+.page button:disabled { opacity: .5; }
+.page button:focus-visible { outline: 2px solid var(--zt-focus); outline-offset: 2px; }
+
+/* A select is Zen's groupbox menulist (zen-preferences.css:46-50 over the in-content select, common-shared.css:138-154,
+   186-219, measured in Zen 1.23.4b's Tab Management pane): the groupbox button's fill, .7em block padding, 18px before
+   the label and 31px after it (a 12px dropmarker 19px from the end), the label at 600, radius 8px. The dropmarker is
+   arrow-down-12.svg's chevron (1px, about 7 x 3.5px) drawn in CSS on the select's wrapper, since a select has no
+   pseudo-elements, as the popup draws its chevron (§4.8). Its centre is 23px from the end, which leaves the 4px gap
+   after the label that Zen's menulist shows (its label's 3.75px margin). */
+.select { position: relative; display: inline-flex; color: var(--zt-prefs-button-text); }
+.select::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 20.5px;
+  inset-block-start: 50%;
+  inline-size: 5px;
+  block-size: 5px;
+  border-inline-end: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
+  translate: 0 calc(-50% - 1px);
+  rotate: 45deg;
+  pointer-events: none;
+}
+.select:has(> select:disabled)::after { opacity: .5; }
+select {
+  appearance: none;
+  min-height: 32px;
+  padding: .7em 31px .7em 18px;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: var(--zt-radius-button);
+  background-color: var(--zt-prefs-button-bg);
+  color: var(--zt-prefs-button-text);
+  font: inherit;
+  font-weight: 600;
+  text-overflow: ellipsis;
+}
+select:hover:not(:disabled) { background-color: color-mix(in srgb, currentColor 5%, transparent); }
+select:disabled { opacity: .5; }
+select[aria-invalid="true"] { outline: 2px solid var(--zt-error); outline-offset: -1px; }
+
+/* "Get a key": an in-content link. Zen underlines links in content pages. */
+.page button.link {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent !important;
+  color: var(--zt-link);
+  font-weight: normal;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.page button.link:hover { color: var(--zt-link-hover); }
+.page button.link:hover:active { color: color-mix(in srgb, var(--zt-link-hover) 80%, transparent); text-decoration: none; }
+
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: .75rem; }
+
+.error, .result { margin: .5rem 0 0; font-size: .867rem; font-weight: normal; }
+.error:empty { display: none; }
+/* #test-result is a status: empty, it takes no room but stays rendered, so "Testing…" lands in a live region that is
+   already there, as .saved does. */
+.result:empty { margin: 0; }
+.error, .result[data-ok="false"] { color: var(--zt-error); }
+/* Success is neutral in Zen. */
+.result[data-ok="true"] { color: var(--zt-text); }
+.page-error { margin: 0 0 1rem; font-size: inherit; }
+/* "Saved": quiet secondary text beside the section's buttons. Never display:none, so the live region stays live. */
+.saved { margin: 0; font-size: .867rem; color: var(--zt-text-secondary); }
+/* Read by screen readers only (a filter's status): clipped to nothing and out of the flow, never display: none, as the
+   popup clips its row actions. */
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* A reset's second step, in place of its button. */
+.confirm { margin-top: .75rem; }
+.confirm-text { margin: 0; }
+.confirm .actions { margin-top: .5rem; }
+
+/* ---- The sensitive-list editors ---- */
+
+.editor { margin: 1.25rem 0 0; }
+.editor-head { display: flex; align-items: baseline; gap: 8px; }
+.count { font-size: .867rem; color: var(--zt-text-secondary); font-variant-numeric: tabular-nums; }
+.add-label { margin-top: .75rem; }
+
+/* The entries: a scrollable in-content box (the input's border and fill) of chips. Hundreds of entries are drawn once
+   and filtered with `hidden`; contain keeps a filter's relayout inside the box. */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 6px;
+  margin: .5rem 0 0;
+  padding: 8px;
+  list-style: none;
+  max-block-size: 14rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  contain: content;
+  border: 1px solid var(--zt-input-border);
+  border-radius: var(--zt-radius-medium);
+  background-color: var(--zt-input-bg);
+}
+.chips:empty { display: none; }
+
+/* A chip: Zen's pill (§4.9, the unsynced-window name pill) at the page's small size. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-inline-size: 100%;
+  min-block-size: 26px;
+  padding-inline: 10px 3px;
+  border-radius: var(--zt-radius-pill);
+  background: var(--zt-pill-bg);
+  font-size: .867rem;
+  corner-shape: round;
+}
+.chip-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* "added": a secondary label, as Zen marks a state (.6 and smaller, §1.3). */
+.chip-badge { flex: none; font-size: smaller; color: var(--zt-text-secondary); }
+
+/* The remove button: a 20px round icon button with a cross drawn in CSS (Zen's close icon is nucleo, §7). */
+.page .chip-remove {
+  position: relative;
+  flex: none;
+  inline-size: 20px;
+  min-height: 0;
+  block-size: 20px;
+  padding: 0;
+  border: none;
+  border-radius: var(--zt-radius-pill);
+  background: transparent;
+  color: inherit;
+  opacity: .6;
+  corner-shape: round;
+}
+.page .chip-remove::before,
+.page .chip-remove::after {
+  content: "";
+  position: absolute;
+  inset-block-start: calc(50% - .665px);
+  inset-inline-start: 5px;
+  inline-size: 10px;
+  block-size: 1.33px;
+  background: currentColor;
+  rotate: 45deg;
+}
+.page .chip-remove::after { rotate: -45deg; }
+.page .chip-remove:is(:hover, :focus-visible) { opacity: 1; }
+.page .chip-remove:hover:not(:disabled) { background-color: var(--zt-fill-hover); }
+.page .chip-remove:focus-visible { outline-offset: 0; }
+
+/* "Put back": Zen's text action (the site-data "Manage" label), always shown here. */
+.page .chip-restore {
+  flex: none;
+  min-height: 0;
+  padding: 1px 8px;
+  border: none;
+  border-radius: var(--zt-radius-pill);
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  corner-shape: round;
+}
+.page .chip-restore:hover:not(:disabled) { background-color: var(--zt-fill-hover); }
+
+.empty-note { margin: .5rem 0 0; font-size: .867rem; color: var(--zt-text-secondary); }
+
+/* Disclosures: "Removed defaults (N)" under each list, and "Advanced" around the host stems. Zen's chevron, not the
+   user agent's filled triangle: pointing right while closed, down while open, turning in .1s (zen-workspaces.css:444-475,
+   drawn in CSS as the popup's is, §4.8). */
+details > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  inline-size: fit-content;
+  border-radius: var(--zt-radius-small);
+  list-style: none;
+}
+details > summary::before {
+  content: "";
+  flex: none;
+  inline-size: 5px;
+  block-size: 5px;
+  margin-inline: 2px 1px;
+  border-inline-end: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
+  rotate: -45deg;
+  transition: rotate .1s;
+}
+details[open] > summary::before { rotate: 45deg; }
+@media (prefers-reduced-motion: reduce) {
+  details > summary::before { transition: none; }
+}
+.removed { margin-top: .75rem; }
+.removed > summary { font-size: .867rem; color: var(--zt-text-secondary); }
+.advanced { margin-top: 1.25rem; }
+.advanced > summary { font-weight: 600; }
+.advanced > .editor { margin-top: .5rem; }

@@ -1,0 +1,6718 @@
+{
+ "port": 2956,
+ "cases": {
+  "c01_loose_start": {
+   "requested_index": 6,
+   "create_result": {
+    "value": {
+     "id": 14,
+     "index": 6,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905051145,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c01_loose_start",
+     "title": "New c01_loose_start"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 14,
+     "index": 6,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905051145,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c01_loose_start",
+     "title": "New c01_loose_start"
+    }
+   },
+   "prev": [
+    "F2",
+    4,
+    1792905047714092
+   ],
+   "next": [
+    "A",
+    7,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 6,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "c01_loose_star",
+     6,
+     "",
+     ""
+    ],
+    [
+     "A",
+     7,
+     "",
+     ""
+    ],
+    [
+     "B",
+     8,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     10,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c02_middle_A_B": {
+   "requested_index": 7,
+   "create_result": {
+    "value": {
+     "id": 15,
+     "index": 7,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905053193,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c02_middle_A_B",
+     "title": "New c02_middle_A_B"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 15,
+     "index": 7,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905053193,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c02_middle_A_B",
+     "title": "New c02_middle_A_B"
+    }
+   },
+   "prev": [
+    "A",
+    6,
+    -1
+   ],
+   "next": [
+    "B",
+    8,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 7,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "c02_middle_A_B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "B",
+     8,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     10,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c03_group_leading_edge": {
+   "requested_index": 8,
+   "create_result": {
+    "value": {
+     "id": 16,
+     "index": 8,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905055432,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c03_group_leading_edge",
+     "title": "New c03_group_leading_edge"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 16,
+     "index": 8,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905055432,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c03_group_leading_edge",
+     "title": "New c03_group_leading_edge"
+    }
+   },
+   "prev": [
+    "B",
+    7,
+    -1
+   ],
+   "next": [
+    "G1",
+    9,
+    1792905048727092
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 8,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "c03_group_lead",
+     8,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     10,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c04_inside_group": {
+   "requested_index": 9,
+   "create_result": {
+    "value": {
+     "id": 17,
+     "index": 9,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905057489,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905048727092,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c04_inside_group",
+     "title": "New c04_inside_group"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 17,
+     "index": 9,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905057489,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905048727092,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c04_inside_group",
+     "title": "New c04_inside_group"
+    }
+   },
+   "prev": [
+    "G1",
+    8,
+    1792905048727092
+   ],
+   "next": [
+    "G2",
+    10,
+    1792905048727092
+   ],
+   "chrome": {
+    "parentClass": "tab-group-container",
+    "group": "1792905048727-92",
+    "groupIsSplit": false,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 9,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "c04_inside_gro",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     10,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c05_group_trailing_edge": {
+   "requested_index": 10,
+   "create_result": {
+    "value": {
+     "id": 19,
+     "index": 10,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905059553,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c05_group_trailing_edge",
+     "title": "New c05_group_trailing_edge"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 19,
+     "index": 10,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905059553,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c05_group_trailing_edge",
+     "title": "New c05_group_trailing_edge"
+    }
+   },
+   "prev": [
+    "G2",
+    9,
+    1792905048727092
+   ],
+   "next": [
+    "C",
+    11,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 10,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "c05_group_trai",
+     10,
+     "",
+     ""
+    ],
+    [
+     "C",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c06_split_leading_edge": {
+   "requested_index": 11,
+   "create_result": {
+    "value": {
+     "id": 20,
+     "index": 11,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905061602,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c06_split_leading_edge",
+     "title": "New c06_split_leading_edge"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 20,
+     "index": 11,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905061602,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c06_split_leading_edge",
+     "title": "New c06_split_leading_edge"
+    }
+   },
+   "prev": [
+    "C",
+    10,
+    -1
+   ],
+   "next": [
+    "S1",
+    12,
+    1792905048743091
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 11,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "c06_split_lead",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c07_inside_split": {
+   "requested_index": 12,
+   "create_result": {
+    "value": {
+     "id": 21,
+     "index": 12,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905063711,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905048743091,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c07_inside_split",
+     "title": "New c07_inside_split"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 21,
+     "index": 12,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905063711,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905048743091,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c07_inside_split",
+     "title": "New c07_inside_split"
+    }
+   },
+   "prev": [
+    "S1",
+    11,
+    1792905048743091
+   ],
+   "next": [
+    "S2",
+    13,
+    1792905048743091
+   ],
+   "chrome": {
+    "parentClass": "tab-group-container",
+    "group": "1792905048743-91",
+    "groupIsSplit": true,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 12,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "c07_inside_spl",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c08_split_trailing_edge": {
+   "requested_index": 13,
+   "create_result": {
+    "value": {
+     "id": 23,
+     "index": 13,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905065757,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c08_split_trailing_edge",
+     "title": "New c08_split_trailing_edge"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 23,
+     "index": 13,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905065757,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c08_split_trailing_edge",
+     "title": "New c08_split_trailing_edge"
+    }
+   },
+   "prev": [
+    "S2",
+    12,
+    1792905048743091
+   ],
+   "next": [
+    "D",
+    14,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 13,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "c08_split_trai",
+     13,
+     "",
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c09_end": {
+   "requested_index": 15,
+   "create_result": {
+    "value": {
+     "id": 24,
+     "index": 15,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905067834,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c09_end",
+     "title": "New c09_end"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 24,
+     "index": 15,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905067834,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c09_end",
+     "title": "New c09_end"
+    }
+   },
+   "prev": [
+    "E",
+    14,
+    -1
+   ],
+   "next": null,
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 15,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ],
+    [
+     "c09_end",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c10_huge_9999": {
+   "requested_index": 9999,
+   "create_result": {
+    "value": {
+     "id": 25,
+     "index": 15,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905069877,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c10_huge_9999",
+     "title": "New c10_huge_9999"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 25,
+     "index": 15,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905069877,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c10_huge_9999",
+     "title": "New c10_huge_9999"
+    }
+   },
+   "prev": [
+    "E",
+    14,
+    -1
+   ],
+   "next": null,
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 15,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ],
+    [
+     "c10_huge_9999",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c11_no_index": {
+   "requested_index": null,
+   "create_result": {
+    "value": {
+     "id": 26,
+     "index": 6,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905071979,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c11_no_index",
+     "title": "New c11_no_index"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 26,
+     "index": 6,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905071979,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c11_no_index",
+     "title": "New c11_no_index"
+    }
+   },
+   "prev": [
+    "F2",
+    4,
+    1792905047714092
+   ],
+   "next": [
+    "A",
+    7,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 6,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "c11_no_index",
+     6,
+     "",
+     ""
+    ],
+    [
+     "A",
+     7,
+     "",
+     ""
+    ],
+    [
+     "B",
+     8,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     10,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c12_index_0_pinned_area": {
+   "requested_index": 0,
+   "create_result": {
+    "value": {
+     "id": 27,
+     "index": 6,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905074021,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c12_index_0_pinned_area",
+     "title": "New c12_index_0_pinned_area"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 27,
+     "index": 6,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905074021,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c12_index_0_pinned_area",
+     "title": "New c12_index_0_pinned_area"
+    }
+   },
+   "prev": [
+    "F2",
+    4,
+    1792905047714092
+   ],
+   "next": [
+    "A",
+    7,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 6,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "c12_index_0_pi",
+     6,
+     "",
+     ""
+    ],
+    [
+     "A",
+     7,
+     "",
+     ""
+    ],
+    [
+     "B",
+     8,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     10,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  },
+  "c13_index_of_pinned_spike_page": {
+   "requested_index": 1,
+   "create_result": {
+    "value": {
+     "id": 28,
+     "index": 6,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905076140,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c13_index_of_pinned_spike_page",
+     "title": "New c13_index_of_pinned_spike_page"
+    }
+   },
+   "layout_before": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "A",
+     6,
+     "",
+     ""
+    ],
+    [
+     "B",
+     7,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     8,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     10,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     11,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     13,
+     "",
+     ""
+    ],
+    [
+     "E",
+     14,
+     "",
+     ""
+    ]
+   ],
+   "tabs_get": {
+    "value": {
+     "id": 28,
+     "index": 6,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905076140,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/create/c13_index_of_pinned_spike_page",
+     "title": "New c13_index_of_pinned_spike_page"
+    }
+   },
+   "prev": [
+    "F2",
+    4,
+    1792905047714092
+   ],
+   "next": [
+    "A",
+    7,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "gbIndex": 6,
+    "inSplitData": false,
+    "browserLoaded": false
+   },
+   "layout_after": [
+    [
+     "ESS",
+     0,
+     "",
+     "P"
+    ],
+    [
+     "spike.html",
+     1,
+     "",
+     "P"
+    ],
+    [
+     "F1",
+     3,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "F2",
+     4,
+     1792905047714092,
+     "P"
+    ],
+    [
+     "c13_index_of_p",
+     6,
+     "",
+     ""
+    ],
+    [
+     "A",
+     7,
+     "",
+     ""
+    ],
+    [
+     "B",
+     8,
+     "",
+     ""
+    ],
+    [
+     "G1",
+     9,
+     1792905048727092,
+     ""
+    ],
+    [
+     "G2",
+     10,
+     1792905048727092,
+     ""
+    ],
+    [
+     "C",
+     11,
+     "",
+     ""
+    ],
+    [
+     "S1",
+     12,
+     1792905048743091,
+     ""
+    ],
+    [
+     "S2",
+     13,
+     1792905048743091,
+     ""
+    ],
+    [
+     "D",
+     14,
+     "",
+     ""
+    ],
+    [
+     "E",
+     15,
+     "",
+     ""
+    ]
+   ],
+   "remove": {
+    "value": null
+   }
+  }
+ },
+ "rejections": {
+  "r01_about_blank_discarded": {
+   "props": {
+    "url": "about:blank",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Cannot create a discarded new tab or \"about\" urls."
+   }
+  },
+  "r02_about_robots_discarded": {
+   "props": {
+    "url": "about:robots",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: about:robots"
+   }
+  },
+  "r03_about_blank_not_discarded_CONTROL": {
+   "props": {
+    "url": "about:blank",
+    "active": false
+   },
+   "result": {
+    "ok": true,
+    "id": 29,
+    "url": "about:blank",
+    "discarded": false,
+    "title": "New Tab"
+   }
+  },
+  "r04_file_discarded": {
+   "props": {
+    "url": "file:///C:/Windows/win.ini",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: file:///C:/Windows/win.ini"
+   }
+  },
+  "r05_file_not_discarded": {
+   "props": {
+    "url": "file:///C:/Windows/win.ini",
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: file:///C:/Windows/win.ini"
+   }
+  },
+  "r06_view_source_discarded": {
+   "props": {
+    "url": "view-source:https://example.com/",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "ok": true,
+    "id": 30,
+    "url": "view-source:https://example.com/",
+    "discarded": true,
+    "title": "view-source:https://example.com/"
+   }
+  },
+  "r07_data_discarded": {
+   "props": {
+    "url": "data:text/html,hi",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: data:text/html,hi"
+   }
+  },
+  "r08_javascript_discarded": {
+   "props": {
+    "url": "javascript:void(0)",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: javascript:void(0)"
+   }
+  },
+  "r09_discarded_active_true": {
+   "props": {
+    "url": "https://example.com/create/r09",
+    "discarded": true,
+    "active": true
+   },
+   "result": {
+    "error": "Error: Active tabs cannot be created and discarded."
+   }
+  },
+  "r10_discarded_pinned_true": {
+   "props": {
+    "url": "https://example.com/create/r10",
+    "discarded": true,
+    "pinned": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Pinned tabs cannot be created and discarded."
+   }
+  },
+  "r11_http_localhost_discarded_CONTROL": {
+   "props": {
+    "url": "http://127.0.0.1:9/x",
+    "discarded": true,
+    "active": false,
+    "title": "local"
+   },
+   "result": {
+    "ok": true,
+    "id": 31,
+    "url": "http://127.0.0.1:9/x",
+    "discarded": true,
+    "title": "local"
+   }
+  },
+  "r12_title_without_discarded": {
+   "props": {
+    "url": "https://example.com/create/r12",
+    "title": "x",
+    "active": false
+   },
+   "result": {
+    "error": "Error: Title may only be set for discarded tabs."
+   }
+  },
+  "r13_about_newtab_discarded": {
+   "props": {
+    "url": "about:newtab",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: about:newtab"
+   }
+  },
+  "r14_no_url_discarded": {
+   "props": {
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Cannot create a discarded new tab or \"about\" urls."
+   }
+  }
+ },
+ "install": "zen-tidy-spike-b@local",
+ "default_order_after_creates": [
+  [
+   "spike.html",
+   0,
+   "",
+   "P"
+  ],
+  [
+   "F2",
+   2,
+   "",
+   ""
+  ],
+  [
+   "F1",
+   3,
+   "",
+   ""
+  ],
+  [
+   "ESS",
+   4,
+   "",
+   ""
+  ],
+  [
+   "E",
+   5,
+   "",
+   ""
+  ],
+  [
+   "D",
+   6,
+   "",
+   ""
+  ],
+  [
+   "S2",
+   7,
+   "",
+   ""
+  ],
+  [
+   "S1",
+   8,
+   "",
+   ""
+  ],
+  [
+   "C",
+   9,
+   "",
+   ""
+  ],
+  [
+   "G2",
+   10,
+   "",
+   ""
+  ],
+  [
+   "G1",
+   11,
+   "",
+   ""
+  ],
+  [
+   "B",
+   12,
+   "",
+   ""
+  ],
+  [
+   "A",
+   13,
+   "",
+   ""
+  ]
+ ],
+ "setup_essential_folder": {
+  "folder": "1792905047714-92"
+ },
+ "setup_split": {
+  "ok": true,
+  "groupId": "1792905048743-91"
+ },
+ "ids": {
+  "A": 2,
+  "B": 3,
+  "G1": 4,
+  "G2": 5,
+  "C": 6,
+  "S1": 7,
+  "S2": 8,
+  "D": 9,
+  "E": 10,
+  "ESS": 11,
+  "F1": 12,
+  "F2": 13
+ },
+ "tidy_group": 1792905048727092,
+ "split_group": 1792905048743091,
+ "layout_before": [
+  [
+   "ESS",
+   0,
+   "",
+   "P"
+  ],
+  [
+   "spike.html",
+   1,
+   "",
+   "P"
+  ],
+  [
+   "F1",
+   3,
+   1792905047714092,
+   "P"
+  ],
+  [
+   "F2",
+   4,
+   1792905047714092,
+   "P"
+  ],
+  [
+   "A",
+   6,
+   "",
+   ""
+  ],
+  [
+   "B",
+   7,
+   "",
+   ""
+  ],
+  [
+   "G1",
+   8,
+   1792905048727092,
+   ""
+  ],
+  [
+   "G2",
+   9,
+   1792905048727092,
+   ""
+  ],
+  [
+   "C",
+   10,
+   "",
+   ""
+  ],
+  [
+   "S1",
+   11,
+   1792905048743091,
+   ""
+  ],
+  [
+   "S2",
+   12,
+   1792905048743091,
+   ""
+  ],
+  [
+   "D",
+   13,
+   "",
+   ""
+  ],
+  [
+   "E",
+   14,
+   "",
+   ""
+  ]
+ ],
+ "snap_before": {
+  "ext": {
+   "tabs_query_currentWindow": {
+    "value": [
+     {
+      "id": 11,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047623,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/ESS",
+      "title": "Tab ESS"
+     },
+     {
+      "id": 1,
+      "index": 1,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905047140,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://59e645d3-f303-415b-a3c4-f914a89213ea/spike.html",
+      "title": "Zen Tidy Spike"
+     },
+     {
+      "id": 12,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047628,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905047714092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/F1",
+      "title": "Tab F1"
+     },
+     {
+      "id": 13,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047633,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905047714092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/F2",
+      "title": "Tab F2"
+     },
+     {
+      "id": 2,
+      "index": 6,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047576,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/A",
+      "title": "Tab A"
+     },
+     {
+      "id": 3,
+      "index": 7,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047582,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/B",
+      "title": "Tab B"
+     },
+     {
+      "id": 4,
+      "index": 8,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047587,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048727092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/G1",
+      "title": "Tab G1"
+     },
+     {
+      "id": 5,
+      "index": 9,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047592,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048727092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/G2",
+      "title": "Tab G2"
+     },
+     {
+      "id": 6,
+      "index": 10,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047597,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/C",
+      "title": "Tab C"
+     },
+     {
+      "id": 7,
+      "index": 11,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047602,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048743091,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/S1",
+      "title": "Tab S1"
+     },
+     {
+      "id": 8,
+      "index": 12,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047607,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048743091,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/S2",
+      "title": "Tab S2"
+     },
+     {
+      "id": 9,
+      "index": 13,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047612,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/D",
+      "title": "Tab D"
+     },
+     {
+      "id": 10,
+      "index": 14,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047618,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/E",
+      "title": "Tab E"
+     }
+    ]
+   },
+   "tabs_query_all": {
+    "value": [
+     {
+      "id": 11,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047623,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/ESS",
+      "title": "Tab ESS"
+     },
+     {
+      "id": 1,
+      "index": 1,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905047140,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://59e645d3-f303-415b-a3c4-f914a89213ea/spike.html",
+      "title": "Zen Tidy Spike"
+     },
+     {
+      "id": 12,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047628,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905047714092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/F1",
+      "title": "Tab F1"
+     },
+     {
+      "id": 13,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047633,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905047714092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/F2",
+      "title": "Tab F2"
+     },
+     {
+      "id": 2,
+      "index": 6,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047576,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/A",
+      "title": "Tab A"
+     },
+     {
+      "id": 3,
+      "index": 7,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047582,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/B",
+      "title": "Tab B"
+     },
+     {
+      "id": 4,
+      "index": 8,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047587,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048727092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/G1",
+      "title": "Tab G1"
+     },
+     {
+      "id": 5,
+      "index": 9,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047592,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048727092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/G2",
+      "title": "Tab G2"
+     },
+     {
+      "id": 6,
+      "index": 10,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047597,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/C",
+      "title": "Tab C"
+     },
+     {
+      "id": 7,
+      "index": 11,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047602,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048743091,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/S1",
+      "title": "Tab S1"
+     },
+     {
+      "id": 8,
+      "index": 12,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047607,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048743091,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/S2",
+      "title": "Tab S2"
+     },
+     {
+      "id": 9,
+      "index": 13,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047612,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/D",
+      "title": "Tab D"
+     },
+     {
+      "id": 10,
+      "index": 14,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047618,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/E",
+      "title": "Tab E"
+     }
+    ]
+   },
+   "tabs_query_active": {
+    "value": []
+   },
+   "tabGroups_query": {
+    "value": [
+     {
+      "collapsed": false,
+      "color": "zen-workspace-color",
+      "id": 1792905047714092,
+      "title": "Folder F",
+      "windowId": 3
+     },
+     {
+      "collapsed": false,
+      "color": "blue",
+      "id": 1792905048727092,
+      "title": "⁠⁣Tidy G",
+      "windowId": 3
+     },
+     {
+      "collapsed": false,
+      "color": "purple",
+      "id": 1792905048743091,
+      "title": "",
+      "windowId": 3
+     }
+    ]
+   },
+   "tabs_get": {
+    "1": {
+     "value": {
+      "id": 1,
+      "index": 1,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905047140,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://59e645d3-f303-415b-a3c4-f914a89213ea/spike.html",
+      "title": "Zen Tidy Spike"
+     }
+    },
+    "2": {
+     "value": {
+      "id": 2,
+      "index": 6,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047576,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/A",
+      "title": "Tab A"
+     }
+    },
+    "3": {
+     "value": {
+      "id": 3,
+      "index": 7,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047582,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/B",
+      "title": "Tab B"
+     }
+    },
+    "4": {
+     "value": {
+      "id": 4,
+      "index": 8,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047587,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048727092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/G1",
+      "title": "Tab G1"
+     }
+    },
+    "5": {
+     "value": {
+      "id": 5,
+      "index": 9,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047592,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048727092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/G2",
+      "title": "Tab G2"
+     }
+    },
+    "6": {
+     "value": {
+      "id": 6,
+      "index": 10,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047597,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/C",
+      "title": "Tab C"
+     }
+    },
+    "7": {
+     "value": {
+      "id": 7,
+      "index": 11,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047602,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048743091,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/S1",
+      "title": "Tab S1"
+     }
+    },
+    "8": {
+     "value": {
+      "id": 8,
+      "index": 12,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047607,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905048743091,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/S2",
+      "title": "Tab S2"
+     }
+    },
+    "9": {
+     "value": {
+      "id": 9,
+      "index": 13,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047612,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/D",
+      "title": "Tab D"
+     }
+    },
+    "10": {
+     "value": {
+      "id": 10,
+      "index": 14,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047618,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/E",
+      "title": "Tab E"
+     }
+    },
+    "11": {
+     "value": {
+      "id": 11,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047623,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/ESS",
+      "title": "Tab ESS"
+     }
+    },
+    "12": {
+     "value": {
+      "id": 12,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047628,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905047714092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/F1",
+      "title": "Tab F1"
+     }
+    },
+    "13": {
+     "value": {
+      "id": 13,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905047633,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905047714092,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/create/F2",
+      "title": "Tab F2"
+     }
+    }
+   }
+  },
+  "chrome": {
+   "tabs": [
+    {
+     "extId": 11,
+     "url": "https://example.com/create/ESS",
+     "label": "New Tab",
+     "gbTabsIndex": 0,
+     "allTabsIndex": 0,
+     "pinned": true,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": true,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "hbox",
+     "parentId": null,
+     "parentClass": "zen-essentials-container zen-workspace-tabs-section",
+     "wsContainerId": null,
+     "inEssentialsSection": true
+    },
+    {
+     "extId": 1,
+     "url": "moz-extension://59e645d3-f303-415b-a3c4-f914a89213ea/spike.html",
+     "label": "Zen Tidy Spike",
+     "gbTabsIndex": 1,
+     "allTabsIndex": 1,
+     "pinned": true,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": false,
+     "ws": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-pinned-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": -1,
+     "url": "about:blank",
+     "label": "New Tab",
+     "gbTabsIndex": 2,
+     "allTabsIndex": 2,
+     "pinned": true,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": true,
+     "pending": true,
+     "ws": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905047714-92",
+     "groupTag": "zen-folder",
+     "groupLabelCps": [
+      "U+0046",
+      "U+006F",
+      "U+006C",
+      "U+0064",
+      "U+0065",
+      "U+0072",
+      "U+0020",
+      "U+0046"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 12,
+     "url": "https://example.com/create/F1",
+     "label": "New Tab",
+     "gbTabsIndex": 3,
+     "allTabsIndex": 3,
+     "pinned": true,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905047714-92",
+     "groupTag": "zen-folder",
+     "groupLabelCps": [
+      "U+0046",
+      "U+006F",
+      "U+006C",
+      "U+0064",
+      "U+0065",
+      "U+0072",
+      "U+0020",
+      "U+0046"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 13,
+     "url": "https://example.com/create/F2",
+     "label": "New Tab",
+     "gbTabsIndex": 4,
+     "allTabsIndex": 4,
+     "pinned": true,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905047714-92",
+     "groupTag": "zen-folder",
+     "groupLabelCps": [
+      "U+0046",
+      "U+006F",
+      "U+006C",
+      "U+0064",
+      "U+0065",
+      "U+0072",
+      "U+0020",
+      "U+0046"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": -1,
+     "url": "about:blank",
+     "label": "New Tab",
+     "gbTabsIndex": 5,
+     "allTabsIndex": 5,
+     "pinned": false,
+     "selected": true,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": true,
+     "pending": false,
+     "ws": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 2,
+     "url": "https://example.com/create/A",
+     "label": "New Tab",
+     "gbTabsIndex": 6,
+     "allTabsIndex": 6,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 3,
+     "url": "https://example.com/create/B",
+     "label": "New Tab",
+     "gbTabsIndex": 7,
+     "allTabsIndex": 7,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 4,
+     "url": "https://example.com/create/G1",
+     "label": "New Tab",
+     "gbTabsIndex": 8,
+     "allTabsIndex": 8,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905048727-92",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0069",
+      "U+0064",
+      "U+0079",
+      "U+0020",
+      "U+0047"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 5,
+     "url": "https://example.com/create/G2",
+     "label": "New Tab",
+     "gbTabsIndex": 9,
+     "allTabsIndex": 9,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905048727-92",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0069",
+      "U+0064",
+      "U+0079",
+      "U+0020",
+      "U+0047"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 6,
+     "url": "https://example.com/create/C",
+     "label": "New Tab",
+     "gbTabsIndex": 10,
+     "allTabsIndex": 10,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 7,
+     "url": "https://example.com/create/S1",
+     "label": "New Tab",
+     "gbTabsIndex": 11,
+     "allTabsIndex": 11,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": true,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905048743-91",
+     "groupTag": "tab-group",
+     "groupLabelCps": [],
+     "groupSplitAttr": true,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 8,
+     "url": "https://example.com/create/S2",
+     "label": "New Tab",
+     "gbTabsIndex": 12,
+     "allTabsIndex": 12,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": true,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905048743-91",
+     "groupTag": "tab-group",
+     "groupLabelCps": [],
+     "groupSplitAttr": true,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 9,
+     "url": "https://example.com/create/D",
+     "label": "New Tab",
+     "gbTabsIndex": 13,
+     "allTabsIndex": 13,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 10,
+     "url": "https://example.com/create/E",
+     "label": "New Tab",
+     "gbTabsIndex": 14,
+     "allTabsIndex": 14,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "inEssentialsSection": false
+    }
+   ],
+   "groups": [
+    {
+     "id": "1792905047714-92",
+     "tag": "zen-folder",
+     "label": "Folder F",
+     "labelCps": [
+      "U+0046",
+      "U+006F",
+      "U+006C",
+      "U+0064",
+      "U+0065",
+      "U+0072",
+      "U+0020",
+      "U+0046"
+     ],
+     "labelAttrCps": [
+      "U+0046",
+      "U+006F",
+      "U+006C",
+      "U+0064",
+      "U+0065",
+      "U+0072",
+      "U+0020",
+      "U+0046"
+     ],
+     "color": "zen-workspace-color",
+     "collapsed": false,
+     "splitAttr": false,
+     "isZenFolder": true,
+     "ws": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-pinned-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "tabExtIds": [
+      -1,
+      12,
+      13
+     ],
+     "pinned": true
+    },
+    {
+     "id": "1792905048727-92",
+     "tag": "tab-group",
+     "label": "⁠⁣Tidy G",
+     "labelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0069",
+      "U+0064",
+      "U+0079",
+      "U+0020",
+      "U+0047"
+     ],
+     "labelAttrCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0069",
+      "U+0064",
+      "U+0079",
+      "U+0020",
+      "U+0047"
+     ],
+     "color": "blue",
+     "collapsed": false,
+     "splitAttr": false,
+     "isZenFolder": false,
+     "ws": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "tabExtIds": [
+      4,
+      5
+     ],
+     "pinned": false
+    },
+    {
+     "id": "1792905048743-91",
+     "tag": "tab-group",
+     "label": "",
+     "labelCps": [],
+     "labelAttrCps": [
+      "U+200B"
+     ],
+     "color": "purple",
+     "collapsed": false,
+     "splitAttr": true,
+     "isZenFolder": false,
+     "ws": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "tabExtIds": [
+      7,
+      8
+     ],
+     "pinned": false
+    }
+   ],
+   "split": [
+    {
+     "groupId": "1792905048743-91",
+     "gridType": "grid",
+     "tabExtIds": [
+      7,
+      8
+     ]
+    }
+   ],
+   "spaces": [
+    {
+     "uuid": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+     "name": "Space"
+    }
+   ],
+   "activeSpace": "{c6c0adeb-6600-42ef-a1e6-3d345ab0eed4}",
+   "selectedExtId": -1,
+   "pinnedTabCount": 5,
+   "numEssentials": 1,
+   "splitCurrentView": -1
+  }
+ },
+ "layout_end": [
+  [
+   "ESS",
+   0,
+   "",
+   "P"
+  ],
+  [
+   "spike.html",
+   1,
+   "",
+   "P"
+  ],
+  [
+   "F1",
+   3,
+   1792905047714092,
+   "P"
+  ],
+  [
+   "F2",
+   4,
+   1792905047714092,
+   "P"
+  ],
+  [
+   "A",
+   6,
+   "",
+   ""
+  ],
+  [
+   "B",
+   7,
+   "",
+   ""
+  ],
+  [
+   "G1",
+   8,
+   1792905048727092,
+   ""
+  ],
+  [
+   "G2",
+   9,
+   1792905048727092,
+   ""
+  ],
+  [
+   "C",
+   10,
+   "",
+   ""
+  ],
+  [
+   "S1",
+   11,
+   1792905048743091,
+   ""
+  ],
+  [
+   "S2",
+   12,
+   1792905048743091,
+   ""
+  ],
+  [
+   "D",
+   13,
+   "",
+   ""
+  ],
+  [
+   "E",
+   14,
+   "",
+   ""
+  ]
+ ],
+ "event_log": {
+  "value": {
+   "spikeLog": [
+    {
+     "t": 1792905047173,
+     "event": "onInstalled",
+     "reason": "install"
+    },
+    {
+     "t": 1792905047173,
+     "event": "tabs.onMoved",
+     "id": 1,
+     "windowId": 3,
+     "fromIndex": 1,
+     "toIndex": 0
+    },
+    {
+     "t": 1792905047174,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "59e645d3-f303-415b-a3c4-f914a89213ea/spike.html"
+     }
+    },
+    {
+     "t": 1792905047175,
+     "event": "tabs.onUpdated",
+     "id": 1,
+     "changeInfo": {
+      "pinned": true
+     },
+     "tab": {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "59e645d3-f303-415b-a3c4-f914a89213ea/spike.html"
+     }
+    },
+    {
+     "t": 1792905047176,
+     "event": "tabs.onUpdated",
+     "id": 1,
+     "changeInfo": {
+      "status": "loading",
+      "url": "moz-extension://59e645d3-f303-415b-a3c4-f914a89213ea/spike.html"
+     },
+     "tab": {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "moz-extension://59e645d3-f303-415b-a3c4-f914a89213ea/spike.html",
+      "title": "59e645d3-f303-415b-a3c4-f914a89213ea/spike.html"
+     }
+    },
+    {
+     "t": 1792905047579,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 2,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/A",
+      "title": "Tab A"
+     }
+    },
+    {
+     "t": 1792905047584,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 3,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/B",
+      "title": "Tab B"
+     }
+    },
+    {
+     "t": 1792905047588,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 4,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/G1",
+      "title": "Tab G1"
+     }
+    },
+    {
+     "t": 1792905047593,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/G2",
+      "title": "Tab G2"
+     }
+    },
+    {
+     "t": 1792905047599,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 6,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/C",
+      "title": "Tab C"
+     }
+    },
+    {
+     "t": 1792905047604,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 7,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/S1",
+      "title": "Tab S1"
+     }
+    },
+    {
+     "t": 1792905047609,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 8,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/S2",
+      "title": "Tab S2"
+     }
+    },
+    {
+     "t": 1792905047613,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/D",
+      "title": "Tab D"
+     }
+    },
+    {
+     "t": 1792905047619,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 10,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/E",
+      "title": "Tab E"
+     }
+    },
+    {
+     "t": 1792905047625,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 11,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/ESS",
+      "title": "Tab ESS"
+     }
+    },
+    {
+     "t": 1792905047629,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 12,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/F1",
+      "title": "Tab F1"
+     }
+    },
+    {
+     "t": 1792905047635,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 13,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/F2",
+      "title": "Tab F2"
+     }
+    },
+    {
+     "t": 1792905047644,
+     "event": "tabs.onMoved",
+     "id": 3,
+     "windowId": 3,
+     "fromIndex": 12,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047646,
+     "event": "tabs.onMoved",
+     "id": 4,
+     "windowId": 3,
+     "fromIndex": 11,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047650,
+     "event": "tabs.onMoved",
+     "id": 5,
+     "windowId": 3,
+     "fromIndex": 10,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047654,
+     "event": "tabs.onMoved",
+     "id": 6,
+     "windowId": 3,
+     "fromIndex": 9,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047658,
+     "event": "tabs.onMoved",
+     "id": 7,
+     "windowId": 3,
+     "fromIndex": 8,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047663,
+     "event": "tabs.onMoved",
+     "id": 8,
+     "windowId": 3,
+     "fromIndex": 7,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047668,
+     "event": "tabs.onMoved",
+     "id": 9,
+     "windowId": 3,
+     "fromIndex": 6,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047676,
+     "event": "tabs.onMoved",
+     "id": 10,
+     "windowId": 3,
+     "fromIndex": 5,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047685,
+     "event": "tabs.onMoved",
+     "id": 11,
+     "windowId": 3,
+     "fromIndex": 4,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047694,
+     "event": "tabs.onMoved",
+     "id": 12,
+     "windowId": 3,
+     "fromIndex": 3,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047703,
+     "event": "tabs.onMoved",
+     "id": 13,
+     "windowId": 3,
+     "fromIndex": 2,
+     "toIndex": 13
+    },
+    {
+     "t": 1792905047717,
+     "event": "tabs.onMoved",
+     "id": 11,
+     "windowId": 3,
+     "fromIndex": 11,
+     "toIndex": 0
+    },
+    {
+     "t": 1792905047718,
+     "event": "tabs.onMoved",
+     "id": 12,
+     "windowId": 3,
+     "fromIndex": 12,
+     "toIndex": 2
+    },
+    {
+     "t": 1792905047719,
+     "event": "tabs.onMoved",
+     "id": 13,
+     "windowId": 3,
+     "fromIndex": 13,
+     "toIndex": 3
+    },
+    {
+     "t": 1792905047720,
+     "event": "tabGroups.onCreated",
+     "id": 1792905047714092,
+     "title": "Folder F",
+     "color": "zen-workspace-color"
+    },
+    {
+     "t": 1792905047721,
+     "event": "tabs.onMoved",
+     "id": 12,
+     "windowId": 3,
+     "fromIndex": 2,
+     "toIndex": 4
+    },
+    {
+     "t": 1792905047723,
+     "event": "tabs.onMoved",
+     "id": 13,
+     "windowId": 3,
+     "fromIndex": 2,
+     "toIndex": 4
+    },
+    {
+     "t": 1792905047724,
+     "event": "tabs.onUpdated",
+     "id": 11,
+     "changeInfo": {
+      "pinned": true
+     },
+     "tab": {
+      "id": 11,
+      "index": 0,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/ESS",
+      "title": "Tab ESS"
+     }
+    },
+    {
+     "t": 1792905047724,
+     "event": "tabs.onUpdated",
+     "id": 12,
+     "changeInfo": {
+      "pinned": true
+     },
+     "tab": {
+      "id": 12,
+      "index": 3,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": 1792905047714092,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/F1",
+      "title": "Tab F1"
+     }
+    },
+    {
+     "t": 1792905047725,
+     "event": "tabs.onUpdated",
+     "id": 13,
+     "changeInfo": {
+      "pinned": true
+     },
+     "tab": {
+      "id": 13,
+      "index": 4,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": 1792905047714092,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/F2",
+      "title": "Tab F2"
+     }
+    },
+    {
+     "t": 1792905047727,
+     "event": "tabs.onUpdated",
+     "id": 12,
+     "changeInfo": {
+      "groupId": 1792905047714092
+     },
+     "tab": {
+      "id": 12,
+      "index": 3,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": 1792905047714092,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/F1",
+      "title": "Tab F1"
+     }
+    },
+    {
+     "t": 1792905047728,
+     "event": "tabs.onUpdated",
+     "id": 13,
+     "changeInfo": {
+      "groupId": 1792905047714092
+     },
+     "tab": {
+      "id": 13,
+      "index": 4,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": 1792905047714092,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/F2",
+      "title": "Tab F2"
+     }
+    },
+    {
+     "t": 1792905048730,
+     "event": "tabGroups.onCreated",
+     "id": 1792905048727092,
+     "title": "",
+     "color": "blue"
+    },
+    {
+     "t": 1792905048731,
+     "event": "tabs.onUpdated",
+     "id": 4,
+     "changeInfo": {
+      "groupId": 1792905048727092
+     },
+     "tab": {
+      "id": 4,
+      "index": 8,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905048727092,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/G1",
+      "title": "Tab G1"
+     }
+    },
+    {
+     "t": 1792905048732,
+     "event": "tabs.onUpdated",
+     "id": 5,
+     "changeInfo": {
+      "groupId": 1792905048727092
+     },
+     "tab": {
+      "id": 5,
+      "index": 9,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905048727092,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/G2",
+      "title": "Tab G2"
+     }
+    },
+    {
+     "t": 1792905048739,
+     "event": "tabGroups.onUpdated",
+     "id": 1792905048727092,
+     "title": "⁠⁣Tidy G",
+     "collapsed": false,
+     "color": "blue"
+    },
+    {
+     "t": 1792905048746,
+     "event": "tabGroups.onCreated",
+     "id": 1792905048743091,
+     "title": "",
+     "color": "purple"
+    },
+    {
+     "t": 1792905048747,
+     "event": "tabs.onUpdated",
+     "id": 7,
+     "changeInfo": {
+      "groupId": 1792905048743091
+     },
+     "tab": {
+      "id": 7,
+      "index": 11,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905048743091,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/S1",
+      "title": "Tab S1"
+     }
+    },
+    {
+     "t": 1792905048747,
+     "event": "tabs.onUpdated",
+     "id": 8,
+     "changeInfo": {
+      "groupId": 1792905048743091
+     },
+     "tab": {
+      "id": 8,
+      "index": 12,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905048743091,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/S2",
+      "title": "Tab S2"
+     }
+    },
+    {
+     "t": 1792905051148,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 14,
+      "index": 6,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c01_loose_start",
+      "title": "New c01_loose_start"
+     }
+    },
+    {
+     "t": 1792905052173,
+     "event": "tabs.onRemoved",
+     "id": 14,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905053196,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 15,
+      "index": 7,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c02_middle_A_B",
+      "title": "New c02_middle_A_B"
+     }
+    },
+    {
+     "t": 1792905054261,
+     "event": "tabs.onRemoved",
+     "id": 15,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905055438,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 16,
+      "index": 8,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c03_group_leading_edge",
+      "title": "New c03_group_leading_edge"
+     }
+    },
+    {
+     "t": 1792905056465,
+     "event": "tabs.onRemoved",
+     "id": 16,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905057492,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 17,
+      "index": 9,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905048727092,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c04_inside_group",
+      "title": "New c04_inside_group"
+     }
+    },
+    {
+     "t": 1792905058533,
+     "event": "tabs.onRemoved",
+     "id": 17,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905059556,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 19,
+      "index": 10,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c05_group_trailing_edge",
+      "title": "New c05_group_trailing_edge"
+     }
+    },
+    {
+     "t": 1792905060578,
+     "event": "tabs.onRemoved",
+     "id": 19,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905061605,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 20,
+      "index": 11,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c06_split_leading_edge",
+      "title": "New c06_split_leading_edge"
+     }
+    },
+    {
+     "t": 1792905062699,
+     "event": "tabs.onRemoved",
+     "id": 20,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905063714,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 21,
+      "index": 12,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905048743091,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c07_inside_split",
+      "title": "New c07_inside_split"
+     }
+    },
+    {
+     "t": 1792905064732,
+     "event": "tabs.onRemoved",
+     "id": 21,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905065759,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 23,
+      "index": 13,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c08_split_trailing_edge",
+      "title": "New c08_split_trailing_edge"
+     }
+    },
+    {
+     "t": 1792905066807,
+     "event": "tabs.onRemoved",
+     "id": 23,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905067836,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 24,
+      "index": 15,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c09_end",
+      "title": "New c09_end"
+     }
+    },
+    {
+     "t": 1792905068860,
+     "event": "tabs.onRemoved",
+     "id": 24,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905069879,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 25,
+      "index": 15,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c10_huge_9999",
+      "title": "New c10_huge_9999"
+     }
+    },
+    {
+     "t": 1792905070959,
+     "event": "tabs.onRemoved",
+     "id": 25,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905071981,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 26,
+      "index": 6,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c11_no_index",
+      "title": "New c11_no_index"
+     }
+    },
+    {
+     "t": 1792905073005,
+     "event": "tabs.onRemoved",
+     "id": 26,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905074024,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 27,
+      "index": 6,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c12_index_0_pinned_area",
+      "title": "New c12_index_0_pinned_area"
+     }
+    },
+    {
+     "t": 1792905075111,
+     "event": "tabs.onRemoved",
+     "id": 27,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905076142,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 28,
+      "index": 6,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/create/c13_index_of_pinned_spike_page",
+      "title": "New c13_index_of_pinned_spike_page"
+     }
+    },
+    {
+     "t": 1792905077192,
+     "event": "tabs.onRemoved",
+     "id": 28,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905078222,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 29,
+      "index": 6,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "New Tab"
+     }
+    },
+    {
+     "t": 1792905078230,
+     "event": "tabs.onRemoved",
+     "id": 29,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905078243,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 30,
+      "index": 6,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "view-source:https://example.com/",
+      "title": "view-source:https://example.com/"
+     }
+    },
+    {
+     "t": 1792905078249,
+     "event": "tabs.onRemoved",
+     "id": 30,
+     "windowId": 3,
+     "isWindowClosing": false
+    },
+    {
+     "t": 1792905078261,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 31,
+      "index": 6,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "http://127.0.0.1:9/x",
+      "title": "local"
+     }
+    },
+    {
+     "t": 1792905078268,
+     "event": "tabs.onRemoved",
+     "id": 31,
+     "windowId": 3,
+     "isWindowClosing": false
+    }
+   ]
+  }
+ }
+}

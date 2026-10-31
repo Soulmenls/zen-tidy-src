@@ -1,0 +1,673 @@
+{
+ "which": "variant",
+ "iters": 9,
+ "ops": [
+  "i0:group:noncontig_last_first",
+  "i0:update",
+  "i0:move_top:1792906092363023",
+  "i0:add_to_group",
+  "i1:group:contig",
+  "i1:update",
+  "i1:move_top:1792906093453049",
+  "i2:group:first_last",
+  "i2:update",
+  "i2:move_top:1792906094542000",
+  "i2:add_to_group",
+  "i3:group:noncontig_last_first",
+  "i3:update",
+  "i3:move_top:1792906095638068",
+  "i4:group:contig",
+  "i4:update",
+  "i4:move_top:1792906096702059",
+  "i4:add_to_group",
+  "i5:group:first_last",
+  "i5:update",
+  "i5:move_top:1792906097809025",
+  "i6:group:noncontig_last_first",
+  "i6:update",
+  "i6:move_top:1792906098983003",
+  "i6:add_to_group",
+  "i7:group:contig",
+  "i7:update",
+  "i7:move_top:1792906100083006",
+  "i8:group:first_last",
+  "i8:update",
+  "i8:move_top:1792906101180054",
+  "i8:add_to_group"
+ ],
+ "log": [
+  {
+   "t": 1792906091901,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792906091903,
+   "event": "onInstalled",
+   "reason": "install",
+   "flushed": 0
+  },
+  {
+   "t": 1792906092359,
+   "event": "mark",
+   "label": "i0:group:noncontig_last_first"
+  },
+  {
+   "t": 1792906092365,
+   "event": "tabGroups.onCreated",
+   "id": 1792906092363023,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906092365,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792906092363023
+  },
+  {
+   "t": 1792906092365,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 6,
+   "groupId": 1792906092363023
+  },
+  {
+   "t": 1792906092371,
+   "event": "mark",
+   "label": "i0:update"
+  },
+  {
+   "t": 1792906092378,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906092363023,
+   "title": "R0",
+   "collapsed": false,
+   "sinceBg": 478,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906092386,
+   "event": "mark",
+   "label": "i0:move_top:1792906092363023"
+  },
+  {
+   "t": 1792906092389,
+   "event": "tabGroups.onMoved",
+   "id": 1792906092363023,
+   "title": "R0"
+  },
+  {
+   "t": 1792906092394,
+   "event": "mark",
+   "label": "i0:add_to_group"
+  },
+  {
+   "t": 1792906092398,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 5,
+   "groupId": 1792906092363023
+  },
+  {
+   "t": 1792906093450,
+   "event": "mark",
+   "label": "i1:group:contig"
+  },
+  {
+   "t": 1792906093455,
+   "event": "tabGroups.onCreated",
+   "id": 1792906093453049,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906093455,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 9,
+   "groupId": 1792906093453049
+  },
+  {
+   "t": 1792906093455,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 8,
+   "groupId": 1792906093453049
+  },
+  {
+   "t": 1792906093466,
+   "event": "mark",
+   "label": "i1:update"
+  },
+  {
+   "t": 1792906093470,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906093453049,
+   "title": "R1",
+   "collapsed": false,
+   "sinceBg": 1570,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906093475,
+   "event": "mark",
+   "label": "i1:move_top:1792906093453049"
+  },
+  {
+   "t": 1792906093479,
+   "event": "tabGroups.onMoved",
+   "id": 1792906093453049,
+   "title": "R1"
+  },
+  {
+   "t": 1792906094537,
+   "event": "mark",
+   "label": "i2:group:first_last"
+  },
+  {
+   "t": 1792906094543,
+   "event": "tabGroups.onCreated",
+   "id": 1792906094542000,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906094544,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 14,
+   "groupId": 1792906094542000
+  },
+  {
+   "t": 1792906094544,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 11,
+   "groupId": 1792906094542000
+  },
+  {
+   "t": 1792906094555,
+   "event": "mark",
+   "label": "i2:update"
+  },
+  {
+   "t": 1792906094560,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906094542000,
+   "title": "R2",
+   "collapsed": false,
+   "sinceBg": 2660,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906094569,
+   "event": "mark",
+   "label": "i2:move_top:1792906094542000"
+  },
+  {
+   "t": 1792906094580,
+   "event": "mark",
+   "label": "i2:add_to_group"
+  },
+  {
+   "t": 1792906094585,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 13,
+   "groupId": 1792906094542000
+  },
+  {
+   "t": 1792906095635,
+   "event": "mark",
+   "label": "i3:group:noncontig_last_first"
+  },
+  {
+   "t": 1792906095640,
+   "event": "tabGroups.onCreated",
+   "id": 1792906095638068,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906095640,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 15,
+   "groupId": 1792906095638068
+  },
+  {
+   "t": 1792906095640,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 18,
+   "groupId": 1792906095638068
+  },
+  {
+   "t": 1792906095646,
+   "event": "mark",
+   "label": "i3:update"
+  },
+  {
+   "t": 1792906095649,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906095638068,
+   "title": "R3",
+   "collapsed": false,
+   "sinceBg": 3749,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906095655,
+   "event": "mark",
+   "label": "i3:move_top:1792906095638068"
+  },
+  {
+   "t": 1792906095658,
+   "event": "tabGroups.onMoved",
+   "id": 1792906095638068,
+   "title": "R3"
+  },
+  {
+   "t": 1792906096699,
+   "event": "mark",
+   "label": "i4:group:contig"
+  },
+  {
+   "t": 1792906096704,
+   "event": "tabGroups.onCreated",
+   "id": 1792906096702059,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906096704,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 21,
+   "groupId": 1792906096702059
+  },
+  {
+   "t": 1792906096704,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 20,
+   "groupId": 1792906096702059
+  },
+  {
+   "t": 1792906096712,
+   "event": "mark",
+   "label": "i4:update"
+  },
+  {
+   "t": 1792906096715,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906096702059,
+   "title": "R4",
+   "collapsed": false,
+   "sinceBg": 4815,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906096722,
+   "event": "mark",
+   "label": "i4:move_top:1792906096702059"
+  },
+  {
+   "t": 1792906096726,
+   "event": "tabGroups.onMoved",
+   "id": 1792906096702059,
+   "title": "R4"
+  },
+  {
+   "t": 1792906096732,
+   "event": "mark",
+   "label": "i4:add_to_group"
+  },
+  {
+   "t": 1792906096736,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 22,
+   "groupId": 1792906096702059
+  },
+  {
+   "t": 1792906097806,
+   "event": "mark",
+   "label": "i5:group:first_last"
+  },
+  {
+   "t": 1792906097811,
+   "event": "tabGroups.onCreated",
+   "id": 1792906097809025,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906097812,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 26,
+   "groupId": 1792906097809025
+  },
+  {
+   "t": 1792906097812,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 23,
+   "groupId": 1792906097809025
+  },
+  {
+   "t": 1792906097820,
+   "event": "mark",
+   "label": "i5:update"
+  },
+  {
+   "t": 1792906097824,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906097809025,
+   "title": "R5",
+   "collapsed": false,
+   "sinceBg": 5924,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906097830,
+   "event": "mark",
+   "label": "i5:move_top:1792906097809025"
+  },
+  {
+   "t": 1792906098980,
+   "event": "mark",
+   "label": "i6:group:noncontig_last_first"
+  },
+  {
+   "t": 1792906098985,
+   "event": "tabGroups.onCreated",
+   "id": 1792906098983003,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906098985,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 27,
+   "groupId": 1792906098983003
+  },
+  {
+   "t": 1792906098985,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 30,
+   "groupId": 1792906098983003
+  },
+  {
+   "t": 1792906098991,
+   "event": "mark",
+   "label": "i6:update"
+  },
+  {
+   "t": 1792906098994,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906098983003,
+   "title": "R6",
+   "collapsed": false,
+   "sinceBg": 7094,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906099000,
+   "event": "mark",
+   "label": "i6:move_top:1792906098983003"
+  },
+  {
+   "t": 1792906099004,
+   "event": "tabGroups.onMoved",
+   "id": 1792906098983003,
+   "title": "R6"
+  },
+  {
+   "t": 1792906099009,
+   "event": "mark",
+   "label": "i6:add_to_group"
+  },
+  {
+   "t": 1792906099013,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 29,
+   "groupId": 1792906098983003
+  },
+  {
+   "t": 1792906100078,
+   "event": "mark",
+   "label": "i7:group:contig"
+  },
+  {
+   "t": 1792906100085,
+   "event": "tabGroups.onCreated",
+   "id": 1792906100083006,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906100086,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 33,
+   "groupId": 1792906100083006
+  },
+  {
+   "t": 1792906100086,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 32,
+   "groupId": 1792906100083006
+  },
+  {
+   "t": 1792906100098,
+   "event": "mark",
+   "label": "i7:update"
+  },
+  {
+   "t": 1792906100104,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906100083006,
+   "title": "R7",
+   "collapsed": false,
+   "sinceBg": 8204,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906100112,
+   "event": "mark",
+   "label": "i7:move_top:1792906100083006"
+  },
+  {
+   "t": 1792906100118,
+   "event": "tabGroups.onMoved",
+   "id": 1792906100083006,
+   "title": "R7"
+  },
+  {
+   "t": 1792906101178,
+   "event": "mark",
+   "label": "i8:group:first_last"
+  },
+  {
+   "t": 1792906101182,
+   "event": "tabGroups.onCreated",
+   "id": 1792906101180054,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906101183,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 38,
+   "groupId": 1792906101180054
+  },
+  {
+   "t": 1792906101183,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 35,
+   "groupId": 1792906101180054
+  },
+  {
+   "t": 1792906101191,
+   "event": "mark",
+   "label": "i8:update"
+  },
+  {
+   "t": 1792906101196,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906101180054,
+   "title": "R8",
+   "collapsed": false,
+   "sinceBg": 9296,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906101204,
+   "event": "mark",
+   "label": "i8:move_top:1792906101180054"
+  },
+  {
+   "t": 1792906101218,
+   "event": "mark",
+   "label": "i8:add_to_group"
+  },
+  {
+   "t": 1792906101224,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 37,
+   "groupId": 1792906101180054
+  }
+ ],
+ "groups_end": [
+  {
+   "collapsed": false,
+   "color": "red",
+   "id": 1792906101180054,
+   "title": "R8",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "grey",
+   "id": 1792906100083006,
+   "title": "R7",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "green",
+   "id": 1792906098983003,
+   "title": "R6",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "pink",
+   "id": 1792906097809025,
+   "title": "R5",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "yellow",
+   "id": 1792906096702059,
+   "title": "R4",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "orange",
+   "id": 1792906095638068,
+   "title": "R3",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "cyan",
+   "id": 1792906094542000,
+   "title": "R2",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "purple",
+   "id": 1792906093453049,
+   "title": "R1",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792906092363023,
+   "title": "R0",
+   "windowId": 3
+  }
+ ],
+ "dom_groups_end": [
+  [
+   "1792906101180-54",
+   "R8",
+   3
+  ],
+  [
+   "1792906100083-6",
+   "R7",
+   2
+  ],
+  [
+   "1792906098983-3",
+   "R6",
+   3
+  ],
+  [
+   "1792906097809-25",
+   "R5",
+   2
+  ],
+  [
+   "1792906096702-59",
+   "R4",
+   3
+  ],
+  [
+   "1792906095638-68",
+   "R3",
+   2
+  ],
+  [
+   "1792906094542-0",
+   "R2",
+   3
+  ],
+  [
+   "1792906093453-49",
+   "R1",
+   2
+  ],
+  [
+   "1792906092363-23",
+   "R0",
+   3
+  ]
+ ],
+ "summary": {
+  "onRemoved": 0,
+  "attributed": [],
+  "groups_alive_end": 9,
+  "created": 9
+ }
+}

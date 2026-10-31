@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Zen Tidy Spike (M3 reopen)",
+  "version": "0.0.1",
+  "description": "M3 spike: reopen closed tabs live, then discard. Not for daily use.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zen-tidy-spike-m3@local",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": { "required": ["browsingActivity"] }
+    }
+  },
+  "permissions": ["tabs", "tabGroups", "sessions", "storage"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  }
+}

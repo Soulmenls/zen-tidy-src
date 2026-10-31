@@ -1,0 +1,3039 @@
+{
+ "port": 2966,
+ "install": "zen-tidy-spike-b@local",
+ "ids": {
+  "L1": 2,
+  "VF1": 3,
+  "VF2": 4,
+  "L2": 5,
+  "VB1": 6,
+  "VB2": 7,
+  "L3": 8,
+  "XA1": 9,
+  "XA2": 10,
+  "XN1": 11,
+  "XN2": 12,
+  "XG1": 13,
+  "XG2": 14,
+  "W1": 15,
+  "W2": 16,
+  "Y1": 17,
+  "Y2": 18,
+  "Z1": 19,
+  "Z2": 20,
+  "T1": 21,
+  "T2": 22,
+  "U1": 23,
+  "U2": 24,
+  "L4": 25
+ },
+ "split_XA": {
+  "ok": true,
+  "groupId": "1792906305632-4",
+  "flags": [
+   true,
+   true
+  ],
+  "selected": 9
+ },
+ "split_VF": {
+  "ok": true,
+  "groupId": "1792906306856-62",
+  "flags": [
+   true,
+   true
+  ],
+  "selected": 9
+ },
+ "split_VB": {
+  "ok": true,
+  "groupId": "1792906308062-95",
+  "flags": [
+   true,
+   true
+  ],
+  "selected": 9
+ },
+ "split_XN": {
+  "ok": true,
+  "groupId": "1792906309367-82",
+  "flags": [
+   true,
+   true
+  ],
+  "selected": 9
+ },
+ "split_XG": {
+  "ok": true,
+  "groupId": "1792906310587-83",
+  "flags": [
+   true,
+   true
+  ],
+  "selected": 9
+ },
+ "split_W": {
+  "ok": true,
+  "groupId": "1792906311792-41",
+  "flags": [
+   true,
+   true
+  ],
+  "selected": 9
+ },
+ "split_Y": {
+  "ok": true,
+  "groupId": "1792906313007-28",
+  "flags": [
+   true,
+   true
+  ],
+  "selected": 9
+ },
+ "split_Z": {
+  "ok": true,
+  "groupId": "1792906314225-42",
+  "flags": [
+   true,
+   true
+  ],
+  "selected": 9
+ },
+ "tidy_gid": 1792906315477053,
+ "unnamed_gid": 1792906315493069,
+ "layout_0": [
+  [
+   "L1",
+   2,
+   -1
+  ],
+  [
+   "VF1",
+   3,
+   1792906306856062
+  ],
+  [
+   "VF2",
+   4,
+   1792906306856062
+  ],
+  [
+   "L2",
+   5,
+   -1
+  ],
+  [
+   "VB1",
+   6,
+   1792906308062095
+  ],
+  [
+   "VB2",
+   7,
+   1792906308062095
+  ],
+  [
+   "L3",
+   8,
+   -1
+  ],
+  [
+   "XA1",
+   9,
+   1792906305632004
+  ],
+  [
+   "XA2",
+   10,
+   1792906305632004
+  ],
+  [
+   "XN1",
+   11,
+   1792906309367082
+  ],
+  [
+   "XN2",
+   12,
+   1792906309367082
+  ],
+  [
+   "XG1",
+   13,
+   1792906310587083
+  ],
+  [
+   "XG2",
+   14,
+   1792906310587083
+  ],
+  [
+   "W1",
+   15,
+   1792906311792041
+  ],
+  [
+   "W2",
+   16,
+   1792906311792041
+  ],
+  [
+   "Y1",
+   17,
+   1792906313007028
+  ],
+  [
+   "Y2",
+   18,
+   1792906313007028
+  ],
+  [
+   "Z1",
+   19,
+   1792906314225042
+  ],
+  [
+   "Z2",
+   20,
+   1792906314225042
+  ],
+  [
+   "T1",
+   21,
+   1792906315477053
+  ],
+  [
+   "T2",
+   22,
+   1792906315477053
+  ],
+  [
+   "U1",
+   23,
+   1792906315493069
+  ],
+  [
+   "U2",
+   24,
+   1792906315493069
+  ],
+  [
+   "L4",
+   25,
+   -1
+  ]
+ ],
+ "state_0": {
+  "tabs": {
+   "L1": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 2,
+    "extId": 2
+   },
+   "VF1": {
+    "splitViewFlag": true,
+    "group": "1792906306856-62",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 3,
+    "extId": 3
+   },
+   "VF2": {
+    "splitViewFlag": true,
+    "group": "1792906306856-62",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 4,
+    "extId": 4
+   },
+   "L2": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 5,
+    "extId": 5
+   },
+   "VB1": {
+    "splitViewFlag": true,
+    "group": "1792906308062-95",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 6,
+    "extId": 6
+   },
+   "VB2": {
+    "splitViewFlag": true,
+    "group": "1792906308062-95",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 7,
+    "extId": 7
+   },
+   "L3": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 8,
+    "extId": 8
+   },
+   "XA1": {
+    "splitViewFlag": true,
+    "group": "1792906305632-4",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 9,
+    "extId": 9
+   },
+   "XA2": {
+    "splitViewFlag": true,
+    "group": "1792906305632-4",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 10,
+    "extId": 10
+   },
+   "XN1": {
+    "splitViewFlag": true,
+    "group": "1792906309367-82",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 11,
+    "extId": 11
+   },
+   "XN2": {
+    "splitViewFlag": true,
+    "group": "1792906309367-82",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 12,
+    "extId": 12
+   },
+   "XG1": {
+    "splitViewFlag": true,
+    "group": "1792906310587-83",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 13,
+    "extId": 13
+   },
+   "XG2": {
+    "splitViewFlag": true,
+    "group": "1792906310587-83",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 14,
+    "extId": 14
+   },
+   "W1": {
+    "splitViewFlag": true,
+    "group": "1792906311792-41",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 15,
+    "extId": 15
+   },
+   "W2": {
+    "splitViewFlag": true,
+    "group": "1792906311792-41",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 16,
+    "extId": 16
+   },
+   "Y1": {
+    "splitViewFlag": true,
+    "group": "1792906313007-28",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 17,
+    "extId": 17
+   },
+   "Y2": {
+    "splitViewFlag": true,
+    "group": "1792906313007-28",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 18,
+    "extId": 18
+   },
+   "Z1": {
+    "splitViewFlag": true,
+    "group": "1792906314225-42",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 19,
+    "extId": 19
+   },
+   "Z2": {
+    "splitViewFlag": true,
+    "group": "1792906314225-42",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 20,
+    "extId": 20
+   },
+   "T1": {
+    "splitViewFlag": false,
+    "group": "1792906315477-53",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "2060",
+     "2063",
+     "54",
+     "69",
+     "64",
+     "79",
+     "20",
+     "54"
+    ],
+    "inSplitData": false,
+    "gbIndex": 21,
+    "extId": 21
+   },
+   "T2": {
+    "splitViewFlag": false,
+    "group": "1792906315477-53",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "2060",
+     "2063",
+     "54",
+     "69",
+     "64",
+     "79",
+     "20",
+     "54"
+    ],
+    "inSplitData": false,
+    "gbIndex": 22,
+    "extId": 22
+   },
+   "U1": {
+    "splitViewFlag": false,
+    "group": "1792906315493-69",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 23,
+    "extId": 23
+   },
+   "U2": {
+    "splitViewFlag": false,
+    "group": "1792906315493-69",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 24,
+    "extId": 24
+   },
+   "L4": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 25,
+    "extId": 25
+   }
+  },
+  "splitData": [
+   {
+    "groupId": "1792906305632-4",
+    "groupConnected": true,
+    "tabs": [
+     "XA1",
+     "XA2"
+    ]
+   },
+   {
+    "groupId": "1792906306856-62",
+    "groupConnected": true,
+    "tabs": [
+     "VF1",
+     "VF2"
+    ]
+   },
+   {
+    "groupId": "1792906308062-95",
+    "groupConnected": true,
+    "tabs": [
+     "VB1",
+     "VB2"
+    ]
+   },
+   {
+    "groupId": "1792906309367-82",
+    "groupConnected": true,
+    "tabs": [
+     "XN1",
+     "XN2"
+    ]
+   },
+   {
+    "groupId": "1792906310587-83",
+    "groupConnected": true,
+    "tabs": [
+     "XG1",
+     "XG2"
+    ]
+   },
+   {
+    "groupId": "1792906311792-41",
+    "groupConnected": true,
+    "tabs": [
+     "W1",
+     "W2"
+    ]
+   },
+   {
+    "groupId": "1792906313007-28",
+    "groupConnected": true,
+    "tabs": [
+     "Y1",
+     "Y2"
+    ]
+   },
+   {
+    "groupId": "1792906314225-42",
+    "groupConnected": true,
+    "tabs": [
+     "Z1",
+     "Z2"
+    ]
+   }
+  ],
+  "splitGroupsDom": [
+   {
+    "id": "1792906306856-62",
+    "tabs": [
+     "VF1",
+     "VF2"
+    ]
+   },
+   {
+    "id": "1792906308062-95",
+    "tabs": [
+     "VB1",
+     "VB2"
+    ]
+   },
+   {
+    "id": "1792906305632-4",
+    "tabs": [
+     "XA1",
+     "XA2"
+    ]
+   },
+   {
+    "id": "1792906309367-82",
+    "tabs": [
+     "XN1",
+     "XN2"
+    ]
+   },
+   {
+    "id": "1792906310587-83",
+    "tabs": [
+     "XG1",
+     "XG2"
+    ]
+   },
+   {
+    "id": "1792906311792-41",
+    "tabs": [
+     "W1",
+     "W2"
+    ]
+   },
+   {
+    "id": "1792906313007-28",
+    "tabs": [
+     "Y1",
+     "Y2"
+    ]
+   },
+   {
+    "id": "1792906314225-42",
+    "tabs": [
+     "Z1",
+     "Z2"
+    ]
+   }
+  ],
+  "selected": "XA1",
+  "closedTabCount": 0
+ },
+ "api_groups_0": [
+  {
+   "collapsed": false,
+   "color": "purple",
+   "id": 1792906306856062,
+   "title": "",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "cyan",
+   "id": 1792906308062095,
+   "title": "",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792906305632004,
+   "title": "",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "orange",
+   "id": 1792906309367082,
+   "title": "",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "yellow",
+   "id": 1792906310587083,
+   "title": "",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "pink",
+   "id": 1792906311792041,
+   "title": "",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "green",
+   "id": 1792906313007028,
+   "title": "",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "grey",
+   "id": 1792906314225042,
+   "title": "",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "red",
+   "id": 1792906315477053,
+   "title": "⁠⁣Tidy T",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "green",
+   "id": 1792906315493069,
+   "title": "",
+   "windowId": 3
+  }
+ ],
+ "api_tabs_0": [
+  {
+   "id": 2,
+   "index": 2,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305398,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/L1",
+   "title": "Tab L1"
+  },
+  {
+   "id": 3,
+   "index": 3,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305405,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906306856062,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/VF1",
+   "title": "Tab VF1"
+  },
+  {
+   "id": 4,
+   "index": 4,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305410,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906306856062,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/VF2",
+   "title": "Tab VF2"
+  },
+  {
+   "id": 5,
+   "index": 5,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305416,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/L2",
+   "title": "Tab L2"
+  },
+  {
+   "id": 6,
+   "index": 6,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305423,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906308062095,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/VB1",
+   "title": "Tab VB1"
+  },
+  {
+   "id": 7,
+   "index": 7,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305428,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906308062095,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/VB2",
+   "title": "Tab VB2"
+  },
+  {
+   "id": 8,
+   "index": 8,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305433,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/L3",
+   "title": "Tab L3"
+  },
+  {
+   "id": 9,
+   "index": 9,
+   "windowId": 3,
+   "highlighted": true,
+   "active": true,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": false,
+   "incognito": false,
+   "width": 583,
+   "height": 752,
+   "lastAccessed": 1792906316519,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isArticle": false,
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906305632004,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/XA1",
+   "title": "Problem loading page",
+   "favIconUrl": "chrome://global/skin/icons/info.svg"
+  },
+  {
+   "id": 10,
+   "index": 10,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": false,
+   "incognito": false,
+   "width": 583,
+   "height": 752,
+   "lastAccessed": 1792906305445,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isArticle": false,
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906305632004,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/XA2",
+   "title": "Problem loading page",
+   "favIconUrl": "chrome://global/skin/icons/info.svg"
+  },
+  {
+   "id": 11,
+   "index": 11,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305451,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906309367082,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/XN1",
+   "title": "Tab XN1"
+  },
+  {
+   "id": 12,
+   "index": 12,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305456,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906309367082,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/XN2",
+   "title": "Tab XN2"
+  },
+  {
+   "id": 13,
+   "index": 13,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305461,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906310587083,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/XG1",
+   "title": "Tab XG1"
+  },
+  {
+   "id": 14,
+   "index": 14,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305466,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906310587083,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/XG2",
+   "title": "Tab XG2"
+  },
+  {
+   "id": 15,
+   "index": 15,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305470,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906311792041,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/W1",
+   "title": "Tab W1"
+  },
+  {
+   "id": 16,
+   "index": 16,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305479,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906311792041,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/W2",
+   "title": "Tab W2"
+  },
+  {
+   "id": 17,
+   "index": 17,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305483,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906313007028,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/Y1",
+   "title": "Tab Y1"
+  },
+  {
+   "id": 18,
+   "index": 18,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305489,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906313007028,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/Y2",
+   "title": "Tab Y2"
+  },
+  {
+   "id": 19,
+   "index": 19,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305493,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906314225042,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/Z1",
+   "title": "Tab Z1"
+  },
+  {
+   "id": 20,
+   "index": 20,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305499,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906314225042,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/Z2",
+   "title": "Tab Z2"
+  },
+  {
+   "id": 21,
+   "index": 21,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305505,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906315477053,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/T1",
+   "title": "Tab T1"
+  },
+  {
+   "id": 22,
+   "index": 22,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305510,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906315477053,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/T2",
+   "title": "Tab T2"
+  },
+  {
+   "id": 23,
+   "index": 23,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305516,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906315493069,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/U1",
+   "title": "Tab U1"
+  },
+  {
+   "id": 24,
+   "index": 24,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305523,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906315493069,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/U2",
+   "title": "Tab U2"
+  },
+  {
+   "id": 25,
+   "index": 25,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906305529,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbs/L4",
+   "title": "Tab L4"
+  }
+ ],
+ "XA_group_one": {
+  "value": 1792906316522085
+ },
+ "XN_group_one": {
+  "value": 1792906316531073
+ },
+ "XG_into_tidy": {
+  "value": 1792906315477053
+ },
+ "W_group_both": {
+  "value": 1792906316547085
+ },
+ "Y_ungroup_one": {
+  "value": null
+ },
+ "VF_before": {
+  "L1": 2,
+  "VF2": 4
+ },
+ "VF_move": {
+  "value": [
+   {
+    "id": 2,
+    "index": 4,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792906305398,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/vbs/L1",
+    "title": "Tab L1"
+   }
+  ]
+ },
+ "VF_after": {
+  "L1": [
+   4,
+   -1
+  ],
+  "VF1": [
+   2,
+   1792906306856062
+  ],
+  "VF2": [
+   3,
+   1792906306856062
+  ]
+ },
+ "VB_before": {
+  "L3": 8,
+  "VB2": 7
+ },
+ "VB_move": {
+  "value": [
+   {
+    "id": 8,
+    "index": 6,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792906305433,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/vbs/L3",
+    "title": "Tab L3"
+   }
+  ]
+ },
+ "VB_after": {
+  "L3": [
+   6,
+   -1
+  ],
+  "VB1": [
+   7,
+   1792906308062095
+  ],
+  "VB2": [
+   8,
+   1792906308062095
+  ]
+ },
+ "layout_1": [
+  [
+   "VF1",
+   2,
+   1792906306856062
+  ],
+  [
+   "VF2",
+   3,
+   1792906306856062
+  ],
+  [
+   "L1",
+   4,
+   -1
+  ],
+  [
+   "L2",
+   5,
+   -1
+  ],
+  [
+   "L3",
+   6,
+   -1
+  ],
+  [
+   "VB1",
+   7,
+   1792906308062095
+  ],
+  [
+   "VB2",
+   8,
+   1792906308062095
+  ],
+  [
+   "XA1",
+   9,
+   1792906316522085
+  ],
+  [
+   "XA2",
+   10,
+   1792906305632004
+  ],
+  [
+   "XN1",
+   11,
+   1792906316531073
+  ],
+  [
+   "XN2",
+   12,
+   1792906309367082
+  ],
+  [
+   "W1",
+   13,
+   1792906316547085
+  ],
+  [
+   "W2",
+   14,
+   1792906316547085
+  ],
+  [
+   "Y1",
+   15,
+   1792906313007028
+  ],
+  [
+   "Y2",
+   16,
+   1792906313007028
+  ],
+  [
+   "Z1",
+   17,
+   1792906314225042
+  ],
+  [
+   "Z2",
+   18,
+   1792906314225042
+  ],
+  [
+   "XG1",
+   19,
+   1792906310587083
+  ],
+  [
+   "XG2",
+   20,
+   1792906310587083
+  ],
+  [
+   "T1",
+   21,
+   1792906315477053
+  ],
+  [
+   "T2",
+   22,
+   1792906315477053
+  ],
+  [
+   "U1",
+   23,
+   1792906315493069
+  ],
+  [
+   "U2",
+   24,
+   1792906315493069
+  ],
+  [
+   "L4",
+   25,
+   -1
+  ]
+ ],
+ "state_1": {
+  "tabs": {
+   "VF1": {
+    "splitViewFlag": true,
+    "group": "1792906306856-62",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 2,
+    "extId": 3
+   },
+   "VF2": {
+    "splitViewFlag": true,
+    "group": "1792906306856-62",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 3,
+    "extId": 4
+   },
+   "L1": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 4,
+    "extId": 2
+   },
+   "L2": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 5,
+    "extId": 5
+   },
+   "L3": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 6,
+    "extId": 8
+   },
+   "VB1": {
+    "splitViewFlag": true,
+    "group": "1792906308062-95",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 7,
+    "extId": 6
+   },
+   "VB2": {
+    "splitViewFlag": true,
+    "group": "1792906308062-95",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 8,
+    "extId": 7
+   },
+   "XA1": {
+    "splitViewFlag": true,
+    "group": "1792906316522-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 9,
+    "extId": 9
+   },
+   "XA2": {
+    "splitViewFlag": true,
+    "group": "1792906305632-4",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 10,
+    "extId": 10
+   },
+   "XN1": {
+    "splitViewFlag": true,
+    "group": "1792906316531-73",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 11,
+    "extId": 11
+   },
+   "XN2": {
+    "splitViewFlag": true,
+    "group": "1792906309367-82",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 12,
+    "extId": 12
+   },
+   "W1": {
+    "splitViewFlag": true,
+    "group": "1792906316547-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 13,
+    "extId": 15
+   },
+   "W2": {
+    "splitViewFlag": true,
+    "group": "1792906316547-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 14,
+    "extId": 16
+   },
+   "Y1": {
+    "splitViewFlag": true,
+    "group": "1792906313007-28",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 15,
+    "extId": 17
+   },
+   "Y2": {
+    "splitViewFlag": true,
+    "group": "1792906313007-28",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 16,
+    "extId": 18
+   },
+   "Z1": {
+    "splitViewFlag": true,
+    "group": "1792906314225-42",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 17,
+    "extId": 19
+   },
+   "Z2": {
+    "splitViewFlag": true,
+    "group": "1792906314225-42",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 18,
+    "extId": 20
+   },
+   "XG1": {
+    "splitViewFlag": true,
+    "group": "1792906310587-83",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 19,
+    "extId": 13
+   },
+   "XG2": {
+    "splitViewFlag": true,
+    "group": "1792906310587-83",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 20,
+    "extId": 14
+   },
+   "T1": {
+    "splitViewFlag": false,
+    "group": "1792906315477-53",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "2060",
+     "2063",
+     "54",
+     "69",
+     "64",
+     "79",
+     "20",
+     "54"
+    ],
+    "inSplitData": false,
+    "gbIndex": 21,
+    "extId": 21
+   },
+   "T2": {
+    "splitViewFlag": false,
+    "group": "1792906315477-53",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "2060",
+     "2063",
+     "54",
+     "69",
+     "64",
+     "79",
+     "20",
+     "54"
+    ],
+    "inSplitData": false,
+    "gbIndex": 22,
+    "extId": 22
+   },
+   "U1": {
+    "splitViewFlag": false,
+    "group": "1792906315493-69",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 23,
+    "extId": 23
+   },
+   "U2": {
+    "splitViewFlag": false,
+    "group": "1792906315493-69",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 24,
+    "extId": 24
+   },
+   "L4": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 25,
+    "extId": 25
+   }
+  },
+  "splitData": [
+   {
+    "groupId": "1792906305632-4",
+    "groupConnected": true,
+    "tabs": [
+     "XA1",
+     "XA2"
+    ]
+   },
+   {
+    "groupId": "1792906306856-62",
+    "groupConnected": true,
+    "tabs": [
+     "VF1",
+     "VF2"
+    ]
+   },
+   {
+    "groupId": "1792906308062-95",
+    "groupConnected": true,
+    "tabs": [
+     "VB1",
+     "VB2"
+    ]
+   },
+   {
+    "groupId": "1792906309367-82",
+    "groupConnected": true,
+    "tabs": [
+     "XN1",
+     "XN2"
+    ]
+   },
+   {
+    "groupId": "1792906310587-83",
+    "groupConnected": true,
+    "tabs": [
+     "XG1",
+     "XG2"
+    ]
+   },
+   {
+    "groupId": "1792906311792-41",
+    "groupConnected": false,
+    "tabs": [
+     "W1",
+     "W2"
+    ]
+   },
+   {
+    "groupId": "1792906313007-28",
+    "groupConnected": true,
+    "tabs": [
+     "Y1",
+     "Y2"
+    ]
+   },
+   {
+    "groupId": "1792906314225-42",
+    "groupConnected": true,
+    "tabs": [
+     "Z1",
+     "Z2"
+    ]
+   }
+  ],
+  "splitGroupsDom": [
+   {
+    "id": "1792906306856-62",
+    "tabs": [
+     "VF1",
+     "VF2"
+    ]
+   },
+   {
+    "id": "1792906308062-95",
+    "tabs": [
+     "VB1",
+     "VB2"
+    ]
+   },
+   {
+    "id": "1792906305632-4",
+    "tabs": [
+     "XA2"
+    ]
+   },
+   {
+    "id": "1792906309367-82",
+    "tabs": [
+     "XN2"
+    ]
+   },
+   {
+    "id": "1792906313007-28",
+    "tabs": [
+     "Y1",
+     "Y2"
+    ]
+   },
+   {
+    "id": "1792906314225-42",
+    "tabs": [
+     "Z1",
+     "Z2"
+    ]
+   },
+   {
+    "id": "1792906310587-83",
+    "tabs": [
+     "XG1",
+     "XG2"
+    ]
+   }
+  ],
+  "selected": "XA1",
+  "closedTabCount": 0
+ },
+ "count_1": 24,
+ "state_r1": {
+  "tabs": {
+   "VF1": {
+    "splitViewFlag": true,
+    "group": "1792906306856-62",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 2,
+    "extId": 1
+   },
+   "VF2": {
+    "splitViewFlag": true,
+    "group": "1792906306856-62",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 3,
+    "extId": 2
+   },
+   "L1": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 4,
+    "extId": 3
+   },
+   "L2": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 5,
+    "extId": 4
+   },
+   "L3": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 6,
+    "extId": 5
+   },
+   "VB1": {
+    "splitViewFlag": true,
+    "group": "1792906308062-95",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 7,
+    "extId": 6
+   },
+   "VB2": {
+    "splitViewFlag": true,
+    "group": "1792906308062-95",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 8,
+    "extId": 7
+   },
+   "XA1": {
+    "splitViewFlag": false,
+    "group": "1792906316522-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 9,
+    "extId": 8
+   },
+   "XN1": {
+    "splitViewFlag": false,
+    "group": "1792906316531-73",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 10,
+    "extId": 9
+   },
+   "W1": {
+    "splitViewFlag": false,
+    "group": "1792906316547-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 11,
+    "extId": 10
+   },
+   "W2": {
+    "splitViewFlag": false,
+    "group": "1792906316547-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 12,
+    "extId": 11
+   },
+   "Y1": {
+    "splitViewFlag": true,
+    "group": "1792906313007-28",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 13,
+    "extId": 12
+   },
+   "Y2": {
+    "splitViewFlag": true,
+    "group": "1792906313007-28",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 14,
+    "extId": 13
+   },
+   "Z1": {
+    "splitViewFlag": true,
+    "group": "1792906314225-42",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 15,
+    "extId": 14
+   },
+   "Z2": {
+    "splitViewFlag": true,
+    "group": "1792906314225-42",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 16,
+    "extId": 15
+   },
+   "XG1": {
+    "splitViewFlag": true,
+    "group": "1792906310587-83",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 17,
+    "extId": 16
+   },
+   "XG2": {
+    "splitViewFlag": true,
+    "group": "1792906310587-83",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 18,
+    "extId": 17
+   },
+   "T1": {
+    "splitViewFlag": false,
+    "group": "1792906315477-53",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "2060",
+     "2063",
+     "54",
+     "69",
+     "64",
+     "79",
+     "20",
+     "54"
+    ],
+    "inSplitData": false,
+    "gbIndex": 19,
+    "extId": 18
+   },
+   "T2": {
+    "splitViewFlag": false,
+    "group": "1792906315477-53",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "2060",
+     "2063",
+     "54",
+     "69",
+     "64",
+     "79",
+     "20",
+     "54"
+    ],
+    "inSplitData": false,
+    "gbIndex": 20,
+    "extId": 19
+   },
+   "U1": {
+    "splitViewFlag": false,
+    "group": "1792906315493-69",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 21,
+    "extId": 20
+   },
+   "U2": {
+    "splitViewFlag": false,
+    "group": "1792906315493-69",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 22,
+    "extId": 21
+   },
+   "L4": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 23,
+    "extId": 22
+   }
+  },
+  "splitData": [
+   {
+    "groupId": "1792906306856-62",
+    "groupConnected": true,
+    "tabs": [
+     "VF1",
+     "VF2"
+    ]
+   },
+   {
+    "groupId": "1792906308062-95",
+    "groupConnected": true,
+    "tabs": [
+     "VB1",
+     "VB2"
+    ]
+   },
+   {
+    "groupId": "1792906310587-83",
+    "groupConnected": true,
+    "tabs": [
+     "XG1",
+     "XG2"
+    ]
+   },
+   {
+    "groupId": "1792906313007-28",
+    "groupConnected": true,
+    "tabs": [
+     "Y1",
+     "Y2"
+    ]
+   },
+   {
+    "groupId": "1792906314225-42",
+    "groupConnected": true,
+    "tabs": [
+     "Z1",
+     "Z2"
+    ]
+   }
+  ],
+  "splitGroupsDom": [
+   {
+    "id": "1792906306856-62",
+    "tabs": [
+     "VF1",
+     "VF2"
+    ]
+   },
+   {
+    "id": "1792906308062-95",
+    "tabs": [
+     "VB1",
+     "VB2"
+    ]
+   },
+   {
+    "id": "1792906313007-28",
+    "tabs": [
+     "Y1",
+     "Y2"
+    ]
+   },
+   {
+    "id": "1792906314225-42",
+    "tabs": [
+     "Z1",
+     "Z2"
+    ]
+   },
+   {
+    "id": "1792906310587-83",
+    "tabs": [
+     "XG1",
+     "XG2"
+    ]
+   }
+  ],
+  "selected": "about:blank",
+  "closedTabCount": 2
+ },
+ "layout_r1": [
+  [
+   "VF1",
+   2,
+   1792906306856062
+  ],
+  [
+   "VF2",
+   3,
+   1792906306856062
+  ],
+  [
+   "L1",
+   4,
+   -1
+  ],
+  [
+   "L2",
+   5,
+   -1
+  ],
+  [
+   "L3",
+   6,
+   -1
+  ],
+  [
+   "VB1",
+   7,
+   1792906308062095
+  ],
+  [
+   "VB2",
+   8,
+   1792906308062095
+  ],
+  [
+   "XA1",
+   9,
+   1792906316522085
+  ],
+  [
+   "XN1",
+   10,
+   1792906316531073
+  ],
+  [
+   "W1",
+   11,
+   1792906316547085
+  ],
+  [
+   "W2",
+   12,
+   1792906316547085
+  ],
+  [
+   "Y1",
+   13,
+   1792906313007028
+  ],
+  [
+   "Y2",
+   14,
+   1792906313007028
+  ],
+  [
+   "Z1",
+   15,
+   1792906314225042
+  ],
+  [
+   "Z2",
+   16,
+   1792906314225042
+  ],
+  [
+   "XG1",
+   17,
+   1792906310587083
+  ],
+  [
+   "XG2",
+   18,
+   1792906310587083
+  ],
+  [
+   "T1",
+   19,
+   1792906315477053
+  ],
+  [
+   "T2",
+   20,
+   1792906315477053
+  ],
+  [
+   "U1",
+   21,
+   1792906315493069
+  ],
+  [
+   "U2",
+   22,
+   1792906315493069
+  ],
+  [
+   "L4",
+   23,
+   -1
+  ]
+ ],
+ "count_r1": 22,
+ "recently_closed_r1": [
+  {
+   "tab": "moz-extension://051360c9-9b62-42ff-9014-818aa0b92e97/spike.html",
+   "window": false,
+   "lastModified": 1792906323174
+  },
+  {
+   "tab": "https://example.com/vbs/XN2",
+   "window": false,
+   "lastModified": 1792906321330
+  },
+  {
+   "tab": "https://example.com/vbs/XA2",
+   "window": false,
+   "lastModified": 1792906321329
+  }
+ ],
+ "closed_groups_r1": [
+  {
+   "closedGroups": [
+    {
+     "name": "",
+     "tabs": [
+      "https://example.com/vbs/XN2"
+     ]
+    },
+    {
+     "name": "",
+     "tabs": [
+      "https://example.com/vbs/XA2"
+     ]
+    }
+   ],
+   "closedTabs": [
+    "moz-extension://051360c9-9b62-42ff-9014-818aa0b92e97/spike.html"
+   ]
+  }
+ ],
+ "state_r2": {
+  "tabs": {
+   "VF1": {
+    "splitViewFlag": true,
+    "group": "1792906306856-62",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 2,
+    "extId": 1
+   },
+   "VF2": {
+    "splitViewFlag": true,
+    "group": "1792906306856-62",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 3,
+    "extId": 2
+   },
+   "L1": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 4,
+    "extId": 3
+   },
+   "L2": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 5,
+    "extId": 4
+   },
+   "L3": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 6,
+    "extId": 5
+   },
+   "VB1": {
+    "splitViewFlag": true,
+    "group": "1792906308062-95",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 7,
+    "extId": 6
+   },
+   "VB2": {
+    "splitViewFlag": true,
+    "group": "1792906308062-95",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 8,
+    "extId": 7
+   },
+   "XA1": {
+    "splitViewFlag": false,
+    "group": "1792906316522-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 9,
+    "extId": 8
+   },
+   "XN1": {
+    "splitViewFlag": false,
+    "group": "1792906316531-73",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 10,
+    "extId": 9
+   },
+   "W1": {
+    "splitViewFlag": false,
+    "group": "1792906316547-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 11,
+    "extId": 10
+   },
+   "W2": {
+    "splitViewFlag": false,
+    "group": "1792906316547-85",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 12,
+    "extId": 11
+   },
+   "Y1": {
+    "splitViewFlag": true,
+    "group": "1792906313007-28",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 13,
+    "extId": 12
+   },
+   "Y2": {
+    "splitViewFlag": true,
+    "group": "1792906313007-28",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 14,
+    "extId": 13
+   },
+   "Z1": {
+    "splitViewFlag": true,
+    "group": "1792906314225-42",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 15,
+    "extId": 14
+   },
+   "Z2": {
+    "splitViewFlag": true,
+    "group": "1792906314225-42",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 16,
+    "extId": 15
+   },
+   "XG1": {
+    "splitViewFlag": true,
+    "group": "1792906310587-83",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 17,
+    "extId": 16
+   },
+   "XG2": {
+    "splitViewFlag": true,
+    "group": "1792906310587-83",
+    "groupIsSplit": true,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": true,
+    "gbIndex": 18,
+    "extId": 17
+   },
+   "T1": {
+    "splitViewFlag": false,
+    "group": "1792906315477-53",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "2060",
+     "2063",
+     "54",
+     "69",
+     "64",
+     "79",
+     "20",
+     "54"
+    ],
+    "inSplitData": false,
+    "gbIndex": 19,
+    "extId": 18
+   },
+   "T2": {
+    "splitViewFlag": false,
+    "group": "1792906315477-53",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "2060",
+     "2063",
+     "54",
+     "69",
+     "64",
+     "79",
+     "20",
+     "54"
+    ],
+    "inSplitData": false,
+    "gbIndex": 20,
+    "extId": 19
+   },
+   "U1": {
+    "splitViewFlag": false,
+    "group": "1792906315493-69",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 21,
+    "extId": 20
+   },
+   "U2": {
+    "splitViewFlag": false,
+    "group": "1792906315493-69",
+    "groupIsSplit": false,
+    "groupLabelAttrCps": [
+     "200b"
+    ],
+    "inSplitData": false,
+    "gbIndex": 22,
+    "extId": 21
+   },
+   "L4": {
+    "splitViewFlag": false,
+    "group": null,
+    "groupIsSplit": null,
+    "groupLabelAttrCps": null,
+    "inSplitData": false,
+    "gbIndex": 23,
+    "extId": 22
+   }
+  },
+  "splitData": [
+   {
+    "groupId": "1792906306856-62",
+    "groupConnected": true,
+    "tabs": [
+     "VF1",
+     "VF2"
+    ]
+   },
+   {
+    "groupId": "1792906308062-95",
+    "groupConnected": true,
+    "tabs": [
+     "VB1",
+     "VB2"
+    ]
+   },
+   {
+    "groupId": "1792906310587-83",
+    "groupConnected": true,
+    "tabs": [
+     "XG1",
+     "XG2"
+    ]
+   },
+   {
+    "groupId": "1792906313007-28",
+    "groupConnected": true,
+    "tabs": [
+     "Y1",
+     "Y2"
+    ]
+   },
+   {
+    "groupId": "1792906314225-42",
+    "groupConnected": true,
+    "tabs": [
+     "Z1",
+     "Z2"
+    ]
+   }
+  ],
+  "splitGroupsDom": [
+   {
+    "id": "1792906306856-62",
+    "tabs": [
+     "VF1",
+     "VF2"
+    ]
+   },
+   {
+    "id": "1792906308062-95",
+    "tabs": [
+     "VB1",
+     "VB2"
+    ]
+   },
+   {
+    "id": "1792906313007-28",
+    "tabs": [
+     "Y1",
+     "Y2"
+    ]
+   },
+   {
+    "id": "1792906314225-42",
+    "tabs": [
+     "Z1",
+     "Z2"
+    ]
+   },
+   {
+    "id": "1792906310587-83",
+    "tabs": [
+     "XG1",
+     "XG2"
+    ]
+   }
+  ],
+  "selected": "about:blank",
+  "closedTabCount": 3
+ },
+ "layout_r2": [
+  [
+   "VF1",
+   2,
+   1792906306856062
+  ],
+  [
+   "VF2",
+   3,
+   1792906306856062
+  ],
+  [
+   "L1",
+   4,
+   -1
+  ],
+  [
+   "L2",
+   5,
+   -1
+  ],
+  [
+   "L3",
+   6,
+   -1
+  ],
+  [
+   "VB1",
+   7,
+   1792906308062095
+  ],
+  [
+   "VB2",
+   8,
+   1792906308062095
+  ],
+  [
+   "XA1",
+   9,
+   1792906316522085
+  ],
+  [
+   "XN1",
+   10,
+   1792906316531073
+  ],
+  [
+   "W1",
+   11,
+   1792906316547085
+  ],
+  [
+   "W2",
+   12,
+   1792906316547085
+  ],
+  [
+   "Y1",
+   13,
+   1792906313007028
+  ],
+  [
+   "Y2",
+   14,
+   1792906313007028
+  ],
+  [
+   "Z1",
+   15,
+   1792906314225042
+  ],
+  [
+   "Z2",
+   16,
+   1792906314225042
+  ],
+  [
+   "XG1",
+   17,
+   1792906310587083
+  ],
+  [
+   "XG2",
+   18,
+   1792906310587083
+  ],
+  [
+   "T1",
+   19,
+   1792906315477053
+  ],
+  [
+   "T2",
+   20,
+   1792906315477053
+  ],
+  [
+   "U1",
+   21,
+   1792906315493069
+  ],
+  [
+   "U2",
+   22,
+   1792906315493069
+  ],
+  [
+   "L4",
+   23,
+   -1
+  ]
+ ],
+ "count_r2": 22
+}

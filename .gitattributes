@@ -1,0 +1,7 @@
+# The git hooks are POSIX sh scripts: LF line endings in every checkout, whatever core.autocrlf says.
+scripts/git-hooks/* text eol=lf
+# What a release ships, LF in every checkout too (M7-REL-1): with core.autocrlf on, a checkout would otherwise write the
+# extension and the CSS with CRLF while git status calls the tree clean. Releases read HEAD's bytes either way; this
+# keeps the working tree, which local-test and the dev build package, the same bytes. Binary files stay as they are.
+extension/** text=auto eol=lf
+css/** text=auto eol=lf

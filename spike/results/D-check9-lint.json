@@ -1,0 +1,180 @@
+{
+ "web_ext": "web-ext@10.8.0",
+ "web_ext_version": "10.8.0",
+ "prod_manifest_forbidden_keys": [],
+ "base": {
+  "exit": 0,
+  "summary": {
+   "errors": 0,
+   "notices": 0,
+   "warnings": 1
+  },
+  "items": [
+   {
+    "type": "warning",
+    "code": "KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION",
+    "message": "Manifest key not supported by the specified minimum Firefox for Android version",
+    "description": "\"strict_min_version\" requires Firefox for Android 140, which was released before version 142 introduced support for \"browser_specific_settings.gecko.data_collection_permissions\".",
+    "file": "manifest.json"
+   }
+  ],
+  "metadata": {
+   "id": "zen-tidy-spike@local",
+   "manifestVersion": 3,
+   "firefoxMinVersion": "140.0"
+  }
+ },
+ "base_self_hosted": {
+  "exit": 0,
+  "summary": {
+   "errors": 0,
+   "notices": 0,
+   "warnings": 1
+  },
+  "items": [
+   {
+    "type": "warning",
+    "code": "KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION",
+    "message": "Manifest key not supported by the specified minimum Firefox for Android version",
+    "description": "\"strict_min_version\" requires Firefox for Android 140, which was released before version 142 introduced support for \"browser_specific_settings.gecko.data_collection_permissions\".",
+    "file": "manifest.json"
+   }
+  ],
+  "metadata": {
+   "id": "zen-tidy-spike@local",
+   "manifestVersion": 3,
+   "firefoxMinVersion": "140.0"
+  }
+ },
+ "prod": {
+  "exit": 1,
+  "summary": {
+   "errors": 1,
+   "notices": 0,
+   "warnings": 1
+  },
+  "items": [
+   {
+    "type": "error",
+    "code": "MANIFEST_UPDATE_URL",
+    "message": "\"update_url\" is not allowed.",
+    "description": "\"applications.gecko.update_url\" or \"browser_specific_settings.gecko.update_url\" are not allowed for Mozilla-hosted add-ons.",
+    "file": "manifest.json"
+   },
+   {
+    "type": "warning",
+    "code": "KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION",
+    "message": "Manifest key not supported by the specified minimum Firefox for Android version",
+    "description": "\"strict_min_version\" requires Firefox for Android 140, which was released before version 142 introduced support for \"browser_specific_settings.gecko.data_collection_permissions\".",
+    "file": "manifest.json"
+   }
+  ],
+  "metadata": {
+   "id": "zen-tidy-spike-d@local",
+   "manifestVersion": 3,
+   "firefoxMinVersion": "140.0"
+  }
+ },
+ "prod_self_hosted": {
+  "exit": 0,
+  "summary": {
+   "errors": 0,
+   "notices": 0,
+   "warnings": 1
+  },
+  "items": [
+   {
+    "type": "warning",
+    "code": "KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION",
+    "message": "Manifest key not supported by the specified minimum Firefox for Android version",
+    "description": "\"strict_min_version\" requires Firefox for Android 140, which was released before version 142 introduced support for \"browser_specific_settings.gecko.data_collection_permissions\".",
+    "file": "manifest.json"
+   }
+  ],
+  "metadata": {
+   "id": "zen-tidy-spike-d@local",
+   "manifestVersion": 3,
+   "firefoxMinVersion": "140.0"
+  }
+ },
+ "prod_plus_gecko_android_142_self_hosted": {
+  "exit": 0,
+  "summary": {
+   "errors": 0,
+   "notices": 0,
+   "warnings": 0
+  },
+  "items": [],
+  "metadata": {
+   "id": "zen-tidy-spike-d@local",
+   "manifestVersion": 3,
+   "firefoxMinVersion": "140.0"
+  }
+ },
+ "prod_plus_websiteContent_self_hosted": {
+  "exit": 0,
+  "summary": {
+   "errors": 0,
+   "notices": 0,
+   "warnings": 1
+  },
+  "items": [
+   {
+    "type": "warning",
+    "code": "KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION",
+    "message": "Manifest key not supported by the specified minimum Firefox for Android version",
+    "description": "\"strict_min_version\" requires Firefox for Android 140, which was released before version 142 introduced support for \"browser_specific_settings.gecko.data_collection_permissions\".",
+    "file": "manifest.json"
+   }
+  ],
+  "metadata": {
+   "id": "zen-tidy-spike-d@local",
+   "manifestVersion": 3,
+   "firefoxMinVersion": "140.0"
+  }
+ },
+ "control_prod_without_data_collection_self_hosted": {
+  "exit": 0,
+  "summary": {
+   "errors": 0,
+   "notices": 0,
+   "warnings": 1
+  },
+  "items": [
+   {
+    "type": "warning",
+    "code": "MISSING_DATA_COLLECTION_PERMISSIONS",
+    "message": "The \"data_collection_permissions\" property is missing.",
+    "description": "The \"/browser_specific_settings/gecko/data_collection_permissions\" property is required for all new Firefox extensions, and will be required for new versions of existing extensions in the future. Please add this key to the manifest. More information at: https://mzl.la/firefox-builtin-data-consent",
+    "file": "manifest.json"
+   }
+  ],
+  "metadata": {
+   "id": "zen-tidy-spike-d@local",
+   "manifestVersion": 3,
+   "firefoxMinVersion": "140.0"
+  }
+ },
+ "control_prod_with_war_and_content_scripts_self_hosted": {
+  "exit": 0,
+  "summary": {
+   "errors": 0,
+   "notices": 0,
+   "warnings": 1
+  },
+  "items": [
+   {
+    "type": "warning",
+    "code": "KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION",
+    "message": "Manifest key not supported by the specified minimum Firefox for Android version",
+    "description": "\"strict_min_version\" requires Firefox for Android 140, which was released before version 142 introduced support for \"browser_specific_settings.gecko.data_collection_permissions\".",
+    "file": "manifest.json"
+   }
+  ],
+  "metadata": {
+   "id": "zen-tidy-spike-d@local",
+   "manifestVersion": 3,
+   "firefoxMinVersion": "140.0"
+  }
+ }
+}

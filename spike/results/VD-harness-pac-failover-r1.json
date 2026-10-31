@@ -1,0 +1,167 @@
+{
+ "run": "r1",
+ "server_port": 38513,
+ "cases": {
+  "CTRL_direct_pac": {
+   "result": {
+    "failoverDirectAtProbe": false,
+    "failoverDirectBefore": false,
+    "proxyType": 2,
+    "plain_fetch_http": {
+     "ok": true,
+     "status": 200
+    },
+    "chan_plain_http": {
+     "status": "0x0",
+     "http": 200,
+     "beConservative": false
+    },
+    "chan_conservative_http": {
+     "status": "0x0",
+     "http": 200,
+     "beConservative": true
+    },
+    "chan_conservative_http_2": {
+     "status": "0x0",
+     "http": 200,
+     "beConservative": true
+    },
+    "chan_conservative_https": {
+     "status": "0x805a2fe7",
+     "http": null,
+     "beConservative": true
+    },
+    "service_request_http": {
+     "ok": true,
+     "status": 200
+    },
+    "failoverDirectAfter": false
+   },
+   "server_hits": [
+    "GET /CTRL-plain-fetch-http HTTP/1.1",
+    "GET /CTRL-chan-plain-http HTTP/1.1",
+    "GET /CTRL-chan-conservative-http HTTP/1.1",
+    "GET /CTRL-chan-conservative-http-2 HTTP/1.1",
+    "<non-http bytes 16030100c6010000>",
+    "GET /CTRL-service-request-http HTTP/1.1"
+   ]
+  },
+  "H_failover_false": {
+   "result": {
+    "failoverDirectAtProbe": false,
+    "failoverDirectBefore": false,
+    "proxyType": 2,
+    "plain_fetch_http": {
+     "ok": false,
+     "error": "TypeError: NetworkError when attempting to fetch resource."
+    },
+    "chan_plain_http": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": false
+    },
+    "chan_conservative_http": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": true
+    },
+    "chan_conservative_http_2": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": true
+    },
+    "chan_conservative_https": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": true
+    },
+    "service_request_http": {
+     "ok": false,
+     "status": 0
+    },
+    "failoverDirectAfter": false
+   },
+   "server_hits": []
+  },
+  "H_failover_true_default": {
+   "result": {
+    "failoverDirectAtProbe": true,
+    "failoverDirectBefore": false,
+    "proxyType": 2,
+    "plain_fetch_http": {
+     "ok": false,
+     "error": "TypeError: NetworkError when attempting to fetch resource."
+    },
+    "chan_plain_http": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": false
+    },
+    "chan_conservative_http": {
+     "status": "0x0",
+     "http": null,
+     "beConservative": true
+    },
+    "chan_conservative_http_2": {
+     "status": "0x0",
+     "http": null,
+     "beConservative": true
+    },
+    "chan_conservative_https": {
+     "status": "0x805a2fe7",
+     "http": null,
+     "beConservative": true
+    },
+    "service_request_http": {
+     "ok": true,
+     "status": 200
+    },
+    "failoverDirectAfter": false
+   },
+   "server_hits": [
+    "GET /H_failover_true_default-chan-conservative-http HTTP/1.1",
+    "GET /H_failover_true_default-chan-conservative-http-2 HTTP/1.1",
+    "<non-http bytes 16030100c6010000>",
+    "GET /H_failover_true_default-service-request-http HTTP/1.1"
+   ]
+  },
+  "H_failover_false_again": {
+   "result": {
+    "failoverDirectAtProbe": false,
+    "failoverDirectBefore": false,
+    "proxyType": 2,
+    "plain_fetch_http": {
+     "ok": false,
+     "error": "TypeError: NetworkError when attempting to fetch resource."
+    },
+    "chan_plain_http": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": false
+    },
+    "chan_conservative_http": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": true
+    },
+    "chan_conservative_http_2": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": true
+    },
+    "chan_conservative_https": {
+     "status": "0x804b0048",
+     "http": null,
+     "beConservative": true
+    },
+    "service_request_http": {
+     "ok": false,
+     "status": 0
+    },
+    "failoverDirectAfter": false
+   },
+   "server_hits": []
+  }
+ },
+ "harness_pac_text": "function FindProxyForURL(url, host) {\n  if (host == \"127.0.0.1\" || host == \"localhost\") return \"DIRECT\";\n  return \"PROXY 127.0.0.1:9\";\n}\n"
+}

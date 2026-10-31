@@ -1,0 +1,37 @@
+D1 1792906210679071
+D2 1792906210679071
+D3 [[2, -1]]
+D3 tabs.get before: {"index": 2, "groupId": -1}
+== s0_in_A active A
+   A_disc  {"wsAttr": null, "container": "A", "group": null, "visibleInActiveSpace": true, "selected": false}
+   A_g1    {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test A", "visibleInActiveSpace": true, "selected": false}
+   A_g2    {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test A", "visibleInActiveSpace": true, "selected": false}
+   A_live  {"wsAttr": "A", "container": "A", "group": null, "visibleInActiveSpace": true, "selected": false}
+== s1_in_A active A
+   A_g1    {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test A", "visibleInActiveSpace": true, "selected": false}
+   A_g2    {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test A", "visibleInActiveSpace": true, "selected": false}
+   B_x     {"wsAttr": "B", "container": "B", "group": null, "visibleInActiveSpace": false, "selected": false}
+   A_disc  {"wsAttr": null, "container": "B", "group": "\u2060\u2063Test B", "visibleInActiveSpace": false, "selected": false}
+   B_g1    {"wsAttr": "B", "container": "B", "group": "\u2060\u2063Test B", "visibleInActiveSpace": false, "selected": false}
+   B_g2    {"wsAttr": "B", "container": "B", "group": "\u2060\u2063Test B", "visibleInActiveSpace": false, "selected": false}
+   A_live  {"wsAttr": "A", "container": "B", "group": "\u2060\u2063Test B", "visibleInActiveSpace": false, "selected": false}
+== s2_in_B active B
+   B_x     {"wsAttr": "B", "container": "B", "group": null, "visibleInActiveSpace": true, "selected": false}
+   A_disc  {"wsAttr": null, "container": "B", "group": "\u2060\u2063Test B", "visibleInActiveSpace": true, "selected": false}
+   B_g1    {"wsAttr": "B", "container": "B", "group": "\u2060\u2063Test B", "visibleInActiveSpace": true, "selected": false}
+   B_g2    {"wsAttr": "B", "container": "B", "group": "\u2060\u2063Test B", "visibleInActiveSpace": true, "selected": false}
+   A_live  {"wsAttr": "A", "container": "B", "group": "\u2060\u2063Test B", "visibleInActiveSpace": true, "selected": false}
+   A_g1    {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test A", "visibleInActiveSpace": false, "selected": false}
+   A_g2    {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test A", "visibleInActiveSpace": false, "selected": false}
+== s3_after_restart active A
+   A_g1    {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test A", "visibleInActiveSpace": true, "selected": false}
+   A_g2    {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test A", "visibleInActiveSpace": true, "selected": false}
+   A_disc  {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test B", "visibleInActiveSpace": true, "selected": false}
+   B_g1    {"wsAttr": "B", "container": "A", "group": "\u2060\u2063Test B", "visibleInActiveSpace": true, "selected": false}
+   B_g2    {"wsAttr": "B", "container": "A", "group": "\u2060\u2063Test B", "visibleInActiveSpace": true, "selected": false}
+   A_live  {"wsAttr": "A", "container": "A", "group": "\u2060\u2063Test B", "visibleInActiveSpace": true, "selected": false}
+   B_x     {"wsAttr": "B", "container": "B", "group": null, "visibleInActiveSpace": false, "selected": false}
+q0_in_A ['spike.html', 'A_disc', 'A_g1', 'A_g2', 'A_live']
+q1_in_A [('spike.html', 0, -1), ('A_g1', 2, 1792906208340060), ('A_g2', 3, 1792906208340060)]
+q2_in_B [('spike.html', 0, -1), ('B_x', 2, -1), ('A_disc', 3, 1792906210679071), ('B_g1', 4, 1792906210679071), ('B_g2', 5, 1792906210679071), ('A_live', 6, 1792906210679071)]
+q3_after_restart [('spike.html', -1), ('A_g1', 1792906208340060), ('A_g2', 1792906208340060), ('A_disc', 1792906210679071), ('B_g1', 1792906210679071), ('B_g2', 1792906210679071), ('A_live', 1792906210679071)]

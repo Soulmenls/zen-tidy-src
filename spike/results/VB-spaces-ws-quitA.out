@@ -1,0 +1,61 @@
+== state_after_create_in_A (active A)
+   A_warm   wsAttr=None container=A group=None groupCont=None pending=True visible=True
+   A_grp1   wsAttr=None container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=True
+   A_grp2   wsAttr=None container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=True
+   A_disc   wsAttr=None container=A group=None groupCont=None pending=True visible=True
+   session: [('A_warm', None), ('A_lg1', 'A'), ('A_lg2', 'A'), ('A_grp1', None), ('A_grp2', None), ('A_live', 'A'), ('A_disc', None)]
+   sessionGroups: [["\u2060\u2063Group A live", null], ["\u2060\u2063Group A disc", null]]
+== before_quit (active A)
+   A_warm   wsAttr=None container=A group=None groupCont=None pending=True visible=True
+   A_lg1    wsAttr=A container=A group='\u2060\u2063Group A live' groupCont=A pending=False visible=True
+   A_lg2    wsAttr=A container=A group='\u2060\u2063Group A live' groupCont=A pending=False visible=True
+   A_grp1   wsAttr=None container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=True
+   A_grp2   wsAttr=None container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=True
+   A_live   wsAttr=A container=A group=None groupCont=None pending=False visible=True
+   A_disc   wsAttr=None container=A group=None groupCont=None pending=True visible=True
+   B_live   wsAttr=B container=B group=None groupCont=None pending=False visible=False
+   B_disc   wsAttr=None container=B group=None groupCont=None pending=True visible=False
+   session: [('A_warm', None), ('A_grp1', None), ('A_grp2', None), ('A_disc', None), ('B_disc', None)]
+   sessionGroups: [["\u2060\u2063Group A live", null], ["\u2060\u2063Group A disc", null]]
+== after_restart1 (active A)
+   A_warm   wsAttr=A container=A group=None groupCont=None pending=True visible=True
+   A_lg1    wsAttr=A container=A group='\u2060\u2063Group A live' groupCont=A pending=True visible=True
+   A_lg2    wsAttr=A container=A group='\u2060\u2063Group A live' groupCont=A pending=True visible=True
+   A_grp1   wsAttr=A container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=True
+   A_grp2   wsAttr=A container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=True
+   A_live   wsAttr=A container=A group=None groupCont=None pending=True visible=True
+   A_disc   wsAttr=A container=A group=None groupCont=None pending=True visible=True
+   B_disc   wsAttr=A container=A group=None groupCont=None pending=True visible=True
+   B_live   wsAttr=B container=B group=None groupCont=None pending=True visible=False
+   session: [('A_warm', 'A'), ('A_lg1', 'A'), ('A_lg2', 'A'), ('A_grp1', 'A'), ('A_grp2', 'A'), ('A_live', 'A'), ('A_disc', 'A'), ('B_disc', 'A'), ('B_live', 'B')]
+   sessionGroups: [["\u2060\u2063Group A live", null], ["\u2060\u2063Group A disc", null]]
+== before_restart2 (active B)
+   B_live   wsAttr=B container=B group=None groupCont=None pending=True visible=True
+   A_warm   wsAttr=A container=A group=None groupCont=None pending=True visible=False
+   A_lg1    wsAttr=A container=A group='\u2060\u2063Group A live' groupCont=A pending=True visible=False
+   A_lg2    wsAttr=A container=A group='\u2060\u2063Group A live' groupCont=A pending=True visible=False
+   A_grp1   wsAttr=A container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=False
+   A_grp2   wsAttr=A container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=False
+   A_live   wsAttr=A container=A group=None groupCont=None pending=True visible=False
+   A_disc   wsAttr=A container=A group=None groupCont=None pending=True visible=False
+   B_disc   wsAttr=A container=A group=None groupCont=None pending=True visible=False
+   session: [('B_live', 'B'), ('A_warm', 'A'), ('A_lg1', 'A'), ('A_lg2', 'A'), ('A_grp1', 'A'), ('A_grp2', 'A'), ('A_live', 'A'), ('A_disc', 'A'), ('B_disc', 'A')]
+   sessionGroups: [["\u2060\u2063Group A live", null], ["\u2060\u2063Group A disc", null]]
+== after_restart2 (active B)
+   B_live   wsAttr=B container=B group=None groupCont=None pending=True visible=True
+   A_warm   wsAttr=A container=A group=None groupCont=None pending=True visible=False
+   A_lg1    wsAttr=A container=A group='\u2060\u2063Group A live' groupCont=A pending=True visible=False
+   A_lg2    wsAttr=A container=A group='\u2060\u2063Group A live' groupCont=A pending=True visible=False
+   A_grp1   wsAttr=A container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=False
+   A_grp2   wsAttr=A container=A group='\u2060\u2063Group A disc' groupCont=A pending=True visible=False
+   A_live   wsAttr=A container=A group=None groupCont=None pending=True visible=False
+   A_disc   wsAttr=A container=A group=None groupCont=None pending=True visible=False
+   B_disc   wsAttr=A container=A group=None groupCont=None pending=True visible=False
+   session: [('B_live', 'B'), ('A_warm', 'A'), ('A_lg1', 'A'), ('A_lg2', 'A'), ('A_grp1', 'A'), ('A_grp2', 'A'), ('A_live', 'A'), ('A_disc', 'A'), ('B_disc', 'A')]
+   sessionGroups: [["\u2060\u2063Group A live", null], ["\u2060\u2063Group A disc", null]]
+warmup: {"value": null} A_warm after: {"discarded": true, "status": "complete", "url": "https://example.com/vbws/A_warm"}
+pre_query_in_A ['A_warm', 'A_lg1', 'A_lg2', 'A_grp1', 'A_grp2', 'A_live', 'A_disc']
+pre_query_in_B ['B_live', 'B_disc']
+r1_query_active ['A_warm', 'A_lg1', 'A_lg2', 'A_grp1', 'A_grp2', 'A_live', 'A_disc', 'B_disc']
+r1_query_other ['B_live']
+r2_query_active ['B_live']

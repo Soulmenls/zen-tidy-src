@@ -1,0 +1,31 @@
+{
+ "signed_xpi": "abb2c6a6ad8c463692fa-0.0.1.xpi",
+ "install_signed": "zen-tidy-dev@soulaymane",
+ "install_unsigned_error": "{\"error\": \"invalid web extension\", \"message\": \"Could not install Add-on: ERROR_SIGNEDSTATE_REQUIRED: The addon must be signed and isn't.\", \"stacktrace\": \"RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:14:8\\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5\\",
+ "info": {
+  "sigRequired": true,
+  "SIGNEDSTATE_SIGNED": 2,
+  "zen-tidy-dev@soulaymane": {
+   "version": "0.0.1",
+   "isActive": true,
+   "signedState": 2,
+   "appDisabled": false,
+   "warnings": [],
+   "csp": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+  },
+  "zen-tidy-spike-vd@local": null
+ },
+ "info_after_restart": {
+  "sigRequired": true,
+  "SIGNEDSTATE_SIGNED": 2,
+  "zen-tidy-dev@soulaymane": {
+   "version": "0.0.1",
+   "isActive": true,
+   "signedState": 2,
+   "appDisabled": false,
+   "warnings": [],
+   "csp": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+  },
+  "zen-tidy-spike-vd@local": null
+ }
+}

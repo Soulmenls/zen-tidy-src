@@ -1,0 +1,233 @@
+{
+ "port": 2956,
+ "install": "zen-tidy-spike-b@local",
+ "split": {
+  "ok": true,
+  "groupId": "1792905516591-38"
+ },
+ "create_inside": {
+  "value": {
+   "id": 7,
+   "index": 4,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 1172,
+   "height": 752,
+   "lastAccessed": 1792905517806,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792905516591038,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/cs/NEW",
+   "title": "NEW"
+  }
+ },
+ "state_before": {
+  "A": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "inSplitData": false,
+   "gbIndex": 2
+  },
+  "S1": {
+   "splitViewFlag": true,
+   "group": "1792905516591-38",
+   "groupIsSplit": true,
+   "inSplitData": true,
+   "gbIndex": 3
+  },
+  "NEW": {
+   "splitViewFlag": false,
+   "group": "1792905516591-38",
+   "groupIsSplit": true,
+   "inSplitData": false,
+   "gbIndex": 4
+  },
+  "S2": {
+   "splitViewFlag": true,
+   "group": "1792905516591-38",
+   "groupIsSplit": true,
+   "inSplitData": true,
+   "gbIndex": 5
+  },
+  "B": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "inSplitData": false,
+   "gbIndex": 6
+  },
+  "_splitData": [
+   {
+    "groupId": "1792905516591-38",
+    "tabs": [
+     "S1",
+     "S2"
+    ]
+   }
+  ]
+ },
+ "ext_before": [
+  [
+   "spike.html",
+   0,
+   -1
+  ],
+  [
+   "A",
+   2,
+   -1
+  ],
+  [
+   "S1",
+   3,
+   1792905516591038
+  ],
+  [
+   "NEW",
+   4,
+   1792905516591038
+  ],
+  [
+   "S2",
+   5,
+   1792905516591038
+  ],
+  [
+   "B",
+   6,
+   -1
+  ]
+ ],
+ "view_source_not_discarded": {
+  "value": {
+   "id": 8,
+   "index": 2,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": false,
+   "incognito": false,
+   "width": 1172,
+   "height": 752,
+   "lastAccessed": 1792905517818,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "about:blank",
+   "title": "view-source:https://example.com/cs/vs"
+  }
+ },
+ "state_after_restart": {
+  "A": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "inSplitData": false,
+   "gbIndex": 2
+  },
+  "S1": {
+   "splitViewFlag": true,
+   "group": "1792905516591-38",
+   "groupIsSplit": true,
+   "inSplitData": true,
+   "gbIndex": 3
+  },
+  "NEW": {
+   "splitViewFlag": true,
+   "group": "1792905516591-38",
+   "groupIsSplit": true,
+   "inSplitData": true,
+   "gbIndex": 4
+  },
+  "S2": {
+   "splitViewFlag": true,
+   "group": "1792905516591-38",
+   "groupIsSplit": true,
+   "inSplitData": true,
+   "gbIndex": 5
+  },
+  "B": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "inSplitData": false,
+   "gbIndex": 6
+  },
+  "_splitData": [
+   {
+    "groupId": "1792905516591-38",
+    "tabs": [
+     "S1",
+     "NEW",
+     "S2"
+    ]
+   }
+  ]
+ },
+ "ext_after_restart": [
+  [
+   "spike.html",
+   0,
+   -1
+  ],
+  [
+   "A",
+   2,
+   -1
+  ],
+  [
+   "S1",
+   3,
+   1792905516591038
+  ],
+  [
+   "NEW",
+   4,
+   1792905516591038
+  ],
+  [
+   "S2",
+   5,
+   1792905516591038
+  ],
+  [
+   "B",
+   6,
+   -1
+  ]
+ ]
+}

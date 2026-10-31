@@ -1,0 +1,1171 @@
+{
+ "check": 6,
+ "tag": "r1",
+ "marionette_port": 2967,
+ "rounds": 2,
+ "delay_s": 70.0,
+ "started": 1792905963.2229626,
+ "server_log": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\VC-6-server-r1.log",
+ "server_pid": 36972,
+ "server_port": 46710,
+ "install": "zen-tidy-spike@local",
+ "env": {
+  "prefs": {
+   "extensions.background.idle.timeout": {
+    "exists": false,
+    "type": 0,
+    "value": null,
+    "hasUserValue": false
+   },
+   "extensions.background.idle.enabled": {
+    "exists": false,
+    "type": 0,
+    "value": null,
+    "hasUserValue": false
+   },
+   "extensions.eventPages.enabled": {
+    "exists": true,
+    "type": 128,
+    "value": true,
+    "hasUserValue": false
+   },
+   "extensions.backgroundServiceWorker.enabled": {
+    "exists": true,
+    "type": 128,
+    "value": false,
+    "hasUserValue": false
+   },
+   "devtools.debugger.remote-enabled": {
+    "exists": true,
+    "type": 128,
+    "value": false,
+    "hasUserValue": false
+   },
+   "devtools.chrome.enabled": {
+    "exists": true,
+    "type": 128,
+    "value": false,
+    "hasUserValue": false
+   }
+  },
+  "appVersion": "1.23.4b",
+  "manifestVersion": 3,
+  "persistentBackground": false,
+  "backgroundState": "running",
+  "devtoolsAttached": false,
+  "isInAutomation": false,
+  "marionetteRunning": true,
+  "instrumented": [
+   "start-background-script",
+   "background-script-event",
+   "background-script-started",
+   "background-script-reset-idle",
+   "background-script-idle-waituntil",
+   "background-script-suspend",
+   "background-script-suspend-canceled",
+   "background-script-suspend-ignored",
+   "shutdown-background-script"
+  ]
+ },
+ "control_send": {
+  "value": {
+   "started": true
+  }
+ },
+ "control": {
+  "spikeLog": [
+   {
+    "t": 1792905966811,
+    "event": "longFetch.start",
+    "label": "r1-control",
+    "keepalive": false
+   },
+   {
+    "t": 1792905968883,
+    "event": "longFetch.done",
+    "label": "r1-control",
+    "keepalive": false,
+    "ms": 2072,
+    "status": 200,
+    "body": "{\"label\": \"r1-control\", \"delay\": 2.0, \"id\": 1}"
+   }
+  ],
+  "server": [
+   {
+    "t": 1792905966.8172688,
+    "event": "request.start",
+    "id": 1,
+    "label": "r1-control",
+    "path": "/slow?delay=2&label=r1-control",
+    "delay": 2.0,
+    "peer": [
+     "127.0.0.1",
+     46767
+    ],
+    "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+   },
+   {
+    "t": 1792905968.8829372,
+    "event": "request.responded",
+    "id": 1,
+    "label": "r1-control",
+    "after_s": 2.066
+   }
+  ],
+  "chrome_events": [
+   {
+    "t": 1792905966809,
+    "ev": "background-script-event",
+    "state": "running",
+    "data": null
+   },
+   {
+    "t": 1792905966809,
+    "ev": "start-background-script",
+    "state": "running",
+    "data": null
+   },
+   {
+    "t": 1792905966810,
+    "ev": "background-script-reset-idle",
+    "state": "running",
+    "data": {
+     "reason": "event",
+     "path": null,
+     "eventName": "runtime.onMessage",
+     "pendingListeners": null
+    }
+   }
+  ],
+  "fetch_done": true
+ },
+ "runs": [
+  {
+   "label": "r1-noKA-1",
+   "keepalive": false,
+   "wait_stopped_before": {
+    "state": "stopped",
+    "waitedMs": 25069
+   },
+   "t_send": 1792905996.8997366,
+   "send": {
+    "value": {
+     "started": true
+    }
+   },
+   "sample": {
+    "t0": 1792905996938,
+    "t1": 1792906031787,
+    "transitions": [
+     {
+      "t": 1792905996938,
+      "state": "running",
+      "hasContext": true
+     },
+     {
+      "t": 1792906027032,
+      "state": "stopped",
+      "hasContext": false
+     }
+    ],
+    "terminal": {
+     "t": 1792906026.9374049,
+     "event": "request.client_disconnected",
+     "id": 2,
+     "label": "r1-noKA-1",
+     "how": "FIN",
+     "after_s": 29.99
+    },
+    "devtoolsEver": false,
+    "finalState": "stopped"
+   },
+   "chrome_events": [
+    {
+     "t": 1792905996819,
+     "ev": "background-script-suspend",
+     "state": "suspending",
+     "data": null
+    },
+    {
+     "t": 1792905996819,
+     "ev": "shutdown-background-script",
+     "state": "suspending",
+     "data": null
+    },
+    {
+     "t": 1792905996902,
+     "ev": "background-script-event",
+     "state": "stopped",
+     "data": null
+    },
+    {
+     "t": 1792905996902,
+     "ev": "start-background-script",
+     "state": "stopped",
+     "data": null
+    },
+    {
+     "t": 1792905996932,
+     "ev": "background-script-started",
+     "state": "running",
+     "data": null
+    },
+    {
+     "t": 1792905996934,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "event",
+      "path": null,
+      "eventName": "runtime.onMessage",
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906026935,
+     "ev": "background-script-suspend",
+     "state": "suspending",
+     "data": null
+    },
+    {
+     "t": 1792906026935,
+     "ev": "shutdown-background-script",
+     "state": "suspending",
+     "data": null
+    }
+   ],
+   "spikeLog": [
+    {
+     "t": 1792905996944,
+     "event": "longFetch.start",
+     "label": "r1-noKA-1",
+     "keepalive": false
+    }
+   ],
+   "server": [
+    {
+     "t": 1792905996.9478955,
+     "event": "request.start",
+     "id": 2,
+     "label": "r1-noKA-1",
+     "path": "/slow?delay=70&label=r1-noKA-1",
+     "delay": 70.0,
+     "peer": [
+      "127.0.0.1",
+      46880
+     ],
+     "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+    },
+    {
+     "t": 1792906026.9374049,
+     "event": "request.client_disconnected",
+     "id": 2,
+     "label": "r1-noKA-1",
+     "how": "FIN",
+     "after_s": 29.99
+    }
+   ],
+   "analysis": {
+    "server_request_start_s": 0.05,
+    "server_outcome": "request.client_disconnected",
+    "server_outcome_after_request_start_s": 29.99,
+    "server_outcome_how": "FIN",
+    "bg_transitions": [
+     {
+      "at_s": 0.04,
+      "state": "running"
+     },
+     {
+      "at_s": 30.13,
+      "state": "stopped"
+     }
+    ],
+    "bg_suspending_at_s": null,
+    "bg_stopped_at_s": 30.13,
+    "fetch_done": false,
+    "fetch_done_ms": null,
+    "fetch_done_status": null,
+    "idle_resets": [
+     {
+      "at_s": 0.03,
+      "reason": "event",
+      "path": null,
+      "eventName": "runtime.onMessage",
+      "pendingListeners": null
+     }
+    ],
+    "lifecycle_events": [
+     {
+      "at_s": -0.08,
+      "ev": "background-script-suspend",
+      "state": "suspending"
+     },
+     {
+      "at_s": -0.08,
+      "ev": "shutdown-background-script",
+      "state": "suspending"
+     },
+     {
+      "at_s": 0.0,
+      "ev": "background-script-event",
+      "state": "stopped"
+     },
+     {
+      "at_s": 0.0,
+      "ev": "start-background-script",
+      "state": "stopped"
+     },
+     {
+      "at_s": 0.03,
+      "ev": "background-script-started",
+      "state": "running"
+     },
+     {
+      "at_s": 30.04,
+      "ev": "background-script-suspend",
+      "state": "suspending"
+     },
+     {
+      "at_s": 30.04,
+      "ev": "shutdown-background-script",
+      "state": "suspending"
+     }
+    ],
+    "devtools_attached_during_run": false
+   }
+  },
+  {
+   "label": "r1-KA-1",
+   "keepalive": true,
+   "wait_stopped_before": {
+    "state": "stopped",
+    "waitedMs": 0
+   },
+   "t_send": 1792906031.7956996,
+   "send": {
+    "value": {
+     "started": true
+    }
+   },
+   "sample": {
+    "t0": 1792906031807,
+    "t1": 1792906106851,
+    "transitions": [
+     {
+      "t": 1792906031807,
+      "state": "running",
+      "hasContext": true
+     }
+    ],
+    "terminal": {
+     "t": 1792906101.8351953,
+     "event": "request.responded",
+     "id": 3,
+     "label": "r1-KA-1",
+     "after_s": 70.023
+    },
+    "devtoolsEver": false,
+    "finalState": "running"
+   },
+   "chrome_events": [
+    {
+     "t": 1792906031796,
+     "ev": "background-script-event",
+     "state": "stopped",
+     "data": null
+    },
+    {
+     "t": 1792906031797,
+     "ev": "start-background-script",
+     "state": "stopped",
+     "data": null
+    },
+    {
+     "t": 1792906031802,
+     "ev": "background-script-started",
+     "state": "running",
+     "data": null
+    },
+    {
+     "t": 1792906031803,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "event",
+      "path": null,
+      "eventName": "runtime.onMessage",
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906048061,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906064305,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906080527,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906096912,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    }
+   ],
+   "spikeLog": [
+    {
+     "t": 1792906031810,
+     "event": "longFetch.start",
+     "label": "r1-KA-1",
+     "keepalive": true
+    },
+    {
+     "t": 1792906101840,
+     "event": "longFetch.done",
+     "label": "r1-KA-1",
+     "keepalive": true,
+     "ms": 70033,
+     "status": 200,
+     "body": "{\"label\": \"r1-KA-1\", \"delay\": 70.0, \"id\": 3}"
+    }
+   ],
+   "server": [
+    {
+     "t": 1792906031.8120668,
+     "event": "request.start",
+     "id": 3,
+     "label": "r1-KA-1",
+     "path": "/slow?delay=70&label=r1-KA-1",
+     "delay": 70.0,
+     "peer": [
+      "127.0.0.1",
+      47187
+     ],
+     "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+    },
+    {
+     "t": 1792906101.8351953,
+     "event": "request.responded",
+     "id": 3,
+     "label": "r1-KA-1",
+     "after_s": 70.023
+    }
+   ],
+   "analysis": {
+    "server_request_start_s": 0.02,
+    "server_outcome": "request.responded",
+    "server_outcome_after_request_start_s": 70.023,
+    "server_outcome_how": null,
+    "bg_transitions": [
+     {
+      "at_s": 0.01,
+      "state": "running"
+     }
+    ],
+    "bg_suspending_at_s": null,
+    "bg_stopped_at_s": null,
+    "fetch_done": true,
+    "fetch_done_ms": 70033,
+    "fetch_done_status": 200,
+    "idle_resets": [
+     {
+      "at_s": 0.01,
+      "reason": "event",
+      "path": null,
+      "eventName": "runtime.onMessage",
+      "pendingListeners": null
+     },
+     {
+      "at_s": 16.27,
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     },
+     {
+      "at_s": 32.51,
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     },
+     {
+      "at_s": 48.73,
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     },
+     {
+      "at_s": 65.12,
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    ],
+    "lifecycle_events": [
+     {
+      "at_s": 0.0,
+      "ev": "background-script-event",
+      "state": "stopped"
+     },
+     {
+      "at_s": 0.0,
+      "ev": "start-background-script",
+      "state": "stopped"
+     },
+     {
+      "at_s": 0.01,
+      "ev": "background-script-started",
+      "state": "running"
+     }
+    ],
+    "devtools_attached_during_run": false
+   }
+  },
+  {
+   "label": "r1-noKA-2",
+   "keepalive": false,
+   "wait_stopped_before": {
+    "state": "stopped",
+    "waitedMs": 20150
+   },
+   "t_send": 1792906127.014807,
+   "send": {
+    "value": {
+     "started": true
+    }
+   },
+   "sample": {
+    "t0": 1792906127040,
+    "t1": 1792906161677,
+    "transitions": [
+     {
+      "t": 1792906127040,
+      "state": "running",
+      "hasContext": true
+     },
+     {
+      "t": 1792906157112,
+      "state": "stopped",
+      "hasContext": false
+     }
+    ],
+    "terminal": {
+     "t": 1792906157.1129801,
+     "event": "request.client_disconnected",
+     "id": 4,
+     "label": "r1-noKA-2",
+     "how": "FIN",
+     "after_s": 30.075
+    },
+    "devtoolsEver": false,
+    "finalState": "stopped"
+   },
+   "chrome_events": [
+    {
+     "t": 1792906127011,
+     "ev": "background-script-suspend",
+     "state": "suspending",
+     "data": null
+    },
+    {
+     "t": 1792906127012,
+     "ev": "shutdown-background-script",
+     "state": "suspending",
+     "data": null
+    },
+    {
+     "t": 1792906127017,
+     "ev": "background-script-event",
+     "state": "stopped",
+     "data": null
+    },
+    {
+     "t": 1792906127017,
+     "ev": "start-background-script",
+     "state": "stopped",
+     "data": null
+    },
+    {
+     "t": 1792906127029,
+     "ev": "background-script-started",
+     "state": "running",
+     "data": null
+    },
+    {
+     "t": 1792906127033,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "event",
+      "path": null,
+      "eventName": "runtime.onMessage",
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906157111,
+     "ev": "background-script-suspend",
+     "state": "suspending",
+     "data": null
+    },
+    {
+     "t": 1792906157112,
+     "ev": "shutdown-background-script",
+     "state": "suspending",
+     "data": null
+    }
+   ],
+   "spikeLog": [
+    {
+     "t": 1792906127034,
+     "event": "longFetch.start",
+     "label": "r1-noKA-2",
+     "keepalive": false
+    }
+   ],
+   "server": [
+    {
+     "t": 1792906127.0380194,
+     "event": "request.start",
+     "id": 4,
+     "label": "r1-noKA-2",
+     "path": "/slow?delay=70&label=r1-noKA-2",
+     "delay": 70.0,
+     "peer": [
+      "127.0.0.1",
+      47866
+     ],
+     "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+    },
+    {
+     "t": 1792906157.1129801,
+     "event": "request.client_disconnected",
+     "id": 4,
+     "label": "r1-noKA-2",
+     "how": "FIN",
+     "after_s": 30.075
+    }
+   ],
+   "analysis": {
+    "server_request_start_s": 0.02,
+    "server_outcome": "request.client_disconnected",
+    "server_outcome_after_request_start_s": 30.075,
+    "server_outcome_how": "FIN",
+    "bg_transitions": [
+     {
+      "at_s": 0.03,
+      "state": "running"
+     },
+     {
+      "at_s": 30.1,
+      "state": "stopped"
+     }
+    ],
+    "bg_suspending_at_s": null,
+    "bg_stopped_at_s": 30.1,
+    "fetch_done": false,
+    "fetch_done_ms": null,
+    "fetch_done_status": null,
+    "idle_resets": [
+     {
+      "at_s": 0.02,
+      "reason": "event",
+      "path": null,
+      "eventName": "runtime.onMessage",
+      "pendingListeners": null
+     }
+    ],
+    "lifecycle_events": [
+     {
+      "at_s": -0.0,
+      "ev": "background-script-suspend",
+      "state": "suspending"
+     },
+     {
+      "at_s": -0.0,
+      "ev": "shutdown-background-script",
+      "state": "suspending"
+     },
+     {
+      "at_s": 0.0,
+      "ev": "background-script-event",
+      "state": "stopped"
+     },
+     {
+      "at_s": 0.0,
+      "ev": "start-background-script",
+      "state": "stopped"
+     },
+     {
+      "at_s": 0.01,
+      "ev": "background-script-started",
+      "state": "running"
+     },
+     {
+      "at_s": 30.1,
+      "ev": "background-script-suspend",
+      "state": "suspending"
+     },
+     {
+      "at_s": 30.1,
+      "ev": "shutdown-background-script",
+      "state": "suspending"
+     }
+    ],
+    "devtools_attached_during_run": false
+   }
+  },
+  {
+   "label": "r1-KA-2",
+   "keepalive": true,
+   "wait_stopped_before": {
+    "state": "stopped",
+    "waitedMs": 0
+   },
+   "t_send": 1792906161.6932209,
+   "send": {
+    "value": {
+     "started": true
+    }
+   },
+   "sample": {
+    "t0": 1792906161714,
+    "t1": 1792906236741,
+    "transitions": [
+     {
+      "t": 1792906161714,
+      "state": "running",
+      "hasContext": true
+     }
+    ],
+    "terminal": {
+     "t": 1792906231.7534273,
+     "event": "request.responded",
+     "id": 5,
+     "label": "r1-KA-2",
+     "after_s": 70.035
+    },
+    "devtoolsEver": false,
+    "finalState": "running"
+   },
+   "chrome_events": [
+    {
+     "t": 1792906161695,
+     "ev": "background-script-event",
+     "state": "stopped",
+     "data": null
+    },
+    {
+     "t": 1792906161695,
+     "ev": "start-background-script",
+     "state": "stopped",
+     "data": null
+    },
+    {
+     "t": 1792906161707,
+     "ev": "background-script-started",
+     "state": "running",
+     "data": null
+    },
+    {
+     "t": 1792906161709,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "event",
+      "path": null,
+      "eventName": "runtime.onMessage",
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906177947,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906194198,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906210419,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    },
+    {
+     "t": 1792906226657,
+     "ev": "background-script-reset-idle",
+     "state": "running",
+     "data": {
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    }
+   ],
+   "spikeLog": [
+    {
+     "t": 1792906161715,
+     "event": "longFetch.start",
+     "label": "r1-KA-2",
+     "keepalive": true
+    },
+    {
+     "t": 1792906231764,
+     "event": "longFetch.done",
+     "label": "r1-KA-2",
+     "keepalive": true,
+     "ms": 70046,
+     "status": 200,
+     "body": "{\"label\": \"r1-KA-2\", \"delay\": 70.0, \"id\": 5}"
+    }
+   ],
+   "server": [
+    {
+     "t": 1792906161.7184432,
+     "event": "request.start",
+     "id": 5,
+     "label": "r1-KA-2",
+     "path": "/slow?delay=70&label=r1-KA-2",
+     "delay": 70.0,
+     "peer": [
+      "127.0.0.1",
+      48113
+     ],
+     "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+    },
+    {
+     "t": 1792906231.7534273,
+     "event": "request.responded",
+     "id": 5,
+     "label": "r1-KA-2",
+     "after_s": 70.035
+    }
+   ],
+   "analysis": {
+    "server_request_start_s": 0.03,
+    "server_outcome": "request.responded",
+    "server_outcome_after_request_start_s": 70.035,
+    "server_outcome_how": null,
+    "bg_transitions": [
+     {
+      "at_s": 0.02,
+      "state": "running"
+     }
+    ],
+    "bg_suspending_at_s": null,
+    "bg_stopped_at_s": null,
+    "fetch_done": true,
+    "fetch_done_ms": 70046,
+    "fetch_done_status": 200,
+    "idle_resets": [
+     {
+      "at_s": 0.02,
+      "reason": "event",
+      "path": null,
+      "eventName": "runtime.onMessage",
+      "pendingListeners": null
+     },
+     {
+      "at_s": 16.25,
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     },
+     {
+      "at_s": 32.5,
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     },
+     {
+      "at_s": 48.73,
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     },
+     {
+      "at_s": 64.96,
+      "reason": "parentapicall",
+      "path": "storage.session.set",
+      "eventName": null,
+      "pendingListeners": null
+     }
+    ],
+    "lifecycle_events": [
+     {
+      "at_s": 0.0,
+      "ev": "background-script-event",
+      "state": "stopped"
+     },
+     {
+      "at_s": 0.0,
+      "ev": "start-background-script",
+      "state": "stopped"
+     },
+     {
+      "at_s": 0.01,
+      "ev": "background-script-started",
+      "state": "running"
+     }
+    ],
+    "devtools_attached_during_run": false
+   }
+  }
+ ],
+ "session_before_restart": {
+  "value": {
+   "keepalive": 1792906226658
+  }
+ },
+ "local_log_len_before_restart": 9,
+ "env_after_restart": {
+  "prefs": {
+   "extensions.background.idle.timeout": {
+    "exists": false,
+    "type": 0,
+    "value": null,
+    "hasUserValue": false
+   },
+   "extensions.background.idle.enabled": {
+    "exists": false,
+    "type": 0,
+    "value": null,
+    "hasUserValue": false
+   },
+   "extensions.eventPages.enabled": {
+    "exists": true,
+    "type": 128,
+    "value": true,
+    "hasUserValue": false
+   },
+   "extensions.backgroundServiceWorker.enabled": {
+    "exists": true,
+    "type": 128,
+    "value": false,
+    "hasUserValue": false
+   },
+   "devtools.debugger.remote-enabled": {
+    "exists": true,
+    "type": 128,
+    "value": false,
+    "hasUserValue": false
+   },
+   "devtools.chrome.enabled": {
+    "exists": true,
+    "type": 128,
+    "value": false,
+    "hasUserValue": false
+   }
+  },
+  "appVersion": "1.23.4b",
+  "manifestVersion": 3,
+  "persistentBackground": false,
+  "backgroundState": "running",
+  "devtoolsAttached": false,
+  "isInAutomation": false,
+  "marionetteRunning": true,
+  "instrumented": [
+   "start-background-script",
+   "background-script-event",
+   "background-script-started",
+   "background-script-reset-idle",
+   "background-script-idle-waituntil",
+   "background-script-suspend",
+   "background-script-suspend-canceled",
+   "background-script-suspend-ignored",
+   "shutdown-background-script"
+  ]
+ },
+ "session_after_restart": {
+  "value": {}
+ },
+ "local_log_len_after_restart": 10,
+ "session_probe_set": {
+  "value": null
+ },
+ "session_probe_get": {
+  "value": {
+   "probe": 1
+  }
+ },
+ "server_exit_code": 1,
+ "server_log_all": [
+  {
+   "t": 1792905963.3569434,
+   "event": "server.start",
+   "port": 46710,
+   "pid": 36972,
+   "default_delay": 70.0
+  },
+  {
+   "t": 1792905966.8172688,
+   "event": "request.start",
+   "id": 1,
+   "label": "r1-control",
+   "path": "/slow?delay=2&label=r1-control",
+   "delay": 2.0,
+   "peer": [
+    "127.0.0.1",
+    46767
+   ],
+   "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+  },
+  {
+   "t": 1792905968.8829372,
+   "event": "request.responded",
+   "id": 1,
+   "label": "r1-control",
+   "after_s": 2.066
+  },
+  {
+   "t": 1792905996.9478955,
+   "event": "request.start",
+   "id": 2,
+   "label": "r1-noKA-1",
+   "path": "/slow?delay=70&label=r1-noKA-1",
+   "delay": 70.0,
+   "peer": [
+    "127.0.0.1",
+    46880
+   ],
+   "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+  },
+  {
+   "t": 1792906026.9374049,
+   "event": "request.client_disconnected",
+   "id": 2,
+   "label": "r1-noKA-1",
+   "how": "FIN",
+   "after_s": 29.99
+  },
+  {
+   "t": 1792906031.8120668,
+   "event": "request.start",
+   "id": 3,
+   "label": "r1-KA-1",
+   "path": "/slow?delay=70&label=r1-KA-1",
+   "delay": 70.0,
+   "peer": [
+    "127.0.0.1",
+    47187
+   ],
+   "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+  },
+  {
+   "t": 1792906101.8351953,
+   "event": "request.responded",
+   "id": 3,
+   "label": "r1-KA-1",
+   "after_s": 70.023
+  },
+  {
+   "t": 1792906127.0380194,
+   "event": "request.start",
+   "id": 4,
+   "label": "r1-noKA-2",
+   "path": "/slow?delay=70&label=r1-noKA-2",
+   "delay": 70.0,
+   "peer": [
+    "127.0.0.1",
+    47866
+   ],
+   "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+  },
+  {
+   "t": 1792906157.1129801,
+   "event": "request.client_disconnected",
+   "id": 4,
+   "label": "r1-noKA-2",
+   "how": "FIN",
+   "after_s": 30.075
+  },
+  {
+   "t": 1792906161.7184432,
+   "event": "request.start",
+   "id": 5,
+   "label": "r1-KA-2",
+   "path": "/slow?delay=70&label=r1-KA-2",
+   "delay": 70.0,
+   "peer": [
+    "127.0.0.1",
+    48113
+   ],
+   "origin": "moz-extension://3f853b99-14c6-4376-a9cc-74a1bb40e71f",
+   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+  },
+  {
+   "t": 1792906231.7534273,
+   "event": "request.responded",
+   "id": 5,
+   "label": "r1-KA-2",
+   "after_s": 70.035
+  }
+ ],
+ "finished": 1792906243.9587023
+}

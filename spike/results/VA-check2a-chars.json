@@ -1,0 +1,3524 @@
+{
+ "candidates": [
+  "U+200B",
+  "U+200C",
+  "U+200D",
+  "U+2060",
+  "U+2061",
+  "U+2062",
+  "U+2063",
+  "U+2064",
+  "U+FEFF",
+  "U+180E"
+ ],
+ "per_char": {
+  "U+200B": {
+   "gid": 1792905917828071,
+   "sent": [
+    "U+200B",
+    "U+200B",
+    "U+004E",
+    "U+0061",
+    "U+200B",
+    "U+006D",
+    "U+0065",
+    "U+200B"
+   ],
+   "update_title": [
+    "U+200B",
+    "U+200B",
+    "U+004E",
+    "U+0061",
+    "U+200B",
+    "U+006D",
+    "U+0065",
+    "U+200B"
+   ],
+   "get_title": [
+    "U+200B",
+    "U+200B",
+    "U+004E",
+    "U+0061",
+    "U+200B",
+    "U+006D",
+    "U+0065",
+    "U+200B"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+200B",
+    "U+200B",
+    "U+004E",
+    "U+0061",
+    "U+200B",
+    "U+006D",
+    "U+0065",
+    "U+200B"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+200B",
+    "U+200B",
+    "U+004E",
+    "U+0061",
+    "U+200B",
+    "U+006D",
+    "U+0065",
+    "U+200B"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+200B",
+    "U+200B",
+    "U+004E",
+    "U+0061",
+    "U+200B",
+    "U+006D",
+    "U+0065",
+    "U+200B"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+200C": {
+   "gid": 1792905917842089,
+   "sent": [
+    "U+200C",
+    "U+200C",
+    "U+004E",
+    "U+0061",
+    "U+200C",
+    "U+006D",
+    "U+0065",
+    "U+200C"
+   ],
+   "update_title": [
+    "U+200C",
+    "U+200C",
+    "U+004E",
+    "U+0061",
+    "U+200C",
+    "U+006D",
+    "U+0065",
+    "U+200C"
+   ],
+   "get_title": [
+    "U+200C",
+    "U+200C",
+    "U+004E",
+    "U+0061",
+    "U+200C",
+    "U+006D",
+    "U+0065",
+    "U+200C"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+200C",
+    "U+200C",
+    "U+004E",
+    "U+0061",
+    "U+200C",
+    "U+006D",
+    "U+0065",
+    "U+200C"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+200C",
+    "U+200C",
+    "U+004E",
+    "U+0061",
+    "U+200C",
+    "U+006D",
+    "U+0065",
+    "U+200C"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+200C",
+    "U+200C",
+    "U+004E",
+    "U+0061",
+    "U+200C",
+    "U+006D",
+    "U+0065",
+    "U+200C"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+200D": {
+   "gid": 1792905917856044,
+   "sent": [
+    "U+200D",
+    "U+200D",
+    "U+004E",
+    "U+0061",
+    "U+200D",
+    "U+006D",
+    "U+0065",
+    "U+200D"
+   ],
+   "update_title": [
+    "U+200D",
+    "U+200D",
+    "U+004E",
+    "U+0061",
+    "U+200D",
+    "U+006D",
+    "U+0065",
+    "U+200D"
+   ],
+   "get_title": [
+    "U+200D",
+    "U+200D",
+    "U+004E",
+    "U+0061",
+    "U+200D",
+    "U+006D",
+    "U+0065",
+    "U+200D"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+200D",
+    "U+200D",
+    "U+004E",
+    "U+0061",
+    "U+200D",
+    "U+006D",
+    "U+0065",
+    "U+200D"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+200D",
+    "U+200D",
+    "U+004E",
+    "U+0061",
+    "U+200D",
+    "U+006D",
+    "U+0065",
+    "U+200D"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+200D",
+    "U+200D",
+    "U+004E",
+    "U+0061",
+    "U+200D",
+    "U+006D",
+    "U+0065",
+    "U+200D"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+2060": {
+   "gid": 1792905917871029,
+   "sent": [
+    "U+2060",
+    "U+2060",
+    "U+004E",
+    "U+0061",
+    "U+2060",
+    "U+006D",
+    "U+0065",
+    "U+2060"
+   ],
+   "update_title": [
+    "U+2060",
+    "U+2060",
+    "U+004E",
+    "U+0061",
+    "U+2060",
+    "U+006D",
+    "U+0065",
+    "U+2060"
+   ],
+   "get_title": [
+    "U+2060",
+    "U+2060",
+    "U+004E",
+    "U+0061",
+    "U+2060",
+    "U+006D",
+    "U+0065",
+    "U+2060"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+2060",
+    "U+2060",
+    "U+004E",
+    "U+0061",
+    "U+2060",
+    "U+006D",
+    "U+0065",
+    "U+2060"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+2060",
+    "U+2060",
+    "U+004E",
+    "U+0061",
+    "U+2060",
+    "U+006D",
+    "U+0065",
+    "U+2060"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+2060",
+    "U+2060",
+    "U+004E",
+    "U+0061",
+    "U+2060",
+    "U+006D",
+    "U+0065",
+    "U+2060"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+2061": {
+   "gid": 1792905917885040,
+   "sent": [
+    "U+2061",
+    "U+2061",
+    "U+004E",
+    "U+0061",
+    "U+2061",
+    "U+006D",
+    "U+0065",
+    "U+2061"
+   ],
+   "update_title": [
+    "U+2061",
+    "U+2061",
+    "U+004E",
+    "U+0061",
+    "U+2061",
+    "U+006D",
+    "U+0065",
+    "U+2061"
+   ],
+   "get_title": [
+    "U+2061",
+    "U+2061",
+    "U+004E",
+    "U+0061",
+    "U+2061",
+    "U+006D",
+    "U+0065",
+    "U+2061"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+2061",
+    "U+2061",
+    "U+004E",
+    "U+0061",
+    "U+2061",
+    "U+006D",
+    "U+0065",
+    "U+2061"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+2061",
+    "U+2061",
+    "U+004E",
+    "U+0061",
+    "U+2061",
+    "U+006D",
+    "U+0065",
+    "U+2061"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+2061",
+    "U+2061",
+    "U+004E",
+    "U+0061",
+    "U+2061",
+    "U+006D",
+    "U+0065",
+    "U+2061"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+2062": {
+   "gid": 1792905917898040,
+   "sent": [
+    "U+2062",
+    "U+2062",
+    "U+004E",
+    "U+0061",
+    "U+2062",
+    "U+006D",
+    "U+0065",
+    "U+2062"
+   ],
+   "update_title": [
+    "U+2062",
+    "U+2062",
+    "U+004E",
+    "U+0061",
+    "U+2062",
+    "U+006D",
+    "U+0065",
+    "U+2062"
+   ],
+   "get_title": [
+    "U+2062",
+    "U+2062",
+    "U+004E",
+    "U+0061",
+    "U+2062",
+    "U+006D",
+    "U+0065",
+    "U+2062"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+2062",
+    "U+2062",
+    "U+004E",
+    "U+0061",
+    "U+2062",
+    "U+006D",
+    "U+0065",
+    "U+2062"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+2062",
+    "U+2062",
+    "U+004E",
+    "U+0061",
+    "U+2062",
+    "U+006D",
+    "U+0065",
+    "U+2062"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+2062",
+    "U+2062",
+    "U+004E",
+    "U+0061",
+    "U+2062",
+    "U+006D",
+    "U+0065",
+    "U+2062"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+2063": {
+   "gid": 1792905917913056,
+   "sent": [
+    "U+2063",
+    "U+2063",
+    "U+004E",
+    "U+0061",
+    "U+2063",
+    "U+006D",
+    "U+0065",
+    "U+2063"
+   ],
+   "update_title": [
+    "U+2063",
+    "U+2063",
+    "U+004E",
+    "U+0061",
+    "U+2063",
+    "U+006D",
+    "U+0065",
+    "U+2063"
+   ],
+   "get_title": [
+    "U+2063",
+    "U+2063",
+    "U+004E",
+    "U+0061",
+    "U+2063",
+    "U+006D",
+    "U+0065",
+    "U+2063"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+2063",
+    "U+2063",
+    "U+004E",
+    "U+0061",
+    "U+2063",
+    "U+006D",
+    "U+0065",
+    "U+2063"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+2063",
+    "U+2063",
+    "U+004E",
+    "U+0061",
+    "U+2063",
+    "U+006D",
+    "U+0065",
+    "U+2063"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+2063",
+    "U+2063",
+    "U+004E",
+    "U+0061",
+    "U+2063",
+    "U+006D",
+    "U+0065",
+    "U+2063"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+2064": {
+   "gid": 1792905917925058,
+   "sent": [
+    "U+2064",
+    "U+2064",
+    "U+004E",
+    "U+0061",
+    "U+2064",
+    "U+006D",
+    "U+0065",
+    "U+2064"
+   ],
+   "update_title": [
+    "U+2064",
+    "U+2064",
+    "U+004E",
+    "U+0061",
+    "U+2064",
+    "U+006D",
+    "U+0065",
+    "U+2064"
+   ],
+   "get_title": [
+    "U+2064",
+    "U+2064",
+    "U+004E",
+    "U+0061",
+    "U+2064",
+    "U+006D",
+    "U+0065",
+    "U+2064"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+2064",
+    "U+2064",
+    "U+004E",
+    "U+0061",
+    "U+2064",
+    "U+006D",
+    "U+0065",
+    "U+2064"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+2064",
+    "U+2064",
+    "U+004E",
+    "U+0061",
+    "U+2064",
+    "U+006D",
+    "U+0065",
+    "U+2064"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+2064",
+    "U+2064",
+    "U+004E",
+    "U+0061",
+    "U+2064",
+    "U+006D",
+    "U+0065",
+    "U+2064"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+FEFF": {
+   "gid": 1792905917938078,
+   "sent": [
+    "U+FEFF",
+    "U+FEFF",
+    "U+004E",
+    "U+0061",
+    "U+FEFF",
+    "U+006D",
+    "U+0065",
+    "U+FEFF"
+   ],
+   "update_title": [
+    "U+FEFF",
+    "U+FEFF",
+    "U+004E",
+    "U+0061",
+    "U+FEFF",
+    "U+006D",
+    "U+0065",
+    "U+FEFF"
+   ],
+   "get_title": [
+    "U+FEFF",
+    "U+FEFF",
+    "U+004E",
+    "U+0061",
+    "U+FEFF",
+    "U+006D",
+    "U+0065",
+    "U+FEFF"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+FEFF",
+    "U+FEFF",
+    "U+004E",
+    "U+0061",
+    "U+FEFF",
+    "U+006D",
+    "U+0065",
+    "U+FEFF"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+FEFF",
+    "U+FEFF",
+    "U+004E",
+    "U+0061",
+    "U+FEFF",
+    "U+006D",
+    "U+0065",
+    "U+FEFF"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+FEFF",
+    "U+FEFF",
+    "U+004E",
+    "U+0061",
+    "U+FEFF",
+    "U+006D",
+    "U+0065",
+    "U+FEFF"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  },
+  "U+180E": {
+   "gid": 1792905917951079,
+   "sent": [
+    "U+180E",
+    "U+180E",
+    "U+004E",
+    "U+0061",
+    "U+180E",
+    "U+006D",
+    "U+0065",
+    "U+180E"
+   ],
+   "update_title": [
+    "U+180E",
+    "U+180E",
+    "U+004E",
+    "U+0061",
+    "U+180E",
+    "U+006D",
+    "U+0065",
+    "U+180E"
+   ],
+   "get_title": [
+    "U+180E",
+    "U+180E",
+    "U+004E",
+    "U+0061",
+    "U+180E",
+    "U+006D",
+    "U+0065",
+    "U+180E"
+   ],
+   "get_equal": true,
+   "dom_label": [
+    "U+180E",
+    "U+180E",
+    "U+004E",
+    "U+0061",
+    "U+180E",
+    "U+006D",
+    "U+0065",
+    "U+180E"
+   ],
+   "dom_equal": true,
+   "dom_text": [
+    "U+180E",
+    "U+180E",
+    "U+004E",
+    "U+0061",
+    "U+180E",
+    "U+006D",
+    "U+0065",
+    "U+180E"
+   ],
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0,
+   "after_get_title": [
+    "U+180E",
+    "U+180E",
+    "U+004E",
+    "U+0061",
+    "U+180E",
+    "U+006D",
+    "U+0065",
+    "U+180E"
+   ],
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "after_label_text_width": 37.866668701171875,
+   "survives": true
+  }
+ },
+ "install": "zen-tidy-spike@local",
+ "dom_before": {
+  "activeWorkspace": "{98415372-6263-4e61-b463-072658650f29}",
+  "workspaceIds": [
+   "{98415372-6263-4e61-b463-072658650f29}"
+  ],
+  "normalOrder": [
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "about:blank",
+    "pinned": false,
+    "selected": true,
+    "empty": true,
+    "tPos": null
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905918012-48",
+    "label": "​‌‍⁠⁡⁢⁣⁤﻿᠎All"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905918001-18",
+    "label": "​"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917990-48",
+    "label": "⁣⁢⁡⁤"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917980-88",
+    "label": "Name"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917951-79",
+    "label": "᠎᠎Na᠎me᠎"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917938-78",
+    "label": "﻿﻿Na﻿me﻿"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917925-58",
+    "label": "⁤⁤Na⁤me⁤"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917913-56",
+    "label": "⁣⁣Na⁣me⁣"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917898-40",
+    "label": "⁢⁢Na⁢me⁢"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917885-40",
+    "label": "⁡⁡Na⁡me⁡"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917871-29",
+    "label": "⁠⁠Na⁠me⁠"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917856-44",
+    "label": "‍‍Na‍me‍"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917842-89",
+    "label": "‌‌Na‌me‌"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917828-71",
+    "label": "​​Na​me​"
+   }
+  ],
+  "pinnedOrder": [
+   {
+    "kind": "tab",
+    "label": "Zen Tidy Spike",
+    "url": "moz-extension://4a1c2aaa-358f-4a31-9470-6731d8db94c3/spike.html",
+    "pinned": true,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   }
+  ],
+  "allTabs": [
+   {
+    "kind": "tab",
+    "label": "Zen Tidy Spike",
+    "url": "moz-extension://4a1c2aaa-358f-4a31-9470-6731d8db94c3/spike.html",
+    "pinned": true,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "about:blank",
+    "pinned": false,
+    "selected": true,
+    "empty": true,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/13",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/12",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/11",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/10",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/9",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/8",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/7",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/6",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/5",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/4",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/3",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/2",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/1",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "https://example.com/c2a/0",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   }
+  ],
+  "groups": [
+   {
+    "id": "1792905918012-48",
+    "tag": "tab-group",
+    "label": "​‌‍⁠⁡⁢⁣⁤﻿᠎All",
+    "labelHex": [
+     "U+200B",
+     "U+200C",
+     "U+200D",
+     "U+2060",
+     "U+2061",
+     "U+2062",
+     "U+2063",
+     "U+2064",
+     "U+FEFF",
+     "U+180E",
+     "U+0041",
+     "U+006C",
+     "U+006C"
+    ],
+    "labelText": "​‌‍⁠⁡⁢⁣⁤﻿᠎All",
+    "labelTextHex": [
+     "U+200B",
+     "U+200C",
+     "U+200D",
+     "U+2060",
+     "U+2061",
+     "U+2062",
+     "U+2063",
+     "U+2064",
+     "U+FEFF",
+     "U+180E",
+     "U+0041",
+     "U+006C",
+     "U+006C"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 25.01666259765625,
+    "labelBoxWidth": 33.01666259765625,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/13",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905918001-18",
+    "tag": "tab-group",
+    "label": "​",
+    "labelHex": [
+     "U+200B"
+    ],
+    "labelText": "​",
+    "labelTextHex": [
+     "U+200B"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 0,
+    "labelBoxWidth": 24,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/12",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917990-48",
+    "tag": "tab-group",
+    "label": "⁣⁢⁡⁤",
+    "labelHex": [
+     "U+2063",
+     "U+2062",
+     "U+2061",
+     "U+2064"
+    ],
+    "labelText": "⁣⁢⁡⁤",
+    "labelTextHex": [
+     "U+2063",
+     "U+2062",
+     "U+2061",
+     "U+2064"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 0,
+    "labelBoxWidth": 24,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/11",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917980-88",
+    "tag": "tab-group",
+    "label": "Name",
+    "labelHex": [
+     "U+004E",
+     "U+0061",
+     "U+006D",
+     "U+0065"
+    ],
+    "labelText": "Name",
+    "labelTextHex": [
+     "U+004E",
+     "U+0061",
+     "U+006D",
+     "U+0065"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/10",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917951-79",
+    "tag": "tab-group",
+    "label": "᠎᠎Na᠎me᠎",
+    "labelHex": [
+     "U+180E",
+     "U+180E",
+     "U+004E",
+     "U+0061",
+     "U+180E",
+     "U+006D",
+     "U+0065",
+     "U+180E"
+    ],
+    "labelText": "᠎᠎Na᠎me᠎",
+    "labelTextHex": [
+     "U+180E",
+     "U+180E",
+     "U+004E",
+     "U+0061",
+     "U+180E",
+     "U+006D",
+     "U+0065",
+     "U+180E"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/9",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917938-78",
+    "tag": "tab-group",
+    "label": "﻿﻿Na﻿me﻿",
+    "labelHex": [
+     "U+FEFF",
+     "U+FEFF",
+     "U+004E",
+     "U+0061",
+     "U+FEFF",
+     "U+006D",
+     "U+0065",
+     "U+FEFF"
+    ],
+    "labelText": "﻿﻿Na﻿me﻿",
+    "labelTextHex": [
+     "U+FEFF",
+     "U+FEFF",
+     "U+004E",
+     "U+0061",
+     "U+FEFF",
+     "U+006D",
+     "U+0065",
+     "U+FEFF"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/8",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917925-58",
+    "tag": "tab-group",
+    "label": "⁤⁤Na⁤me⁤",
+    "labelHex": [
+     "U+2064",
+     "U+2064",
+     "U+004E",
+     "U+0061",
+     "U+2064",
+     "U+006D",
+     "U+0065",
+     "U+2064"
+    ],
+    "labelText": "⁤⁤Na⁤me⁤",
+    "labelTextHex": [
+     "U+2064",
+     "U+2064",
+     "U+004E",
+     "U+0061",
+     "U+2064",
+     "U+006D",
+     "U+0065",
+     "U+2064"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/7",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917913-56",
+    "tag": "tab-group",
+    "label": "⁣⁣Na⁣me⁣",
+    "labelHex": [
+     "U+2063",
+     "U+2063",
+     "U+004E",
+     "U+0061",
+     "U+2063",
+     "U+006D",
+     "U+0065",
+     "U+2063"
+    ],
+    "labelText": "⁣⁣Na⁣me⁣",
+    "labelTextHex": [
+     "U+2063",
+     "U+2063",
+     "U+004E",
+     "U+0061",
+     "U+2063",
+     "U+006D",
+     "U+0065",
+     "U+2063"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/6",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917898-40",
+    "tag": "tab-group",
+    "label": "⁢⁢Na⁢me⁢",
+    "labelHex": [
+     "U+2062",
+     "U+2062",
+     "U+004E",
+     "U+0061",
+     "U+2062",
+     "U+006D",
+     "U+0065",
+     "U+2062"
+    ],
+    "labelText": "⁢⁢Na⁢me⁢",
+    "labelTextHex": [
+     "U+2062",
+     "U+2062",
+     "U+004E",
+     "U+0061",
+     "U+2062",
+     "U+006D",
+     "U+0065",
+     "U+2062"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/5",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917885-40",
+    "tag": "tab-group",
+    "label": "⁡⁡Na⁡me⁡",
+    "labelHex": [
+     "U+2061",
+     "U+2061",
+     "U+004E",
+     "U+0061",
+     "U+2061",
+     "U+006D",
+     "U+0065",
+     "U+2061"
+    ],
+    "labelText": "⁡⁡Na⁡me⁡",
+    "labelTextHex": [
+     "U+2061",
+     "U+2061",
+     "U+004E",
+     "U+0061",
+     "U+2061",
+     "U+006D",
+     "U+0065",
+     "U+2061"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/4",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917871-29",
+    "tag": "tab-group",
+    "label": "⁠⁠Na⁠me⁠",
+    "labelHex": [
+     "U+2060",
+     "U+2060",
+     "U+004E",
+     "U+0061",
+     "U+2060",
+     "U+006D",
+     "U+0065",
+     "U+2060"
+    ],
+    "labelText": "⁠⁠Na⁠me⁠",
+    "labelTextHex": [
+     "U+2060",
+     "U+2060",
+     "U+004E",
+     "U+0061",
+     "U+2060",
+     "U+006D",
+     "U+0065",
+     "U+2060"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/3",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917856-44",
+    "tag": "tab-group",
+    "label": "‍‍Na‍me‍",
+    "labelHex": [
+     "U+200D",
+     "U+200D",
+     "U+004E",
+     "U+0061",
+     "U+200D",
+     "U+006D",
+     "U+0065",
+     "U+200D"
+    ],
+    "labelText": "‍‍Na‍me‍",
+    "labelTextHex": [
+     "U+200D",
+     "U+200D",
+     "U+004E",
+     "U+0061",
+     "U+200D",
+     "U+006D",
+     "U+0065",
+     "U+200D"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/2",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917842-89",
+    "tag": "tab-group",
+    "label": "‌‌Na‌me‌",
+    "labelHex": [
+     "U+200C",
+     "U+200C",
+     "U+004E",
+     "U+0061",
+     "U+200C",
+     "U+006D",
+     "U+0065",
+     "U+200C"
+    ],
+    "labelText": "‌‌Na‌me‌",
+    "labelTextHex": [
+     "U+200C",
+     "U+200C",
+     "U+004E",
+     "U+0061",
+     "U+200C",
+     "U+006D",
+     "U+0065",
+     "U+200C"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/1",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917828-71",
+    "tag": "tab-group",
+    "label": "​​Na​me​",
+    "labelHex": [
+     "U+200B",
+     "U+200B",
+     "U+004E",
+     "U+0061",
+     "U+200B",
+     "U+006D",
+     "U+0065",
+     "U+200B"
+    ],
+    "labelText": "​​Na​me​",
+    "labelTextHex": [
+     "U+200B",
+     "U+200B",
+     "U+004E",
+     "U+0061",
+     "U+200B",
+     "U+006D",
+     "U+0065",
+     "U+200B"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "New Tab",
+      "url": "https://example.com/c2a/0",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   }
+  ]
+ },
+ "control_width": 37.866668701171875,
+ "specials_before": {
+  "control": {
+   "sent": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "get": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "dom": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "domText": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "width": 37.866668701171875
+  },
+  "only_invisible": {
+   "sent": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "get": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "dom": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "domText": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "width": 0
+  },
+  "empty": {
+   "sent": [],
+   "get": [],
+   "dom": [
+    "U+200B"
+   ],
+   "domText": [
+    "U+200B"
+   ],
+   "width": 0
+  },
+  "all": {
+   "sent": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "get": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "dom": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "domText": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "width": 25.01666259765625
+  }
+ },
+ "screenshot_before": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\VA-check2a-before.png",
+ "dom_after": {
+  "activeWorkspace": "{98415372-6263-4e61-b463-072658650f29}",
+  "workspaceIds": [
+   "{98415372-6263-4e61-b463-072658650f29}"
+  ],
+  "normalOrder": [
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "about:blank",
+    "pinned": false,
+    "selected": true,
+    "empty": true,
+    "tPos": null
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905918012-48",
+    "label": "​‌‍⁠⁡⁢⁣⁤﻿᠎All"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905918001-18",
+    "label": "​"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917990-48",
+    "label": "⁣⁢⁡⁤"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917980-88",
+    "label": "Name"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917951-79",
+    "label": "᠎᠎Na᠎me᠎"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917938-78",
+    "label": "﻿﻿Na﻿me﻿"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917925-58",
+    "label": "⁤⁤Na⁤me⁤"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917913-56",
+    "label": "⁣⁣Na⁣me⁣"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917898-40",
+    "label": "⁢⁢Na⁢me⁢"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917885-40",
+    "label": "⁡⁡Na⁡me⁡"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917871-29",
+    "label": "⁠⁠Na⁠me⁠"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917856-44",
+    "label": "‍‍Na‍me‍"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917842-89",
+    "label": "‌‌Na‌me‌"
+   },
+   {
+    "kind": "group",
+    "tag": "tab-group",
+    "id": "1792905917828-71",
+    "label": "​​Na​me​"
+   }
+  ],
+  "pinnedOrder": [
+   {
+    "kind": "tab",
+    "label": "Zen Tidy Spike",
+    "url": "moz-extension://4a1c2aaa-358f-4a31-9470-6731d8db94c3/spike.html",
+    "pinned": true,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   }
+  ],
+  "allTabs": [
+   {
+    "kind": "tab",
+    "label": "Zen Tidy Spike",
+    "url": "moz-extension://4a1c2aaa-358f-4a31-9470-6731d8db94c3/spike.html",
+    "pinned": true,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "New Tab",
+    "url": "about:blank",
+    "pinned": false,
+    "selected": true,
+    "empty": true,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-13",
+    "url": "https://example.com/c2a/13",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-12",
+    "url": "https://example.com/c2a/12",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-11",
+    "url": "https://example.com/c2a/11",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-10",
+    "url": "https://example.com/c2a/10",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-9",
+    "url": "https://example.com/c2a/9",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-8",
+    "url": "https://example.com/c2a/8",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-7",
+    "url": "https://example.com/c2a/7",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-6",
+    "url": "https://example.com/c2a/6",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-5",
+    "url": "https://example.com/c2a/5",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-4",
+    "url": "https://example.com/c2a/4",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-3",
+    "url": "https://example.com/c2a/3",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-2",
+    "url": "https://example.com/c2a/2",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-1",
+    "url": "https://example.com/c2a/1",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   },
+   {
+    "kind": "tab",
+    "label": "c2a-0",
+    "url": "https://example.com/c2a/0",
+    "pinned": false,
+    "selected": false,
+    "empty": false,
+    "tPos": null
+   }
+  ],
+  "groups": [
+   {
+    "id": "1792905918012-48",
+    "tag": "tab-group",
+    "label": "​‌‍⁠⁡⁢⁣⁤﻿᠎All",
+    "labelHex": [
+     "U+200B",
+     "U+200C",
+     "U+200D",
+     "U+2060",
+     "U+2061",
+     "U+2062",
+     "U+2063",
+     "U+2064",
+     "U+FEFF",
+     "U+180E",
+     "U+0041",
+     "U+006C",
+     "U+006C"
+    ],
+    "labelText": "​‌‍⁠⁡⁢⁣⁤﻿᠎All",
+    "labelTextHex": [
+     "U+200B",
+     "U+200C",
+     "U+200D",
+     "U+2060",
+     "U+2061",
+     "U+2062",
+     "U+2063",
+     "U+2064",
+     "U+FEFF",
+     "U+180E",
+     "U+0041",
+     "U+006C",
+     "U+006C"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 25.01666259765625,
+    "labelBoxWidth": 33.01666259765625,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-13",
+      "url": "https://example.com/c2a/13",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905918001-18",
+    "tag": "tab-group",
+    "label": "​",
+    "labelHex": [
+     "U+200B"
+    ],
+    "labelText": "​",
+    "labelTextHex": [
+     "U+200B"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 0,
+    "labelBoxWidth": 24,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-12",
+      "url": "https://example.com/c2a/12",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917990-48",
+    "tag": "tab-group",
+    "label": "⁣⁢⁡⁤",
+    "labelHex": [
+     "U+2063",
+     "U+2062",
+     "U+2061",
+     "U+2064"
+    ],
+    "labelText": "⁣⁢⁡⁤",
+    "labelTextHex": [
+     "U+2063",
+     "U+2062",
+     "U+2061",
+     "U+2064"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 0,
+    "labelBoxWidth": 24,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-11",
+      "url": "https://example.com/c2a/11",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917980-88",
+    "tag": "tab-group",
+    "label": "Name",
+    "labelHex": [
+     "U+004E",
+     "U+0061",
+     "U+006D",
+     "U+0065"
+    ],
+    "labelText": "Name",
+    "labelTextHex": [
+     "U+004E",
+     "U+0061",
+     "U+006D",
+     "U+0065"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-10",
+      "url": "https://example.com/c2a/10",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917951-79",
+    "tag": "tab-group",
+    "label": "᠎᠎Na᠎me᠎",
+    "labelHex": [
+     "U+180E",
+     "U+180E",
+     "U+004E",
+     "U+0061",
+     "U+180E",
+     "U+006D",
+     "U+0065",
+     "U+180E"
+    ],
+    "labelText": "᠎᠎Na᠎me᠎",
+    "labelTextHex": [
+     "U+180E",
+     "U+180E",
+     "U+004E",
+     "U+0061",
+     "U+180E",
+     "U+006D",
+     "U+0065",
+     "U+180E"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-9",
+      "url": "https://example.com/c2a/9",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917938-78",
+    "tag": "tab-group",
+    "label": "﻿﻿Na﻿me﻿",
+    "labelHex": [
+     "U+FEFF",
+     "U+FEFF",
+     "U+004E",
+     "U+0061",
+     "U+FEFF",
+     "U+006D",
+     "U+0065",
+     "U+FEFF"
+    ],
+    "labelText": "﻿﻿Na﻿me﻿",
+    "labelTextHex": [
+     "U+FEFF",
+     "U+FEFF",
+     "U+004E",
+     "U+0061",
+     "U+FEFF",
+     "U+006D",
+     "U+0065",
+     "U+FEFF"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-8",
+      "url": "https://example.com/c2a/8",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917925-58",
+    "tag": "tab-group",
+    "label": "⁤⁤Na⁤me⁤",
+    "labelHex": [
+     "U+2064",
+     "U+2064",
+     "U+004E",
+     "U+0061",
+     "U+2064",
+     "U+006D",
+     "U+0065",
+     "U+2064"
+    ],
+    "labelText": "⁤⁤Na⁤me⁤",
+    "labelTextHex": [
+     "U+2064",
+     "U+2064",
+     "U+004E",
+     "U+0061",
+     "U+2064",
+     "U+006D",
+     "U+0065",
+     "U+2064"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-7",
+      "url": "https://example.com/c2a/7",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917913-56",
+    "tag": "tab-group",
+    "label": "⁣⁣Na⁣me⁣",
+    "labelHex": [
+     "U+2063",
+     "U+2063",
+     "U+004E",
+     "U+0061",
+     "U+2063",
+     "U+006D",
+     "U+0065",
+     "U+2063"
+    ],
+    "labelText": "⁣⁣Na⁣me⁣",
+    "labelTextHex": [
+     "U+2063",
+     "U+2063",
+     "U+004E",
+     "U+0061",
+     "U+2063",
+     "U+006D",
+     "U+0065",
+     "U+2063"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-6",
+      "url": "https://example.com/c2a/6",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917898-40",
+    "tag": "tab-group",
+    "label": "⁢⁢Na⁢me⁢",
+    "labelHex": [
+     "U+2062",
+     "U+2062",
+     "U+004E",
+     "U+0061",
+     "U+2062",
+     "U+006D",
+     "U+0065",
+     "U+2062"
+    ],
+    "labelText": "⁢⁢Na⁢me⁢",
+    "labelTextHex": [
+     "U+2062",
+     "U+2062",
+     "U+004E",
+     "U+0061",
+     "U+2062",
+     "U+006D",
+     "U+0065",
+     "U+2062"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-5",
+      "url": "https://example.com/c2a/5",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917885-40",
+    "tag": "tab-group",
+    "label": "⁡⁡Na⁡me⁡",
+    "labelHex": [
+     "U+2061",
+     "U+2061",
+     "U+004E",
+     "U+0061",
+     "U+2061",
+     "U+006D",
+     "U+0065",
+     "U+2061"
+    ],
+    "labelText": "⁡⁡Na⁡me⁡",
+    "labelTextHex": [
+     "U+2061",
+     "U+2061",
+     "U+004E",
+     "U+0061",
+     "U+2061",
+     "U+006D",
+     "U+0065",
+     "U+2061"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-4",
+      "url": "https://example.com/c2a/4",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917871-29",
+    "tag": "tab-group",
+    "label": "⁠⁠Na⁠me⁠",
+    "labelHex": [
+     "U+2060",
+     "U+2060",
+     "U+004E",
+     "U+0061",
+     "U+2060",
+     "U+006D",
+     "U+0065",
+     "U+2060"
+    ],
+    "labelText": "⁠⁠Na⁠me⁠",
+    "labelTextHex": [
+     "U+2060",
+     "U+2060",
+     "U+004E",
+     "U+0061",
+     "U+2060",
+     "U+006D",
+     "U+0065",
+     "U+2060"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-3",
+      "url": "https://example.com/c2a/3",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917856-44",
+    "tag": "tab-group",
+    "label": "‍‍Na‍me‍",
+    "labelHex": [
+     "U+200D",
+     "U+200D",
+     "U+004E",
+     "U+0061",
+     "U+200D",
+     "U+006D",
+     "U+0065",
+     "U+200D"
+    ],
+    "labelText": "‍‍Na‍me‍",
+    "labelTextHex": [
+     "U+200D",
+     "U+200D",
+     "U+004E",
+     "U+0061",
+     "U+200D",
+     "U+006D",
+     "U+0065",
+     "U+200D"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-2",
+      "url": "https://example.com/c2a/2",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917842-89",
+    "tag": "tab-group",
+    "label": "‌‌Na‌me‌",
+    "labelHex": [
+     "U+200C",
+     "U+200C",
+     "U+004E",
+     "U+0061",
+     "U+200C",
+     "U+006D",
+     "U+0065",
+     "U+200C"
+    ],
+    "labelText": "‌‌Na‌me‌",
+    "labelTextHex": [
+     "U+200C",
+     "U+200C",
+     "U+004E",
+     "U+0061",
+     "U+200C",
+     "U+006D",
+     "U+0065",
+     "U+200C"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-1",
+      "url": "https://example.com/c2a/1",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   },
+   {
+    "id": "1792905917828-71",
+    "tag": "tab-group",
+    "label": "​​Na​me​",
+    "labelHex": [
+     "U+200B",
+     "U+200B",
+     "U+004E",
+     "U+0061",
+     "U+200B",
+     "U+006D",
+     "U+0065",
+     "U+200B"
+    ],
+    "labelText": "​​Na​me​",
+    "labelTextHex": [
+     "U+200B",
+     "U+200B",
+     "U+004E",
+     "U+0061",
+     "U+200B",
+     "U+006D",
+     "U+0065",
+     "U+200B"
+    ],
+    "labelValue": null,
+    "labelTextWidth": 37.866668701171875,
+    "labelBoxWidth": 45.866668701171875,
+    "collapsedAttr": false,
+    "collapsedProp": false,
+    "pinnedProp": false,
+    "pinnedAttr": false,
+    "splitView": false,
+    "isZenFolder": false,
+    "workspaceAttr": null,
+    "where": "normal-section",
+    "workspaceEl": "{98415372-6263-4e61-b463-072658650f29}",
+    "parentTag": "vbox",
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "groupDisplay": "contents",
+    "containerDisplay": "block",
+    "tabs": [
+     {
+      "label": "c2a-0",
+      "url": "https://example.com/c2a/0",
+      "pinned": false,
+      "selected": false,
+      "empty": false,
+      "display": "flex",
+      "visibility": "visible",
+      "height": 40,
+      "width": 167
+     }
+    ]
+   }
+  ]
+ },
+ "specials_after": {
+  "control": {
+   "get": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "dom": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ]
+  },
+  "only_invisible": {
+   "get": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "dom": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ]
+  },
+  "empty": {
+   "get": [],
+   "dom": [
+    "U+200B"
+   ]
+  },
+  "all": {
+   "get": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "dom": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ]
+  }
+ },
+ "screenshot_after": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\VA-check2a-after.png",
+ "log": [
+  {
+   "t": 1792905917323,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792905917326,
+   "event": "onInstalled",
+   "reason": "install",
+   "flushed": 0
+  },
+  {
+   "t": 1792905917830,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917828071,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917830,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792905917828071
+  },
+  {
+   "t": 1792905917838,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917828071,
+   "title": "​​Na​me​",
+   "collapsed": false,
+   "sinceBg": 515,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917844,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917842089,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917845,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 4,
+   "groupId": 1792905917842089
+  },
+  {
+   "t": 1792905917851,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917842089,
+   "title": "‌‌Na‌me‌",
+   "collapsed": false,
+   "sinceBg": 528,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917858,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917856044,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917858,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 5,
+   "groupId": 1792905917856044
+  },
+  {
+   "t": 1792905917866,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917856044,
+   "title": "‍‍Na‍me‍",
+   "collapsed": false,
+   "sinceBg": 543,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917873,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917871029,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917873,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 6,
+   "groupId": 1792905917871029
+  },
+  {
+   "t": 1792905917879,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917871029,
+   "title": "⁠⁠Na⁠me⁠",
+   "collapsed": false,
+   "sinceBg": 556,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917886,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917885040,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917887,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 7,
+   "groupId": 1792905917885040
+  },
+  {
+   "t": 1792905917891,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917885040,
+   "title": "⁡⁡Na⁡me⁡",
+   "collapsed": false,
+   "sinceBg": 568,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917899,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917898040,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917899,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 8,
+   "groupId": 1792905917898040
+  },
+  {
+   "t": 1792905917906,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917898040,
+   "title": "⁢⁢Na⁢me⁢",
+   "collapsed": false,
+   "sinceBg": 583,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917915,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917913056,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917915,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 9,
+   "groupId": 1792905917913056
+  },
+  {
+   "t": 1792905917921,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917913056,
+   "title": "⁣⁣Na⁣me⁣",
+   "collapsed": false,
+   "sinceBg": 598,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917927,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917925058,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917927,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 10,
+   "groupId": 1792905917925058
+  },
+  {
+   "t": 1792905917930,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917925058,
+   "title": "⁤⁤Na⁤me⁤",
+   "collapsed": false,
+   "sinceBg": 607,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917940,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917938078,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917940,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 11,
+   "groupId": 1792905917938078
+  },
+  {
+   "t": 1792905917946,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917938078,
+   "title": "﻿﻿Na﻿me﻿",
+   "collapsed": false,
+   "sinceBg": 623,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917953,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917951079,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917954,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 12,
+   "groupId": 1792905917951079
+  },
+  {
+   "t": 1792905917975,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917951079,
+   "title": "᠎᠎Na᠎me᠎",
+   "collapsed": false,
+   "sinceBg": 652,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917981,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917980088,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917982,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 13,
+   "groupId": 1792905917980088
+  },
+  {
+   "t": 1792905917988,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917980088,
+   "title": "Name",
+   "collapsed": false,
+   "sinceBg": 665,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905917991,
+   "event": "tabGroups.onCreated",
+   "id": 1792905917990048,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905917992,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 14,
+   "groupId": 1792905917990048
+  },
+  {
+   "t": 1792905917999,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905917990048,
+   "title": "⁣⁢⁡⁤",
+   "collapsed": false,
+   "sinceBg": 676,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905918003,
+   "event": "tabGroups.onCreated",
+   "id": 1792905918001018,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905918003,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 15,
+   "groupId": 1792905918001018
+  },
+  {
+   "t": 1792905918013,
+   "event": "tabGroups.onCreated",
+   "id": 1792905918012048,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905918013,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 16,
+   "groupId": 1792905918012048
+  },
+  {
+   "t": 1792905918020,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905918012048,
+   "title": "​‌‍⁠⁡⁢⁣⁤﻿᠎All",
+   "collapsed": false,
+   "sinceBg": 697,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905918012048,
+   "title": "​‌‍⁠⁡⁢⁣⁤﻿᠎All",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905918001018,
+   "title": "",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917990048,
+   "title": "⁣⁢⁡⁤",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917980088,
+   "title": "Name",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917951079,
+   "title": "᠎᠎Na᠎me᠎",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917938078,
+   "title": "﻿﻿Na﻿me﻿",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917925058,
+   "title": "⁤⁤Na⁤me⁤",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917913056,
+   "title": "⁣⁣Na⁣me⁣",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917898040,
+   "title": "⁢⁢Na⁢me⁢",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917885040,
+   "title": "⁡⁡Na⁡me⁡",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918227,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917871029,
+   "title": "⁠⁠Na⁠me⁠",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918228,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917856044,
+   "title": "‍‍Na‍me‍",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918228,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917842089,
+   "title": "‌‌Na‌me‌",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905918228,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905917828071,
+   "title": "​​Na​me​",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905921330,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792905921339,
+   "event": "onStartup",
+   "sinceBg": 14,
+   "droppedBuffered": []
+  },
+  {
+   "t": 1792905921358,
+   "event": "startup.mode",
+   "mode": "off",
+   "sinceBg": 33,
+   "groups": [
+    {
+     "id": 1792905918012048,
+     "title": "​‌‍⁠⁡⁢⁣⁤﻿᠎All",
+     "collapsed": false
+    },
+    {
+     "id": 1792905918001018,
+     "title": "",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917990048,
+     "title": "⁣⁢⁡⁤",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917980088,
+     "title": "Name",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917951079,
+     "title": "᠎᠎Na᠎me᠎",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917938078,
+     "title": "﻿﻿Na﻿me﻿",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917925058,
+     "title": "⁤⁤Na⁤me⁤",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917913056,
+     "title": "⁣⁣Na⁣me⁣",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917898040,
+     "title": "⁢⁢Na⁢me⁢",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917885040,
+     "title": "⁡⁡Na⁡me⁡",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917871029,
+     "title": "⁠⁠Na⁠me⁠",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917856044,
+     "title": "‍‍Na‍me‍",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917842089,
+     "title": "‌‌Na‌me‌",
+     "collapsed": false
+    },
+    {
+     "id": 1792905917828071,
+     "title": "​​Na​me​",
+     "collapsed": false
+    }
+   ]
+  }
+ ],
+ "surviving": [
+  "U+200B",
+  "U+200C",
+  "U+200D",
+  "U+2060",
+  "U+2061",
+  "U+2062",
+  "U+2063",
+  "U+2064",
+  "U+FEFF",
+  "U+180E"
+ ]
+}

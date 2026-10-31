@@ -1,0 +1,88 @@
+/* Zen Tidy tokens: literal copies of Zen 1.23.4b values. See notes/zen-design-system.md. */
+:root {
+  color-scheme: light dark;
+  --zt-squircle: 1;                                   /* 1 = no corner-shape support */
+
+  /* Accent: fallback = Zen's resolved values for the Windows default accent #0078d4 */
+  --zt-zen-primary: light-dark(#1193fb, #022846);
+  --zt-branding-bg: light-dark(#e2e2e2, #101010);
+  --zt-branding-reverse: light-dark(#101010, #e2e2e2);
+  --zt-accent-primary: color-mix(in srgb, var(--zt-zen-primary) 40%, var(--zt-branding-reverse));
+  --zt-accent-primary-hover: color-mix(in srgb, var(--zt-zen-primary) 45%, var(--zt-branding-reverse));
+  --zt-accent-primary-active: color-mix(in srgb, var(--zt-zen-primary) 50%, var(--zt-branding-reverse));
+  --zt-on-accent-primary: var(--zt-branding-bg);
+  --zt-focus: var(--zt-accent-primary);
+  --zt-themed-icon-fill: light-dark(
+    color-mix(in srgb, var(--zt-zen-primary) 50%, black),
+    color-mix(in srgb, color-mix(in srgb, var(--zt-zen-primary) 20%, #101010) 15%, #ebebeb));
+  --zt-notice-bg: color-mix(in srgb, var(--zt-zen-primary) 5%, light-dark(white, black));
+  --zt-loading: color-mix(in srgb, var(--zt-zen-primary), light-dark(rgba(0,0,0,.5), rgba(255,255,255,.5)) 70%);
+
+  /* Text */
+  --zt-text: light-dark(#000000, #fbfbfe);
+  --zt-button-text: light-dark(#15141a, #fbfbfe);
+  --zt-text-secondary: color-mix(in srgb, currentColor 60%, transparent);
+  --zt-text-disabled: color-mix(in srgb, currentColor 40%, transparent);
+
+  /* Surfaces, fills, lines */
+  --zt-bg: light-dark(#f4f4f4, #1f1f1f);
+  --zt-popover-bg: light-dark(#f4f4f4, #1f1f1f);
+  --zt-popover-border: light-dark(rgb(240,240,244), rgb(82,82,94));
+  --zt-shadow-panel: rgba(0,0,0,.24) 0 3px 8px;
+  --zt-field-bg: light-dark(rgba(0,0,0,.05), rgba(255,255,255,.05));
+  --zt-fill-hover: light-dark(rgba(0,0,0,.1), rgba(255,255,255,.1));
+  --zt-fill-button: color-mix(in srgb, currentColor 10%, transparent);
+  --zt-fill-button-hover: color-mix(in srgb, currentColor 5%, transparent);
+  --zt-fill-button-active: color-mix(in srgb, currentColor 10%, transparent);
+  --zt-toolbarbutton-hover: color-mix(in srgb, var(--zt-branding-reverse) 7%, transparent);
+  --zt-toolbarbutton-active: color-mix(in srgb, var(--zt-branding-reverse) 10%, transparent);
+  --zt-menu-hover: light-dark(rgba(0,0,0,.118), rgba(255,255,255,.118));
+  --zt-separator: color-mix(in srgb, currentColor 15%, transparent);
+  --zt-footer-border: color-mix(in srgb, currentColor 6%, transparent);
+  --zt-scroll-edge: light-dark(rgba(0,0,0,.08), rgba(255,255,255,.08));
+  --zt-pill-bg: light-dark(color-mix(in oklch, currentColor 8%, transparent),
+                           color-mix(in oklch, currentColor 15%, transparent));
+  --zt-dashed-ring: 1px dashed light-dark(rgba(0,0,0,.5), rgba(255,255,255,.5));
+  --zt-notice-outline: 1px solid light-dark(transparent, rgba(255,255,255,.1));
+  --zt-notice-shadow: 0 0 6px light-dark(rgba(0,0,0,.1), rgba(0,0,0,.3));
+  --zt-loading-track: light-dark(rgba(0,0,0,.1), rgba(255,255,255,.1));
+
+  /* Radii */
+  --zt-radius-xsmall: calc(2px * var(--zt-squircle));
+  --zt-radius-small: calc(4px * var(--zt-squircle));
+  --zt-radius-medium: calc(8px * var(--zt-squircle));
+  --zt-radius-large: calc(16px * var(--zt-squircle));
+  --zt-radius-button: 8px;
+  --zt-radius-row: 6px;
+  --zt-radius-cell: 4px;
+  --zt-radius-popover: 8px;
+  --zt-radius-pill: 9999px;
+
+  /* Type, space, size */
+  --zt-font-size: 12px;
+  --zt-gutter: 8px;
+  --zt-gap: 8px;
+  --zt-icon-size: 16px;
+  --zt-control-height: 32px;
+  --zt-icon-button: 22px;
+  --zt-row-height: 40px;
+}
+
+/* Zen's main-window accent for the default Space theme, derived from the OS accent exactly as
+   ZenGradientGenerator.getNativeAccentColor + getAccentColorForUI do (§3). */
+@supports (color: hsl(from red h s l)) {
+  :root {
+    --zt-zen-primary: light-dark(
+      hsl(from color-mix(in srgb, AccentColor 50%, rgb(240 240 244)) h min(calc(s + 30), 100) calc(l * 0.4 + 25.2)),
+      color-mix(in srgb, color-mix(in srgb, AccentColor 80%, rgb(23 23 26)) 40%, black));
+  }
+}
+
+/* Squircles, as zen-theme.css:361-369. data-os is set from runtime.getPlatformInfo(). */
+@supports (corner-shape: superellipse(2)) {
+  :root { --zt-squircle: 1.3; }
+  :root[data-os="win"] { --zt-squircle: 2.3; }
+  *, *::before { corner-shape: superellipse(var(--zt-squircle)); }
+  .zt-round, .badge, .zt-loading, .zt-loading::before, .popover,
+  input[type="checkbox"] { corner-shape: round; }
+}

@@ -1,0 +1,272 @@
+== setup {"seconds": 2.8, "ntabs": 251}
+== A1_collapsed {"bad": [], "dom": {"0": [true, 0, 12, 0], "1": [true, 0, 12, 0], "2": [true, 1, 11, 1], "3": [true, 0, 12, 0], "4": [true, 0, 12, 0], "5": [true, 0, 12, 0], "6": [true, 0, 12, 0], "7": [true, 0, 12, 0], "8": [true, 0, 12, 0], "9": [true, 0, 12, 0], "10": [true, 0, 12, 0], "11": [true, 0, 12, 0], "12": [true, 0, 12, 0], "13": [true, 0, 12, 0], "14": [true, 0, 12, 0], "15": [false, 12, 0, 0], "16": [false, 12, 0, 0], "17": [false, 12, 0, 0], "18": [false, 12, 0, 0], "19": [false, 12, 0, 0]}}
+== A2_session_before {"session": [[{"id": "1792906161595-15", "collapsed": false}, {"id": "1792906161552-37", "collapsed": false}, {"id": "1792906161515-22", "collapsed": false}, {"id": "1792906161466-70", "collapsed": false}, {"id": "1792906161429-86", "collapsed": false}, {"id": "1792906161391-95", "collapsed": true}, {"id": "1792906161339-82", "collapsed": true}, {"id": "1792906161289-4", "collapsed": true}, {"id": "1792906161250-48", "collapsed": true}, {"id": "1792906161211-66", "collapsed": true}, {"id": "1792906161174-37", "collapsed": true}, {"id": "1792906161130-68", "collapsed": true}, {"id": "1792906161086-92", "collapsed": true}, {"id": "1792906161041-44", "collapsed": true}, {"id": "1792906160991-25", "collapsed": true}, {"id": "1792906160954-92", "collapsed": true}, {"id": "1792906160916-50", "collapsed": true}, {"id": "1792906160879-84", "collapsed": true}, {"id": "1792906160839-52", "collapsed": true}, {"id": "1792906160796-6", "collapsed": true}]]}
+== A3_after_restart_mode_off {"n_collapsed_api": 0, "n_expanded_api": 20, "dom": {"0": [false, 12, 0, 0], "1": [false, 12, 0, 0], "2": [false, 12, 0, 0], "3": [false, 12, 0, 0], "4": [false, 12, 0, 0], "5": [false, 12, 0, 0], "6": [false, 12, 0, 0], "7": [false, 12, 0, 0], "8": [false, 12, 0, 0], "9": [false, 12, 0, 0], "10": [false, 12, 0, 0], "11": [false, 12, 0, 0], "12": [false, 12, 0, 0], "13": [false, 12, 0, 0], "14": [false, 12, 0, 0], "15": [false, 12, 0, 0], "16": [false, 12, 0, 0], "17": [false, 12, 0, 0], "18": [false, 12, 0, 0], "19": [false, 12, 0, 0]}, "session": [[{"id": "1792906161595-15", "collapsed": false}, {"id": "1792906161552-37", "collapsed": false}, {"id": "1792906161515-22", "collapsed": false}, {"id": "1792906161466-70", "collapsed": false}, {"id": "1792906161429-86", "collapsed": false}, {"id": "1792906161391-95", "collapsed": false}, {"id": "1792906161339-82", "collapsed": false}, {"id": "1792906161289-4", "collapsed": false}, {"id": "1792906161250-48", "collapsed": false}, {"id": "1792906161211-66", "collapsed": false}, {"id": "1792906161174-37", "collapsed": false}, {"id": "1792906161130-68", "collapsed": false}, {"id": "1792906161086-92", "collapsed": false}, {"id": "1792906161041-44", "collapsed": false}, {"id": "1792906160991-25", "collapsed": false}, {"id": "1792906160954-92", "collapsed": false}, {"id": "1792906160916-50", "collapsed": false}, {"id": "1792906160879-84", "collapsed": false}, {"id": "1792906160839-52", "collapsed": false}, {"id": "1792906160796-6", "colla
+== B1_collapsed_saved {"saved_count": 15, "saved_true": 15, "bad": []}
+== B1_early {"bad": [], "dom": {"0": [true, 0, 12, 0], "1": [true, 0, 12, 0], "2": [true, 0, 12, 0], "3": [true, 0, 12, 0], "4": [true, 0, 12, 0], "5": [true, 0, 12, 0], "6": [true, 0, 12, 0], "7": [true, 0, 12, 0], "8": [true, 0, 12, 0], "9": [true, 0, 12, 0], "10": [true, 0, 12, 0], "11": [true, 0, 12, 0], "12": [true, 0, 12, 0], "13": [true, 0, 12, 0], "14": [true, 0, 12, 0], "15": [false, 12, 0, 0], "16": [false, 12, 0, 0], "17": [false, 12, 0, 0], "18": [false, 12, 0, 0], "19": [false, 12, 0, 0]}}
+== B1_settled {"bad": [], "saved_true": 15, "saved_count": 15}
+== B2_early {"bad": [], "dom": {"0": [true, 0, 12, 0], "1": [true, 0, 12, 0], "2": [true, 0, 12, 0], "3": [true, 0, 12, 0], "4": [true, 0, 12, 0], "5": [true, 0, 12, 0], "6": [true, 0, 12, 0], "7": [true, 0, 12, 0], "8": [true, 0, 12, 0], "9": [true, 0, 12, 0], "10": [true, 0, 12, 0], "11": [true, 0, 12, 0], "12": [true, 0, 12, 0], "13": [true, 0, 12, 0], "14": [true, 0, 12, 0], "15": [false, 12, 0, 0], "16": [false, 12, 0, 0], "17": [false, 12, 0, 0], "18": [false, 12, 0, 0], "19": [false, 12, 0, 0]}}
+== B2_settled {"bad": [], "saved_true": 15, "saved_count": 15}
+[
+ {
+  "first": {
+   "event": "onInstalled",
+   "sinceBg": null,
+   "droppedBuffered": null,
+   "reason": "install"
+  },
+  "startup_snapshot_collapsed": null,
+  "startup_snapshot_sinceBg": null,
+  "onUpdated_unsuppressed_collapsed_false": [
+   [
+    1792906160796006,
+    2431,
+    "running"
+   ],
+   [
+    1792906160839052,
+    2475,
+    "running"
+   ],
+   [
+    1792906160879084,
+    2511,
+    "running"
+   ],
+   [
+    1792906160916050,
+    2550,
+    "running"
+   ],
+   [
+    1792906160954092,
+    2587,
+    "running"
+   ],
+   [
+    1792906160991025,
+    2634,
+    "running"
+   ],
+   [
+    1792906161041044,
+    2681,
+    "running"
+   ],
+   [
+    1792906161086092,
+    2724,
+    "running"
+   ],
+   [
+    1792906161130068,
+    2768,
+    "running"
+   ],
+   [
+    1792906161174037,
+    2808,
+    "running"
+   ],
+   [
+    1792906161211066,
+    2844,
+    "running"
+   ],
+   [
+    1792906161250048,
+    2884,
+    "running"
+   ],
+   [
+    1792906161289004,
+    2933,
+    "running"
+   ],
+   [
+    1792906161339082,
+    2987,
+    "running"
+   ],
+   [
+    1792906161391095,
+    3025,
+    "running"
+   ],
+   [
+    1792906161429086,
+    3061,
+    "running"
+   ],
+   [
+    1792906161466070,
+    3110,
+    "running"
+   ],
+   [
+    1792906161515022,
+    3148,
+    "running"
+   ],
+   [
+    1792906161552037,
+    3185,
+    "running"
+   ],
+   [
+    1792906161595015,
+    3245,
+    "running"
+   ]
+  ],
+  "onUpdated_total": 35,
+  "onUpdated_before_startup": [],
+  "onRemoved": [
+   {
+    "isWindowClosing": true
+   },
+   {
+    "isWindowClosing": true
+   }
+  ],
+  "onRemoved_count": 5,
+  "applies": []
+ },
+ {
+  "first": {
+   "event": "onStartup",
+   "sinceBg": 107,
+   "droppedBuffered": [],
+   "reason": null
+  },
+  "startup_snapshot_collapsed": 0,
+  "startup_snapshot_sinceBg": 111,
+  "onUpdated_unsuppressed_collapsed_false": [],
+  "onUpdated_total": 15,
+  "onUpdated_before_startup": [],
+  "onRemoved": [
+   {
+    "isWindowClosing": true
+   },
+   {
+    "isWindowClosing": true
+   }
+  ],
+  "onRemoved_count": 4,
+  "applies": []
+ },
+ {
+  "first": {
+   "event": "onStartup",
+   "sinceBg": 13,
+   "droppedBuffered": [],
+   "reason": null
+  },
+  "startup_snapshot_collapsed": 0,
+  "startup_snapshot_sinceBg": 28,
+  "onUpdated_unsuppressed_collapsed_false": [],
+  "onUpdated_total": 15,
+  "onUpdated_before_startup": [],
+  "onRemoved": [
+   {
+    "isWindowClosing": true
+   },
+   {
+    "isWindowClosing": true
+   }
+  ],
+  "onRemoved_count": 6,
+  "applies": [
+   {
+    "label": "immediate",
+    "sinceBg": 107,
+    "was_false": 15,
+    "errors": 0
+   },
+   {
+    "label": "after-250",
+    "sinceBg": 371,
+    "was_false": 0,
+    "errors": 0
+   },
+   {
+    "label": "after-1000",
+    "sinceBg": 1117,
+    "was_false": 0,
+    "errors": 0
+   },
+   {
+    "label": "after-2000",
+    "sinceBg": 2124,
+    "was_false": 0,
+    "errors": 0
+   },
+   {
+    "label": "after-4000",
+    "sinceBg": 4115,
+    "was_false": 0,
+    "errors": 0
+   },
+   {
+    "label": "after-7000",
+    "sinceBg": 7118,
+    "was_false": 0,
+    "errors": 0
+   }
+  ]
+ },
+ {
+  "first": {
+   "event": "onStartup",
+   "sinceBg": 11,
+   "droppedBuffered": [],
+   "reason": null
+  },
+  "startup_snapshot_collapsed": 0,
+  "startup_snapshot_sinceBg": 19,
+  "onUpdated_unsuppressed_collapsed_false": [],
+  "onUpdated_total": 15,
+  "onUpdated_before_startup": [],
+  "onRemoved": [],
+  "onRemoved_count": 0,
+  "applies": [
+   {
+    "label": "immediate",
+    "sinceBg": 115,
+    "was_false": 15,
+    "errors": 0
+   },
+   {
+    "label": "after-250",
+    "sinceBg": 396,
+    "was_false": 0,
+    "errors": 0
+   },
+   {
+    "label": "after-1000",
+    "sinceBg": 1165,
+    "was_false": 0,
+    "errors": 0
+   },
+   {
+    "label": "after-2000",
+    "sinceBg": 2142,
+    "was_false": 0,
+    "errors": 0
+   },
+   {
+    "label": "after-4000",
+    "sinceBg": 4183,
+    "was_false": 0,
+    "errors": 0
+   },
+   {
+    "label": "after-7000",
+    "sinceBg": 7139,
+    "was_false": 0,
+    "errors": 0
+   }
+  ]
+ }
+]
+saved C:\Users\Soulaymane\Documents\Projects\zen-tidy\spike\results\VA-check3s-stress-run1.json

@@ -1,0 +1,133 @@
+split_XA {"ok": true, "groupId": "1792906305632-4", "flags": [true, true], "selected": 9}
+split_XN {"ok": true, "groupId": "1792906309367-82", "flags": [true, true], "selected": 9}
+XA_group_one {"value": 1792906316522085}
+XN_group_one {"value": 1792906316531073}
+XG_into_tidy {"value": 1792906315477053}
+W_group_both {"value": 1792906316547085}
+Y_ungroup_one {"value": null}
+VF_before {"L1": 2, "VF2": 4}
+VF_move [[2, 4, -1]]
+VF_after {"L1": [4, -1], "VF1": [2, 1792906306856062], "VF2": [3, 1792906306856062]}
+VB_before {"L3": 8, "VB2": 7}
+VB_move [[8, 6, -1]]
+VB_after {"L3": [6, -1], "VB1": [7, 1792906308062095], "VB2": [8, 1792906308062095]}
+api groups:
+   {"collapsed": false, "color": "purple", "id": 1792906306856062, "title": "", "windowId": 3}
+   {"collapsed": false, "color": "cyan", "id": 1792906308062095, "title": "", "windowId": 3}
+   {"collapsed": false, "color": "blue", "id": 1792906305632004, "title": "", "windowId": 3}
+   {"collapsed": false, "color": "orange", "id": 1792906309367082, "title": "", "windowId": 3}
+   {"collapsed": false, "color": "yellow", "id": 1792906310587083, "title": "", "windowId": 3}
+   {"collapsed": false, "color": "pink", "id": 1792906311792041, "title": "", "windowId": 3}
+   {"collapsed": false, "color": "green", "id": 1792906313007028, "title": "", "windowId": 3}
+   {"collapsed": false, "color": "grey", "id": 1792906314225042, "title": "", "windowId": 3}
+   {"collapsed": false, "color": "red", "id": 1792906315477053, "title": "\u2060\u2063Tidy T", "windowId": 3}
+   {"collapsed": false, "color": "green", "id": 1792906315493069, "title": "", "windowId": 3}
+== state_0 selected XA1 closedTabCount 0
+    L1   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 2, "extId": 2}
+    VF1  {"splitViewFlag": true, "group": "1792906306856-62", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 3, "extId": 3}
+    VF2  {"splitViewFlag": true, "group": "1792906306856-62", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 4, "extId": 4}
+    L2   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 5, "extId": 5}
+    VB1  {"splitViewFlag": true, "group": "1792906308062-95", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 6, "extId": 6}
+    VB2  {"splitViewFlag": true, "group": "1792906308062-95", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 7, "extId": 7}
+    L3   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 8, "extId": 8}
+    XA1  {"splitViewFlag": true, "group": "1792906305632-4", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 9, "extId": 9}
+    XA2  {"splitViewFlag": true, "group": "1792906305632-4", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 10, "extId": 10}
+    XN1  {"splitViewFlag": true, "group": "1792906309367-82", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 11, "extId": 11}
+    XN2  {"splitViewFlag": true, "group": "1792906309367-82", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 12, "extId": 12}
+    XG1  {"splitViewFlag": true, "group": "1792906310587-83", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 13, "extId": 13}
+    XG2  {"splitViewFlag": true, "group": "1792906310587-83", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 14, "extId": 14}
+    W1   {"splitViewFlag": true, "group": "1792906311792-41", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 15, "extId": 15}
+    W2   {"splitViewFlag": true, "group": "1792906311792-41", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 16, "extId": 16}
+    Y1   {"splitViewFlag": true, "group": "1792906313007-28", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 17, "extId": 17}
+    Y2   {"splitViewFlag": true, "group": "1792906313007-28", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 18, "extId": 18}
+    Z1   {"splitViewFlag": true, "group": "1792906314225-42", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 19, "extId": 19}
+    Z2   {"splitViewFlag": true, "group": "1792906314225-42", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 20, "extId": 20}
+    T1   {"splitViewFlag": false, "group": "1792906315477-53", "groupIsSplit": false, "groupLabelAttrCps": ["2060", "2063", "54", "69", "64", "79", "20", "54"], "inSplitData": false, "gbIndex": 21, "extId": 21}
+    T2   {"splitViewFlag": false, "group": "1792906315477-53", "groupIsSplit": false, "groupLabelAttrCps": ["2060", "2063", "54", "69", "64", "79", "20", "54"], "inSplitData": false, "gbIndex": 22, "extId": 22}
+    U1   {"splitViewFlag": false, "group": "1792906315493-69", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 23, "extId": 23}
+    U2   {"splitViewFlag": false, "group": "1792906315493-69", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 24, "extId": 24}
+    L4   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 25, "extId": 25}
+    splitData [{"groupId": "1792906305632-4", "groupConnected": true, "tabs": ["XA1", "XA2"]}, {"groupId": "1792906306856-62", "groupConnected": true, "tabs": ["VF1", "VF2"]}, {"groupId": "1792906308062-95", "groupConnected": true, "tabs": ["VB1", "VB2"]}, {"groupId": "1792906309367-82", "groupConnected": true, "tabs": ["XN1", "XN2"]}, {"groupId": "1792906310587-83", "groupConnected": true, "tabs": ["XG1", "XG2"]}, {"groupId": "1792906311792-41", "groupConnected": true, "tabs": ["W1", "W2"]}, {"groupId": "1792906313007-28", "groupConnected": true, "tabs": ["Y1", "Y2"]}, {"groupId": "1792906314225-42", "groupConnected": true, "tabs": ["Z1", "Z2"]}]
+    splitGroupsDom [{"id": "1792906306856-62", "tabs": ["VF1", "VF2"]}, {"id": "1792906308062-95", "tabs": ["VB1", "VB2"]}, {"id": "1792906305632-4", "tabs": ["XA1", "XA2"]}, {"id": "1792906309367-82", "tabs": ["XN1", "XN2"]}, {"id": "1792906310587-83", "tabs": ["XG1", "XG2"]}, {"id": "1792906311792-41", "tabs": ["W1", "W2"]}, {"id": "1792906313007-28", "tabs": ["Y1", "Y2"]}, {"id": "1792906314225-42", "tabs": ["Z1", "Z2"]}]
+== state_1 selected XA1 closedTabCount 0
+    VF1  {"splitViewFlag": true, "group": "1792906306856-62", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 2, "extId": 3}
+    VF2  {"splitViewFlag": true, "group": "1792906306856-62", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 3, "extId": 4}
+    L1   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 4, "extId": 2}
+    L2   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 5, "extId": 5}
+    L3   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 6, "extId": 8}
+    VB1  {"splitViewFlag": true, "group": "1792906308062-95", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 7, "extId": 6}
+    VB2  {"splitViewFlag": true, "group": "1792906308062-95", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 8, "extId": 7}
+    XA1  {"splitViewFlag": true, "group": "1792906316522-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 9, "extId": 9}
+    XA2  {"splitViewFlag": true, "group": "1792906305632-4", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 10, "extId": 10}
+    XN1  {"splitViewFlag": true, "group": "1792906316531-73", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 11, "extId": 11}
+    XN2  {"splitViewFlag": true, "group": "1792906309367-82", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 12, "extId": 12}
+    W1   {"splitViewFlag": true, "group": "1792906316547-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 13, "extId": 15}
+    W2   {"splitViewFlag": true, "group": "1792906316547-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 14, "extId": 16}
+    Y1   {"splitViewFlag": true, "group": "1792906313007-28", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 15, "extId": 17}
+    Y2   {"splitViewFlag": true, "group": "1792906313007-28", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 16, "extId": 18}
+    Z1   {"splitViewFlag": true, "group": "1792906314225-42", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 17, "extId": 19}
+    Z2   {"splitViewFlag": true, "group": "1792906314225-42", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 18, "extId": 20}
+    XG1  {"splitViewFlag": true, "group": "1792906310587-83", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 19, "extId": 13}
+    XG2  {"splitViewFlag": true, "group": "1792906310587-83", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 20, "extId": 14}
+    T1   {"splitViewFlag": false, "group": "1792906315477-53", "groupIsSplit": false, "groupLabelAttrCps": ["2060", "2063", "54", "69", "64", "79", "20", "54"], "inSplitData": false, "gbIndex": 21, "extId": 21}
+    T2   {"splitViewFlag": false, "group": "1792906315477-53", "groupIsSplit": false, "groupLabelAttrCps": ["2060", "2063", "54", "69", "64", "79", "20", "54"], "inSplitData": false, "gbIndex": 22, "extId": 22}
+    U1   {"splitViewFlag": false, "group": "1792906315493-69", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 23, "extId": 23}
+    U2   {"splitViewFlag": false, "group": "1792906315493-69", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 24, "extId": 24}
+    L4   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 25, "extId": 25}
+    splitData [{"groupId": "1792906305632-4", "groupConnected": true, "tabs": ["XA1", "XA2"]}, {"groupId": "1792906306856-62", "groupConnected": true, "tabs": ["VF1", "VF2"]}, {"groupId": "1792906308062-95", "groupConnected": true, "tabs": ["VB1", "VB2"]}, {"groupId": "1792906309367-82", "groupConnected": true, "tabs": ["XN1", "XN2"]}, {"groupId": "1792906310587-83", "groupConnected": true, "tabs": ["XG1", "XG2"]}, {"groupId": "1792906311792-41", "groupConnected": false, "tabs": ["W1", "W2"]}, {"groupId": "1792906313007-28", "groupConnected": true, "tabs": ["Y1", "Y2"]}, {"groupId": "1792906314225-42", "groupConnected": true, "tabs": ["Z1", "Z2"]}]
+    splitGroupsDom [{"id": "1792906306856-62", "tabs": ["VF1", "VF2"]}, {"id": "1792906308062-95", "tabs": ["VB1", "VB2"]}, {"id": "1792906305632-4", "tabs": ["XA2"]}, {"id": "1792906309367-82", "tabs": ["XN2"]}, {"id": "1792906313007-28", "tabs": ["Y1", "Y2"]}, {"id": "1792906314225-42", "tabs": ["Z1", "Z2"]}, {"id": "1792906310587-83", "tabs": ["XG1", "XG2"]}]
+== state_r1 selected about:blank closedTabCount 2
+    VF1  {"splitViewFlag": true, "group": "1792906306856-62", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 2, "extId": 1}
+    VF2  {"splitViewFlag": true, "group": "1792906306856-62", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 3, "extId": 2}
+    L1   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 4, "extId": 3}
+    L2   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 5, "extId": 4}
+    L3   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 6, "extId": 5}
+    VB1  {"splitViewFlag": true, "group": "1792906308062-95", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 7, "extId": 6}
+    VB2  {"splitViewFlag": true, "group": "1792906308062-95", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 8, "extId": 7}
+    XA1  {"splitViewFlag": false, "group": "1792906316522-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 9, "extId": 8}
+    XN1  {"splitViewFlag": false, "group": "1792906316531-73", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 10, "extId": 9}
+    W1   {"splitViewFlag": false, "group": "1792906316547-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 11, "extId": 10}
+    W2   {"splitViewFlag": false, "group": "1792906316547-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 12, "extId": 11}
+    Y1   {"splitViewFlag": true, "group": "1792906313007-28", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 13, "extId": 12}
+    Y2   {"splitViewFlag": true, "group": "1792906313007-28", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 14, "extId": 13}
+    Z1   {"splitViewFlag": true, "group": "1792906314225-42", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 15, "extId": 14}
+    Z2   {"splitViewFlag": true, "group": "1792906314225-42", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 16, "extId": 15}
+    XG1  {"splitViewFlag": true, "group": "1792906310587-83", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 17, "extId": 16}
+    XG2  {"splitViewFlag": true, "group": "1792906310587-83", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 18, "extId": 17}
+    T1   {"splitViewFlag": false, "group": "1792906315477-53", "groupIsSplit": false, "groupLabelAttrCps": ["2060", "2063", "54", "69", "64", "79", "20", "54"], "inSplitData": false, "gbIndex": 19, "extId": 18}
+    T2   {"splitViewFlag": false, "group": "1792906315477-53", "groupIsSplit": false, "groupLabelAttrCps": ["2060", "2063", "54", "69", "64", "79", "20", "54"], "inSplitData": false, "gbIndex": 20, "extId": 19}
+    U1   {"splitViewFlag": false, "group": "1792906315493-69", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 21, "extId": 20}
+    U2   {"splitViewFlag": false, "group": "1792906315493-69", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 22, "extId": 21}
+    L4   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 23, "extId": 22}
+    splitData [{"groupId": "1792906306856-62", "groupConnected": true, "tabs": ["VF1", "VF2"]}, {"groupId": "1792906308062-95", "groupConnected": true, "tabs": ["VB1", "VB2"]}, {"groupId": "1792906310587-83", "groupConnected": true, "tabs": ["XG1", "XG2"]}, {"groupId": "1792906313007-28", "groupConnected": true, "tabs": ["Y1", "Y2"]}, {"groupId": "1792906314225-42", "groupConnected": true, "tabs": ["Z1", "Z2"]}]
+    splitGroupsDom [{"id": "1792906306856-62", "tabs": ["VF1", "VF2"]}, {"id": "1792906308062-95", "tabs": ["VB1", "VB2"]}, {"id": "1792906313007-28", "tabs": ["Y1", "Y2"]}, {"id": "1792906314225-42", "tabs": ["Z1", "Z2"]}, {"id": "1792906310587-83", "tabs": ["XG1", "XG2"]}]
+== state_r2 selected about:blank closedTabCount 3
+    VF1  {"splitViewFlag": true, "group": "1792906306856-62", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 2, "extId": 1}
+    VF2  {"splitViewFlag": true, "group": "1792906306856-62", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 3, "extId": 2}
+    L1   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 4, "extId": 3}
+    L2   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 5, "extId": 4}
+    L3   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 6, "extId": 5}
+    VB1  {"splitViewFlag": true, "group": "1792906308062-95", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 7, "extId": 6}
+    VB2  {"splitViewFlag": true, "group": "1792906308062-95", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 8, "extId": 7}
+    XA1  {"splitViewFlag": false, "group": "1792906316522-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 9, "extId": 8}
+    XN1  {"splitViewFlag": false, "group": "1792906316531-73", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 10, "extId": 9}
+    W1   {"splitViewFlag": false, "group": "1792906316547-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 11, "extId": 10}
+    W2   {"splitViewFlag": false, "group": "1792906316547-85", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 12, "extId": 11}
+    Y1   {"splitViewFlag": true, "group": "1792906313007-28", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 13, "extId": 12}
+    Y2   {"splitViewFlag": true, "group": "1792906313007-28", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 14, "extId": 13}
+    Z1   {"splitViewFlag": true, "group": "1792906314225-42", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 15, "extId": 14}
+    Z2   {"splitViewFlag": true, "group": "1792906314225-42", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 16, "extId": 15}
+    XG1  {"splitViewFlag": true, "group": "1792906310587-83", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 17, "extId": 16}
+    XG2  {"splitViewFlag": true, "group": "1792906310587-83", "groupIsSplit": true, "groupLabelAttrCps": ["200b"], "inSplitData": true, "gbIndex": 18, "extId": 17}
+    T1   {"splitViewFlag": false, "group": "1792906315477-53", "groupIsSplit": false, "groupLabelAttrCps": ["2060", "2063", "54", "69", "64", "79", "20", "54"], "inSplitData": false, "gbIndex": 19, "extId": 18}
+    T2   {"splitViewFlag": false, "group": "1792906315477-53", "groupIsSplit": false, "groupLabelAttrCps": ["2060", "2063", "54", "69", "64", "79", "20", "54"], "inSplitData": false, "gbIndex": 20, "extId": 19}
+    U1   {"splitViewFlag": false, "group": "1792906315493-69", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 21, "extId": 20}
+    U2   {"splitViewFlag": false, "group": "1792906315493-69", "groupIsSplit": false, "groupLabelAttrCps": ["200b"], "inSplitData": false, "gbIndex": 22, "extId": 21}
+    L4   {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabelAttrCps": null, "inSplitData": false, "gbIndex": 23, "extId": 22}
+    splitData [{"groupId": "1792906306856-62", "groupConnected": true, "tabs": ["VF1", "VF2"]}, {"groupId": "1792906308062-95", "groupConnected": true, "tabs": ["VB1", "VB2"]}, {"groupId": "1792906310587-83", "groupConnected": true, "tabs": ["XG1", "XG2"]}, {"groupId": "1792906313007-28", "groupConnected": true, "tabs": ["Y1", "Y2"]}, {"groupId": "1792906314225-42", "groupConnected": true, "tabs": ["Z1", "Z2"]}]
+    splitGroupsDom [{"id": "1792906306856-62", "tabs": ["VF1", "VF2"]}, {"id": "1792906308062-95", "tabs": ["VB1", "VB2"]}, {"id": "1792906313007-28", "tabs": ["Y1", "Y2"]}, {"id": "1792906314225-42", "tabs": ["Z1", "Z2"]}, {"id": "1792906310587-83", "tabs": ["XG1", "XG2"]}]
+count_1 24
+count_r1 22
+count_r2 22
+recently_closed_r1 [{"tab": "moz-extension://051360c9-9b62-42ff-9014-818aa0b92e97/spike.html", "window": false, "lastModified": 1792906323174}, {"tab": "https://example.com/vbs/XN2", "window": false, "lastModified": 1792906321330}, {"tab": "https://example.com/vbs/XA2", "window": false, "lastModified": 1792906321329}]
+closed_groups_r1 [{"closedGroups": [{"name": "", "tabs": ["https://example.com/vbs/XN2"]}, {"name": "", "tabs": ["https://example.com/vbs/XA2"]}], "closedTabs": ["moz-extension://051360c9-9b62-42ff-9014-818aa0b92e97/spike.html"]}]

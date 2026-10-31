@@ -1,0 +1,74 @@
+pref newtab top: True
+default order after creates: [('spike.html', 0, '', 'P'), ('F2', 2, '', ''), ('F1', 3, '', ''), ('ESS', 4, '', ''), ('E', 5, '', ''), ('D', 6, '', ''), ('S2', 7, '', ''), ('S1', 8, '', ''), ('C', 9, '', ''), ('G2', 10, '', ''), ('G1', 11, '', ''), ('B', 12, '', ''), ('A', 13, '', '')]
+layout before: [('ESS', 0, '', 'P'), ('spike.html', 1, '', 'P'), ('F1', 3, 1792906159991097, 'P'), ('F2', 4, 1792906159991097, 'P'), ('A', 6, '', ''), ('B', 7, '', ''), ('G1', 8, 1792906160999013, ''), ('G2', 9, 1792906160999013, ''), ('C', 10, '', ''), ('S1', 11, 1792906161015038, ''), ('S2', 12, 1792906161015038, ''), ('D', 13, '', ''), ('E', 14, '', '')]
+c01_loose_start            req=6     ret=6 get={'index': 6, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('F2', 4, 1792906159991097) next=('A', 7, -1) chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c02_middle_A_B             req=7     ret=7 get={'index': 7, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('A', 6, -1) next=('B', 8, -1) chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c03_group_leading_edge     req=8     ret=8 get={'index': 8, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('B', 7, -1) next=('G1', 9, 1792906160999013) chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c04_inside_group           req=9     ret=9 get={'index': 9, 'groupId': 1792906160999013, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('G1', 8, 1792906160999013) next=('G2', 10, 1792906160999013) chrome={"parentClass": "tab-group-container", "group": "1792906160999-13", "groupIsSplit": false, "inSplitData": false, "ws": null}
+c05_group_trailing_edge    req=10    ret=10 get={'index': 10, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('G2', 9, 1792906160999013) next=('C', 11, -1) chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c06_split_leading_edge     req=11    ret=11 get={'index': 11, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('C', 10, -1) next=('S1', 12, 1792906161015038) chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c07_inside_split           req=12    ret=12 get={'index': 12, 'groupId': 1792906161015038, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('S1', 11, 1792906161015038) next=('S2', 13, 1792906161015038) chrome={"parentClass": "tab-group-container", "group": "1792906161015-38", "groupIsSplit": true, "inSplitData": false, "ws": null}
+c08_split_trailing_edge    req=13    ret=13 get={'index': 13, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('S2', 12, 1792906161015038) next=('D', 14, -1) chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c09_end                    req=15    ret=15 get={'index': 15, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('E', 14, -1) next=None chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c10_huge_9999              req=9999  ret=15 get={'index': 15, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('E', 14, -1) next=None chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c11_no_index               req=None  ret=6 get={'index': 6, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('F2', 4, 1792906159991097) next=('A', 7, -1) chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c12_index_0                req=0     ret=6 get={'index': 6, 'groupId': -1, 'discarded': True, 'pinned': False, 'status': 'complete'} prev=('F2', 4, 1792906159991097) next=('A', 7, -1) chrome={"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "inSplitData": false, "ws": null}
+c11b no index pref off: {"result_index": 15, "layout": [["ESS", 0, "", "P"], ["spike.html", 1, "", "P"], ["F1", 3, 1792906159991097, "P"], ["F2", 4, 1792906159991097, "P"], ["A", 6, "", ""], ["B", 7, "", ""], ["G1", 8, 1792906160999013, ""], ["G2", 9, 1792906160999013, ""], ["C", 10, "", ""], ["S1", 11, 1792906161015038, ""], ["S2", 12, 1792906161015038, ""], ["D", 13, "", ""], ["E", 14, "", ""], ["noindex_pref_off", 15, "", ""]]}
+r01_about_blank_discarded                {"error": "Error: Cannot create a discarded new tab or \"about\" urls."}
+r02_about_robots_discarded               {"error": "Error: Illegal URL: about:robots"}
+r03_about_blank_not_discarded_CONTROL    {"ok": true, "url": "about:blank", "discarded": false}
+r04_file_discarded                       {"error": "Error: Illegal URL: file:///C:/Windows/win.ini"}
+r05_file_not_discarded                   {"error": "Error: Illegal URL: file:///C:/Windows/win.ini"}
+r07_data_discarded                       {"error": "Error: Illegal URL: data:text/html,hi"}
+r08_javascript_discarded                 {"error": "Error: Illegal URL: javascript:void(0)"}
+r09_discarded_active_true                {"error": "Error: Active tabs cannot be created and discarded."}
+r10_discarded_pinned_true                {"error": "Error: Pinned tabs cannot be created and discarded."}
+r11_http_localhost_discarded_CONTROL     {"ok": true, "url": "http://127.0.0.1:9/x", "discarded": true}
+r12_title_without_discarded              {"error": "Error: Title may only be set for discarded tabs."}
+r13_about_newtab_discarded               {"error": "Error: Illegal URL: about:newtab"}
+r14_no_url_discarded                     {"error": "Error: Cannot create a discarded new tab or \"about\" urls."}
+r15_moz_ext_other_discarded              {"ok": true, "url": "moz-extension://00000000-0000-0000-0000-000000000000/x.html", "discarded": true}
+vs_discarded {"url": "view-source:https://example.com/vbc/vsd", "discarded": true, "status": "complete", "title": "vsd"}
+vs_not_discarded {"url": "about:blank", "discarded": false, "status": "complete", "title": "view-source:https://example.com/vbc/vsn"}
+vs_discarded_truth {"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "splitViewFlag": false, "pinned": false, "pending": true, "ws": null, "currentURI": "view-source:https://example.com/vbc/vsd", "label": "New Tab", "ssEntries": ["view-source:https://example.com/vbc/vsd"], "ssUserTyped": "", "gbIndex": 7, "inSplitData": false}
+vs_not_discarded_truth {"parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section", "group": null, "groupIsSplit": null, "splitViewFlag": false, "pinned": false, "pending": false, "ws": "{32652eaa-f8f2-4f35-a715-039b1a71197e}", "currentURI": "about:blank", "label": "view-source:https://example.com/vbc/vsn", "ssEntries": [], "ssUserTyped": "view-source:https://example.com/vbc/vsn", "gbIndex": 6, "inSplitData": false}
+vs_not_discarded_get {"url": "about:blank", "status": "loading", "discarded": false, "title": "view-source:https://example.com/vbc/vsn"}
+== state_before_restart
+   ESS {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 0, "pending": true}
+   F1 {"splitViewFlag": false, "group": "1792906159991-97", "groupIsSplit": false, "groupLabel": "Folder F", "inSplitData": false, "gbIndex": 3, "pending": true}
+   F2 {"splitViewFlag": false, "group": "1792906159991-97", "groupIsSplit": false, "groupLabel": "Folder F", "inSplitData": false, "gbIndex": 4, "pending": true}
+   view-source:https://example.com/vbc/vsn {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 6, "pending": false}
+   view-source:https://example.com/vbc/vsd {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 7, "pending": true}
+   A {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 8, "pending": true}
+   B {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 9, "pending": true}
+   G1 {"splitViewFlag": false, "group": "1792906160999-13", "groupIsSplit": false, "groupLabel": "\u2060\u2063Tidy G", "inSplitData": false, "gbIndex": 10, "pending": true}
+   NEWGROUP {"splitViewFlag": false, "group": "1792906160999-13", "groupIsSplit": false, "groupLabel": "\u2060\u2063Tidy G", "inSplitData": false, "gbIndex": 11, "pending": true}
+   G2 {"splitViewFlag": false, "group": "1792906160999-13", "groupIsSplit": false, "groupLabel": "\u2060\u2063Tidy G", "inSplitData": false, "gbIndex": 12, "pending": true}
+   C {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 13, "pending": true}
+   S1 {"splitViewFlag": true, "group": "1792906161015-38", "groupIsSplit": true, "groupLabel": "", "inSplitData": true, "gbIndex": 14, "pending": true}
+   NEWSPLIT {"splitViewFlag": false, "group": "1792906161015-38", "groupIsSplit": true, "groupLabel": "", "inSplitData": false, "gbIndex": 15, "pending": true}
+   S2 {"splitViewFlag": true, "group": "1792906161015-38", "groupIsSplit": true, "groupLabel": "", "inSplitData": true, "gbIndex": 16, "pending": true}
+   D {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 17, "pending": true}
+   E {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 18, "pending": true}
+   _splitData [{"groupId": "1792906161015-38", "tabs": ["S1", "S2"]}]
+== state_after_restart
+   ESS {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 0, "pending": true}
+   F1 {"splitViewFlag": false, "group": "1792906159991-97", "groupIsSplit": false, "groupLabel": "Folder F", "inSplitData": false, "gbIndex": 3, "pending": true}
+   F2 {"splitViewFlag": false, "group": "1792906159991-97", "groupIsSplit": false, "groupLabel": "Folder F", "inSplitData": false, "gbIndex": 4, "pending": true}
+   view-source:https://example.com/vbc/vsn {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 6, "pending": true}
+   view-source:https://example.com/vbc/vsd {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 7, "pending": true}
+   A {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 8, "pending": true}
+   B {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 9, "pending": true}
+   G1 {"splitViewFlag": false, "group": "1792906160999-13", "groupIsSplit": false, "groupLabel": "\u2060\u2063Tidy G", "inSplitData": false, "gbIndex": 10, "pending": true}
+   NEWGROUP {"splitViewFlag": false, "group": "1792906160999-13", "groupIsSplit": false, "groupLabel": "\u2060\u2063Tidy G", "inSplitData": false, "gbIndex": 11, "pending": true}
+   G2 {"splitViewFlag": false, "group": "1792906160999-13", "groupIsSplit": false, "groupLabel": "\u2060\u2063Tidy G", "inSplitData": false, "gbIndex": 12, "pending": true}
+   C {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 13, "pending": true}
+   S1 {"splitViewFlag": true, "group": "1792906161015-38", "groupIsSplit": true, "groupLabel": "", "inSplitData": true, "gbIndex": 14, "pending": true}
+   NEWSPLIT {"splitViewFlag": true, "group": "1792906161015-38", "groupIsSplit": true, "groupLabel": "", "inSplitData": true, "gbIndex": 15, "pending": true}
+   S2 {"splitViewFlag": true, "group": "1792906161015-38", "groupIsSplit": true, "groupLabel": "", "inSplitData": true, "gbIndex": 16, "pending": true}
+   D {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 17, "pending": true}
+   E {"splitViewFlag": false, "group": null, "groupIsSplit": null, "groupLabel": null, "inSplitData": false, "gbIndex": 18, "pending": true}
+   _splitData [{"groupId": "1792906161015-38", "tabs": ["S1", "NEWSPLIT", "S2"]}]
+layout_before_restart [('ESS', 0, '', 'P'), ('spike.html', 1, '', 'P'), ('F1', 3, 1792906159991097, 'P'), ('F2', 4, 1792906159991097, 'P'), ('vsn', 6, '', ''), ('vsd', 7, '', ''), ('A', 8, '', ''), ('B', 9, '', ''), ('G1', 10, 1792906160999013, ''), ('NEWGROUP', 11, 1792906160999013, ''), ('G2', 12, 1792906160999013, ''), ('C', 13, '', ''), ('S1', 14, 1792906161015038, ''), ('NEWSPLIT', 15, 1792906161015038, ''), ('S2', 16, 1792906161015038, ''), ('D', 17, '', ''), ('E', 18, '', '')]
+layout_after_restart [('ESS', 0, '', 'P'), ('F1', 2, 1792906159991097, 'P'), ('F2', 3, 1792906159991097, 'P'), ('spike.html', 4, '', 'P'), ('vsn', 6, '', ''), ('vsd', 7, '', ''), ('A', 8, '', ''), ('B', 9, '', ''), ('G1', 10, 1792906160999013, ''), ('NEWGROUP', 11, 1792906160999013, ''), ('G2', 12, 1792906160999013, ''), ('C', 13, '', ''), ('S1', 14, 1792906161015038, ''), ('NEWSPLIT', 15, 1792906161015038, ''), ('S2', 16, 1792906161015038, ''), ('D', 17, '', ''), ('E', 18, '', '')]
+query_after_restart_vs [{'url': 'view-source:https://example.com/vbc/vsn', 'discarded': True, 'title': 'view-source:https://example.com/vbc/vsn'}, {'url': 'view-source:https://example.com/vbc/vsd', 'discarded': True, 'title': 'vsd'}]

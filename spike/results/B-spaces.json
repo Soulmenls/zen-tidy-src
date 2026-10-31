@@ -1,0 +1,5687 @@
+{
+ "port": 2952,
+ "install": "zen-tidy-spike-b@local",
+ "page_to_essential": {
+  "essential": true,
+  "spaceA": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+  "spaces": [
+   [
+    "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "Space"
+   ]
+  ]
+ },
+ "create_space_b": {
+  "uuid": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+  "active": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+  "spaces": [
+   [
+    "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "Space"
+   ],
+   [
+    "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "Space B"
+   ]
+  ]
+ },
+ "ids": {
+  "A1": 2,
+  "A2": 3,
+  "A3": 4,
+  "A4": 5,
+  "B1": 6,
+  "B2": 7,
+  "B3": 8,
+  "B4": 9
+ },
+ "ga": 1792905085595094,
+ "gb": 1792905088738018,
+ "space_a": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+ "space_b": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+ "truth_in_B": {
+  "A1": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A2": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A3": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A4": {
+   "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B1": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B2": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B3": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B4": {
+   "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "_active": "{48948474-926c-476d-bb52-d7b880a1d14e}"
+ },
+ "snap_in_B": {
+  "ext": {
+   "tabs_query_currentWindow": {
+    "value": [
+     {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905084334,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+      "title": "Zen Tidy Spike"
+     },
+     {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "loading",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905089564,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B4",
+      "title": "Tab B4"
+     },
+     {
+      "id": 7,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088723,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905088738018,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B2",
+      "title": "Tab B2"
+     },
+     {
+      "id": 8,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088728,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905088738018,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B3",
+      "title": "Tab B3"
+     },
+     {
+      "id": 6,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088716,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B1",
+      "title": "Tab B1"
+     }
+    ]
+   },
+   "tabs_query_all": {
+    "value": [
+     {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905084334,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+      "title": "Zen Tidy Spike"
+     },
+     {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "loading",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905089567,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B4",
+      "title": "Tab B4"
+     },
+     {
+      "id": 7,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088723,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905088738018,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B2",
+      "title": "Tab B2"
+     },
+     {
+      "id": 8,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088728,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905088738018,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B3",
+      "title": "Tab B3"
+     },
+     {
+      "id": 6,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088716,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B1",
+      "title": "Tab B1"
+     }
+    ]
+   },
+   "tabs_query_active": {
+    "value": [
+     {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "loading",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905089570,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B4",
+      "title": "Tab B4"
+     }
+    ]
+   },
+   "tabGroups_query": {
+    "value": [
+     {
+      "collapsed": false,
+      "color": "blue",
+      "id": 1792905085595094,
+      "title": "⁠⁣Test A",
+      "windowId": 3
+     },
+     {
+      "collapsed": false,
+      "color": "purple",
+      "id": 1792905088738018,
+      "title": "⁠⁣Test B",
+      "windowId": 3
+     }
+    ]
+   },
+   "tabs_get": {
+    "1": {
+     "value": {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905084334,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+      "title": "Zen Tidy Spike"
+     }
+    },
+    "2": {
+     "value": {
+      "id": 2,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085573,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A1",
+      "title": "Tab A1"
+     }
+    },
+    "3": {
+     "value": {
+      "id": 3,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085578,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905085595094,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A2",
+      "title": "Tab A2"
+     }
+    },
+    "4": {
+     "value": {
+      "id": 4,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085581,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905085595094,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A3",
+      "title": "Tab A3"
+     }
+    },
+    "5": {
+     "value": {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "loading",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905086440,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A4",
+      "title": "Tab A4"
+     }
+    },
+    "6": {
+     "value": {
+      "id": 6,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088716,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B1",
+      "title": "Tab B1"
+     }
+    },
+    "7": {
+     "value": {
+      "id": 7,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088723,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905088738018,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B2",
+      "title": "Tab B2"
+     }
+    },
+    "8": {
+     "value": {
+      "id": 8,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088728,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905088738018,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B3",
+      "title": "Tab B3"
+     }
+    },
+    "9": {
+     "value": {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "loading",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905089597,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B4",
+      "title": "Tab B4"
+     }
+    }
+   }
+  },
+  "chrome": {
+   "tabs": [
+    {
+     "extId": 1,
+     "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+     "label": "Zen Tidy Spike",
+     "gbTabsIndex": 0,
+     "allTabsIndex": 0,
+     "pinned": true,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": true,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": false,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "hbox",
+     "parentId": null,
+     "parentClass": "zen-essentials-container zen-workspace-tabs-section",
+     "wsContainerId": null,
+     "inEssentialsSection": true
+    },
+    {
+     "extId": -1,
+     "url": "about:blank",
+     "label": "New Tab",
+     "gbTabsIndex": 1,
+     "allTabsIndex": 1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": true,
+     "pending": false,
+     "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 9,
+     "url": "https://example.com/spaces/B4",
+     "label": "Tab B4",
+     "gbTabsIndex": 2,
+     "allTabsIndex": 2,
+     "pinned": false,
+     "selected": true,
+     "visuallyselected": true,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": false,
+     "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 7,
+     "url": "https://example.com/spaces/B2",
+     "label": "New Tab",
+     "gbTabsIndex": 3,
+     "allTabsIndex": 3,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905088738-18",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0042"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 8,
+     "url": "https://example.com/spaces/B3",
+     "label": "New Tab",
+     "gbTabsIndex": 4,
+     "allTabsIndex": 4,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905088738-18",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0042"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 6,
+     "url": "https://example.com/spaces/B1",
+     "label": "New Tab",
+     "gbTabsIndex": 5,
+     "allTabsIndex": 5,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 5,
+     "url": "https://example.com/spaces/A4",
+     "label": "Tab A4",
+     "gbTabsIndex": -1,
+     "allTabsIndex": -1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": false,
+     "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 3,
+     "url": "https://example.com/spaces/A2",
+     "label": "New Tab",
+     "gbTabsIndex": -1,
+     "allTabsIndex": -1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905085595-94",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0041"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 4,
+     "url": "https://example.com/spaces/A3",
+     "label": "New Tab",
+     "gbTabsIndex": -1,
+     "allTabsIndex": -1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905085595-94",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0041"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 2,
+     "url": "https://example.com/spaces/A1",
+     "label": "New Tab",
+     "gbTabsIndex": -1,
+     "allTabsIndex": -1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    }
+   ],
+   "groups": [
+    {
+     "id": "1792905085595-94",
+     "tag": "tab-group",
+     "label": "⁠⁣Test A",
+     "labelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0041"
+     ],
+     "labelAttrCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0041"
+     ],
+     "color": "blue",
+     "collapsed": false,
+     "splitAttr": false,
+     "isZenFolder": false,
+     "ws": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "tabExtIds": [
+      3,
+      4
+     ],
+     "pinned": false
+    },
+    {
+     "id": "1792905088738-18",
+     "tag": "tab-group",
+     "label": "⁠⁣Test B",
+     "labelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0042"
+     ],
+     "labelAttrCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0042"
+     ],
+     "color": "purple",
+     "collapsed": false,
+     "splitAttr": false,
+     "isZenFolder": false,
+     "ws": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "tabExtIds": [
+      7,
+      8
+     ],
+     "pinned": false
+    }
+   ],
+   "split": [],
+   "spaces": [
+    {
+     "uuid": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "name": "Space"
+    },
+    {
+     "uuid": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "name": "Space B"
+    }
+   ],
+   "activeSpace": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "selectedExtId": 9,
+   "pinnedTabCount": 1,
+   "numEssentials": 1,
+   "splitCurrentView": -1
+  }
+ },
+ "filter_in_B": {
+  "naive_title_only": [
+   "⁠⁣Test A",
+   "⁠⁣Test B"
+  ],
+  "filtered": [
+   "⁠⁣Test B"
+  ]
+ },
+ "switch_to_A": {
+  "active": "{6f3b8e9f-f276-417d-a084-4353896e17d7}"
+ },
+ "truth_in_A": {
+  "A1": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A2": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A3": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A4": {
+   "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B1": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B2": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B3": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B4": {
+   "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "_active": "{6f3b8e9f-f276-417d-a084-4353896e17d7}"
+ },
+ "snap_in_A": {
+  "ext": {
+   "tabs_query_currentWindow": {
+    "value": [
+     {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905084334,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+      "title": "Zen Tidy Spike"
+     },
+     {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905091971,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isArticle": false,
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A4",
+      "title": "Problem loading page",
+      "favIconUrl": "chrome://global/skin/icons/info.svg"
+     },
+     {
+      "id": 3,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085578,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905085595094,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A2",
+      "title": "Tab A2"
+     },
+     {
+      "id": 4,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085581,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905085595094,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A3",
+      "title": "Tab A3"
+     },
+     {
+      "id": 2,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085573,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A1",
+      "title": "Tab A1"
+     }
+    ]
+   },
+   "tabs_query_all": {
+    "value": [
+     {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905084334,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+      "title": "Zen Tidy Spike"
+     },
+     {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905091975,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isArticle": false,
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A4",
+      "title": "Problem loading page",
+      "favIconUrl": "chrome://global/skin/icons/info.svg"
+     },
+     {
+      "id": 3,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085578,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905085595094,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A2",
+      "title": "Tab A2"
+     },
+     {
+      "id": 4,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085581,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905085595094,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A3",
+      "title": "Tab A3"
+     },
+     {
+      "id": 2,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085573,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A1",
+      "title": "Tab A1"
+     }
+    ]
+   },
+   "tabs_query_active": {
+    "value": [
+     {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905091977,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isArticle": false,
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A4",
+      "title": "Problem loading page",
+      "favIconUrl": "chrome://global/skin/icons/info.svg"
+     }
+    ]
+   },
+   "tabGroups_query": {
+    "value": [
+     {
+      "collapsed": false,
+      "color": "blue",
+      "id": 1792905085595094,
+      "title": "⁠⁣Test A",
+      "windowId": 3
+     },
+     {
+      "collapsed": false,
+      "color": "purple",
+      "id": 1792905088738018,
+      "title": "⁠⁣Test B",
+      "windowId": 3
+     }
+    ]
+   },
+   "tabs_get": {
+    "1": {
+     "value": {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": true,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905084334,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+      "title": "Zen Tidy Spike"
+     }
+    },
+    "2": {
+     "value": {
+      "id": 2,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085573,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A1",
+      "title": "Tab A1"
+     }
+    },
+    "3": {
+     "value": {
+      "id": 3,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085578,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905085595094,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A2",
+      "title": "Tab A2"
+     }
+    },
+    "4": {
+     "value": {
+      "id": 4,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905085581,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905085595094,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A3",
+      "title": "Tab A3"
+     }
+    },
+    "5": {
+     "value": {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905091992,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isArticle": false,
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/A4",
+      "title": "Problem loading page",
+      "favIconUrl": "chrome://global/skin/icons/info.svg"
+     }
+    },
+    "6": {
+     "value": {
+      "id": 6,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088716,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B1",
+      "title": "Tab B1"
+     }
+    },
+    "7": {
+     "value": {
+      "id": 7,
+      "index": 3,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088723,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905088738018,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B2",
+      "title": "Tab B2"
+     }
+    },
+    "8": {
+     "value": {
+      "id": 8,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": true,
+      "incognito": false,
+      "width": 0,
+      "height": 0,
+      "lastAccessed": 1792905088728,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": 1792905088738018,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B3",
+      "title": "Tab B3"
+     }
+    },
+    "9": {
+     "value": {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "highlighted": false,
+      "active": false,
+      "attention": false,
+      "pinned": false,
+      "status": "loading",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792905089615,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "https://example.com/spaces/B4",
+      "title": "Tab B4"
+     }
+    }
+   }
+  },
+  "chrome": {
+   "tabs": [
+    {
+     "extId": 1,
+     "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+     "label": "Zen Tidy Spike",
+     "gbTabsIndex": 0,
+     "allTabsIndex": 0,
+     "pinned": true,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": true,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": false,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "hbox",
+     "parentId": null,
+     "parentClass": "zen-essentials-container zen-workspace-tabs-section",
+     "wsContainerId": null,
+     "inEssentialsSection": true
+    },
+    {
+     "extId": -1,
+     "url": "about:blank",
+     "label": "New Tab",
+     "gbTabsIndex": 1,
+     "allTabsIndex": 1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": true,
+     "pending": false,
+     "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 5,
+     "url": "https://example.com/spaces/A4",
+     "label": "Problem loading page",
+     "gbTabsIndex": 2,
+     "allTabsIndex": 2,
+     "pinned": false,
+     "selected": true,
+     "visuallyselected": true,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": false,
+     "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 3,
+     "url": "https://example.com/spaces/A2",
+     "label": "New Tab",
+     "gbTabsIndex": 3,
+     "allTabsIndex": 3,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905085595-94",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0041"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 4,
+     "url": "https://example.com/spaces/A3",
+     "label": "New Tab",
+     "gbTabsIndex": 4,
+     "allTabsIndex": 4,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905085595-94",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0041"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 2,
+     "url": "https://example.com/spaces/A1",
+     "label": "New Tab",
+     "gbTabsIndex": 5,
+     "allTabsIndex": 5,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 9,
+     "url": "https://example.com/spaces/B4",
+     "label": "Tab B4",
+     "gbTabsIndex": -1,
+     "allTabsIndex": -1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": false,
+     "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 7,
+     "url": "https://example.com/spaces/B2",
+     "label": "New Tab",
+     "gbTabsIndex": -1,
+     "allTabsIndex": -1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905088738-18",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0042"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 8,
+     "url": "https://example.com/spaces/B3",
+     "label": "New Tab",
+     "gbTabsIndex": -1,
+     "allTabsIndex": -1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": "1792905088738-18",
+     "groupTag": "tab-group",
+     "groupLabelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0042"
+     ],
+     "groupSplitAttr": false,
+     "parentTag": "html:div",
+     "parentId": null,
+     "parentClass": "tab-group-container",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    },
+    {
+     "extId": 6,
+     "url": "https://example.com/spaces/B1",
+     "label": "New Tab",
+     "gbTabsIndex": -1,
+     "allTabsIndex": -1,
+     "pinned": false,
+     "selected": false,
+     "visuallyselected": false,
+     "hidden": false,
+     "essential": false,
+     "splitView": false,
+     "glance": false,
+     "glanceId": null,
+     "emptyTab": false,
+     "pending": true,
+     "ws": null,
+     "ownerExtId": null,
+     "openerExtId": null,
+     "groupId": null,
+     "groupTag": null,
+     "groupLabelCps": null,
+     "groupSplitAttr": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "inEssentialsSection": false
+    }
+   ],
+   "groups": [
+    {
+     "id": "1792905085595-94",
+     "tag": "tab-group",
+     "label": "⁠⁣Test A",
+     "labelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0041"
+     ],
+     "labelAttrCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0041"
+     ],
+     "color": "blue",
+     "collapsed": false,
+     "splitAttr": false,
+     "isZenFolder": false,
+     "ws": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "tabExtIds": [
+      3,
+      4
+     ],
+     "pinned": false
+    },
+    {
+     "id": "1792905088738-18",
+     "tag": "tab-group",
+     "label": "⁠⁣Test B",
+     "labelCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0042"
+     ],
+     "labelAttrCps": [
+      "U+2060",
+      "U+2063",
+      "U+0054",
+      "U+0065",
+      "U+0073",
+      "U+0074",
+      "U+0020",
+      "U+0042"
+     ],
+     "color": "purple",
+     "collapsed": false,
+     "splitAttr": false,
+     "isZenFolder": false,
+     "ws": null,
+     "parentTag": "vbox",
+     "parentId": null,
+     "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+     "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "tabExtIds": [
+      7,
+      8
+     ],
+     "pinned": false
+    }
+   ],
+   "split": [],
+   "spaces": [
+    {
+     "uuid": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+     "name": "Space"
+    },
+    {
+     "uuid": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+     "name": "Space B"
+    }
+   ],
+   "activeSpace": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "selectedExtId": 5,
+   "pinnedTabCount": 1,
+   "numEssentials": 1,
+   "splitCurrentView": -1
+  }
+ },
+ "in_A": {
+  "tabs_query_currentWindow": [
+   {
+    "id": 1,
+    "index": 0,
+    "groupId": -1,
+    "splitViewId": -1,
+    "pinned": true,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": false,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Zen Tidy Spike",
+    "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html"
+   },
+   {
+    "id": 5,
+    "index": 2,
+    "groupId": -1,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": true,
+    "highlighted": true,
+    "hidden": false,
+    "discarded": false,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Problem loading page",
+    "url": "https://example.com/spaces/A4"
+   },
+   {
+    "id": 3,
+    "index": 3,
+    "groupId": 1792905085595094,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab A2",
+    "url": "https://example.com/spaces/A2"
+   },
+   {
+    "id": 4,
+    "index": 4,
+    "groupId": 1792905085595094,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab A3",
+    "url": "https://example.com/spaces/A3"
+   },
+   {
+    "id": 2,
+    "index": 5,
+    "groupId": -1,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab A1",
+    "url": "https://example.com/spaces/A1"
+   }
+  ],
+  "tabs_query_all": [
+   {
+    "id": 1,
+    "index": 0,
+    "groupId": -1,
+    "splitViewId": -1,
+    "pinned": true,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": false,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Zen Tidy Spike",
+    "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html"
+   },
+   {
+    "id": 5,
+    "index": 2,
+    "groupId": -1,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": true,
+    "highlighted": true,
+    "hidden": false,
+    "discarded": false,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Problem loading page",
+    "url": "https://example.com/spaces/A4"
+   },
+   {
+    "id": 3,
+    "index": 3,
+    "groupId": 1792905085595094,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab A2",
+    "url": "https://example.com/spaces/A2"
+   },
+   {
+    "id": 4,
+    "index": 4,
+    "groupId": 1792905085595094,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab A3",
+    "url": "https://example.com/spaces/A3"
+   },
+   {
+    "id": 2,
+    "index": 5,
+    "groupId": -1,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab A1",
+    "url": "https://example.com/spaces/A1"
+   }
+  ],
+  "tabGroups_query": [
+   {
+    "id": 1792905085595094,
+    "title": "⁠⁣Test A",
+    "titleCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "color": "blue",
+    "collapsed": false,
+    "windowId": 3
+   },
+   {
+    "id": 1792905088738018,
+    "title": "⁠⁣Test B",
+    "titleCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "color": "purple",
+    "collapsed": false,
+    "windowId": 3
+   }
+  ],
+  "tabs_get_B": {
+   "B1": {
+    "value": {
+     "id": 6,
+     "index": 5,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088716,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B1",
+     "title": "Tab B1"
+    }
+   },
+   "B2": {
+    "value": {
+     "id": 7,
+     "index": 3,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088723,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B2",
+     "title": "Tab B2"
+    }
+   },
+   "B3": {
+    "value": {
+     "id": 8,
+     "index": 4,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088728,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B3",
+     "title": "Tab B3"
+    }
+   },
+   "B4": {
+    "value": {
+     "id": 9,
+     "index": 2,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "loading",
+     "hidden": false,
+     "discarded": false,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905089615,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B4",
+     "title": "Tab B4"
+    }
+   }
+  },
+  "tabGroups_get_GB": {
+   "value": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905088738018,
+    "title": "⁠⁣Test B",
+    "windowId": 3
+   }
+  }
+ },
+ "filter_in_A": {
+  "naive_title_only": [
+   "⁠⁣Test A",
+   "⁠⁣Test B"
+  ],
+  "filtered": [
+   "⁠⁣Test A"
+  ]
+ },
+ "danger_group_A1_into_GB": {
+  "value": 1792905088738018
+ },
+ "truth_after_danger1_in_A": {
+  "A1": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A2": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A3": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A4": {
+   "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B1": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B2": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B3": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B4": {
+   "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "_active": "{6f3b8e9f-f276-417d-a084-4353896e17d7}"
+ },
+ "ext_after_danger1_in_A": {
+  "A1_get": {
+   "value": {
+    "id": 2,
+    "index": 5,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792905085573,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": 1792905088738018,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/spaces/A1",
+    "title": "Tab A1"
+   }
+  },
+  "query_ids": [
+   1,
+   5,
+   3,
+   4
+  ],
+  "groups": [
+   {
+    "id": 1792905085595094,
+    "title": "⁠⁣Test A",
+    "titleCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "color": "blue",
+    "collapsed": false,
+    "windowId": 3
+   },
+   {
+    "id": 1792905088738018,
+    "title": "⁠⁣Test B",
+    "titleCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "color": "purple",
+    "collapsed": false,
+    "windowId": 3
+   }
+  ]
+ },
+ "danger_group_B1_new_group": {
+  "value": 1792905093537059
+ },
+ "truth_after_danger2_in_A": {
+  "A1": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A2": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A3": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A4": {
+   "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B1": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905093537-59",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B2": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B3": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B4": {
+   "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "_active": "{6f3b8e9f-f276-417d-a084-4353896e17d7}"
+ },
+ "ext_after_danger2_in_A": {
+  "B1_get": {
+   "value": {
+    "id": 6,
+    "index": 5,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792905088716,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": 1792905093537059,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/spaces/B1",
+    "title": "Tab B1"
+   }
+  },
+  "query_ids": [
+   1,
+   5,
+   3,
+   4
+  ],
+  "groups": [
+   {
+    "id": 1792905085595094,
+    "title": "⁠⁣Test A",
+    "titleCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "color": "blue",
+    "collapsed": false,
+    "windowId": 3
+   },
+   {
+    "id": 1792905088738018,
+    "title": "⁠⁣Test B",
+    "titleCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "color": "purple",
+    "collapsed": false,
+    "windowId": 3
+   },
+   {
+    "id": 1792905093537059,
+    "title": "",
+    "titleCps": [],
+    "color": "cyan",
+    "collapsed": false,
+    "windowId": 3
+   }
+  ]
+ },
+ "switch_to_B_again": {
+  "active": "{48948474-926c-476d-bb52-d7b880a1d14e}"
+ },
+ "truth_in_B_after": {
+  "A1": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A2": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A3": {
+   "ws": null,
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "tab-group-container",
+   "group": "1792905085595-94",
+   "groupWs": null,
+   "groupContainerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "A4": {
+   "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "containerWs": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": false,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B1": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905093537-59",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B2": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B3": {
+   "ws": null,
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "tab-group-container",
+   "group": "1792905088738-18",
+   "groupWs": null,
+   "groupContainerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "B4": {
+   "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "containerWs": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+   "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+   "group": null,
+   "groupWs": null,
+   "groupContainerWs": null,
+   "inGBrowserTabs": true,
+   "hidden": false,
+   "essential": false,
+   "visibleInStrip": true
+  },
+  "_active": "{48948474-926c-476d-bb52-d7b880a1d14e}"
+ },
+ "ext_in_B_after": {
+  "query": [
+   {
+    "id": 1,
+    "index": 0,
+    "groupId": -1,
+    "splitViewId": -1,
+    "pinned": true,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": false,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Zen Tidy Spike",
+    "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html"
+   },
+   {
+    "id": 9,
+    "index": 2,
+    "groupId": -1,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": true,
+    "highlighted": true,
+    "hidden": false,
+    "discarded": false,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Problem loading page",
+    "url": "https://example.com/spaces/B4"
+   },
+   {
+    "id": 7,
+    "index": 3,
+    "groupId": 1792905088738018,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab B2",
+    "url": "https://example.com/spaces/B2"
+   },
+   {
+    "id": 8,
+    "index": 4,
+    "groupId": 1792905088738018,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab B3",
+    "url": "https://example.com/spaces/B3"
+   },
+   {
+    "id": 2,
+    "index": 5,
+    "groupId": 1792905088738018,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab A1",
+    "url": "https://example.com/spaces/A1"
+   },
+   {
+    "id": 6,
+    "index": 6,
+    "groupId": 1792905093537059,
+    "splitViewId": -1,
+    "pinned": false,
+    "active": false,
+    "highlighted": false,
+    "hidden": false,
+    "discarded": true,
+    "openerTabId": null,
+    "status": "complete",
+    "title": "Tab B1",
+    "url": "https://example.com/spaces/B1"
+   }
+  ]
+ },
+ "chrome_in_B_after": {
+  "tabs": [
+   {
+    "extId": 1,
+    "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+    "label": "Zen Tidy Spike",
+    "gbTabsIndex": 0,
+    "allTabsIndex": 0,
+    "pinned": true,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": true,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": false,
+    "ws": null,
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": null,
+    "groupTag": null,
+    "groupLabelCps": null,
+    "groupSplitAttr": null,
+    "parentTag": "hbox",
+    "parentId": null,
+    "parentClass": "zen-essentials-container zen-workspace-tabs-section",
+    "wsContainerId": null,
+    "inEssentialsSection": true
+   },
+   {
+    "extId": -1,
+    "url": "about:blank",
+    "label": "New Tab",
+    "gbTabsIndex": 1,
+    "allTabsIndex": 1,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": true,
+    "pending": false,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": null,
+    "groupTag": null,
+    "groupLabelCps": null,
+    "groupSplitAttr": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 9,
+    "url": "https://example.com/spaces/B4",
+    "label": "Problem loading page",
+    "gbTabsIndex": 2,
+    "allTabsIndex": 2,
+    "pinned": false,
+    "selected": true,
+    "visuallyselected": true,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": false,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": null,
+    "groupTag": null,
+    "groupLabelCps": null,
+    "groupSplitAttr": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 7,
+    "url": "https://example.com/spaces/B2",
+    "label": "New Tab",
+    "gbTabsIndex": 3,
+    "allTabsIndex": 3,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": null,
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905088738-18",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 8,
+    "url": "https://example.com/spaces/B3",
+    "label": "New Tab",
+    "gbTabsIndex": 4,
+    "allTabsIndex": 4,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": null,
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905088738-18",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 2,
+    "url": "https://example.com/spaces/A1",
+    "label": "New Tab",
+    "gbTabsIndex": 5,
+    "allTabsIndex": 5,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": null,
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905088738-18",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 6,
+    "url": "https://example.com/spaces/B1",
+    "label": "New Tab",
+    "gbTabsIndex": 6,
+    "allTabsIndex": 6,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": null,
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905093537-59",
+    "groupTag": "tab-group",
+    "groupLabelCps": [],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 5,
+    "url": "https://example.com/spaces/A4",
+    "label": "Problem loading page",
+    "gbTabsIndex": -1,
+    "allTabsIndex": -1,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": false,
+    "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": null,
+    "groupTag": null,
+    "groupLabelCps": null,
+    "groupSplitAttr": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 3,
+    "url": "https://example.com/spaces/A2",
+    "label": "New Tab",
+    "gbTabsIndex": -1,
+    "allTabsIndex": -1,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": null,
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905085595-94",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 4,
+    "url": "https://example.com/spaces/A3",
+    "label": "New Tab",
+    "gbTabsIndex": -1,
+    "allTabsIndex": -1,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": null,
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905085595-94",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "inEssentialsSection": false
+   }
+  ],
+  "groups": [
+   {
+    "id": "1792905085595-94",
+    "tag": "tab-group",
+    "label": "⁠⁣Test A",
+    "labelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "labelAttrCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "color": "blue",
+    "collapsed": false,
+    "splitAttr": false,
+    "isZenFolder": false,
+    "ws": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "tabExtIds": [
+     3,
+     4
+    ],
+    "pinned": false
+   },
+   {
+    "id": "1792905088738-18",
+    "tag": "tab-group",
+    "label": "⁠⁣Test B",
+    "labelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "labelAttrCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "color": "purple",
+    "collapsed": false,
+    "splitAttr": false,
+    "isZenFolder": false,
+    "ws": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "tabExtIds": [
+     7,
+     8,
+     2
+    ],
+    "pinned": false
+   },
+   {
+    "id": "1792905093537-59",
+    "tag": "tab-group",
+    "label": "",
+    "labelCps": [],
+    "labelAttrCps": [
+     "U+200B"
+    ],
+    "color": "cyan",
+    "collapsed": false,
+    "splitAttr": false,
+    "isZenFolder": false,
+    "ws": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "tabExtIds": [
+     6
+    ],
+    "pinned": false
+   }
+  ],
+  "split": [],
+  "spaces": [
+   {
+    "uuid": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "name": "Space"
+   },
+   {
+    "uuid": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "name": "Space B"
+   }
+  ],
+  "activeSpace": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+  "selectedExtId": 9,
+  "pinnedTabCount": 1,
+  "numEssentials": 1,
+  "splitCurrentView": -1
+ },
+ "event_log": {
+  "value": {
+   "spikeLog": [
+    {
+     "t": 1792905084368,
+     "event": "onInstalled",
+     "reason": "install"
+    },
+    {
+     "t": 1792905084369,
+     "event": "tabs.onMoved",
+     "id": 1,
+     "windowId": 3,
+     "fromIndex": 1,
+     "toIndex": 0
+    },
+    {
+     "t": 1792905084371,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html"
+     }
+    },
+    {
+     "t": 1792905084372,
+     "event": "tabs.onUpdated",
+     "id": 1,
+     "changeInfo": {
+      "pinned": true
+     },
+     "tab": {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html"
+     }
+    },
+    {
+     "t": 1792905084373,
+     "event": "tabs.onUpdated",
+     "id": 1,
+     "changeInfo": {
+      "status": "loading",
+      "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html"
+     },
+     "tab": {
+      "id": 1,
+      "index": 0,
+      "windowId": 3,
+      "active": false,
+      "pinned": true,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+      "title": "80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html"
+     }
+    },
+    {
+     "t": 1792905085575,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 2,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/A1",
+      "title": "Tab A1"
+     }
+    },
+    {
+     "t": 1792905085580,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 3,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/A2",
+      "title": "Tab A2"
+     }
+    },
+    {
+     "t": 1792905085584,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 4,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/A3",
+      "title": "Tab A3"
+     }
+    },
+    {
+     "t": 1792905085591,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/A4",
+      "title": "Tab A4"
+     }
+    },
+    {
+     "t": 1792905085597,
+     "event": "tabGroups.onCreated",
+     "id": 1792905085595094,
+     "title": "",
+     "color": "blue"
+    },
+    {
+     "t": 1792905085597,
+     "event": "tabs.onMoved",
+     "id": 4,
+     "windowId": 3,
+     "fromIndex": 3,
+     "toIndex": 4
+    },
+    {
+     "t": 1792905085598,
+     "event": "tabs.onUpdated",
+     "id": 3,
+     "changeInfo": {
+      "groupId": 1792905085595094
+     },
+     "tab": {
+      "id": 3,
+      "index": 3,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905085595094,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/A2",
+      "title": "Tab A2"
+     }
+    },
+    {
+     "t": 1792905085599,
+     "event": "tabs.onUpdated",
+     "id": 4,
+     "changeInfo": {
+      "groupId": 1792905085595094
+     },
+     "tab": {
+      "id": 4,
+      "index": 4,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905085595094,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/A3",
+      "title": "Tab A3"
+     }
+    },
+    {
+     "t": 1792905085603,
+     "event": "tabGroups.onUpdated",
+     "id": 1792905085595094,
+     "title": "⁠⁣Test A",
+     "collapsed": false,
+     "color": "blue"
+    },
+    {
+     "t": 1792905085612,
+     "event": "tabs.onUpdated",
+     "id": 5,
+     "changeInfo": {
+      "discarded": false
+     },
+     "tab": {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "active": true,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "Tab A4"
+     }
+    },
+    {
+     "t": 1792905085613,
+     "event": "tabs.onActivated",
+     "tabId": 5,
+     "previousTabId": -1,
+     "windowId": 3
+    },
+    {
+     "t": 1792905086439,
+     "event": "tabGroups.onCreated",
+     "id": 1
+    },
+    {
+     "t": 1792905088719,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 6,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/B1",
+      "title": "Tab B1"
+     }
+    },
+    {
+     "t": 1792905088724,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 7,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/B2",
+      "title": "Tab B2"
+     }
+    },
+    {
+     "t": 1792905088729,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 8,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/B3",
+      "title": "Tab B3"
+     }
+    },
+    {
+     "t": 1792905088734,
+     "event": "tabs.onCreated",
+     "tab": {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/B4",
+      "title": "Tab B4"
+     }
+    },
+    {
+     "t": 1792905088740,
+     "event": "tabGroups.onCreated",
+     "id": 1792905088738018,
+     "title": "",
+     "color": "purple"
+    },
+    {
+     "t": 1792905088741,
+     "event": "tabs.onMoved",
+     "id": 8,
+     "windowId": 3,
+     "fromIndex": 3,
+     "toIndex": 4
+    },
+    {
+     "t": 1792905088742,
+     "event": "tabs.onUpdated",
+     "id": 7,
+     "changeInfo": {
+      "groupId": 1792905088738018
+     },
+     "tab": {
+      "id": 7,
+      "index": 3,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905088738018,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/B2",
+      "title": "Tab B2"
+     }
+    },
+    {
+     "t": 1792905088743,
+     "event": "tabs.onUpdated",
+     "id": 8,
+     "changeInfo": {
+      "groupId": 1792905088738018
+     },
+     "tab": {
+      "id": 8,
+      "index": 4,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905088738018,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/B3",
+      "title": "Tab B3"
+     }
+    },
+    {
+     "t": 1792905088747,
+     "event": "tabGroups.onUpdated",
+     "id": 1792905088738018,
+     "title": "⁠⁣Test B",
+     "collapsed": false,
+     "color": "purple"
+    },
+    {
+     "t": 1792905088754,
+     "event": "tabs.onUpdated",
+     "id": 9,
+     "changeInfo": {
+      "discarded": false
+     },
+     "tab": {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "active": true,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "Tab B4"
+     }
+    },
+    {
+     "t": 1792905088754,
+     "event": "tabs.onActivated",
+     "tabId": 9,
+     "previousTabId": -1,
+     "windowId": 3
+    },
+    {
+     "t": 1792905089617,
+     "event": "tabs.onActivated",
+     "tabId": 5,
+     "previousTabId": 9,
+     "windowId": 3
+    },
+    {
+     "t": 1792905089960,
+     "event": "tabs.onUpdated",
+     "id": 5,
+     "changeInfo": {
+      "isArticle": false
+     },
+     "tab": {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "active": true,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "Tab A4"
+     }
+    },
+    {
+     "t": 1792905089962,
+     "event": "tabs.onUpdated",
+     "id": 5,
+     "changeInfo": {
+      "status": "complete",
+      "url": "https://example.com/spaces/A4"
+     },
+     "tab": {
+      "id": 5,
+      "index": 2,
+      "windowId": 3,
+      "active": true,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "https://example.com/spaces/A4",
+      "title": "example.com/spaces/A4"
+     }
+    },
+    {
+     "t": 1792905092012,
+     "event": "tabs.onUpdated",
+     "id": 2,
+     "changeInfo": {
+      "groupId": 1792905088738018
+     },
+     "tab": {
+      "id": 2,
+      "index": 5,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905088738018,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/A1",
+      "title": "Tab A1"
+     }
+    },
+    {
+     "t": 1792905093058,
+     "event": "tabs.onUpdated",
+     "id": 9,
+     "changeInfo": {
+      "isArticle": false
+     },
+     "tab": {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "about:blank",
+      "title": "Tab B4"
+     }
+    },
+    {
+     "t": 1792905093061,
+     "event": "tabs.onUpdated",
+     "id": 9,
+     "changeInfo": {
+      "status": "complete",
+      "url": "https://example.com/spaces/B4"
+     },
+     "tab": {
+      "id": 9,
+      "index": 2,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": -1,
+      "discarded": false,
+      "hidden": false,
+      "url": "https://example.com/spaces/B4",
+      "title": "example.com/spaces/B4"
+     }
+    },
+    {
+     "t": 1792905093540,
+     "event": "tabGroups.onCreated",
+     "id": 1792905093537059,
+     "title": "",
+     "color": "cyan"
+    },
+    {
+     "t": 1792905093542,
+     "event": "tabs.onUpdated",
+     "id": 6,
+     "changeInfo": {
+      "groupId": 1792905093537059
+     },
+     "tab": {
+      "id": 6,
+      "index": 5,
+      "windowId": 3,
+      "active": false,
+      "pinned": false,
+      "groupId": 1792905093537059,
+      "discarded": true,
+      "hidden": false,
+      "url": "https://example.com/spaces/B1",
+      "title": "Tab B1"
+     }
+    },
+    {
+     "t": 1792905095084,
+     "event": "tabs.onActivated",
+     "tabId": 9,
+     "previousTabId": 5,
+     "windowId": 3
+    }
+   ]
+  }
+ },
+ "after_restart_chrome": {
+  "tabs": [
+   {
+    "extId": 2,
+    "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+    "label": "Zen Tidy Spike",
+    "gbTabsIndex": 0,
+    "allTabsIndex": 0,
+    "pinned": true,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": false,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": null,
+    "groupTag": null,
+    "groupLabelCps": null,
+    "groupSplitAttr": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-pinned-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": -1,
+    "url": "about:blank",
+    "label": "New Tab",
+    "gbTabsIndex": 1,
+    "allTabsIndex": 1,
+    "pinned": false,
+    "selected": true,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": true,
+    "pending": false,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": null,
+    "groupTag": null,
+    "groupLabelCps": null,
+    "groupSplitAttr": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 3,
+    "url": "https://example.com/spaces/B4",
+    "label": "Tab B4",
+    "gbTabsIndex": 2,
+    "allTabsIndex": 2,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": null,
+    "groupTag": null,
+    "groupLabelCps": null,
+    "groupSplitAttr": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 4,
+    "url": "https://example.com/spaces/B2",
+    "label": "Tab B2",
+    "gbTabsIndex": 3,
+    "allTabsIndex": 3,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905088738-18",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 5,
+    "url": "https://example.com/spaces/B3",
+    "label": "Tab B3",
+    "gbTabsIndex": 4,
+    "allTabsIndex": 4,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905088738-18",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 6,
+    "url": "https://example.com/spaces/A1",
+    "label": "Tab A1",
+    "gbTabsIndex": 5,
+    "allTabsIndex": 5,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905088738-18",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 7,
+    "url": "https://example.com/spaces/B1",
+    "label": "Tab B1",
+    "gbTabsIndex": 6,
+    "allTabsIndex": 6,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905093537-59",
+    "groupTag": "tab-group",
+    "groupLabelCps": [],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 8,
+    "url": "https://example.com/spaces/A2",
+    "label": "Tab A2",
+    "gbTabsIndex": 7,
+    "allTabsIndex": 7,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905085595-94",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 9,
+    "url": "https://example.com/spaces/A3",
+    "label": "Tab A3",
+    "gbTabsIndex": 8,
+    "allTabsIndex": 8,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": "1792905085595-94",
+    "groupTag": "tab-group",
+    "groupLabelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "groupSplitAttr": false,
+    "parentTag": "html:div",
+    "parentId": null,
+    "parentClass": "tab-group-container",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "inEssentialsSection": false
+   },
+   {
+    "extId": 10,
+    "url": "https://example.com/spaces/A4",
+    "label": "Tab A4",
+    "gbTabsIndex": -1,
+    "allTabsIndex": -1,
+    "pinned": false,
+    "selected": false,
+    "visuallyselected": false,
+    "hidden": false,
+    "essential": false,
+    "splitView": false,
+    "glance": false,
+    "glanceId": null,
+    "emptyTab": false,
+    "pending": true,
+    "ws": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "ownerExtId": null,
+    "openerExtId": null,
+    "groupId": null,
+    "groupTag": null,
+    "groupLabelCps": null,
+    "groupSplitAttr": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "inEssentialsSection": false
+   }
+  ],
+  "groups": [
+   {
+    "id": "1792905088738-18",
+    "tag": "tab-group",
+    "label": "⁠⁣Test B",
+    "labelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "labelAttrCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0042"
+    ],
+    "color": "purple",
+    "collapsed": false,
+    "splitAttr": false,
+    "isZenFolder": false,
+    "ws": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "tabExtIds": [
+     4,
+     5,
+     6
+    ],
+    "pinned": false
+   },
+   {
+    "id": "1792905093537-59",
+    "tag": "tab-group",
+    "label": "",
+    "labelCps": [],
+    "labelAttrCps": [
+     "U+200B"
+    ],
+    "color": "cyan",
+    "collapsed": false,
+    "splitAttr": false,
+    "isZenFolder": false,
+    "ws": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "tabExtIds": [
+     7
+    ],
+    "pinned": false
+   },
+   {
+    "id": "1792905085595-94",
+    "tag": "tab-group",
+    "label": "⁠⁣Test A",
+    "labelCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "labelAttrCps": [
+     "U+2060",
+     "U+2063",
+     "U+0054",
+     "U+0065",
+     "U+0073",
+     "U+0074",
+     "U+0020",
+     "U+0041"
+    ],
+    "color": "blue",
+    "collapsed": false,
+    "splitAttr": false,
+    "isZenFolder": false,
+    "ws": null,
+    "parentTag": "vbox",
+    "parentId": null,
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "wsContainerId": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "tabExtIds": [
+     8,
+     9
+    ],
+    "pinned": false
+   }
+  ],
+  "split": [],
+  "spaces": [
+   {
+    "uuid": "{6f3b8e9f-f276-417d-a084-4353896e17d7}",
+    "name": "Space"
+   },
+   {
+    "uuid": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+    "name": "Space B"
+   }
+  ],
+  "activeSpace": "{48948474-926c-476d-bb52-d7b880a1d14e}",
+  "selectedExtId": -1,
+  "pinnedTabCount": 1,
+  "numEssentials": 0,
+  "splitCurrentView": -1
+ },
+ "after_restart_ext": {
+  "tabs_query_currentWindow": {
+   "value": [
+    {
+     "id": 2,
+     "index": 0,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": true,
+     "status": "complete",
+     "hidden": false,
+     "discarded": false,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905102027,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+     "title": "Zen Tidy Spike"
+    },
+    {
+     "id": 3,
+     "index": 2,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905097473,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B4",
+     "title": "Tab B4",
+     "favIconUrl": "chrome://global/skin/icons/info.svg"
+    },
+    {
+     "id": 4,
+     "index": 3,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088723,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B2",
+     "title": "Tab B2"
+    },
+    {
+     "id": 5,
+     "index": 4,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088728,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B3",
+     "title": "Tab B3"
+    },
+    {
+     "id": 6,
+     "index": 5,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085573,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A1",
+     "title": "Tab A1"
+    },
+    {
+     "id": 7,
+     "index": 6,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088716,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905093537059,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B1",
+     "title": "Tab B1"
+    },
+    {
+     "id": 8,
+     "index": 7,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085578,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905085595094,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A2",
+     "title": "Tab A2"
+    },
+    {
+     "id": 9,
+     "index": 8,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085581,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905085595094,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A3",
+     "title": "Tab A3"
+    }
+   ]
+  },
+  "tabs_query_all": {
+   "value": [
+    {
+     "id": 2,
+     "index": 0,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": true,
+     "status": "complete",
+     "hidden": false,
+     "discarded": false,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905102027,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+     "title": "Zen Tidy Spike"
+    },
+    {
+     "id": 3,
+     "index": 2,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905097473,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B4",
+     "title": "Tab B4",
+     "favIconUrl": "chrome://global/skin/icons/info.svg"
+    },
+    {
+     "id": 4,
+     "index": 3,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088723,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B2",
+     "title": "Tab B2"
+    },
+    {
+     "id": 5,
+     "index": 4,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088728,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B3",
+     "title": "Tab B3"
+    },
+    {
+     "id": 6,
+     "index": 5,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085573,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A1",
+     "title": "Tab A1"
+    },
+    {
+     "id": 7,
+     "index": 6,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088716,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905093537059,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B1",
+     "title": "Tab B1"
+    },
+    {
+     "id": 8,
+     "index": 7,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085578,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905085595094,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A2",
+     "title": "Tab A2"
+    },
+    {
+     "id": 9,
+     "index": 8,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085581,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905085595094,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A3",
+     "title": "Tab A3"
+    }
+   ]
+  },
+  "tabs_query_active": {
+   "value": []
+  },
+  "tabGroups_query": {
+   "value": [
+    {
+     "collapsed": false,
+     "color": "purple",
+     "id": 1792905088738018,
+     "title": "⁠⁣Test B",
+     "windowId": 1
+    },
+    {
+     "collapsed": false,
+     "color": "cyan",
+     "id": 1792905093537059,
+     "title": "",
+     "windowId": 1
+    },
+    {
+     "collapsed": false,
+     "color": "blue",
+     "id": 1792905085595094,
+     "title": "⁠⁣Test A",
+     "windowId": 1
+    }
+   ]
+  },
+  "tabs_get": {
+   "2": {
+    "value": {
+     "id": 2,
+     "index": 0,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": true,
+     "status": "complete",
+     "hidden": false,
+     "discarded": false,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792905102027,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "moz-extension://80ca991c-163a-459b-be44-cdb8b2dd847d/spike.html",
+     "title": "Zen Tidy Spike"
+    }
+   },
+   "3": {
+    "value": {
+     "id": 3,
+     "index": 2,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905097473,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B4",
+     "title": "Tab B4",
+     "favIconUrl": "chrome://global/skin/icons/info.svg"
+    }
+   },
+   "4": {
+    "value": {
+     "id": 4,
+     "index": 3,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088723,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B2",
+     "title": "Tab B2"
+    }
+   },
+   "5": {
+    "value": {
+     "id": 5,
+     "index": 4,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088728,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B3",
+     "title": "Tab B3"
+    }
+   },
+   "6": {
+    "value": {
+     "id": 6,
+     "index": 5,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085573,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905088738018,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A1",
+     "title": "Tab A1"
+    }
+   },
+   "7": {
+    "value": {
+     "id": 7,
+     "index": 6,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905088716,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905093537059,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/B1",
+     "title": "Tab B1"
+    }
+   },
+   "8": {
+    "value": {
+     "id": 8,
+     "index": 7,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085578,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905085595094,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A2",
+     "title": "Tab A2"
+    }
+   },
+   "9": {
+    "value": {
+     "id": 9,
+     "index": 8,
+     "windowId": 1,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "complete",
+     "hidden": false,
+     "discarded": true,
+     "incognito": false,
+     "width": 0,
+     "height": 0,
+     "lastAccessed": 1792905085581,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792905085595094,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/spaces/A3",
+     "title": "Tab A3"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,206 @@
+{
+ "ids": {
+  "ga": 1792906267880092,
+  "gb": 1792906267898079,
+  "gc": 1792906267918074
+ },
+ "ungroup_a": {
+  "value": null
+ },
+ "remove_b": {
+  "value": null
+ },
+ "ungroup_c1": {
+  "value": null
+ },
+ "groups_end": [
+  {
+   "collapsed": false,
+   "color": "cyan",
+   "id": 1792906267918074,
+   "title": "",
+   "windowId": 3
+  }
+ ],
+ "log": [
+  {
+   "t": 1792906267371,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792906267374,
+   "event": "onInstalled",
+   "reason": "install",
+   "flushed": 0
+  },
+  {
+   "t": 1792906267883,
+   "event": "tabGroups.onCreated",
+   "id": 1792906267880092,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906267884,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 2,
+   "groupId": 1792906267880092
+  },
+  {
+   "t": 1792906267884,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792906267880092
+  },
+  {
+   "t": 1792906267900,
+   "event": "tabGroups.onCreated",
+   "id": 1792906267898079,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906267900,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 4,
+   "groupId": 1792906267898079
+  },
+  {
+   "t": 1792906267901,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 5,
+   "groupId": 1792906267898079
+  },
+  {
+   "t": 1792906267920,
+   "event": "tabGroups.onCreated",
+   "id": 1792906267918074,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906267920,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 6,
+   "groupId": 1792906267918074
+  },
+  {
+   "t": 1792906267921,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 7,
+   "groupId": 1792906267918074
+  },
+  {
+   "t": 1792906267955,
+   "event": "mark",
+   "label": "ungroup_all_a"
+  },
+  {
+   "t": 1792906267964,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906267880092,
+   "title": "",
+   "info": {
+    "isWindowClosing": false
+   }
+  },
+  {
+   "t": 1792906267965,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 2,
+   "groupId": -1
+  },
+  {
+   "t": 1792906267965,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": -1
+  },
+  {
+   "t": 1792906267976,
+   "event": "tabGroups.onRemoved.check",
+   "id": 1792906267880092,
+   "stillExists": false
+  },
+  {
+   "t": 1792906269003,
+   "event": "mark",
+   "label": "remove_tabs_b"
+  },
+  {
+   "t": 1792906269015,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906267898079,
+   "title": "",
+   "info": {
+    "isWindowClosing": false
+   }
+  },
+  {
+   "t": 1792906269025,
+   "event": "tabGroups.onRemoved.check",
+   "id": 1792906267898079,
+   "stillExists": false
+  },
+  {
+   "t": 1792906270044,
+   "event": "mark",
+   "label": "ungroup_one_c"
+  },
+  {
+   "t": 1792906270048,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 6,
+   "groupId": -1
+  },
+  {
+   "t": 1792906271062,
+   "event": "mark",
+   "label": "end"
+  }
+ ],
+ "summary": {
+  "removed_events": [
+   {
+    "after": "ungroup_all_a",
+    "event": "tabGroups.onRemoved",
+    "id": 1792906267880092,
+    "info": {
+     "isWindowClosing": false
+    },
+    "stillExists": null
+   },
+   {
+    "after": "ungroup_all_a",
+    "event": "tabGroups.onRemoved.check",
+    "id": 1792906267880092,
+    "info": null,
+    "stillExists": false
+   },
+   {
+    "after": "remove_tabs_b",
+    "event": "tabGroups.onRemoved",
+    "id": 1792906267898079,
+    "info": {
+     "isWindowClosing": false
+    },
+    "stillExists": null
+   },
+   {
+    "after": "remove_tabs_b",
+    "event": "tabGroups.onRemoved.check",
+    "id": 1792906267898079,
+    "info": null,
+    "stillExists": false
+   }
+  ],
+  "alive_end": [
+   1792906267918074
+  ],
+  "ids": {
+   "ga": 1792906267880092,
+   "gb": 1792906267898079,
+   "gc": 1792906267918074
+  }
+ }
+}

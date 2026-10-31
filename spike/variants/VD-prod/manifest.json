@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Zen Tidy Spike VD",
+  "version": "0.0.1",
+  "description": "Adversarial verifier copy of D-prod. Not for daily use.",
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zen-tidy-spike-vd@local",
+      "strict_min_version": "140.0",
+      "update_url": "https://example.com/zen-tidy/updates.json",
+      "data_collection_permissions": {
+        "required": [
+          "browsingActivity"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "sessions",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.anthropic.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Zen Tidy Spike D",
+    "default_popup": "spike.html"
+  },
+  "options_ui": {
+    "page": "key.html",
+    "open_in_tab": true
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+  }
+}

@@ -1,0 +1,35 @@
+{
+ "signed_xpi": "abb2c6a6ad8c463692fa-0.0.1.xpi",
+ "install_signed": "zen-tidy-dev@soulaymane",
+ "info_after_install": {
+  "id": "zen-tidy-dev@soulaymane",
+  "version": "0.0.1",
+  "isActive": true,
+  "signedState": 2,
+  "SIGNEDSTATE_SIGNED": 2,
+  "appDisabled": false,
+  "temporarilyInstalled": false,
+  "sigRequired": true
+ },
+ "info_after_restart": {
+  "id": "zen-tidy-dev@soulaymane",
+  "version": "0.0.1",
+  "isActive": true,
+  "signedState": 2,
+  "SIGNEDSTATE_SIGNED": 2,
+  "appDisabled": false,
+  "temporarilyInstalled": false,
+  "sigRequired": true
+ },
+ "install_unsigned_error": "{\"error\": \"invalid web extension\", \"message\": \"Could not install Add-on: ERROR_SIGNEDSTATE_REQUIRED: The addon must be signed and isn't.\", \"stacktrace\": \"RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:14:8\\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5\\nInvalidWebExtensionError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:455:5\\ninstallAddo",
+ "info_after_unsigned_attempt": {
+  "id": "zen-tidy-dev@soulaymane",
+  "version": "0.0.1",
+  "isActive": true,
+  "signedState": 2,
+  "SIGNEDSTATE_SIGNED": 2,
+  "appDisabled": false,
+  "temporarilyInstalled": false,
+  "sigRequired": true
+ }
+}

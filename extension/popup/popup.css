@@ -1,0 +1,604 @@
+/* Zen Tidy popup, built on Zen's own panel design (notes/zen-design-system.md). Every value comes from
+   the --zt-* tokens in shared/zen-tokens.css, which copy Zen 1.23.4b. Light and dark follow Zen's
+   scheme through light-dark(). No inline styles anywhere (CSP), so every state is a class, an
+   attribute or [hidden]. */
+
+* { box-sizing: border-box; }
+/* Views and popovers set display; [hidden] must still win. */
+[hidden] { display: none !important; }
+
+/* ---- Panel shell (§4.1). Zen's panel draws the border, corners and shadow (§5). ---- */
+
+/* On html, not body: Firefox injects body { border-radius: 8px } into extension popups. */
+html { margin: 0; background: var(--zt-bg); }
+
+body {
+  margin: 0;
+  width: 380px;
+  font: menu;
+  color: var(--zt-text);
+  background: transparent;
+}
+
+/* Focus: 2px accent-derived ring. Zero specificity, so the inset variants below win. */
+:where(:focus-visible) { outline: 2px solid var(--zt-focus); outline-offset: 2px; }
+
+/* ---- Buttons (§4.2) ---- */
+
+/* The default button is Zen's secondary footer button. Written inside :where() so every class
+   below overrides it without specificity fights. */
+:where(button) {
+  appearance: none;
+  min-height: 32px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: var(--zt-radius-button);
+  background-color: var(--zt-fill-button);
+  color: var(--zt-button-text);
+  font: inherit;
+  font-weight: 500;
+  cursor: default;
+  transition: scale .2s;
+}
+:where(button:hover:not(:disabled)) { background-color: var(--zt-fill-button-hover); }
+:where(button:hover:active:not(:disabled)) { background-color: var(--zt-fill-button-active); scale: .98; }
+:where(button:disabled) { opacity: .5; }
+:where(button:focus-visible) { outline: 2px solid var(--zt-focus); outline-offset: 2px; }
+
+button.primary {
+  appearance: none;
+  min-height: 32px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: var(--zt-radius-button);
+  background-color: var(--zt-accent-primary);
+  color: var(--zt-on-accent-primary);
+  font: inherit;
+  font-weight: 500;
+  transition: scale .2s;
+}
+button.primary:hover:not(:disabled) { background-color: var(--zt-accent-primary-hover); }
+button.primary:hover:active:not(:disabled) { background-color: var(--zt-accent-primary-active); scale: .98; }
+button.primary:disabled { opacity: .5; }
+
+/* Text action: Zen's site-data "Manage" label. Shown on hover of its row or header, or on focus. */
+.text-action {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: inherit;
+  min-height: 0;
+  font: inherit;
+  font-size: smaller;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: var(--zt-radius-row);
+  opacity: 0;
+  transition: opacity .15s ease-in-out;
+}
+:where(.tab-row:hover, .group-head:hover) .text-action { opacity: .5; }
+.text-action:hover:not(:disabled) { background-color: color-mix(in srgb, currentColor 10%, transparent); }
+.text-action:focus-visible, .text-action[aria-expanded="true"] { opacity: 1; }
+.text-action.always { opacity: .6; }
+/* Under the .6 above: (0,2,0) beats the generic :where(button:disabled) at .5, so a disabled one looked enabled. */
+.text-action.always:disabled { opacity: .3; }
+
+/* The groups view's row actions: shown on hover of the row or while the keyboard is in it (Zen §1.6), and while the
+   row's Ungroup or Close all is out or asking for confirmation (.asking, set by popup.js). */
+:where(.groups-row:focus-within, .groups-row.asking) .text-action { opacity: .5; }
+/* Off while another group action is out. (0,3,0) beats the hover, focus-within and asking rules at .5, which made a
+   disabled Ungroup or Close all look like an enabled one (as .text-action.always:disabled above). */
+.groups-row .text-action:disabled { opacity: .3; }
+
+/* Toolbar icon button (§4.2): .toolbarbutton-1, a 16px glyph at 70% in a 28px box. The groups view's Back. */
+.toolbar-button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  place-items: center;
+  flex: none;
+  inline-size: 28px;
+  block-size: 28px;
+  min-height: 0;
+  padding: 6px;
+  border-radius: var(--zt-radius-button);
+  transition: background-color .1s, transform .2s;
+}
+.toolbar-button:hover { background-color: var(--zt-toolbarbutton-hover); }
+.toolbar-button:hover:active { background-color: var(--zt-toolbarbutton-active); transform: scale(.95); }
+.toolbar-button .chevron { color: color-mix(in srgb, currentColor 70%, transparent); }
+
+/* Inline icon buttons: Zen's emoji-picker cell. "Don't add" (an existing group's delete) is a
+   text action instead. */
+.group-toggle, .group-icon, .group-delete:not(.text-action) {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  place-items: center;
+  flex: none;
+  inline-size: 22px;
+  block-size: 22px;
+  min-height: 0;
+  padding: 0;
+  border-radius: var(--zt-radius-cell);
+  transition: opacity .08s ease-in-out;
+}
+:is(.group-toggle, .group-icon, .group-delete:not(.text-action)):hover { background-color: var(--zt-fill-hover); }
+:is(.group-toggle, .group-icon, .group-delete):focus-visible { outline: 2px solid var(--zt-focus); outline-offset: -2px; }
+
+/* ---- Centred states: no key, idle, running, applying, applied, undoing, undone, error (§4.14) ---- */
+
+.view-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 24px 16px 16px;
+  text-align: center;
+}
+.view-title { margin: 0 0 5px; font-size: 18px; font-weight: 600; }
+.view-text { margin: 0; max-width: 300px; font-size: 12px; color: var(--zt-text-secondary); }
+.view-note { margin: 8px 0 0; max-width: 300px; font-size: smaller; color: var(--zt-text-secondary); }
+.view-note:empty { display: none; }
+.view-actions { display: flex; flex-direction: column; gap: 6px; inline-size: 100%; margin-top: 16px; }
+.view-actions > button { inline-size: 100%; }
+.hero-icon { inline-size: 32px; block-size: 32px; color: currentColor; opacity: .65; margin-bottom: 12px; }
+/* "Groups" and "Settings": the idle view's standalone text actions, side by side. */
+.idle-links { display: flex; justify-content: center; gap: 2px; margin-top: 8px; }
+
+/* Running, applying and undoing: Zen's share status line under the loading pill. */
+.view-status { margin: 0 0 5px; font-size: 12px; font-weight: 400; opacity: .7; }
+#elapsed { font-variant-numeric: tabular-nums; }
+
+.details {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 300px;
+  font-size: smaller;
+  color: var(--zt-text-secondary);
+}
+.details:empty { display: none; }
+.details li + li { margin-top: 4px; }
+/* A tab undo left alone, by its current title: one line each. */
+.details .detail-tab { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ---- Undo in the idle, no-key and applied views (m3-contracts, "Popup"). Its notices are under §4.10 below. ---- */
+
+/* The slots popup.js moves Undo's parts into (notices, confirmation, "Last tidy" line); their children lay out as
+   the view's own. */
+.undo-slot { display: contents; }
+/* The multi-window confirmation stands in for the view's buttons: the footer's confirm text and stack (§4.12). */
+.undo-confirm { inline-size: 100%; margin-top: 16px; }
+/* "Last tidy 3 h ago" + Undo: a secondary line (Zen's .6 text) with a standalone text action. */
+.undo-offer { display: flex; align-items: baseline; justify-content: center; gap: 2px; margin: 8px 0 0; }
+.undo-offer-text { font-size: smaller; color: var(--zt-text-secondary); }
+
+/* Loading pill: #zen-loading-progress-bar. No spinners in Zen. */
+.zt-loading {
+  position: relative;
+  overflow: clip;
+  contain: content;
+  inline-size: 60px;
+  block-size: 4.8px;
+  border-radius: 100px;
+  background: var(--zt-loading);
+  margin-bottom: 16px;
+  animation: zt-pulse 1s ease-in-out infinite alternate;
+}
+@keyframes zt-pulse { from { transform: scale(.85); opacity: .6; } to { transform: scale(.95); opacity: 1; } }
+/* After about 3 s popup.js adds [long-load] (Zen's long-load variant). */
+.zt-loading[long-load] { background: var(--zt-loading-track); animation: zt-settle .3s ease-out forwards; }
+.zt-loading[long-load]::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  inline-size: 75%;
+  border-radius: inherit;
+  background: var(--zt-loading);
+  opacity: 0;
+  animation: zt-long 1s ease-in-out .3s infinite;
+}
+@keyframes zt-settle { to { transform: scale(1); opacity: 1; inline-size: 120px; } }
+@keyframes zt-long { 0% { transform: translateX(calc(-400% / 3)); opacity: 1; } 100% { transform: translateX(calc(400% / 3)); opacity: 1; } }
+
+/* ---- Preview editor ---- */
+
+.view-editor {
+  display: flex;
+  flex-direction: column;
+  /* A floor keeps room for the icon picker on short previews; the list scrolls past Firefox's
+     600px popup ceiling. */
+  min-height: 460px;
+  max-height: 600px;
+}
+
+/* Header (§4.11): Zen's panel header metrics. */
+.editor-head {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 40px;
+  padding: 0 16px;
+  border-bottom: none;
+}
+.editor-title { margin: 0; font-size: 12px; font-weight: 600; }
+.editor-summary {
+  margin: 0;
+  font-size: smaller;
+  font-weight: 500;
+  color: var(--zt-text-secondary);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Scroll edge (§4.13): a hairline only while content is scrolled under the header. */
+.editor-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  border-top: 1px solid transparent;
+  transition: border-color .1s;
+}
+.editor-scroll[data-scrolled] { border-top-color: var(--zt-scroll-edge); }
+
+/* Notices (§4.10): Zen's sidebar notification card. One style for every notice. */
+.banners { padding: 8px 8px 0; }
+.banners:not(:has(> :not([hidden]))) { display: none; }
+/* The Glance reminder shows on every preview, so it is a quiet secondary line (Zen's .6 text), not a
+   card: a card on every run would bury the notices that only appear when something needs attention. */
+.glance-note { margin: 0 0 8px; padding: 0 8px; font-size: smaller; color: var(--zt-text-secondary); }
+.banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 0 0 8px;
+  padding: 10px;
+  border-radius: var(--zt-radius-medium);
+  background: var(--zt-notice-bg);
+  outline: var(--zt-notice-outline);
+  outline-offset: -1.5px;
+  box-shadow: var(--zt-notice-shadow);
+  font-size: 12px;
+}
+.banner .zt-icon { inline-size: 16px; block-size: 16px; opacity: .7; }
+/* A notice in a centred view (undo): the same card at the view's width, its text left-aligned. */
+.view-center .banner { inline-size: 100%; margin: 16px 0 0; text-align: start; }
+/* A notice with an action: Zen's sidebar notification puts its action rows under the body text, at the start. */
+.banner-stack { flex-direction: column; align-items: flex-start; gap: 8px; }
+.banner-text { margin: 0; }
+
+/* Empty states (§4.14): Zen Library's empty state; inline empties are left-aligned. */
+.empty-note { margin: 0; padding: 8px 8px 8px 22px; font-size: 12px; color: var(--zt-text-secondary); }
+#no-groups, #groups-empty { padding: 24px 16px; text-align: center; }
+
+/* Group sections (§4.8): no cards. A tinted name row, then the tabs at Zen's folder indent. */
+.groups { display: flex; flex-direction: column; gap: 8px; padding: 8px; }
+.groups:empty { display: none; }
+
+.group-card { background: none; border: none; border-radius: 0; }
+.group-card.drop-target, .leftovers.drop-target {
+  outline: var(--zt-dashed-ring);
+  outline-offset: -1px;
+  border-radius: var(--zt-radius-medium);
+  background: var(--zt-fill-hover);
+}
+
+.group-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 6px 9px 8px;
+  border-radius: var(--zt-radius-medium);
+  background-color: var(--zt-field-bg);
+}
+.group-head:has(.group-name:focus-visible) { outline: 2px solid var(--zt-focus); outline-offset: -2px; }
+
+.group-icon { position: relative; }
+.group-icon .zt-icon { color: var(--zt-themed-icon-fill); }
+.group-icon[aria-expanded="true"] { background: transparent; }
+/* Zen's "picker open" ring around a Space icon. */
+.group-icon[aria-expanded="true"]::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+  border: var(--zt-dashed-ring);
+  border-radius: 6px;
+}
+
+/* Zen's nucleo arrow-right geometry, drawn in CSS (nucleo icons may not be redistributed). */
+.chevron {
+  inline-size: 7.8px;
+  block-size: 7.8px;
+  border-right: 1.33px solid currentColor;
+  border-bottom: 1.33px solid currentColor;
+  transform: translateX(-2px) rotate(-45deg);
+  transition: transform .1s;
+}
+.group-toggle[aria-expanded="true"] .chevron { transform: translateY(-2px) rotate(45deg); }
+
+/* Zen's inline rename field: no border, no fill, the wrapper shows focus. */
+.group-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  appearance: none;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+}
+.group-name::placeholder { color: var(--zt-text-secondary); font-weight: 400; }
+
+.group-count {
+  flex: none;
+  font-size: smaller;
+  font-weight: 500;
+  color: var(--zt-text-secondary);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Row actions appear on hover or focus, as Zen's Space actions button does. */
+.group-delete { flex: none; }
+.group-delete:not(.text-action) { opacity: 0; color: inherit; }
+/* :where() keeps this below the hover/focus rule that follows, which must reach opacity 1. */
+:where(.group-head:is(:hover, :focus-within)) .group-delete:not(.text-action) { opacity: .6; }
+.group-delete:not(.text-action):is(:hover, :focus-visible) { opacity: 1; }
+
+/* "Don't add" takes no room at rest, so every header keeps the same trailing slot (8px gap + 22px,
+   as a new group's delete) and the counts line up. While it shows, it takes the count's place, as
+   Zen's Library rows swap their secondary line on hover (zen-library.css, .zen-library-visit-url). */
+.group-card[data-kind="existing"] .group-head { position: relative; }
+.group-card[data-kind="existing"] .group-delete {
+  position: absolute;
+  inset-inline-end: 6px;
+  inset-block-start: 50%;
+  translate: 0 -50%;
+}
+.group-card[data-kind="existing"] .group-count { margin-inline-end: 30px; }
+.group-card[data-kind="existing"] .group-head:is(:hover, :has(.group-delete:focus-visible)) .group-count { visibility: hidden; }
+
+/* 8px groups padding + 26px puts the note on the checkbox column below it. */
+.group-note, .group-hint { margin: 0; padding: 4px 8px 0 26px; font-size: smaller; }
+.group-note { color: var(--zt-text-secondary); }
+.group-hint { color: var(--zt-text); font-weight: 500; }
+
+/* Tab rows (§4.7): Zen's folder tab-search row. */
+.tab-list { padding: 0 0 0 14px; border-top: none; }
+.leftovers .tab-list, .extras .tab-list { padding: 0; }
+
+.tab-row {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 8px;
+  margin: 2px 0;
+  border-radius: var(--zt-radius-row);
+}
+.tab-row:hover { background-color: var(--zt-fill-hover); }
+/* Zen's [missing] treatment for a tab that won't be grouped: unticked, or ticked in Extras to close. An extra's own
+   box is not .tab-check, so an unticked extra (the normal state: nothing closes) is not dimmed. */
+.tab-row:has(.tab-check:not(:checked)), .tab-row.will-close { opacity: .6; }
+.tab-row.dragging { opacity: .5; }
+
+/* Checkbox (§4.4): a native 16px control tinted with the accent, in the favicon slot. */
+.tab-check, .extra-check {
+  flex: none;
+  inline-size: 16px;
+  block-size: 16px;
+  margin: 0 10px 0 4px;
+  accent-color: var(--zt-accent-primary);
+}
+.tab-check:focus-visible, .extra-check:focus-visible { outline: 2px solid var(--zt-focus); outline-offset: 2px; }
+
+.tab-text { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.tab-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 400; }
+.tab-meta { display: flex; align-items: center; gap: 6px; min-width: 0; font-size: smaller; }
+.tab-site, .tab-keeps {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--zt-text-secondary);
+}
+/* A duplicate's "Keeps: …" takes what the site leaves; the site keeps its own width, up to 45% of the row, so a long
+   kept title never squeezes it to a few letters. */
+.tab-keeps { flex: 1 1 auto; }
+.extra-row .tab-site { flex: none; max-width: 45%; }
+.tab-move { flex: none; }
+
+/* Badge (§4.9): Zen's unsynced-window name pill. One style. */
+.badge {
+  flex: none;
+  padding: 1px 6px;
+  border-radius: var(--zt-radius-pill);
+  background: var(--zt-pill-bg);
+  color: inherit;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/* "Stay loose" and the Extras sections under it: Zen's site-data section, no dashed box. */
+.leftovers, .extras-section { margin: 0 8px 8px; padding: 9px 0 8px; border: none; }
+.section-title { margin: 0 8px 2px; font-size: 12px; font-weight: 600; color: inherit; }
+.section-title .count { font-size: smaller; font-weight: 500; color: var(--zt-text-secondary); margin-inline-start: 6px; }
+
+/* Footer (§4.12): Zen's site-data footer line and the Space-creation button stack. */
+.editor-foot {
+  flex: none;
+  margin: 2px 8px 8px;
+  padding: 8px 0 0;
+  border-top: 1px solid var(--zt-footer-border);
+  background: none;
+}
+.foot-actions { display: flex; flex-direction: column; gap: 6px; }
+.foot-actions > button { inline-size: 100%; }
+.confirm-text { margin: 0 0 8px; font-size: 12px; color: var(--zt-text); }
+.editor-foot .banner { margin: 0 0 8px; }
+/* Close all's confirmation names the tabs Undo couldn't reopen: the details list, at the footer's start. */
+.confirm-list { margin: 0 0 8px; max-width: none; }
+.confirm-list li { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ---- Groups view (m4-contracts, "Popup"): the editor's shell, a Zen subview header with Back ---- */
+
+.groups-head { justify-content: flex-start; gap: 4px; padding-inline-start: 10px; }
+.groups-head .editor-title { flex: 1 1 auto; }
+/* The chevron (§4.8) turned to point back. */
+.chevron-back { transform: translateX(2px) rotate(135deg); }
+/* Each row is a preview card's header: collapse toggle, icon, name, count. The chevron points down while the group
+   is expanded in Zen, as Zen's own. */
+.groups-collapse[aria-pressed="false"] .chevron { transform: translateY(-2px) rotate(45deg); }
+/* Ungroup and Close all take no room at rest and appear on hover or while the keyboard is in the row; the name
+   gives way, as a Zen tab's label does for its close button. The row that asked (.asking) keeps them while its action
+   is out or its confirmation shows, so the confirmation's Go back and the end of a refused action find them on screen.
+   At rest they are clipped to nothing and taken out of the flow (so no gap is left for them), never display: none:
+   they stay in the focus order, so Shift+Tab from below reaches Close all and Ungroup before the row has
+   :focus-within, as Tab does from the name. */
+.groups-row { position: relative; }
+.groups-actions { display: flex; flex: none; align-items: center; gap: 2px; }
+.groups-row:not(:hover, :focus-within, .asking) .groups-actions {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+/* The group undo notice: its line, then Undo as a text action at the end. */
+.group-undo-notice { align-items: baseline; }
+.group-undo-notice .banner-text { flex: 1 1 auto; min-width: 0; }
+
+/* ---- Popovers: icon picker and "Move to…" menu, placed by popup.js (§4.5, §4.6) ---- */
+
+/* Zen's arrow panel. No open or close animation (Zen turns them off for Mica panels). */
+.popover {
+  position: fixed;
+  z-index: 10;
+  margin: 0;
+  background: var(--zt-popover-bg);
+  border: 1px solid var(--zt-popover-border);
+  border-radius: var(--zt-radius-popover);
+  box-shadow: var(--zt-shadow-panel);
+  color: var(--zt-button-text);
+  max-height: calc(100vh - 16px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* Move menu: Zen's context menu items and "Move to Folder" behaviour. */
+.move-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  inline-size: max-content;
+  max-inline-size: calc(100vw - 16px);
+}
+.menu-item {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 6px 12px;
+  border-radius: var(--zt-radius-xsmall);
+  font: inherit;
+  font-weight: 400;
+  text-align: start;
+}
+/* Menus show focus as the highlight. */
+.menu-item:is(:hover, :focus-visible) { background-color: var(--zt-menu-hover); outline: none; }
+.menu-item .zt-icon { color: currentColor; }
+.menu-separator { block-size: 1px; margin: 3px 0; background: var(--zt-separator); }
+.menu-label { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.menu-spacer { flex: none; inline-size: 16px; }
+
+/* Icon picker: Zen's folder icon picker (#PanelUI-zen-emojis-picker, SVG icons only). */
+/* Panel text colour (#000 / #fbfbfe), not the menu-item colour: live Zen picker glyphs compute
+   from black / #fbfbfe. */
+.icon-picker { inline-size: 250px; padding: 0; color: var(--zt-text); }
+.picker-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+}
+/* The "Icons" tab is a 22px toolbarbutton with no fill: in folder mode Zen puts .selected on the
+   hidden Emojis tab (ZenEmojiPicker.mjs #onPopupShown -> #changePage(false)), so the header is
+   6 + 22 + 6 = 34px, as live. */
+.picker-head-label {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 22px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 6px;
+}
+.picker-grid {
+  display: grid;
+  /* Zen: repeat(auto-fill, minmax(28px, 1fr)), 7 columns at 250px. Fixed so the arrow keys know
+     the count (PICKER_COLUMNS in popup.js). */
+  grid-template-columns: repeat(7, minmax(28px, 1fr));
+  gap: 5px;
+  padding: 5px 10px 10px;
+  max-block-size: 230px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.picker-item {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  place-items: center;
+  inline-size: 22px;
+  block-size: 22px;
+  min-height: 0;
+  padding: 4px;
+  border-radius: var(--zt-radius-cell);
+  transition: opacity .08s ease-in-out;
+}
+/* Zen's cells are .toolbarbutton-1, whose icon fill is currentColor 70% (zen-single-components.css:192). */
+.picker-item .zt-icon {
+  inline-size: 14px;
+  block-size: 14px;
+  color: color-mix(in srgb, currentColor 70%, transparent);
+}
+/* Neutral, never accent: Zen marks the current icon with the dashed ring on the anchor. */
+.picker-item:hover, .picker-item[aria-pressed="true"] { background-color: var(--zt-fill-hover); }
+.picker-item:focus-visible { outline: 2px solid var(--zt-focus); outline-offset: -2px; }
+
+/* ---- Reduced motion (§4.15) ---- */
+
+@media (prefers-reduced-motion: reduce) {
+  :where(button), button.primary, .toolbar-button { transition: none; }
+  button:hover:active:not(:disabled), button.primary:hover:active:not(:disabled) { scale: none; }
+  .toolbar-button:hover:active { transform: none; }
+  /* A static pill. */
+  .zt-loading, .zt-loading[long-load] {
+    animation: none;
+    transform: none;
+    opacity: 1;
+    background: var(--zt-loading);
+  }
+  .zt-loading[long-load]::before { content: none; }
+  .chevron { transition: none; }
+}

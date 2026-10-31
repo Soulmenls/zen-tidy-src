@@ -1,0 +1,245 @@
+<!doctype html>
+<!-- Zen Tidy settings (notes/m6-contracts.md, "Options page"). Five sections, styled as Zen's about:preferences
+     groupboxes (notes/zen-design-system.md). No <form>, no inline script or style, no links that navigate this page.
+
+     The key field follows implementation-notes, "Key field": a masked text input (never type=password, which makes
+     Firefox offer to save and sync the key), autocomplete=off, cleared right after Save. M6 adds: copy, cut and drag
+     out of it are blocked (options.js), ime-mode is disabled (options.css), and it has an accessible name and a hint.
+     The field's selection holds the key in the clear too, and browser features read a text field's selection (they
+     leave out only type=password): the context menu's "Search with…", translate and chatbot items, and the find bar,
+     which a find shortcut fills with the selection. options.js collapses the selection before the context menu opens
+     and on the find shortcuts (Ctrl/Cmd+F and +G, Cmd+E, F3), so they find nothing to read.
+     Remaining risk: the mask is visual only. Between the paste and Save, a screen reader asked to read the field can
+     speak the key, since a text input exposes its value to accessibility tools and type=password, which would hide
+     it, is ruled out. A selection made in the field (Ctrl+A stays possible, so a paste can replace what is there) is
+     still the system's primary selection on Linux, and a find opened from the menu rather than a shortcut can still
+     read it. Save clears the field straight away, which keeps every one of these windows short.
+
+     The list editors' hooks are #domains-*, #keywords-* and #stems-* with the same suffixes: -count, -filter, -list
+     (li.chip[data-entry] > .chip-text, .chip-badge "added", button.chip-remove), -empty, -add, -add-button, -error,
+     -removed (a <details>), -removed-summary, -removed-list (li.chip[data-entry] > button.chip-restore), -reset,
+     -status, -confirm, -confirm-text, -confirm-cancel, -confirm-reset, -filter-status (a visually hidden status that
+     says how many entries a typed filter leaves). Each editor puts its Add row first, then the filter right above the
+     list it filters, and each chip list is one Tab stop (the arrow keys move inside it, options.js; the list itself has
+     tabindex=-1, since Firefox makes a scrolling box a Tab stop of its own), so the keyboard reaches Add, Removed
+     defaults and Reset without passing every chip of a 486-word list. Each confirmation's Cancel and Reset are
+     described by its question, so a screen reader reads what the reset removes along with the button. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zen Tidy settings</title>
+  <link rel="stylesheet" href="../shared/zen-tokens.css">
+  <link rel="stylesheet" href="options.css">
+  <script type="module" src="options.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page-head">
+      <h1>Zen Tidy settings</h1>
+      <p id="settings-error" class="error page-error" role="alert"></p>
+    </header>
+
+    <section class="card" aria-labelledby="key-heading">
+      <h2 id="key-heading">Anthropic API key</h2>
+      <p class="hint">Zen Tidy uses your own key to ask Claude for groups. The key stays in this browser's extension storage. It is never synced and only ever sent to api.anthropic.com.</p>
+
+      <p id="key-status" class="status" role="status">Checking…</p>
+
+      <label class="field-label" for="key-input">Anthropic API key</label>
+      <div class="key-row">
+        <input id="key-input" type="text" autocomplete="off" spellcheck="false" autocapitalize="off" class="text-field masked" aria-label="Anthropic API key" aria-describedby="key-hint" placeholder="Paste your key here">
+        <button id="key-save" class="primary" type="button">Save</button>
+      </div>
+      <p id="key-hint" class="note">The key stays hidden in this field, can't be copied out of it, and is cleared as soon as it's saved.</p>
+      <p id="key-error" class="error" role="alert"></p>
+
+      <div class="actions">
+        <button id="key-test" type="button">Test key</button>
+        <button id="key-clear" type="button">Remove key</button>
+        <button id="get-key" class="link" type="button">Get a key</button>
+      </div>
+      <p id="key-test-hint" class="hint small" hidden>Save the key to test it.</p>
+      <p id="test-result" class="result" role="status"></p>
+
+      <p class="hint small">Tip: create the key in a workspace of its own with a low monthly spend limit. Test key spends no tokens.</p>
+    </section>
+
+    <section class="card" aria-labelledby="model-heading">
+      <h2 id="model-heading">Model</h2>
+      <div class="field-row">
+        <label class="field-label" for="model">Model</label>
+        <span class="select">
+          <select id="model" aria-describedby="model-note model-error" disabled>
+            <option value="claude-haiku-5-5">Haiku 5.5 (recommended)</option>
+            <option value="claude-sonnet-5-5">Sonnet 5.5</option>
+            <option value="claude-opus-5-5">Opus 5.5</option>
+          </select>
+        </span>
+      </div>
+      <p id="model-note" class="note">Haiku 5.5 is fast and inexpensive, and Zen Tidy was tuned on it. Larger models cost more per tidy and take longer.</p>
+      <p id="model-error" class="error" role="alert"></p>
+      <div class="field-row">
+        <label class="field-label" for="effort">Effort</label>
+        <span class="select">
+          <select id="effort" aria-describedby="effort-error" disabled>
+            <option value="low">Low (recommended)</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </span>
+      </div>
+      <p id="effort-error" class="error" role="alert"></p>
+      <div class="actions">
+        <button id="model-reset" type="button" disabled>Reset to defaults</button>
+        <p id="model-status" class="saved" role="status"></p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="preferences-heading">
+      <h2 id="preferences-heading">Custom instructions</h2>
+      <p id="preferences-note" class="hint">Sent to Anthropic with every tidy. Don't include private information.</p>
+      <label class="field-label" for="preferences">How should Zen Tidy group your tabs?</label>
+      <textarea id="preferences" class="text-field" rows="4" spellcheck="true" autocomplete="off" placeholder="For example: keep work and personal tabs apart." aria-describedby="preferences-note preferences-count preferences-error" disabled></textarea>
+      <p id="preferences-count" class="counter" data-over="false">0 / 500</p>
+      <p id="preferences-error" class="error" role="alert"></p>
+      <div class="actions">
+        <button id="preferences-save" class="primary" type="button" disabled>Save</button>
+        <button id="preferences-revert" type="button" disabled>Revert</button>
+        <button id="preferences-reset" type="button" disabled>Reset to defaults</button>
+        <p id="preferences-status" class="saved" role="status"></p>
+      </div>
+      <div id="preferences-confirm" class="confirm" hidden>
+        <p id="preferences-confirm-text" class="confirm-text"></p>
+        <div class="actions">
+          <button id="preferences-confirm-cancel" type="button" aria-describedby="preferences-confirm-text">Cancel</button>
+          <button id="preferences-confirm-reset" class="primary" type="button" aria-describedby="preferences-confirm-text">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="tidy-heading">
+      <h2 id="tidy-heading">Tidy</h2>
+      <div class="field-row">
+        <label id="stale-days-label" class="field-label" for="stale-days">Stale after</label>
+        <input id="stale-days" class="text-field number" type="number" min="1" max="365" step="1" inputmode="numeric" autocomplete="off" aria-labelledby="stale-days-label stale-days-unit" aria-describedby="stale-days-hint stale-days-error" disabled>
+        <span id="stale-days-unit" class="unit">days</span>
+      </div>
+      <p id="stale-days-hint" class="note">Tabs you haven't opened for this many days are offered for closing in the preview, unticked.</p>
+      <p id="stale-days-error" class="error" role="alert"></p>
+      <div class="actions">
+        <button id="stale-days-reset" type="button" disabled>Reset to defaults</button>
+        <p id="stale-days-status" class="saved" role="status"></p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="privacy-heading">
+      <h2 id="privacy-heading">Privacy: sensitive tabs</h2>
+      <p class="hint">Tabs on these sites, or with these words in their title or address, are sent to Anthropic as the site only.</p>
+      <p id="chips-keys" class="note">In each list, Tab goes to one entry. Use the arrow keys, Home and End to move between entries.</p>
+
+      <div class="editor" role="group" aria-labelledby="domains-heading">
+        <div class="editor-head">
+          <h3 id="domains-heading">Sites</h3>
+          <span id="domains-count" class="count"></span>
+        </div>
+        <p class="note">A site covers its subdomains too: example.com also covers mail.example.com.</p>
+        <label class="field-label add-label" for="domains-add">Add a site</label>
+        <div class="add-row">
+          <input id="domains-add" class="text-field" type="text" placeholder="example.com" autocomplete="off" spellcheck="false" autocapitalize="off" aria-describedby="domains-error" disabled>
+          <button id="domains-add-button" type="button" disabled>Add</button>
+        </div>
+        <p id="domains-error" class="error" role="alert"></p>
+        <input id="domains-filter" class="text-field filter" type="search" placeholder="Filter sites" aria-label="Filter sites" aria-controls="domains-list" autocomplete="off" spellcheck="false" disabled>
+        <ul id="domains-list" class="chips" tabindex="-1" aria-labelledby="domains-heading"></ul>
+        <p id="domains-empty" class="empty-note" hidden></p>
+        <p id="domains-filter-status" class="visually-hidden" role="status"></p>
+        <details id="domains-removed" class="removed" hidden>
+          <summary id="domains-removed-summary">Removed defaults (0)</summary>
+          <ul id="domains-removed-list" class="chips" tabindex="-1" aria-label="Removed default sites"></ul>
+        </details>
+        <div class="actions">
+          <button id="domains-reset" type="button" disabled>Reset to defaults</button>
+          <p id="domains-status" class="saved" role="status"></p>
+        </div>
+        <div id="domains-confirm" class="confirm" hidden>
+          <p id="domains-confirm-text" class="confirm-text"></p>
+          <div class="actions">
+            <button id="domains-confirm-cancel" type="button" aria-describedby="domains-confirm-text">Cancel</button>
+            <button id="domains-confirm-reset" class="primary" type="button" aria-describedby="domains-confirm-text">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="editor" role="group" aria-labelledby="keywords-heading">
+        <div class="editor-head">
+          <h3 id="keywords-heading">Words</h3>
+          <span id="keywords-count" class="count"></span>
+        </div>
+        <p class="note">Matched as whole words or phrases, ignoring case and accents.</p>
+        <label class="field-label add-label" for="keywords-add">Add a word or phrase</label>
+        <div class="add-row">
+          <input id="keywords-add" class="text-field" type="text" placeholder="tax return" autocomplete="off" spellcheck="false" aria-describedby="keywords-error" disabled>
+          <button id="keywords-add-button" type="button" disabled>Add</button>
+        </div>
+        <p id="keywords-error" class="error" role="alert"></p>
+        <input id="keywords-filter" class="text-field filter" type="search" placeholder="Filter words" aria-label="Filter words" aria-controls="keywords-list" autocomplete="off" spellcheck="false" disabled>
+        <ul id="keywords-list" class="chips" tabindex="-1" aria-labelledby="keywords-heading"></ul>
+        <p id="keywords-empty" class="empty-note" hidden></p>
+        <p id="keywords-filter-status" class="visually-hidden" role="status"></p>
+        <details id="keywords-removed" class="removed" hidden>
+          <summary id="keywords-removed-summary">Removed defaults (0)</summary>
+          <ul id="keywords-removed-list" class="chips" tabindex="-1" aria-label="Removed default words"></ul>
+        </details>
+        <div class="actions">
+          <button id="keywords-reset" type="button" disabled>Reset to defaults</button>
+          <p id="keywords-status" class="saved" role="status"></p>
+        </div>
+        <div id="keywords-confirm" class="confirm" hidden>
+          <p id="keywords-confirm-text" class="confirm-text"></p>
+          <div class="actions">
+            <button id="keywords-confirm-cancel" type="button" aria-describedby="keywords-confirm-text">Cancel</button>
+            <button id="keywords-confirm-reset" class="primary" type="button" aria-describedby="keywords-confirm-text">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <details id="stems-advanced" class="advanced">
+        <summary>Advanced</summary>
+        <div class="editor" role="group" aria-labelledby="stems-heading">
+          <div class="editor-head">
+            <h3 id="stems-heading">Host stems</h3>
+            <span id="stems-count" class="count"></span>
+          </div>
+          <p class="note">A host stem matches anywhere inside a site's name, with hyphens ignored: "payment" also covers countysecurepaymentgateway.com and bill-payment.example. Stems are never matched in titles or paths. Add only a stem that means nothing else, since it catches every site whose name contains it.</p>
+          <label class="field-label add-label" for="stems-add">Add a host stem</label>
+          <div class="add-row">
+            <input id="stems-add" class="text-field" type="text" placeholder="billpay" autocomplete="off" spellcheck="false" autocapitalize="off" aria-describedby="stems-error" disabled>
+            <button id="stems-add-button" type="button" disabled>Add</button>
+          </div>
+          <p id="stems-error" class="error" role="alert"></p>
+          <input id="stems-filter" class="text-field filter" type="search" placeholder="Filter host stems" aria-label="Filter host stems" aria-controls="stems-list" autocomplete="off" spellcheck="false" disabled>
+          <ul id="stems-list" class="chips" tabindex="-1" aria-labelledby="stems-heading"></ul>
+          <p id="stems-empty" class="empty-note" hidden></p>
+          <p id="stems-filter-status" class="visually-hidden" role="status"></p>
+          <details id="stems-removed" class="removed" hidden>
+            <summary id="stems-removed-summary">Removed defaults (0)</summary>
+            <ul id="stems-removed-list" class="chips" tabindex="-1" aria-label="Removed default host stems"></ul>
+          </details>
+          <div class="actions">
+            <button id="stems-reset" type="button" disabled>Reset to defaults</button>
+            <p id="stems-status" class="saved" role="status"></p>
+          </div>
+          <div id="stems-confirm" class="confirm" hidden>
+            <p id="stems-confirm-text" class="confirm-text"></p>
+            <div class="actions">
+              <button id="stems-confirm-cancel" type="button" aria-describedby="stems-confirm-text">Cancel</button>
+              <button id="stems-confirm-reset" class="primary" type="button" aria-describedby="stems-confirm-text">Reset</button>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,5970 @@
+{
+ "steps": [
+  {
+   "step": "setup",
+   "t": 1792906161.657642,
+   "seconds": 2.8,
+   "ntabs": 251
+  },
+  {
+   "step": "A1_collapsed",
+   "t": 1792906162.860772,
+   "bad": [],
+   "dom": {
+    "0": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "1": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "2": [
+     true,
+     1,
+     11,
+     1
+    ],
+    "3": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "4": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "5": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "6": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "7": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "8": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "9": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "10": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "11": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "12": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "13": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "14": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "15": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "16": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "17": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "18": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "19": [
+     false,
+     12,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "step": "A2_session_before",
+   "t": 1792906162.8660498,
+   "session": [
+    [
+     {
+      "id": "1792906161595-15",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161552-37",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161515-22",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161466-70",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161429-86",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161391-95",
+      "collapsed": true
+     },
+     {
+      "id": "1792906161339-82",
+      "collapsed": true
+     },
+     {
+      "id": "1792906161289-4",
+      "collapsed": true
+     },
+     {
+      "id": "1792906161250-48",
+      "collapsed": true
+     },
+     {
+      "id": "1792906161211-66",
+      "collapsed": true
+     },
+     {
+      "id": "1792906161174-37",
+      "collapsed": true
+     },
+     {
+      "id": "1792906161130-68",
+      "collapsed": true
+     },
+     {
+      "id": "1792906161086-92",
+      "collapsed": true
+     },
+     {
+      "id": "1792906161041-44",
+      "collapsed": true
+     },
+     {
+      "id": "1792906160991-25",
+      "collapsed": true
+     },
+     {
+      "id": "1792906160954-92",
+      "collapsed": true
+     },
+     {
+      "id": "1792906160916-50",
+      "collapsed": true
+     },
+     {
+      "id": "1792906160879-84",
+      "collapsed": true
+     },
+     {
+      "id": "1792906160839-52",
+      "collapsed": true
+     },
+     {
+      "id": "1792906160796-6",
+      "collapsed": true
+     }
+    ]
+   ]
+  },
+  {
+   "step": "A3_after_restart_mode_off",
+   "t": 1792906168.2661014,
+   "n_collapsed_api": 0,
+   "n_expanded_api": 20,
+   "dom": {
+    "0": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "1": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "2": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "3": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "4": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "5": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "6": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "7": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "8": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "9": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "10": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "11": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "12": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "13": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "14": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "15": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "16": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "17": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "18": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "19": [
+     false,
+     12,
+     0,
+     0
+    ]
+   },
+   "session": [
+    [
+     {
+      "id": "1792906161595-15",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161552-37",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161515-22",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161466-70",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161429-86",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161391-95",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161339-82",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161289-4",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161250-48",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161211-66",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161174-37",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161130-68",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161086-92",
+      "collapsed": false
+     },
+     {
+      "id": "1792906161041-44",
+      "collapsed": false
+     },
+     {
+      "id": "1792906160991-25",
+      "collapsed": false
+     },
+     {
+      "id": "1792906160954-92",
+      "collapsed": false
+     },
+     {
+      "id": "1792906160916-50",
+      "collapsed": false
+     },
+     {
+      "id": "1792906160879-84",
+      "collapsed": false
+     },
+     {
+      "id": "1792906160839-52",
+      "collapsed": false
+     },
+     {
+      "id": "1792906160796-6",
+      "collapsed": false
+     }
+    ]
+   ]
+  },
+  {
+   "step": "B1_collapsed_saved",
+   "t": 1792906173.2743018,
+   "saved_count": 15,
+   "saved_true": 15,
+   "bad": []
+  },
+  {
+   "step": "B1_early",
+   "t": 1792906178.5870638,
+   "bad": [],
+   "dom": {
+    "0": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "1": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "2": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "3": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "4": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "5": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "6": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "7": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "8": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "9": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "10": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "11": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "12": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "13": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "14": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "15": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "16": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "17": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "18": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "19": [
+     false,
+     12,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "step": "B1_settled",
+   "t": 1792906187.6625588,
+   "bad": [],
+   "saved_true": 15,
+   "saved_count": 15
+  },
+  {
+   "step": "B2_early",
+   "t": 1792906193.1736014,
+   "bad": [],
+   "dom": {
+    "0": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "1": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "2": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "3": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "4": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "5": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "6": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "7": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "8": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "9": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "10": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "11": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "12": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "13": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "14": [
+     true,
+     0,
+     12,
+     0
+    ],
+    "15": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "16": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "17": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "18": [
+     false,
+     12,
+     0,
+     0
+    ],
+    "19": [
+     false,
+     12,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "step": "B2_settled",
+   "t": 1792906202.2341297,
+   "bad": [],
+   "saved_true": 15,
+   "saved_count": 15
+  }
+ ],
+ "config": {
+  "groups": 20,
+  "per": 12,
+  "loose": 10,
+  "collapsed": 15
+ },
+ "G": {
+  "0": 1792906160796006,
+  "1": 1792906160839052,
+  "2": 1792906160879084,
+  "3": 1792906160916050,
+  "4": 1792906160954092,
+  "5": 1792906160991025,
+  "6": 1792906161041044,
+  "7": 1792906161086092,
+  "8": 1792906161130068,
+  "9": 1792906161174037,
+  "10": 1792906161211066,
+  "11": 1792906161250048,
+  "12": 1792906161289004,
+  "13": 1792906161339082,
+  "14": 1792906161391095,
+  "15": 1792906161429086,
+  "16": 1792906161466070,
+  "17": 1792906161515022,
+  "18": 1792906161552037,
+  "19": 1792906161595015
+ },
+ "shot": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\VA-check3s-run1.png",
+ "log": [
+  {
+   "t": 1792906158402,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792906158405,
+   "event": "onInstalled",
+   "reason": "install",
+   "flushed": 0
+  },
+  {
+   "t": 1792906160810,
+   "event": "tabGroups.onCreated",
+   "id": 1792906160796006,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906160811,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160811,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 4,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160811,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 5,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160811,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 6,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160811,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 7,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160811,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 8,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160811,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 9,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160812,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 10,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160812,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 11,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160812,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 12,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160812,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 13,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160812,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 14,
+   "groupId": 1792906160796006
+  },
+  {
+   "t": 1792906160833,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160796006,
+   "title": "⁣⁢⁠⁠⁠Group 0",
+   "collapsed": false,
+   "sinceBg": 2431,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906160854,
+   "event": "tabGroups.onCreated",
+   "id": 1792906160839052,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 15,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 16,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 17,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 18,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 19,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 20,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 21,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 22,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 23,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 24,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 25,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160855,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 26,
+   "groupId": 1792906160839052
+  },
+  {
+   "t": 1792906160877,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160839052,
+   "title": "⁣⁢⁠⁠⁡Group 1",
+   "collapsed": false,
+   "sinceBg": 2475,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906160891,
+   "event": "tabGroups.onCreated",
+   "id": 1792906160879084,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906160892,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 27,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160892,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 28,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 29,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 30,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 31,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 32,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 33,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 34,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 35,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 36,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 37,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160893,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 38,
+   "groupId": 1792906160879084
+  },
+  {
+   "t": 1792906160913,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160879084,
+   "title": "⁣⁢⁠⁡⁤Group 2",
+   "collapsed": false,
+   "sinceBg": 2511,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906160929,
+   "event": "tabGroups.onCreated",
+   "id": 1792906160916050,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906160930,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 39,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160930,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 40,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160930,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 41,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160930,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 42,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160930,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 43,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160930,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 44,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160930,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 45,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160930,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 46,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160931,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 47,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160931,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 48,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160931,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 49,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160931,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 50,
+   "groupId": 1792906160916050
+  },
+  {
+   "t": 1792906160952,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160916050,
+   "title": "⁣⁢᠎​⁤Group 3",
+   "collapsed": false,
+   "sinceBg": 2550,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906160965,
+   "event": "tabGroups.onCreated",
+   "id": 1792906160954092,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 51,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 52,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 53,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 54,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 55,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 56,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 57,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 58,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 59,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 60,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 61,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160967,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 62,
+   "groupId": 1792906160954092
+  },
+  {
+   "t": 1792906160989,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160954092,
+   "title": "⁣⁢᠎᠎᠎Group 4",
+   "collapsed": false,
+   "sinceBg": 2587,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161005,
+   "event": "tabGroups.onCreated",
+   "id": 1792906160991025,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 63,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 64,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 65,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 66,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 67,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 68,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 69,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 70,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 71,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 72,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 73,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161008,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 74,
+   "groupId": 1792906160991025
+  },
+  {
+   "t": 1792906161036,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160991025,
+   "title": "⁣⁢⁠⁠⁠Group 5",
+   "collapsed": false,
+   "sinceBg": 2634,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161055,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161041044,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161056,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 75,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161056,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 76,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161056,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 77,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161056,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 78,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161056,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 79,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161057,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 80,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161057,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 81,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161057,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 82,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161058,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 83,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161058,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 84,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161058,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 85,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161058,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 86,
+   "groupId": 1792906161041044
+  },
+  {
+   "t": 1792906161083,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161041044,
+   "title": "⁣⁢⁠⁠⁡Group 6",
+   "collapsed": false,
+   "sinceBg": 2681,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161100,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161086092,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 87,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 88,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 89,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 90,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 91,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 92,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 93,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 94,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 95,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 96,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 97,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161101,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 98,
+   "groupId": 1792906161086092
+  },
+  {
+   "t": 1792906161126,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161086092,
+   "title": "⁣⁢⁠⁡⁤Group 7",
+   "collapsed": false,
+   "sinceBg": 2724,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161144,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161130068,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161145,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 99,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161145,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 100,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161145,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 101,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161145,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 102,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161145,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 103,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161145,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 104,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161145,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 105,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161146,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 106,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161146,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 107,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161146,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 108,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161146,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 109,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161146,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 110,
+   "groupId": 1792906161130068
+  },
+  {
+   "t": 1792906161170,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161130068,
+   "title": "⁣⁢᠎​⁤Group 8",
+   "collapsed": false,
+   "sinceBg": 2768,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161187,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161174037,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161188,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 111,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161188,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 112,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161188,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 113,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161188,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 114,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161188,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 115,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161189,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 116,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161189,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 117,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161189,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 118,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161189,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 119,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161189,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 120,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161189,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 121,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161189,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 122,
+   "groupId": 1792906161174037
+  },
+  {
+   "t": 1792906161210,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161174037,
+   "title": "⁣⁢᠎᠎᠎Group 9",
+   "collapsed": false,
+   "sinceBg": 2808,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161225,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161211066,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 123,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 124,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 125,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 126,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 127,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 128,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 129,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 130,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 131,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 132,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 133,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161226,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 134,
+   "groupId": 1792906161211066
+  },
+  {
+   "t": 1792906161246,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161211066,
+   "title": "⁣⁢⁠⁠⁠Group 10",
+   "collapsed": false,
+   "sinceBg": 2844,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161262,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161250048,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161262,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 135,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161262,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 136,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161262,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 137,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161262,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 138,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161262,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 139,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161262,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 140,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161263,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 141,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161264,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 142,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161264,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 143,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161264,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 144,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161264,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 145,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161264,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 146,
+   "groupId": 1792906161250048
+  },
+  {
+   "t": 1792906161286,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161250048,
+   "title": "⁣⁢⁠⁠⁡Group 11",
+   "collapsed": false,
+   "sinceBg": 2884,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161303,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161289004,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161304,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 147,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161304,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 148,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161304,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 149,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161304,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 150,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161305,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 151,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161305,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 152,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161305,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 153,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161305,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 154,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161305,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 155,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161305,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 156,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161305,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 157,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161305,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 158,
+   "groupId": 1792906161289004
+  },
+  {
+   "t": 1792906161335,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161289004,
+   "title": "⁣⁢⁠⁡⁤Group 12",
+   "collapsed": false,
+   "sinceBg": 2933,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161353,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161339082,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 159,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 160,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 161,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 162,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 163,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 164,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 165,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 166,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 167,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 168,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 169,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161355,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 170,
+   "groupId": 1792906161339082
+  },
+  {
+   "t": 1792906161389,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161339082,
+   "title": "⁣⁢᠎​⁤Group 13",
+   "collapsed": false,
+   "sinceBg": 2987,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161406,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161391095,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 171,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 172,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 173,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 174,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 175,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 176,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 177,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 178,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 179,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 180,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161407,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 181,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161408,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 182,
+   "groupId": 1792906161391095
+  },
+  {
+   "t": 1792906161427,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161391095,
+   "title": "⁣⁢᠎᠎᠎Group 14",
+   "collapsed": false,
+   "sinceBg": 3025,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161442,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161429086,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 183,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 184,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 185,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 186,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 187,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 188,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 189,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 190,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 191,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 192,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161443,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 193,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161445,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 194,
+   "groupId": 1792906161429086
+  },
+  {
+   "t": 1792906161463,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161429086,
+   "title": "⁣⁢⁠⁠⁠Group 15",
+   "collapsed": false,
+   "sinceBg": 3061,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161480,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161466070,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 195,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 196,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 197,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 198,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 199,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 200,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 201,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 202,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 203,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161482,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 204,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161483,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 205,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161483,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 206,
+   "groupId": 1792906161466070
+  },
+  {
+   "t": 1792906161512,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161466070,
+   "title": "⁣⁢⁠⁠⁡Group 16",
+   "collapsed": false,
+   "sinceBg": 3110,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161515022,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 207,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 208,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 209,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 210,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 211,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 212,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 213,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 214,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 215,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161529,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 216,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161530,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 217,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161530,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 218,
+   "groupId": 1792906161515022
+  },
+  {
+   "t": 1792906161550,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161515022,
+   "title": "⁣⁢⁠⁡⁤Group 17",
+   "collapsed": false,
+   "sinceBg": 3148,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161565,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161552037,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161565,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 219,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161565,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 220,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161565,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 221,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161565,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 222,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161565,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 223,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161565,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 224,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161567,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 225,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161567,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 226,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161567,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 227,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161567,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 228,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161567,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 229,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161567,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 230,
+   "groupId": 1792906161552037
+  },
+  {
+   "t": 1792906161587,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161552037,
+   "title": "⁣⁢᠎​⁤Group 18",
+   "collapsed": false,
+   "sinceBg": 3185,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabGroups.onCreated",
+   "id": 1792906161595015,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 231,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 232,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 233,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 234,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 235,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 236,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 237,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 238,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161609,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 239,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161610,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 240,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161610,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 241,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161611,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 242,
+   "groupId": 1792906161595015
+  },
+  {
+   "t": 1792906161647,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161595015,
+   "title": "⁣⁢᠎᠎᠎Group 19",
+   "collapsed": false,
+   "sinceBg": 3245,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161662,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160796006,
+   "title": "⁣⁢⁠⁠⁠Group 0",
+   "collapsed": true,
+   "sinceBg": 3260,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161668,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160839052,
+   "title": "⁣⁢⁠⁠⁡Group 1",
+   "collapsed": true,
+   "sinceBg": 3266,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161674,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160879084,
+   "title": "⁣⁢⁠⁡⁤Group 2",
+   "collapsed": true,
+   "sinceBg": 3272,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161680,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160916050,
+   "title": "⁣⁢᠎​⁤Group 3",
+   "collapsed": true,
+   "sinceBg": 3278,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161690,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160954092,
+   "title": "⁣⁢᠎᠎᠎Group 4",
+   "collapsed": true,
+   "sinceBg": 3288,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161697,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160991025,
+   "title": "⁣⁢⁠⁠⁠Group 5",
+   "collapsed": true,
+   "sinceBg": 3295,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161705,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161041044,
+   "title": "⁣⁢⁠⁠⁡Group 6",
+   "collapsed": true,
+   "sinceBg": 3303,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161711,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161086092,
+   "title": "⁣⁢⁠⁡⁤Group 7",
+   "collapsed": true,
+   "sinceBg": 3309,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161717,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161130068,
+   "title": "⁣⁢᠎​⁤Group 8",
+   "collapsed": true,
+   "sinceBg": 3315,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161725,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161174037,
+   "title": "⁣⁢᠎᠎᠎Group 9",
+   "collapsed": true,
+   "sinceBg": 3323,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161729,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161211066,
+   "title": "⁣⁢⁠⁠⁠Group 10",
+   "collapsed": true,
+   "sinceBg": 3327,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161734,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161250048,
+   "title": "⁣⁢⁠⁠⁡Group 11",
+   "collapsed": true,
+   "sinceBg": 3332,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161739,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161289004,
+   "title": "⁣⁢⁠⁡⁤Group 12",
+   "collapsed": true,
+   "sinceBg": 3337,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161745,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161339082,
+   "title": "⁣⁢᠎​⁤Group 13",
+   "collapsed": true,
+   "sinceBg": 3343,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906161751,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161391095,
+   "title": "⁣⁢᠎᠎᠎Group 14",
+   "collapsed": true,
+   "sinceBg": 3349,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906162997,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161595015,
+   "title": "⁣⁢᠎᠎᠎Group 19",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906162997,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161552037,
+   "title": "⁣⁢᠎​⁤Group 18",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906162997,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161515022,
+   "title": "⁣⁢⁠⁡⁤Group 17",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906162997,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161466070,
+   "title": "⁣⁢⁠⁠⁡Group 16",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906162997,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161429086,
+   "title": "⁣⁢⁠⁠⁠Group 15",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906166119,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792906166223,
+   "event": "onStartup",
+   "sinceBg": 107,
+   "droppedBuffered": []
+  },
+  {
+   "t": 1792906166234,
+   "event": "startup.mode",
+   "mode": "off",
+   "sinceBg": 111,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": false
+    }
+   ]
+  },
+  {
+   "t": 1792906171821,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160796006,
+   "title": "⁣⁢⁠⁠⁠Group 0",
+   "collapsed": true,
+   "sinceBg": 5705,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171826,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160839052,
+   "title": "⁣⁢⁠⁠⁡Group 1",
+   "collapsed": true,
+   "sinceBg": 5710,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171831,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160879084,
+   "title": "⁣⁢⁠⁡⁤Group 2",
+   "collapsed": true,
+   "sinceBg": 5715,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171835,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160916050,
+   "title": "⁣⁢᠎​⁤Group 3",
+   "collapsed": true,
+   "sinceBg": 5719,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171840,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160954092,
+   "title": "⁣⁢᠎᠎᠎Group 4",
+   "collapsed": true,
+   "sinceBg": 5724,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171843,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160991025,
+   "title": "⁣⁢⁠⁠⁠Group 5",
+   "collapsed": true,
+   "sinceBg": 5727,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171847,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161041044,
+   "title": "⁣⁢⁠⁠⁡Group 6",
+   "collapsed": true,
+   "sinceBg": 5731,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171851,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161086092,
+   "title": "⁣⁢⁠⁡⁤Group 7",
+   "collapsed": true,
+   "sinceBg": 5735,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171856,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161130068,
+   "title": "⁣⁢᠎​⁤Group 8",
+   "collapsed": true,
+   "sinceBg": 5740,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171860,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161174037,
+   "title": "⁣⁢᠎᠎᠎Group 9",
+   "collapsed": true,
+   "sinceBg": 5744,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171864,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161211066,
+   "title": "⁣⁢⁠⁠⁠Group 10",
+   "collapsed": true,
+   "sinceBg": 5748,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171868,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161250048,
+   "title": "⁣⁢⁠⁠⁡Group 11",
+   "collapsed": true,
+   "sinceBg": 5752,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171872,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161289004,
+   "title": "⁣⁢⁠⁡⁤Group 12",
+   "collapsed": true,
+   "sinceBg": 5756,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171876,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161339082,
+   "title": "⁣⁢᠎​⁤Group 13",
+   "collapsed": true,
+   "sinceBg": 5760,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906171880,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161391095,
+   "title": "⁣⁢᠎᠎᠎Group 14",
+   "collapsed": true,
+   "sinceBg": 5764,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792906173284,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161595015,
+   "title": "⁣⁢᠎᠎᠎Group 19",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906173284,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161552037,
+   "title": "⁣⁢᠎​⁤Group 18",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906173284,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161515022,
+   "title": "⁣⁢⁠⁡⁤Group 17",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906173284,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161466070,
+   "title": "⁣⁢⁠⁠⁡Group 16",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906176500,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792906176509,
+   "event": "onStartup",
+   "sinceBg": 13,
+   "droppedBuffered": []
+  },
+  {
+   "t": 1792906176529,
+   "event": "startup.mode",
+   "mode": "restore",
+   "sinceBg": 28,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": false
+    }
+   ]
+  },
+  {
+   "t": 1792906176538,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160796006,
+   "title": "⁣⁢⁠⁠⁠Group 0",
+   "collapsed": true,
+   "sinceBg": 42,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176541,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160839052,
+   "title": "⁣⁢⁠⁠⁡Group 1",
+   "collapsed": true,
+   "sinceBg": 45,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176545,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160879084,
+   "title": "⁣⁢⁠⁡⁤Group 2",
+   "collapsed": true,
+   "sinceBg": 49,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176551,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160916050,
+   "title": "⁣⁢᠎​⁤Group 3",
+   "collapsed": true,
+   "sinceBg": 55,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176567,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160954092,
+   "title": "⁣⁢᠎᠎᠎Group 4",
+   "collapsed": true,
+   "sinceBg": 71,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176572,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160991025,
+   "title": "⁣⁢⁠⁠⁠Group 5",
+   "collapsed": true,
+   "sinceBg": 76,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176575,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161041044,
+   "title": "⁣⁢⁠⁠⁡Group 6",
+   "collapsed": true,
+   "sinceBg": 79,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176579,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161086092,
+   "title": "⁣⁢⁠⁡⁤Group 7",
+   "collapsed": true,
+   "sinceBg": 83,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176583,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161130068,
+   "title": "⁣⁢᠎​⁤Group 8",
+   "collapsed": true,
+   "sinceBg": 87,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176590,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161174037,
+   "title": "⁣⁢᠎᠎᠎Group 9",
+   "collapsed": true,
+   "sinceBg": 94,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176592,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161211066,
+   "title": "⁣⁢⁠⁠⁠Group 10",
+   "collapsed": true,
+   "sinceBg": 96,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176594,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161250048,
+   "title": "⁣⁢⁠⁠⁡Group 11",
+   "collapsed": true,
+   "sinceBg": 98,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176597,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161289004,
+   "title": "⁣⁢⁠⁡⁤Group 12",
+   "collapsed": true,
+   "sinceBg": 101,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176600,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161339082,
+   "title": "⁣⁢᠎​⁤Group 13",
+   "collapsed": true,
+   "sinceBg": 104,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176602,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161391095,
+   "title": "⁣⁢᠎᠎᠎Group 14",
+   "collapsed": true,
+   "sinceBg": 106,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906176603,
+   "event": "apply",
+   "label": "immediate",
+   "sinceBg": 107,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": false,
+     "now": true
+    }
+   ]
+  },
+  {
+   "t": 1792906176857,
+   "event": "startup.check",
+   "ms": 250,
+   "sinceBg": 360,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906176867,
+   "event": "apply",
+   "label": "after-250",
+   "sinceBg": 371,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906177605,
+   "event": "startup.check",
+   "ms": 1000,
+   "sinceBg": 1108,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906177613,
+   "event": "apply",
+   "label": "after-1000",
+   "sinceBg": 1117,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906178613,
+   "event": "startup.check",
+   "ms": 2000,
+   "sinceBg": 2116,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906178620,
+   "event": "apply",
+   "label": "after-2000",
+   "sinceBg": 2124,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906180604,
+   "event": "startup.check",
+   "ms": 4000,
+   "sinceBg": 4107,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906180611,
+   "event": "apply",
+   "label": "after-4000",
+   "sinceBg": 4115,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906183608,
+   "event": "startup.check",
+   "ms": 7000,
+   "sinceBg": 7111,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906183614,
+   "event": "apply",
+   "label": "after-7000",
+   "sinceBg": 7118,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906187673,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161595015,
+   "title": "⁣⁢᠎᠎᠎Group 19",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906187673,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161552037,
+   "title": "⁣⁢᠎​⁤Group 18",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906187674,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161515022,
+   "title": "⁣⁢⁠⁡⁤Group 17",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906187674,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161466070,
+   "title": "⁣⁢⁠⁠⁡Group 16",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906187674,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161429086,
+   "title": "⁣⁢⁠⁠⁠Group 15",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906187674,
+   "event": "tabGroups.onRemoved",
+   "id": 1792906161391095,
+   "title": "⁣⁢᠎᠎᠎Group 14",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792906190975,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792906190983,
+   "event": "onStartup",
+   "sinceBg": 11,
+   "droppedBuffered": []
+  },
+  {
+   "t": 1792906190994,
+   "event": "startup.mode",
+   "mode": "restore",
+   "sinceBg": 19,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": false
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": false
+    }
+   ]
+  },
+  {
+   "t": 1792906190998,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160796006,
+   "title": "⁣⁢⁠⁠⁠Group 0",
+   "collapsed": true,
+   "sinceBg": 26,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191002,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160839052,
+   "title": "⁣⁢⁠⁠⁡Group 1",
+   "collapsed": true,
+   "sinceBg": 30,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191006,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160879084,
+   "title": "⁣⁢⁠⁡⁤Group 2",
+   "collapsed": true,
+   "sinceBg": 34,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191013,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160916050,
+   "title": "⁣⁢᠎​⁤Group 3",
+   "collapsed": true,
+   "sinceBg": 41,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191017,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160954092,
+   "title": "⁣⁢᠎᠎᠎Group 4",
+   "collapsed": true,
+   "sinceBg": 45,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191021,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906160991025,
+   "title": "⁣⁢⁠⁠⁠Group 5",
+   "collapsed": true,
+   "sinceBg": 49,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191027,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161041044,
+   "title": "⁣⁢⁠⁠⁡Group 6",
+   "collapsed": true,
+   "sinceBg": 55,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191031,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161086092,
+   "title": "⁣⁢⁠⁡⁤Group 7",
+   "collapsed": true,
+   "sinceBg": 59,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191035,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161130068,
+   "title": "⁣⁢᠎​⁤Group 8",
+   "collapsed": true,
+   "sinceBg": 63,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191041,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161174037,
+   "title": "⁣⁢᠎᠎᠎Group 9",
+   "collapsed": true,
+   "sinceBg": 69,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191051,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161211066,
+   "title": "⁣⁢⁠⁠⁠Group 10",
+   "collapsed": true,
+   "sinceBg": 79,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191056,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161250048,
+   "title": "⁣⁢⁠⁠⁡Group 11",
+   "collapsed": true,
+   "sinceBg": 84,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191066,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161289004,
+   "title": "⁣⁢⁠⁡⁤Group 12",
+   "collapsed": true,
+   "sinceBg": 94,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191077,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161339082,
+   "title": "⁣⁢᠎​⁤Group 13",
+   "collapsed": true,
+   "sinceBg": 105,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191087,
+   "event": "tabGroups.onUpdated",
+   "id": 1792906161391095,
+   "title": "⁣⁢᠎᠎᠎Group 14",
+   "collapsed": true,
+   "sinceBg": 115,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792906191087,
+   "event": "apply",
+   "label": "immediate",
+   "sinceBg": 115,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": false,
+     "now": true
+    }
+   ]
+  },
+  {
+   "t": 1792906191352,
+   "event": "startup.check",
+   "ms": 250,
+   "sinceBg": 379,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906191368,
+   "event": "apply",
+   "label": "after-250",
+   "sinceBg": 396,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906192126,
+   "event": "startup.check",
+   "ms": 1000,
+   "sinceBg": 1153,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906192137,
+   "event": "apply",
+   "label": "after-1000",
+   "sinceBg": 1165,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906193099,
+   "event": "startup.check",
+   "ms": 2000,
+   "sinceBg": 2126,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906193114,
+   "event": "apply",
+   "label": "after-2000",
+   "sinceBg": 2142,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906195139,
+   "event": "startup.check",
+   "ms": 4000,
+   "sinceBg": 4166,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906195155,
+   "event": "apply",
+   "label": "after-4000",
+   "sinceBg": 4183,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906198102,
+   "event": "startup.check",
+   "ms": 7000,
+   "sinceBg": 7129,
+   "groups": [
+    {
+     "id": 1792906161595015,
+     "title": "⁣⁢᠎᠎᠎Group 19",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161552037,
+     "title": "⁣⁢᠎​⁤Group 18",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161515022,
+     "title": "⁣⁢⁠⁡⁤Group 17",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161466070,
+     "title": "⁣⁢⁠⁠⁡Group 16",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161429086,
+     "title": "⁣⁢⁠⁠⁠Group 15",
+     "collapsed": false
+    },
+    {
+     "id": 1792906161391095,
+     "title": "⁣⁢᠎᠎᠎Group 14",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161339082,
+     "title": "⁣⁢᠎​⁤Group 13",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161289004,
+     "title": "⁣⁢⁠⁡⁤Group 12",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161250048,
+     "title": "⁣⁢⁠⁠⁡Group 11",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161211066,
+     "title": "⁣⁢⁠⁠⁠Group 10",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161174037,
+     "title": "⁣⁢᠎᠎᠎Group 9",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161130068,
+     "title": "⁣⁢᠎​⁤Group 8",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161086092,
+     "title": "⁣⁢⁠⁡⁤Group 7",
+     "collapsed": true
+    },
+    {
+     "id": 1792906161041044,
+     "title": "⁣⁢⁠⁠⁡Group 6",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160991025,
+     "title": "⁣⁢⁠⁠⁠Group 5",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160954092,
+     "title": "⁣⁢᠎᠎᠎Group 4",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160916050,
+     "title": "⁣⁢᠎​⁤Group 3",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160879084,
+     "title": "⁣⁢⁠⁡⁤Group 2",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160839052,
+     "title": "⁣⁢⁠⁠⁡Group 1",
+     "collapsed": true
+    },
+    {
+     "id": 1792906160796006,
+     "title": "⁣⁢⁠⁠⁠Group 0",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906198111,
+   "event": "apply",
+   "label": "after-7000",
+   "sinceBg": 7139,
+   "out": [
+    {
+     "id": 1792906160796006,
+     "was": true
+    },
+    {
+     "id": 1792906160839052,
+     "was": true
+    },
+    {
+     "id": 1792906160879084,
+     "was": true
+    },
+    {
+     "id": 1792906160916050,
+     "was": true
+    },
+    {
+     "id": 1792906160954092,
+     "was": true
+    },
+    {
+     "id": 1792906160991025,
+     "was": true
+    },
+    {
+     "id": 1792906161041044,
+     "was": true
+    },
+    {
+     "id": 1792906161086092,
+     "was": true
+    },
+    {
+     "id": 1792906161130068,
+     "was": true
+    },
+    {
+     "id": 1792906161174037,
+     "was": true
+    },
+    {
+     "id": 1792906161211066,
+     "was": true
+    },
+    {
+     "id": 1792906161250048,
+     "was": true
+    },
+    {
+     "id": 1792906161289004,
+     "was": true
+    },
+    {
+     "id": 1792906161339082,
+     "was": true
+    },
+    {
+     "id": 1792906161391095,
+     "was": true
+    }
+   ]
+  }
+ ],
+ "analysis": [
+  {
+   "first": {
+    "event": "onInstalled",
+    "sinceBg": null,
+    "droppedBuffered": null,
+    "reason": "install"
+   },
+   "startup_snapshot_collapsed": null,
+   "startup_snapshot_sinceBg": null,
+   "onUpdated_unsuppressed_collapsed_false": [
+    [
+     1792906160796006,
+     2431,
+     "running"
+    ],
+    [
+     1792906160839052,
+     2475,
+     "running"
+    ],
+    [
+     1792906160879084,
+     2511,
+     "running"
+    ],
+    [
+     1792906160916050,
+     2550,
+     "running"
+    ],
+    [
+     1792906160954092,
+     2587,
+     "running"
+    ],
+    [
+     1792906160991025,
+     2634,
+     "running"
+    ],
+    [
+     1792906161041044,
+     2681,
+     "running"
+    ],
+    [
+     1792906161086092,
+     2724,
+     "running"
+    ],
+    [
+     1792906161130068,
+     2768,
+     "running"
+    ],
+    [
+     1792906161174037,
+     2808,
+     "running"
+    ],
+    [
+     1792906161211066,
+     2844,
+     "running"
+    ],
+    [
+     1792906161250048,
+     2884,
+     "running"
+    ],
+    [
+     1792906161289004,
+     2933,
+     "running"
+    ],
+    [
+     1792906161339082,
+     2987,
+     "running"
+    ],
+    [
+     1792906161391095,
+     3025,
+     "running"
+    ],
+    [
+     1792906161429086,
+     3061,
+     "running"
+    ],
+    [
+     1792906161466070,
+     3110,
+     "running"
+    ],
+    [
+     1792906161515022,
+     3148,
+     "running"
+    ],
+    [
+     1792906161552037,
+     3185,
+     "running"
+    ],
+    [
+     1792906161595015,
+     3245,
+     "running"
+    ]
+   ],
+   "onUpdated_total": 35,
+   "onUpdated_before_startup": [],
+   "onRemoved": [
+    {
+     "isWindowClosing": true
+    },
+    {
+     "isWindowClosing": true
+    }
+   ],
+   "onRemoved_count": 5,
+   "applies": []
+  },
+  {
+   "first": {
+    "event": "onStartup",
+    "sinceBg": 107,
+    "droppedBuffered": [],
+    "reason": null
+   },
+   "startup_snapshot_collapsed": 0,
+   "startup_snapshot_sinceBg": 111,
+   "onUpdated_unsuppressed_collapsed_false": [],
+   "onUpdated_total": 15,
+   "onUpdated_before_startup": [],
+   "onRemoved": [
+    {
+     "isWindowClosing": true
+    },
+    {
+     "isWindowClosing": true
+    }
+   ],
+   "onRemoved_count": 4,
+   "applies": []
+  },
+  {
+   "first": {
+    "event": "onStartup",
+    "sinceBg": 13,
+    "droppedBuffered": [],
+    "reason": null
+   },
+   "startup_snapshot_collapsed": 0,
+   "startup_snapshot_sinceBg": 28,
+   "onUpdated_unsuppressed_collapsed_false": [],
+   "onUpdated_total": 15,
+   "onUpdated_before_startup": [],
+   "onRemoved": [
+    {
+     "isWindowClosing": true
+    },
+    {
+     "isWindowClosing": true
+    }
+   ],
+   "onRemoved_count": 6,
+   "applies": [
+    {
+     "label": "immediate",
+     "sinceBg": 107,
+     "was_false": 15,
+     "errors": 0
+    },
+    {
+     "label": "after-250",
+     "sinceBg": 371,
+     "was_false": 0,
+     "errors": 0
+    },
+    {
+     "label": "after-1000",
+     "sinceBg": 1117,
+     "was_false": 0,
+     "errors": 0
+    },
+    {
+     "label": "after-2000",
+     "sinceBg": 2124,
+     "was_false": 0,
+     "errors": 0
+    },
+    {
+     "label": "after-4000",
+     "sinceBg": 4115,
+     "was_false": 0,
+     "errors": 0
+    },
+    {
+     "label": "after-7000",
+     "sinceBg": 7118,
+     "was_false": 0,
+     "errors": 0
+    }
+   ]
+  },
+  {
+   "first": {
+    "event": "onStartup",
+    "sinceBg": 11,
+    "droppedBuffered": [],
+    "reason": null
+   },
+   "startup_snapshot_collapsed": 0,
+   "startup_snapshot_sinceBg": 19,
+   "onUpdated_unsuppressed_collapsed_false": [],
+   "onUpdated_total": 15,
+   "onUpdated_before_startup": [],
+   "onRemoved": [],
+   "onRemoved_count": 0,
+   "applies": [
+    {
+     "label": "immediate",
+     "sinceBg": 115,
+     "was_false": 15,
+     "errors": 0
+    },
+    {
+     "label": "after-250",
+     "sinceBg": 396,
+     "was_false": 0,
+     "errors": 0
+    },
+    {
+     "label": "after-1000",
+     "sinceBg": 1165,
+     "was_false": 0,
+     "errors": 0
+    },
+    {
+     "label": "after-2000",
+     "sinceBg": 2142,
+     "was_false": 0,
+     "errors": 0
+    },
+    {
+     "label": "after-4000",
+     "sinceBg": 4183,
+     "was_false": 0,
+     "errors": 0
+    },
+    {
+     "label": "after-7000",
+     "sinceBg": 7139,
+     "was_false": 0,
+     "errors": 0
+    }
+   ]
+  }
+ ]
+}

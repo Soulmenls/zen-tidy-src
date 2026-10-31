@@ -1,0 +1,6718 @@
+{
+ "headed": false,
+ "scenarios": {
+  "P1_naive_form_positive_control": {
+   "tab": {
+    "handle": "69df2ccf-5955-4b88-ac7c-7276fcfcfe2c",
+    "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html",
+    "docURI": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+   },
+   "after": {
+    "browserAlive": true,
+    "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/next.html?user=spike-user&pass=fake-pass-1234",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": false,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": false
+     }
+    ],
+    "panelState": "open",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [],
+    "events": [
+     {
+      "t": 1792905916021,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916612,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916614,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916614,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916616,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916616,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916616,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916616,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916617,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916617,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916617,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916617,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916617,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916618,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916618,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916618,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916618,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916618,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916618,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916619,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916619,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916619,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916619,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916619,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916619,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916620,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916620,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916620,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916620,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916620,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916620,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916621,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916621,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916621,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916621,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916622,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916622,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916622,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916622,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916622,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916622,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905916623,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916623,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916629,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": false,
+      "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/naive.html"
+     },
+     {
+      "t": 1792905916631,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905916633,
+      "kind": "LoginManagerParent",
+      "msg": "ShowDoorhanger",
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwLen": 14,
+      "pwIsKey": false,
+      "hasUsername": true,
+      "dismissedPrompt": false
+     },
+     {
+      "t": 1792905916635,
+      "kind": "observer",
+      "topic": "passwordmgr-form-submission-detected",
+      "data": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91"
+     },
+     {
+      "t": 1792905916636,
+      "kind": "observer",
+      "topic": "passwordmgr-form-submission-detected",
+      "data": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91"
+     }
+    ]
+   },
+   "accept": {
+    "accepted": true
+   },
+   "after_accept": {
+    "browserAlive": true,
+    "url": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91/next.html?user=spike-user&pass=fake-pass-1234",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": false,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": false
+     }
+    ],
+    "panelState": "open",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905919680,
+      "kind": "observer",
+      "topic": "passwordmgr-storage-changed",
+      "data": "addLogin",
+      "loginOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "pwIsKey": false
+     }
+    ]
+   }
+  },
+  "P2_naive_form_under_prod_csp": {
+   "tab": {
+    "handle": "ee0db266-90e7-48ea-a0cc-395dbea5a931",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "noKeyPage": true,
+     "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html",
+     "visibility": "visible"
+    }
+   },
+   "after": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": false,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": false
+     }
+    ],
+    "panelState": "open",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": {
+     "passwords": 1,
+     "containsKey": false,
+     "usernames": 1
+    },
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905922063,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922698,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922698,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922698,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922700,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922700,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922700,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922701,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922701,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922701,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922701,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922702,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922702,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922702,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922702,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922702,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922702,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922703,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922703,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922703,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922703,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922703,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922703,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922704,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922704,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922704,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922704,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922704,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922704,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922705,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922705,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922705,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922705,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922705,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922706,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922706,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922706,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922706,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922706,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922706,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922706,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905922706,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922707,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922710,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": false,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/naive.html"
+     },
+     {
+      "t": 1792905922711,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905922713,
+      "kind": "LoginManagerParent",
+      "msg": "ShowDoorhanger",
+      "origin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwLen": 14,
+      "pwIsKey": false,
+      "hasUsername": true,
+      "dismissedPrompt": false
+     },
+     {
+      "t": 1792905922714,
+      "kind": "observer",
+      "topic": "passwordmgr-form-submission-detected",
+      "data": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7"
+     }
+    ]
+   }
+  },
+  "S1_spec_type_then_save": {
+   "tab": {
+    "handle": "0038fcdf-b7ef-47fc-af6a-0fd3f08f0654",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    }
+   },
+   "state_before_click": {
+    "mode": "spec",
+    "value": "sk-ant-test-0000",
+    "valueLength": 16,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "key",
+    "status": "",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   },
+   "state_after_save": {
+    "mode": "spec",
+    "value": "",
+    "valueLength": 0,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "save",
+    "status": "Key saved (…0000)",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   },
+   "after": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": true,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": true
+     }
+    ],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": {
+     "passwords": 1,
+     "containsKey": true,
+     "usernames": 0
+    },
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905926184,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926772,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926772,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926772,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926774,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926774,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926775,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926775,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926775,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926775,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926775,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926776,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926776,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926776,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926777,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926777,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926777,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926777,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926777,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926778,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926778,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926778,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926778,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926778,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926778,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926779,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926779,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926779,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926779,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926779,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926780,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926780,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926780,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926780,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926781,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926781,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926781,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926781,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926781,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926781,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926781,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926782,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926782,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926782,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926782,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926782,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905926782,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905926783,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905926783,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   },
+   "after_nav_with_empty_field": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/next.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": true,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": true
+     }
+    ],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": []
+   },
+   "storage_has_key": true
+  },
+  "S2_filled_then_tab_closed": {
+   "tab": {
+    "handle": "a40dc5ba-a21d-45f7-af0e-5c7ef2dfcac8",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    }
+   },
+   "state": {
+    "mode": "spec",
+    "value": "sk-ant-test-0000",
+    "valueLength": 16,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "key",
+    "status": "",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   },
+   "closed": true,
+   "after": {
+    "browserAlive": false,
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905932151,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932744,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932745,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932745,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932746,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932747,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932747,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932747,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932748,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932748,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932748,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932748,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932748,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932748,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932749,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932749,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932749,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932749,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932749,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932750,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932750,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932750,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932750,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932750,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932750,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932750,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932751,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932751,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932751,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932751,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932751,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932752,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932752,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932752,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932752,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932753,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932753,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932753,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932753,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932753,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932753,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932753,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932754,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932754,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932754,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932754,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905932754,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905932754,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905932754,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   }
+  },
+  "S3_filled_then_page_navigation": {
+   "tab": {
+    "handle": "a360fb00-cf1c-4fcd-ac67-9c84206e0d73",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    }
+   },
+   "state": {
+    "mode": "spec",
+    "value": "sk-ant-test-0000",
+    "valueLength": 16,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "key",
+    "status": "",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   },
+   "after": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/next.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": false,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": false
+     }
+    ],
+    "panelState": "open",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905935109,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935709,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935709,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935710,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935711,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935713,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935713,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935713,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935713,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935713,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935713,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935714,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935714,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935714,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935715,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935715,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935715,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935715,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935715,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935715,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935716,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935716,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935716,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935716,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935716,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935717,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935717,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935717,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935717,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935717,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935717,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935718,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935718,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935718,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935719,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935719,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935719,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935719,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935719,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935719,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935720,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935720,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935720,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935720,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935720,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935720,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905935720,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905935721,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935721,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     },
+     {
+      "t": 1792905935727,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": false,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905935728,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     },
+     {
+      "t": 1792905935730,
+      "kind": "LoginManagerParent",
+      "msg": "ShowDoorhanger",
+      "origin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwLen": 16,
+      "pwIsKey": true,
+      "hasUsername": false,
+      "dismissedPrompt": false
+     },
+     {
+      "t": 1792905935732,
+      "kind": "observer",
+      "topic": "passwordmgr-form-submission-detected",
+      "data": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7"
+     }
+    ]
+   }
+  },
+  "S4_filled_then_field_removed": {
+   "tab": {
+    "handle": "7f19a69e-f62d-43ae-bb4a-ea77ae7198a8",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    }
+   },
+   "state": {
+    "mode": "spec",
+    "value": "sk-ant-test-0000",
+    "valueLength": 16,
+    "inDom": false,
+    "visibility": "visible",
+    "focused": "rm",
+    "status": "",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": ""
+   },
+   "after": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": true,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": true
+     }
+    ],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": {
+     "passwords": 1,
+     "containsKey": true,
+     "usernames": 0
+    },
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905938092,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938735,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938736,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938736,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938737,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938738,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938738,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938738,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938738,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938738,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938739,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938739,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938739,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938740,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938740,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938740,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938740,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938740,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938740,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938740,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938741,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938741,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938741,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938741,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938741,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938742,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938742,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938742,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938742,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938742,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938742,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938743,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938743,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938743,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938743,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938743,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938743,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938744,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938744,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938744,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938744,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938744,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938744,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938745,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938745,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938745,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905938745,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905938745,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905938745,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   }
+  },
+  "S5_filled_then_user_navigation": {
+   "tab": {
+    "handle": "2358e490-c933-4782-8dff-f02fe6777e2e",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    }
+   },
+   "state": {
+    "mode": "spec",
+    "value": "sk-ant-test-0000",
+    "valueLength": 16,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "key",
+    "status": "",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   },
+   "navigated_to": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/next.html",
+   "after": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/next.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": true,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": true
+     }
+    ],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905941168,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941764,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941765,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941765,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941767,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941767,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941767,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941767,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941768,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941768,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941768,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941768,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941768,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941769,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941769,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941769,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941769,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941770,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941770,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941770,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941771,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941771,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941771,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941771,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941771,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941771,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941772,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941772,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941772,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941772,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941772,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941773,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941773,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941773,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941773,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941773,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941774,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941774,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941774,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941774,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941774,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941774,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941774,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941775,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941775,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941775,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905941775,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905941775,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905941775,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   }
+  },
+  "M_change": {
+   "tab": {
+    "handle": "a02365ac-5343-4103-bf8d-02c52bce6c22",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "change",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    }
+   },
+   "state_after_save": {
+    "mode": "change",
+    "value": "",
+    "valueLength": 0,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "save",
+    "status": "Key saved (…0000)",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   },
+   "after_save": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": true,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": true
+     }
+    ],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": {
+     "passwords": 0,
+     "containsKey": false,
+     "usernames": 0
+    },
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905945651,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946247,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946248,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946248,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946249,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946249,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946250,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946250,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946250,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946250,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946250,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946251,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946251,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946251,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946251,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946251,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946252,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946252,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946252,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946253,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946253,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946253,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946253,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946253,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946254,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946254,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946254,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946254,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946254,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946255,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946255,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946255,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946255,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946255,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946255,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946256,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946256,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946256,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946256,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946256,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946256,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946257,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946257,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946257,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946257,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946257,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905946257,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905946258,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905946258,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   },
+   "after_filled_then_page_navigation": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/next.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": true,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": true
+     }
+    ],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905949176,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949772,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949772,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949772,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949774,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949775,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949775,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949775,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949775,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949776,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949776,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949776,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949776,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949776,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949777,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949777,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949777,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949777,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949777,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949778,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949778,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949778,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949778,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949779,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949779,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949779,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949779,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949779,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949779,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949780,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949780,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949780,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949780,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949780,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949782,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949782,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949782,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949782,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949783,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949783,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949783,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949783,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949783,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949783,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949784,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949784,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905949784,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905949784,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=change"
+     },
+     {
+      "t": 1792905949784,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   }
+  },
+  "M_mousedown": {
+   "tab": {
+    "handle": "8118de54-3d0e-4bb0-b36b-80b580f884bd",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "mousedown",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    }
+   },
+   "state_after_save": {
+    "mode": "mousedown",
+    "value": "",
+    "valueLength": 0,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "key",
+    "status": "Key saved (…0000)",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   },
+   "after_save": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": true,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": true
+     }
+    ],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": {
+     "passwords": 0,
+     "containsKey": false,
+     "usernames": 0
+    },
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905952156,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952800,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952801,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952801,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952801,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952802,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952802,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952803,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952803,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952804,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952804,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952804,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952804,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952804,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952805,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952805,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952805,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952805,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952805,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952805,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952806,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952806,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952806,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952806,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952806,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952807,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952807,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952807,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952807,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952807,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952808,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952808,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952808,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952808,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952808,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952809,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952809,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952809,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952809,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952809,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952809,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952809,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952810,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952810,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952810,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952810,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905952810,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905952811,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905952811,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   },
+   "after_filled_then_page_navigation": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/next.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": false,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": false
+     }
+    ],
+    "panelState": "open",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905955723,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956320,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956321,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956321,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956323,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956323,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956324,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956324,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956324,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956325,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956325,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956325,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956325,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956325,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956326,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956326,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956326,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956326,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956327,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956327,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956327,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956327,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956327,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956327,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956327,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956328,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956328,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956328,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956328,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956328,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956328,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956329,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956329,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956329,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956329,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956330,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956330,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956330,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956330,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956330,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956330,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956331,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956331,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956331,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956331,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956331,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905956331,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905956331,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956331,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     },
+     {
+      "t": 1792905956336,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": false,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html?m=mousedown"
+     },
+     {
+      "t": 1792905956337,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     },
+     {
+      "t": 1792905956339,
+      "kind": "LoginManagerParent",
+      "msg": "ShowDoorhanger",
+      "origin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwLen": 16,
+      "pwIsKey": true,
+      "hasUsername": false,
+      "dismissedPrompt": false
+     },
+     {
+      "t": 1792905956339,
+      "kind": "observer",
+      "topic": "passwordmgr-form-submission-detected",
+      "data": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7"
+     }
+    ]
+   }
+  },
+  "T1_text_field_css_masked": {
+   "tab": {
+    "handle": "295c08c2-159f-4254-a7c7-87e2ffbd2237",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/keytext.html",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/keytext.html",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "text",
+     "hasBeenTypePasswordGuess": false,
+     "computedTextSecurity": "disc"
+    }
+   },
+   "state_before_click": {
+    "mode": "spec",
+    "value": "sk-ant-test-0000",
+    "valueLength": 16,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "key",
+    "status": "",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "text",
+    "hasBeenTypePasswordGuess": false,
+    "computedTextSecurity": "disc"
+   },
+   "state_after_save": {
+    "mode": "spec",
+    "value": "",
+    "valueLength": 0,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "save",
+    "status": "Key saved (…0000)",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "text",
+    "hasBeenTypePasswordGuess": false,
+    "computedTextSecurity": "disc"
+   },
+   "after_save": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/keytext.html",
+    "passwordNotification": null,
+    "allNotificationsForBrowser": [],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": false,
+     "width": 0
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": []
+   },
+   "after_filled_then_page_navigation": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/next.html",
+    "passwordNotification": null,
+    "allNotificationsForBrowser": [],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": false,
+     "width": 0
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": []
+   },
+   "closed": true,
+   "after_filled_then_tab_closed": {
+    "browserAlive": false,
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": []
+   },
+   "after_filled_then_field_removed": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/keytext.html",
+    "passwordNotification": null,
+    "allNotificationsForBrowser": [],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": false,
+     "width": 0
+    },
+    "selected": true,
+    "lmParentPossibleValues": "no LoginManager actor on current window global",
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": []
+   }
+  },
+  "T2_session_store": {
+   "password_spec": {
+    "filled": {
+     "tabStateContainsKey": false,
+     "formdataExcerpt": null
+    },
+    "state_after_save": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": "save",
+     "status": "Key saved (…0000)",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    },
+    "after_save_and_clear": {
+     "tabStateContainsKey": false,
+     "formdataExcerpt": null
+    }
+   },
+   "text_masked_autocomplete_off": {
+    "filled": {
+     "tabStateContainsKey": false,
+     "formdataExcerpt": null
+    },
+    "state_after_save": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": "save",
+     "status": "Key saved (…0000)",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "text",
+     "hasBeenTypePasswordGuess": false,
+     "computedTextSecurity": "disc"
+    },
+    "after_save_and_clear": {
+     "tabStateContainsKey": false,
+     "formdataExcerpt": null
+    }
+   },
+   "plain_text_control": {
+    "filled": {
+     "tabStateContainsKey": true,
+     "formdataExcerpt": "\"formdata\":{\"url\":\"moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/plain.html\",\"id\":{\"key\":\"<KEY>\"}},\"image\":null}"
+    },
+    "state_after_save": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": "save",
+     "status": "Key saved (…0000)",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "text",
+     "hasBeenTypePasswordGuess": false,
+     "computedTextSecurity": "none"
+    },
+    "after_save_and_clear": {
+     "tabStateContainsKey": true,
+     "formdataExcerpt": "\"formdata\":{\"url\":\"moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/plain.html\",\"id\":{\"key\":\"<KEY>\"}},\"image\":null}"
+    }
+   }
+  },
+  "S1b_spec_save_then_open_leftover_doorhanger_and_save": {
+   "tab": {
+    "handle": "e0781634-16e6-41fc-ab0c-0e611e6455a4",
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "docURI": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "removed_prod_logins_before": 0,
+    "initial_state": {
+     "mode": "spec",
+     "value": "",
+     "valueLength": 0,
+     "inDom": true,
+     "visibility": "visible",
+     "focused": null,
+     "status": "",
+     "textSecurity": true,
+     "htmlHasKey": false,
+     "type": "password",
+     "hasBeenTypePasswordGuess": true,
+     "computedTextSecurity": "none"
+    }
+   },
+   "state_after_save": {
+    "mode": "spec",
+    "value": "",
+    "valueLength": 0,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": "save",
+    "status": "Key saved (…0000)",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   },
+   "after_save": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": true,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": true
+     }
+    ],
+    "panelState": "closed",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": {
+     "passwords": 1,
+     "containsKey": true,
+     "usernames": 0
+    },
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905971319,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972104,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972104,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972104,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972106,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972106,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972106,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972106,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972107,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972107,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972107,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972108,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972108,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972108,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972108,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972108,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972109,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972109,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972109,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972109,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972109,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972110,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972110,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972110,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972110,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972110,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972110,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972110,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972111,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972111,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972111,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972111,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972111,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972112,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972112,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972112,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972112,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972113,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972113,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972113,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972113,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972113,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972113,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972113,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972113,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972114,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905972114,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905972114,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905972114,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     },
+     {
+      "t": 1792905982378,
+      "kind": "LoginManagerParent",
+      "msg": "FormProcessed",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982967,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982967,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982967,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982969,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982969,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982970,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982970,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982970,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982970,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982971,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982971,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982971,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982971,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982972,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982972,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982972,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982972,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982972,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982973,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982973,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982973,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982973,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982973,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982973,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982974,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982974,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982974,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982974,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982974,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982975,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982975,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982975,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982975,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982976,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982976,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982976,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982976,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982976,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982976,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982976,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982977,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982977,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982977,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982977,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982977,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": false
+     },
+     {
+      "t": 1792905982977,
+      "kind": "LoginManagerParent",
+      "msg": "PasswordEditedOrGenerated",
+      "origin": null,
+      "pwLen": null,
+      "pwIsKey": null,
+      "hasUsername": false,
+      "dismissedPrompt": null
+     },
+     {
+      "t": 1792905982978,
+      "kind": "PopupNotifications.show",
+      "id": "password",
+      "anchorID": "password-notification-icon",
+      "dismissed": true,
+      "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html"
+     },
+     {
+      "t": 1792905982978,
+      "kind": "observer",
+      "topic": "passwordmgr-prompt-save",
+      "data": null,
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   },
+   "reopen_and_save": {
+    "reopened": true,
+    "wasDismissed": true,
+    "panelOpened": true,
+    "panelPasswordFieldHasFullKey": true,
+    "panelPasswordFieldLength": 16,
+    "panelUsernameLength": 0,
+    "clickedMainButton": true,
+    "savedBy": "mainAction.callback after panel opened",
+    "panelStateAfter": "open"
+   },
+   "after": {
+    "browserAlive": true,
+    "url": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7/key.html",
+    "passwordNotification": {
+     "id": "password",
+     "dismissed": false,
+     "anchorID": "password-notification-icon",
+     "message": "Save password for moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7?",
+     "isPrivate": false
+    },
+    "allNotificationsForBrowser": [
+     {
+      "id": "password",
+      "dismissed": false
+     }
+    ],
+    "panelState": "open",
+    "anchorIcon": {
+     "hiddenAttr": false,
+     "visible": true,
+     "width": 24
+    },
+    "selected": true,
+    "lmParentPossibleValues": {
+     "passwords": 1,
+     "containsKey": true,
+     "usernames": 0
+    },
+    "logins": [
+     {
+      "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+      "hasUsername": true,
+      "pwIsKey": false
+     },
+     {
+      "origin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "formActionOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "hasUsername": false,
+      "pwIsKey": true
+     }
+    ],
+    "events": [
+     {
+      "t": 1792905986860,
+      "kind": "observer",
+      "topic": "passwordmgr-storage-changed",
+      "data": "addLogin",
+      "loginOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+      "pwIsKey": true
+     }
+    ]
+   },
+   "reopened_key_page_initial_state": {
+    "mode": "spec",
+    "value": "sk-ant-test-0000",
+    "valueLength": 16,
+    "inDom": true,
+    "visibility": "visible",
+    "focused": null,
+    "status": "",
+    "textSecurity": true,
+    "htmlHasKey": false,
+    "type": "password",
+    "hasBeenTypePasswordGuess": true,
+    "computedTextSecurity": "none"
+   }
+  }
+ },
+ "install": {
+  "prod": "zen-tidy-spike-d@local",
+  "pwctl": "zen-tidy-spike-d-pw@local"
+ },
+ "instrument": {
+  "instrumented": true,
+  "prefs": {
+   "signon.rememberSignons": true,
+   "signon.formlessCapture.enabled": true,
+   "signon.formRemovalCapture.enabled": true,
+   "signon.capture.inputChanges.enabled": true,
+   "signon.storeWhenAutocompleteOff": true,
+   "signon.userInputRequiredToCapture.enabled": true,
+   "signon.passwordEditCapture.enabled": true,
+   "network.proxy.failover_direct": true,
+   "network.proxy.type": 2
+  },
+  "loginSavingEnabledForExtensions": null,
+  "headless": "1"
+ },
+ "final_logins": [
+  {
+   "origin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+   "formActionOrigin": "moz-extension://1777276c-95c1-4d20-83e5-696f46ef8e91",
+   "hasUsername": true,
+   "pwIsKey": false
+  },
+  {
+   "origin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+   "formActionOrigin": "moz-extension://d9b721df-8cc0-4948-bae6-5df8dbd224e7",
+   "hasUsername": false,
+   "pwIsKey": true
+  }
+ ],
+ "form_history": {
+  "count": 0,
+  "fieldnames": [],
+  "anyValueIsKey": false,
+  "controlUserSaved": false
+ },
+ "console_passwordmgr": []
+}

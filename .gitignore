@@ -1,0 +1,37 @@
+# OMC runtime state, in any directory
+**/.omc/
+
+# Planning docs and tests stay local
+/SPEC.md
+/notes/
+/test/
+
+# Build output
+dist/
+dist-dev/
+*.xpi
+node_modules/
+
+# web-ext sign receipts
+.amo-upload-uuid
+
+# Spike: throwaway Zen profiles and raw run output
+spike/profiles/
+spike/results/*.log
+spike/results/m2/
+spike/results/m5/
+spike/results/m6/
+# Live end-to-end runs: screenshots and dumps of the user's real tabs, never committed
+spike/results/live/
+# Design captures: some are true screen grabs (desktop edges), and they are large binaries
+spike/results/zen-design/
+spike/results/zen-restyle/
+
+# Never commit real tab data, benchmark output or secrets
+test/fixtures/real-*
+*.env
+.env*
+
+# Python bytecode
+__pycache__/
+*.pyc

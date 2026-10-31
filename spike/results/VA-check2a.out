@@ -1,0 +1,297 @@
+{
+ "control_width": 37.866668701171875,
+ "per_char": {
+  "U+200B": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+200C": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+200D": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+2060": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+2061": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+2062": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+2063": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+2064": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+FEFF": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  },
+  "U+180E": {
+   "get_equal": true,
+   "dom_equal": true,
+   "after_get_equal": true,
+   "after_dom_equal": true,
+   "label_text_width": 37.866668701171875,
+   "width_delta_vs_control": 0.0
+  }
+ },
+ "surviving": [
+  "U+200B",
+  "U+200C",
+  "U+200D",
+  "U+2060",
+  "U+2061",
+  "U+2062",
+  "U+2063",
+  "U+2064",
+  "U+FEFF",
+  "U+180E"
+ ],
+ "specials_before": {
+  "control": {
+   "sent": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "get": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "dom": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "domText": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "width": 37.866668701171875
+  },
+  "only_invisible": {
+   "sent": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "get": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "dom": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "domText": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "width": 0
+  },
+  "empty": {
+   "sent": [],
+   "get": [],
+   "dom": [
+    "U+200B"
+   ],
+   "domText": [
+    "U+200B"
+   ],
+   "width": 0
+  },
+  "all": {
+   "sent": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "get": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "dom": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "domText": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "width": 25.01666259765625
+  }
+ },
+ "specials_after": {
+  "control": {
+   "get": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ],
+   "dom": [
+    "U+004E",
+    "U+0061",
+    "U+006D",
+    "U+0065"
+   ]
+  },
+  "only_invisible": {
+   "get": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ],
+   "dom": [
+    "U+2063",
+    "U+2062",
+    "U+2061",
+    "U+2064"
+   ]
+  },
+  "empty": {
+   "get": [],
+   "dom": [
+    "U+200B"
+   ]
+  },
+  "all": {
+   "get": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ],
+   "dom": [
+    "U+200B",
+    "U+200C",
+    "U+200D",
+    "U+2060",
+    "U+2061",
+    "U+2062",
+    "U+2063",
+    "U+2064",
+    "U+FEFF",
+    "U+180E",
+    "U+0041",
+    "U+006C",
+    "U+006C"
+   ]
+  }
+ }
+}
+saved C:\Users\Soulaymane\Documents\Projects\zen-tidy\spike\results\VA-check2a-chars.json
+exit 0

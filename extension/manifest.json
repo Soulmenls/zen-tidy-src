@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Zen Tidy",
+  "version": "0.1.0",
+  "description": "Sorts your open Zen tabs into topic groups with Claude, using your own Anthropic API key.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zen-tidy@soulaymane",
+      "strict_min_version": "142.0",
+      "update_url": "https://github.com/Soulmenls/zen-tidy/releases/latest/download/updates.json",
+      "data_collection_permissions": { "required": ["browsingActivity"] }
+    }
+  },
+  "icons": { "48": "icons/app/tidy-color.svg", "96": "icons/app/tidy-color.svg" },
+  "permissions": ["tabs", "tabGroups", "sessions", "storage"],
+  "host_permissions": ["https://api.anthropic.com/*"],
+  "incognito": "not_allowed",
+  "background": { "scripts": ["background/main.js"], "type": "module" },
+  "action": {
+    "default_title": "Zen Tidy",
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/app/tidy-dark.svg",
+    "theme_icons": [
+      { "light": "icons/app/tidy-light.svg", "dark": "icons/app/tidy-dark.svg", "size": 16 },
+      { "light": "icons/app/tidy-light.svg", "dark": "icons/app/tidy-dark.svg", "size": 32 }
+    ]
+  },
+  "options_ui": { "page": "options/options.html", "open_in_tab": true },
+  "content_security_policy": {
+    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.anthropic.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+  }
+}

@@ -1,0 +1,698 @@
+{
+ "quit_in": "A",
+ "port": 2966,
+ "install": "zen-tidy-spike-b@local",
+ "page_to_essential": {
+  "spaceA": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+  "essential": true
+ },
+ "warmup": {
+  "value": null
+ },
+ "A_warm_after_warmup": {
+  "value": {
+   "id": 8,
+   "index": 2,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792906113884,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbws/A_warm",
+   "title": "Tab A_warm"
+  }
+ },
+ "state_after_create_in_A": {
+  "active": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+  "tabs": {
+   "A_warm": {
+    "wsAttr": null,
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_grp1": {
+    "wsAttr": null,
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_grp2": {
+    "wsAttr": null,
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_disc": {
+    "wsAttr": null,
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   }
+  },
+  "session": [
+   {
+    "name": "A_warm",
+    "zenWorkspace": null
+   },
+   {
+    "name": "A_lg1",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_lg2",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_grp1",
+    "zenWorkspace": null
+   },
+   {
+    "name": "A_grp2",
+    "zenWorkspace": null
+   },
+   {
+    "name": "A_live",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_disc",
+    "zenWorkspace": null
+   }
+  ],
+  "sessionGroups": [
+   {
+    "name": "⁠⁣Group A live",
+    "zenWorkspace": null
+   },
+   {
+    "name": "⁠⁣Group A disc",
+    "zenWorkspace": null
+   }
+  ]
+ },
+ "create_space_b": {
+  "uuid": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+  "active": "{81a108de-beee-4ecf-bf10-305edb69a450}"
+ },
+ "space_a": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+ "space_b": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+ "ids": {
+  "A_disc": 2,
+  "A_live": 3,
+  "A_grp1": 4,
+  "A_grp2": 5,
+  "A_lg1": 6,
+  "A_lg2": 7,
+  "A_warm": 8,
+  "B_disc": 9,
+  "B_live": 10
+ },
+ "switch_to_A_pre": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+ "pre_query_in_A": [
+  "A_warm",
+  "A_lg1",
+  "A_lg2",
+  "A_grp1",
+  "A_grp2",
+  "A_live",
+  "A_disc"
+ ],
+ "switch_to_B_pre": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+ "pre_query_in_B": [
+  "B_live",
+  "B_disc"
+ ],
+ "switch_before_quit": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+ "before_quit": {
+  "active": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+  "tabs": {
+   "A_warm": {
+    "wsAttr": null,
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_lg1": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113900-81",
+    "groupLabel": "⁠⁣Group A live",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": false,
+    "inVisibleTabs": true
+   },
+   "A_lg2": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113900-81",
+    "groupLabel": "⁠⁣Group A live",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": false,
+    "inVisibleTabs": true
+   },
+   "A_grp1": {
+    "wsAttr": null,
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_grp2": {
+    "wsAttr": null,
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_live": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": false,
+    "inVisibleTabs": true
+   },
+   "A_disc": {
+    "wsAttr": null,
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "B_live": {
+    "wsAttr": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "containerWs": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": false,
+    "inVisibleTabs": false
+   },
+   "B_disc": {
+    "wsAttr": null,
+    "containerWs": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   }
+  },
+  "session": [
+   {
+    "name": "A_warm",
+    "zenWorkspace": null
+   },
+   {
+    "name": "A_grp1",
+    "zenWorkspace": null
+   },
+   {
+    "name": "A_grp2",
+    "zenWorkspace": null
+   },
+   {
+    "name": "A_disc",
+    "zenWorkspace": null
+   },
+   {
+    "name": "B_disc",
+    "zenWorkspace": null
+   }
+  ],
+  "sessionGroups": [
+   {
+    "name": "⁠⁣Group A live",
+    "zenWorkspace": null
+   },
+   {
+    "name": "⁠⁣Group A disc",
+    "zenWorkspace": null
+   }
+  ]
+ },
+ "after_restart1": {
+  "active": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+  "tabs": {
+   "A_warm": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_lg1": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113900-81",
+    "groupLabel": "⁠⁣Group A live",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_lg2": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113900-81",
+    "groupLabel": "⁠⁣Group A live",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_grp1": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_grp2": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_live": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_disc": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "B_disc": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "B_live": {
+    "wsAttr": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "containerWs": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   }
+  },
+  "session": [
+   {
+    "name": "A_warm",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_lg1",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_lg2",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_grp1",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_grp2",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_live",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_disc",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "B_disc",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "B_live",
+    "zenWorkspace": "{81a108de-beee-4ecf-bf10-305edb69a450}"
+   }
+  ],
+  "sessionGroups": [
+   {
+    "name": "⁠⁣Group A live",
+    "zenWorkspace": null
+   },
+   {
+    "name": "⁠⁣Group A disc",
+    "zenWorkspace": null
+   }
+  ]
+ },
+ "r1_query_active": [
+  "A_warm",
+  "A_lg1",
+  "A_lg2",
+  "A_grp1",
+  "A_grp2",
+  "A_live",
+  "A_disc",
+  "B_disc"
+ ],
+ "r1_switch_other": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+ "r1_query_other": [
+  "B_live"
+ ],
+ "r1_other_id": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+ "before_restart2": {
+  "active": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+  "tabs": {
+   "B_live": {
+    "wsAttr": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "containerWs": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_warm": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_lg1": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113900-81",
+    "groupLabel": "⁠⁣Group A live",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_lg2": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113900-81",
+    "groupLabel": "⁠⁣Group A live",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_grp1": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_grp2": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_live": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_disc": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "B_disc": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   }
+  },
+  "session": [
+   {
+    "name": "B_live",
+    "zenWorkspace": "{81a108de-beee-4ecf-bf10-305edb69a450}"
+   },
+   {
+    "name": "A_warm",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_lg1",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_lg2",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_grp1",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_grp2",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_live",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_disc",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "B_disc",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   }
+  ],
+  "sessionGroups": [
+   {
+    "name": "⁠⁣Group A live",
+    "zenWorkspace": null
+   },
+   {
+    "name": "⁠⁣Group A disc",
+    "zenWorkspace": null
+   }
+  ]
+ },
+ "after_restart2": {
+  "active": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+  "tabs": {
+   "B_live": {
+    "wsAttr": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "containerWs": "{81a108de-beee-4ecf-bf10-305edb69a450}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": true
+   },
+   "A_warm": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_lg1": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113900-81",
+    "groupLabel": "⁠⁣Group A live",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_lg2": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113900-81",
+    "groupLabel": "⁠⁣Group A live",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_grp1": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_grp2": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": "1792906113889-24",
+    "groupLabel": "⁠⁣Group A disc",
+    "groupWsContainer": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_live": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "A_disc": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   },
+   "B_disc": {
+    "wsAttr": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "containerWs": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}",
+    "group": null,
+    "groupLabel": null,
+    "groupWsContainer": null,
+    "pending": true,
+    "inVisibleTabs": false
+   }
+  },
+  "session": [
+   {
+    "name": "B_live",
+    "zenWorkspace": "{81a108de-beee-4ecf-bf10-305edb69a450}"
+   },
+   {
+    "name": "A_warm",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_lg1",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_lg2",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_grp1",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_grp2",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_live",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "A_disc",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   },
+   {
+    "name": "B_disc",
+    "zenWorkspace": "{2694dd70-23f6-4a2d-b16b-a552ccc8fd6b}"
+   }
+  ],
+  "sessionGroups": [
+   {
+    "name": "⁠⁣Group A live",
+    "zenWorkspace": null
+   },
+   {
+    "name": "⁠⁣Group A disc",
+    "zenWorkspace": null
+   }
+  ]
+ },
+ "r2_query_active": [
+  "B_live"
+ ]
+}

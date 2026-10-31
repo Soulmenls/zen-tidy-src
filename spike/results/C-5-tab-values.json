@@ -1,0 +1,2239 @@
+{
+ "check": 5,
+ "started": 1792904617.0821574,
+ "install": "zen-tidy-spike@local",
+ "page": {
+  "handle": "2219fe6e-e2b6-4913-969d-fc57500bc985",
+  "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html"
+ },
+ "created": {
+  "d1": {
+   "id": 3,
+   "discarded": true,
+   "url": "https://example.com/c5/d1"
+  },
+  "d2": {
+   "id": 4,
+   "discarded": true,
+   "url": "https://example.com/c5/d2"
+  },
+  "d3": {
+   "id": 5,
+   "discarded": true,
+   "url": "https://example.com/c5/d3"
+  },
+  "n1": {
+   "id": 6,
+   "discarded": true,
+   "url": "https://example.com/c5/n1-novalue"
+  },
+  "g1": {
+   "id": 7,
+   "discarded": true,
+   "url": "https://example.com/c5/g1"
+  },
+  "g2": {
+   "id": 8,
+   "discarded": true,
+   "url": "https://example.com/c5/g2-novalue"
+  },
+  "l1": {
+   "id": 9,
+   "discarded": false,
+   "url": "about:blank"
+  },
+  "l2": {
+   "id": 10,
+   "discarded": false,
+   "url": "about:blank"
+  },
+  "x1": {
+   "id": 11,
+   "discarded": false,
+   "url": "about:blank"
+  },
+  "r1": {
+   "id": 12,
+   "discarded": true,
+   "url": "https://example.com/c5/r1"
+  },
+  "r2": {
+   "id": 13,
+   "discarded": false,
+   "url": "about:blank"
+  }
+ },
+ "loaded_state": {
+  "l1": {
+   "status": "complete",
+   "discarded": false
+  },
+  "x1": {
+   "status": "complete",
+   "discarded": false
+  },
+  "r2": {
+   "status": "complete",
+   "discarded": false
+  },
+  "l2": {
+   "status": "loading",
+   "discarded": false
+  }
+ },
+ "groupId_before": 1792904625361085,
+ "removeTabValue": {
+  "value": null
+ },
+ "discard_x1": {
+  "value": null
+ },
+ "x1_after_discard": true,
+ "set_results": {
+  "d1.tidyKey": {
+   "value": null
+  },
+  "d2.tidyKey": {
+   "value": null
+  },
+  "d3.tidyKey": {
+   "value": null
+  },
+  "g1.tidyKey": {
+   "value": null
+  },
+  "l1.tidyKey": {
+   "value": null
+  },
+  "l2.tidyKey": {
+   "value": null
+  },
+  "x1.tidyKey": {
+   "value": null
+  },
+  "r1.tidyKey": {
+   "value": null
+  },
+  "r2.tidyKey": {
+   "value": null
+  },
+  "d1.obj": {
+   "value": null
+  },
+  "d2.k1": {
+   "value": null
+  },
+  "d2.k2": {
+   "value": null
+  },
+  "d2.tmp": {
+   "value": null
+  },
+  "x1.afterDiscard": {
+   "value": null
+  }
+ },
+ "intended": {
+  "d1": {
+   "tidyKey": "C5:d1:https://example.com/c5/d1",
+   "obj": {
+    "n": 1,
+    "nested": {
+     "a": [
+      1,
+      2,
+      null
+     ]
+    },
+    "s": "ünïcode ​⁣⁤ ✓",
+    "f": 1.5,
+    "b": false
+   }
+  },
+  "d2": {
+   "tidyKey": "C5:d2:https://example.com/c5/d2",
+   "k1": 1,
+   "k2": [
+    true,
+    "two"
+   ]
+  },
+  "d3": {
+   "tidyKey": "C5:d3:https://example.com/c5/d3",
+   "k1": "orig-d3-after-dup"
+  },
+  "g1": {
+   "tidyKey": "C5:g1:https://example.com/c5/g1",
+   "k1": "orig-g1-after-dup"
+  },
+  "l1": {
+   "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "k1": "orig-l1-after-dup"
+  },
+  "l2": {
+   "tidyKey": "C5:l2:https://example.com/c5/l2-failedload"
+  },
+  "x1": {
+   "tidyKey": "C5:x1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+   "afterDiscard": "set-while-discarded"
+  },
+  "r1": {
+   "tidyKey": "C5:r1:https://example.com/c5/r1"
+  },
+  "r2": {
+   "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2"
+  }
+ },
+ "S0_after_set": [
+  {
+   "id": 2,
+   "index": 0,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": false,
+   "pinned": true,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": true,
+   "values": {}
+  },
+  {
+   "id": 13,
+   "index": 2,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2"
+   }
+  },
+  {
+   "id": 12,
+   "index": 3,
+   "windowId": 3,
+   "url": "https://example.com/c5/r1",
+   "title": "C5 r1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:r1:https://example.com/c5/r1"
+   }
+  },
+  {
+   "id": 11,
+   "index": 4,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:x1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+    "afterDiscard": "set-while-discarded"
+   }
+  },
+  {
+   "id": 10,
+   "index": 5,
+   "windowId": 3,
+   "url": "https://example.com/c5/l2-failedload",
+   "title": "Problem loading page",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l2:https://example.com/c5/l2-failedload"
+   }
+  },
+  {
+   "id": 9,
+   "index": 6,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1"
+   }
+  },
+  {
+   "id": 7,
+   "index": 7,
+   "windowId": 3,
+   "url": "https://example.com/c5/g1",
+   "title": "C5 g1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:g1:https://example.com/c5/g1"
+   }
+  },
+  {
+   "id": 8,
+   "index": 8,
+   "windowId": 3,
+   "url": "https://example.com/c5/g2-novalue",
+   "title": "C5 g2",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {}
+  },
+  {
+   "id": 6,
+   "index": 9,
+   "windowId": 3,
+   "url": "https://example.com/c5/n1-novalue",
+   "title": "C5 n1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {}
+  },
+  {
+   "id": 5,
+   "index": 10,
+   "windowId": 3,
+   "url": "https://example.com/c5/d3",
+   "title": "C5 d3",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d3:https://example.com/c5/d3"
+   }
+  },
+  {
+   "id": 4,
+   "index": 11,
+   "windowId": 3,
+   "url": "https://example.com/c5/d2",
+   "title": "C5 d2",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d2:https://example.com/c5/d2",
+    "k1": 1,
+    "k2": [
+     true,
+     "two"
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "index": 12,
+   "windowId": 3,
+   "url": "https://example.com/c5/d1",
+   "title": "C5 d1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d1:https://example.com/c5/d1",
+    "obj": {
+     "n": 1,
+     "nested": {
+      "a": [
+       1,
+       2,
+       null
+      ]
+     },
+     "s": "ünïcode ​⁣⁤ ✓",
+     "f": 1.5,
+     "b": false
+    }
+   }
+  }
+ ],
+ "S0_matches_intended": {
+  "d1": true,
+  "d2": true,
+  "d3": true,
+  "n1": true,
+  "g1": true,
+  "g2": true,
+  "l1": true,
+  "l2": true,
+  "x1": true,
+  "r1": true,
+  "r2": true
+ },
+ "duplicate": {
+  "d3": {
+   "result": {
+    "value": {
+     "id": 14,
+     "index": 2,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "loading",
+     "hidden": false,
+     "discarded": false,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792904620937,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/c5/d3",
+     "title": "C5 d3"
+    }
+   },
+   "dup_id": 14,
+   "url": "https://example.com/c5/d3",
+   "discarded": false,
+   "active": false,
+   "groupId": -1,
+   "status": "loading",
+   "values_on_dup": {
+    "tidyKey": "C5:d3:https://example.com/c5/d3",
+    "obj": null,
+    "k1": null,
+    "k2": null,
+    "tmp": null,
+    "afterDiscard": null,
+    "dupMarker": null,
+    "restoreMarker": null
+   },
+   "tidyKey_copied": true,
+   "set_marker": {
+    "value": null
+   },
+   "independent": {
+    "orig_k2": null,
+    "dup_k1": null
+   }
+  },
+  "l1": {
+   "result": {
+    "value": {
+     "id": 15,
+     "index": 2,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "loading",
+     "hidden": false,
+     "discarded": false,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792904620968,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": -1,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+     "title": "Zen Tidy Spike"
+    }
+   },
+   "dup_id": 15,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "discarded": false,
+   "active": false,
+   "groupId": -1,
+   "status": "complete",
+   "values_on_dup": {
+    "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+    "obj": null,
+    "k1": null,
+    "k2": null,
+    "tmp": null,
+    "afterDiscard": null,
+    "dupMarker": null,
+    "restoreMarker": null
+   },
+   "tidyKey_copied": true,
+   "set_marker": {
+    "value": null
+   },
+   "independent": {
+    "orig_k2": null,
+    "dup_k1": null
+   }
+  },
+  "g1": {
+   "result": {
+    "value": {
+     "id": 16,
+     "index": 11,
+     "windowId": 3,
+     "highlighted": false,
+     "active": false,
+     "attention": false,
+     "pinned": false,
+     "status": "loading",
+     "hidden": false,
+     "discarded": false,
+     "incognito": false,
+     "width": 1172,
+     "height": 752,
+     "lastAccessed": 1792904620953,
+     "audible": false,
+     "autoDiscardable": true,
+     "mutedInfo": {
+      "muted": false
+     },
+     "isInReaderMode": false,
+     "sharingState": {
+      "camera": false,
+      "microphone": false
+     },
+     "successorTabId": -1,
+     "groupId": 1792904625361085,
+     "splitViewId": -1,
+     "cookieStoreId": "firefox-default",
+     "url": "https://example.com/c5/g1",
+     "title": "C5 g1"
+    }
+   },
+   "dup_id": 16,
+   "url": "https://example.com/c5/g1",
+   "discarded": false,
+   "active": false,
+   "groupId": 1792904625361085,
+   "status": "loading",
+   "values_on_dup": {
+    "tidyKey": "C5:g1:https://example.com/c5/g1",
+    "obj": null,
+    "k1": null,
+    "k2": null,
+    "tmp": null,
+    "afterDiscard": null,
+    "dupMarker": null,
+    "restoreMarker": null
+   },
+   "tidyKey_copied": true,
+   "set_marker": {
+    "value": null
+   },
+   "independent": {
+    "orig_k2": null,
+    "dup_k1": null
+   }
+  }
+ },
+ "active_after_duplicates": [],
+ "restore": {
+  "r1": {
+   "active_before": [],
+   "remove": {
+    "value": null
+   },
+   "closed_entry_found": true,
+   "sessionId": "0",
+   "restore": {
+    "value": {
+     "lastModified": 1792904630076,
+     "tab": {
+      "id": 17,
+      "index": 5,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792904630076,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "about:blank",
+      "title": "New Tab"
+     }
+    }
+   },
+   "restored_id": 17,
+   "url": "https://example.com/c5/r1",
+   "discarded": false,
+   "active": true,
+   "status": "loading",
+   "groupId": -1,
+   "index": 5,
+   "values_on_restored": {
+    "tidyKey": "C5:r1:https://example.com/c5/r1",
+    "obj": null,
+    "k1": null,
+    "k2": null,
+    "tmp": null,
+    "afterDiscard": null,
+    "dupMarker": null,
+    "restoreMarker": null
+   },
+   "tidyKey_copied": true,
+   "active_after": [
+    17
+   ],
+   "set_marker": {
+    "value": null
+   }
+  },
+  "r2": {
+   "active_before": [
+    17
+   ],
+   "remove": {
+    "value": null
+   },
+   "closed_entry_found": true,
+   "sessionId": "1",
+   "restore": {
+    "value": {
+     "lastModified": 1792904631830,
+     "tab": {
+      "id": 18,
+      "index": 4,
+      "windowId": 3,
+      "highlighted": true,
+      "active": true,
+      "attention": false,
+      "pinned": false,
+      "status": "complete",
+      "hidden": false,
+      "discarded": false,
+      "incognito": false,
+      "width": 1172,
+      "height": 752,
+      "lastAccessed": 1792904631830,
+      "audible": false,
+      "autoDiscardable": true,
+      "mutedInfo": {
+       "muted": false
+      },
+      "isInReaderMode": false,
+      "sharingState": {
+       "camera": false,
+       "microphone": false
+      },
+      "successorTabId": -1,
+      "groupId": -1,
+      "splitViewId": -1,
+      "cookieStoreId": "firefox-default",
+      "url": "about:blank",
+      "title": "New Tab"
+     }
+    }
+   },
+   "restored_id": 18,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+   "discarded": false,
+   "active": true,
+   "status": "complete",
+   "groupId": -1,
+   "index": 4,
+   "values_on_restored": {
+    "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+    "obj": null,
+    "k1": null,
+    "k2": null,
+    "tmp": null,
+    "afterDiscard": null,
+    "dupMarker": null,
+    "restoreMarker": null
+   },
+   "tidyKey_copied": true,
+   "active_after": [
+    18
+   ],
+   "set_marker": {
+    "value": null
+   }
+  }
+ },
+ "windows_before_restart": 1,
+ "S1_before_restart": [
+  {
+   "id": 2,
+   "index": 0,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": false,
+   "pinned": true,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": true,
+   "values": {}
+  },
+  {
+   "id": 15,
+   "index": 2,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+    "k2": "dup-l1-only",
+    "dupMarker": "dup-of-l1"
+   }
+  },
+  {
+   "id": 14,
+   "index": 3,
+   "windowId": 3,
+   "url": "https://example.com/c5/d3",
+   "title": "Problem loading page",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d3:https://example.com/c5/d3",
+    "k2": "dup-d3-only",
+    "dupMarker": "dup-of-d3"
+   }
+  },
+  {
+   "id": 18,
+   "index": 4,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": true,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+    "restoreMarker": "restored-r2"
+   }
+  },
+  {
+   "id": 17,
+   "index": 5,
+   "windowId": 3,
+   "url": "https://example.com/c5/r1",
+   "title": "C5 r1",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "loading",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:r1:https://example.com/c5/r1",
+    "restoreMarker": "restored-r1"
+   }
+  },
+  {
+   "id": 11,
+   "index": 6,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:x1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+    "afterDiscard": "set-while-discarded"
+   }
+  },
+  {
+   "id": 10,
+   "index": 7,
+   "windowId": 3,
+   "url": "https://example.com/c5/l2-failedload",
+   "title": "Problem loading page",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l2:https://example.com/c5/l2-failedload"
+   }
+  },
+  {
+   "id": 9,
+   "index": 8,
+   "windowId": 3,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+    "k1": "orig-l1-after-dup"
+   }
+  },
+  {
+   "id": 7,
+   "index": 9,
+   "windowId": 3,
+   "url": "https://example.com/c5/g1",
+   "title": "C5 g1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:g1:https://example.com/c5/g1",
+    "k1": "orig-g1-after-dup"
+   }
+  },
+  {
+   "id": 8,
+   "index": 10,
+   "windowId": 3,
+   "url": "https://example.com/c5/g2-novalue",
+   "title": "C5 g2",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {}
+  },
+  {
+   "id": 16,
+   "index": 11,
+   "windowId": 3,
+   "url": "https://example.com/c5/g1",
+   "title": "Problem loading page",
+   "discarded": false,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:g1:https://example.com/c5/g1",
+    "k2": "dup-g1-only",
+    "dupMarker": "dup-of-g1"
+   }
+  },
+  {
+   "id": 6,
+   "index": 12,
+   "windowId": 3,
+   "url": "https://example.com/c5/n1-novalue",
+   "title": "C5 n1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {}
+  },
+  {
+   "id": 5,
+   "index": 13,
+   "windowId": 3,
+   "url": "https://example.com/c5/d3",
+   "title": "C5 d3",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d3:https://example.com/c5/d3",
+    "k1": "orig-d3-after-dup"
+   }
+  },
+  {
+   "id": 4,
+   "index": 14,
+   "windowId": 3,
+   "url": "https://example.com/c5/d2",
+   "title": "C5 d2",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d2:https://example.com/c5/d2",
+    "k1": 1,
+    "k2": [
+     true,
+     "two"
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "index": 15,
+   "windowId": 3,
+   "url": "https://example.com/c5/d1",
+   "title": "C5 d1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d1:https://example.com/c5/d1",
+    "obj": {
+     "n": 1,
+     "nested": {
+      "a": [
+       1,
+       2,
+       null
+      ]
+     },
+     "s": "ünïcode ​⁣⁤ ✓",
+     "f": 1.5,
+     "b": false
+    }
+   }
+  }
+ ],
+ "windows_after_restart1": 1,
+ "S2_after_restart1": [
+  {
+   "id": 2,
+   "index": 0,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": false,
+   "pinned": true,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": true,
+   "values": {}
+  },
+  {
+   "id": 3,
+   "index": 2,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+    "k2": "dup-l1-only",
+    "dupMarker": "dup-of-l1"
+   }
+  },
+  {
+   "id": 4,
+   "index": 3,
+   "windowId": 1,
+   "url": "https://example.com/c5/d3",
+   "title": "C5 d3",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d3:https://example.com/c5/d3",
+    "k2": "dup-d3-only",
+    "dupMarker": "dup-of-d3"
+   }
+  },
+  {
+   "id": 5,
+   "index": 4,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+    "restoreMarker": "restored-r2"
+   }
+  },
+  {
+   "id": 6,
+   "index": 5,
+   "windowId": 1,
+   "url": "https://example.com/c5/r1",
+   "title": "C5 r1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:r1:https://example.com/c5/r1",
+    "restoreMarker": "restored-r1"
+   }
+  },
+  {
+   "id": 7,
+   "index": 6,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:x1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+    "afterDiscard": "set-while-discarded"
+   }
+  },
+  {
+   "id": 8,
+   "index": 7,
+   "windowId": 1,
+   "url": "https://example.com/c5/l2-failedload",
+   "title": "https://example.com/c5/l2-failedload",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l2:https://example.com/c5/l2-failedload"
+   }
+  },
+  {
+   "id": 9,
+   "index": 8,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+    "k1": "orig-l1-after-dup"
+   }
+  },
+  {
+   "id": 10,
+   "index": 9,
+   "windowId": 1,
+   "url": "https://example.com/c5/g1",
+   "title": "C5 g1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:g1:https://example.com/c5/g1",
+    "k1": "orig-g1-after-dup"
+   }
+  },
+  {
+   "id": 11,
+   "index": 10,
+   "windowId": 1,
+   "url": "https://example.com/c5/g2-novalue",
+   "title": "C5 g2",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {}
+  },
+  {
+   "id": 12,
+   "index": 11,
+   "windowId": 1,
+   "url": "https://example.com/c5/g1",
+   "title": "C5 g1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:g1:https://example.com/c5/g1",
+    "k2": "dup-g1-only",
+    "dupMarker": "dup-of-g1"
+   }
+  },
+  {
+   "id": 13,
+   "index": 12,
+   "windowId": 1,
+   "url": "https://example.com/c5/n1-novalue",
+   "title": "C5 n1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {}
+  },
+  {
+   "id": 14,
+   "index": 13,
+   "windowId": 1,
+   "url": "https://example.com/c5/d3",
+   "title": "C5 d3",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d3:https://example.com/c5/d3",
+    "k1": "orig-d3-after-dup"
+   }
+  },
+  {
+   "id": 15,
+   "index": 14,
+   "windowId": 1,
+   "url": "https://example.com/c5/d2",
+   "title": "C5 d2",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d2:https://example.com/c5/d2",
+    "k1": 1,
+    "k2": [
+     true,
+     "two"
+    ]
+   }
+  },
+  {
+   "id": 16,
+   "index": 15,
+   "windowId": 1,
+   "url": "https://example.com/c5/d1",
+   "title": "C5 d1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d1:https://example.com/c5/d1",
+    "obj": {
+     "n": 1,
+     "nested": {
+      "a": [
+       1,
+       2,
+       null
+      ]
+     },
+     "s": "ünïcode ​⁣⁤ ✓",
+     "f": 1.5,
+     "b": false
+    }
+   }
+  }
+ ],
+ "groups_after_restart1": [
+  {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792904625361085,
+   "title": "C5 group",
+   "windowId": 1
+  }
+ ],
+ "cmp_S1_S2": {
+  "ok": true,
+  "rows": [
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1|dup=dup-of-l1|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 15,
+    "id_after": 3,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+     "k2": "dup-l1-only",
+     "dupMarker": "dup-of-l1"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d3|dup=dup-of-d3|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 14,
+    "id_after": 4,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d3:https://example.com/c5/d3",
+     "k2": "dup-d3-only",
+     "dupMarker": "dup-of-d3"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2|dup=None|restored=restored-r2",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 18,
+    "id_after": 5,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+     "restoreMarker": "restored-r2"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/r1|dup=None|restored=restored-r1",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 17,
+    "id_after": 6,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:r1:https://example.com/c5/r1",
+     "restoreMarker": "restored-r1"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 11,
+    "id_after": 7,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:x1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+     "afterDiscard": "set-while-discarded"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/l2-failedload|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 10,
+    "id_after": 8,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l2:https://example.com/c5/l2-failedload"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 9,
+    "id_after": 9,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+     "k1": "orig-l1-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/g1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 7,
+    "id_after": 10,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {
+     "tidyKey": "C5:g1:https://example.com/c5/g1",
+     "k1": "orig-g1-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/g2-novalue|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 8,
+    "id_after": 11,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {}
+   },
+   {
+    "identity": "https://example.com/c5/g1|dup=dup-of-g1|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 16,
+    "id_after": 12,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {
+     "tidyKey": "C5:g1:https://example.com/c5/g1",
+     "k2": "dup-g1-only",
+     "dupMarker": "dup-of-g1"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/n1-novalue|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 6,
+    "id_after": 13,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {}
+   },
+   {
+    "identity": "https://example.com/c5/d3|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 5,
+    "id_after": 14,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d3:https://example.com/c5/d3",
+     "k1": "orig-d3-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d2|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 4,
+    "id_after": 15,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d2:https://example.com/c5/d2",
+     "k1": 1,
+     "k2": [
+      true,
+      "two"
+     ]
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 3,
+    "id_after": 16,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d1:https://example.com/c5/d1",
+     "obj": {
+      "n": 1,
+      "nested": {
+       "a": [
+        1,
+        2,
+        null
+       ]
+      },
+      "s": "ünïcode ​⁣⁤ ✓",
+      "f": 1.5,
+      "b": false
+     }
+    }
+   }
+  ],
+  "missing_after": [],
+  "new_after": []
+ },
+ "windows_after_restart2": 1,
+ "S3_after_restart2": [
+  {
+   "id": 2,
+   "index": 0,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html",
+   "title": "Zen Tidy Spike",
+   "discarded": false,
+   "active": false,
+   "pinned": true,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": true,
+   "values": {}
+  },
+  {
+   "id": 3,
+   "index": 2,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+    "k2": "dup-l1-only",
+    "dupMarker": "dup-of-l1"
+   }
+  },
+  {
+   "id": 4,
+   "index": 3,
+   "windowId": 1,
+   "url": "https://example.com/c5/d3",
+   "title": "C5 d3",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d3:https://example.com/c5/d3",
+    "k2": "dup-d3-only",
+    "dupMarker": "dup-of-d3"
+   }
+  },
+  {
+   "id": 5,
+   "index": 4,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+    "restoreMarker": "restored-r2"
+   }
+  },
+  {
+   "id": 6,
+   "index": 5,
+   "windowId": 1,
+   "url": "https://example.com/c5/r1",
+   "title": "C5 r1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:r1:https://example.com/c5/r1",
+    "restoreMarker": "restored-r1"
+   }
+  },
+  {
+   "id": 7,
+   "index": 6,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:x1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+    "afterDiscard": "set-while-discarded"
+   }
+  },
+  {
+   "id": 8,
+   "index": 7,
+   "windowId": 1,
+   "url": "https://example.com/c5/l2-failedload",
+   "title": "https://example.com/c5/l2-failedload",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l2:https://example.com/c5/l2-failedload"
+   }
+  },
+  {
+   "id": 9,
+   "index": 8,
+   "windowId": 1,
+   "url": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+   "title": "Zen Tidy Spike",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+    "k1": "orig-l1-after-dup"
+   }
+  },
+  {
+   "id": 10,
+   "index": 9,
+   "windowId": 1,
+   "url": "https://example.com/c5/g1",
+   "title": "C5 g1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:g1:https://example.com/c5/g1",
+    "k1": "orig-g1-after-dup"
+   }
+  },
+  {
+   "id": 11,
+   "index": 10,
+   "windowId": 1,
+   "url": "https://example.com/c5/g2-novalue",
+   "title": "C5 g2",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {}
+  },
+  {
+   "id": 12,
+   "index": 11,
+   "windowId": 1,
+   "url": "https://example.com/c5/g1",
+   "title": "C5 g1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": 1792904625361085,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:g1:https://example.com/c5/g1",
+    "k2": "dup-g1-only",
+    "dupMarker": "dup-of-g1"
+   }
+  },
+  {
+   "id": 13,
+   "index": 12,
+   "windowId": 1,
+   "url": "https://example.com/c5/n1-novalue",
+   "title": "C5 n1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {}
+  },
+  {
+   "id": 14,
+   "index": 13,
+   "windowId": 1,
+   "url": "https://example.com/c5/d3",
+   "title": "C5 d3",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d3:https://example.com/c5/d3",
+    "k1": "orig-d3-after-dup"
+   }
+  },
+  {
+   "id": 15,
+   "index": 14,
+   "windowId": 1,
+   "url": "https://example.com/c5/d2",
+   "title": "C5 d2",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d2:https://example.com/c5/d2",
+    "k1": 1,
+    "k2": [
+     true,
+     "two"
+    ]
+   }
+  },
+  {
+   "id": 16,
+   "index": 15,
+   "windowId": 1,
+   "url": "https://example.com/c5/d1",
+   "title": "C5 d1",
+   "discarded": true,
+   "active": false,
+   "pinned": false,
+   "groupId": -1,
+   "status": "complete",
+   "isSpikePage": false,
+   "values": {
+    "tidyKey": "C5:d1:https://example.com/c5/d1",
+    "obj": {
+     "n": 1,
+     "nested": {
+      "a": [
+       1,
+       2,
+       null
+      ]
+     },
+     "s": "ünïcode ​⁣⁤ ✓",
+     "f": 1.5,
+     "b": false
+    }
+   }
+  }
+ ],
+ "groups_after_restart2": [
+  {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792904625361085,
+   "title": "C5 group",
+   "windowId": 1
+  }
+ ],
+ "cmp_S1_S3": {
+  "ok": true,
+  "rows": [
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1|dup=dup-of-l1|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 15,
+    "id_after": 3,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+     "k2": "dup-l1-only",
+     "dupMarker": "dup-of-l1"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d3|dup=dup-of-d3|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 14,
+    "id_after": 4,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d3:https://example.com/c5/d3",
+     "k2": "dup-d3-only",
+     "dupMarker": "dup-of-d3"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2|dup=None|restored=restored-r2",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 18,
+    "id_after": 5,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+     "restoreMarker": "restored-r2"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/r1|dup=None|restored=restored-r1",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 17,
+    "id_after": 6,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:r1:https://example.com/c5/r1",
+     "restoreMarker": "restored-r1"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 11,
+    "id_after": 7,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:x1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+     "afterDiscard": "set-while-discarded"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/l2-failedload|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 10,
+    "id_after": 8,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l2:https://example.com/c5/l2-failedload"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 9,
+    "id_after": 9,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+     "k1": "orig-l1-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/g1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 7,
+    "id_after": 10,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {
+     "tidyKey": "C5:g1:https://example.com/c5/g1",
+     "k1": "orig-g1-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/g2-novalue|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 8,
+    "id_after": 11,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {}
+   },
+   {
+    "identity": "https://example.com/c5/g1|dup=dup-of-g1|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 16,
+    "id_after": 12,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {
+     "tidyKey": "C5:g1:https://example.com/c5/g1",
+     "k2": "dup-g1-only",
+     "dupMarker": "dup-of-g1"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/n1-novalue|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 6,
+    "id_after": 13,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {}
+   },
+   {
+    "identity": "https://example.com/c5/d3|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 5,
+    "id_after": 14,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d3:https://example.com/c5/d3",
+     "k1": "orig-d3-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d2|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 4,
+    "id_after": 15,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d2:https://example.com/c5/d2",
+     "k1": 1,
+     "k2": [
+      true,
+      "two"
+     ]
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 3,
+    "id_after": 16,
+    "id_changed": true,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d1:https://example.com/c5/d1",
+     "obj": {
+      "n": 1,
+      "nested": {
+       "a": [
+        1,
+        2,
+        null
+       ]
+      },
+      "s": "ünïcode ​⁣⁤ ✓",
+      "f": 1.5,
+      "b": false
+     }
+    }
+   }
+  ],
+  "missing_after": [],
+  "new_after": []
+ },
+ "cmp_S2_S3": {
+  "ok": true,
+  "rows": [
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1|dup=dup-of-l1|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 3,
+    "id_after": 3,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+     "k2": "dup-l1-only",
+     "dupMarker": "dup-of-l1"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d3|dup=dup-of-d3|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 4,
+    "id_after": 4,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d3:https://example.com/c5/d3",
+     "k2": "dup-d3-only",
+     "dupMarker": "dup-of-d3"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2|dup=None|restored=restored-r2",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 5,
+    "id_after": 5,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:r2:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=r2",
+     "restoreMarker": "restored-r2"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/r1|dup=None|restored=restored-r1",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 6,
+    "id_after": 6,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:r1:https://example.com/c5/r1",
+     "restoreMarker": "restored-r1"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 7,
+    "id_after": 7,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:x1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=x1",
+     "afterDiscard": "set-while-discarded"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/l2-failedload|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 8,
+    "id_after": 8,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l2:https://example.com/c5/l2-failedload"
+    }
+   },
+   {
+    "identity": "moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 9,
+    "id_after": 9,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:l1:moz-extension://80f0f8fc-2040-45db-804c-732dce80c18c/spike.html?c5=l1",
+     "k1": "orig-l1-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/g1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 10,
+    "id_after": 10,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {
+     "tidyKey": "C5:g1:https://example.com/c5/g1",
+     "k1": "orig-g1-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/g2-novalue|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 11,
+    "id_after": 11,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {}
+   },
+   {
+    "identity": "https://example.com/c5/g1|dup=dup-of-g1|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 12,
+    "id_after": 12,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": 1792904625361085,
+    "groupId_after": 1792904625361085,
+    "values_after": {
+     "tidyKey": "C5:g1:https://example.com/c5/g1",
+     "k2": "dup-g1-only",
+     "dupMarker": "dup-of-g1"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/n1-novalue|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 13,
+    "id_after": 13,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {}
+   },
+   {
+    "identity": "https://example.com/c5/d3|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 14,
+    "id_after": 14,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d3:https://example.com/c5/d3",
+     "k1": "orig-d3-after-dup"
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d2|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 15,
+    "id_after": 15,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d2:https://example.com/c5/d2",
+     "k1": 1,
+     "k2": [
+      true,
+      "two"
+     ]
+    }
+   },
+   {
+    "identity": "https://example.com/c5/d1|dup=None|restored=None",
+    "count_before": 1,
+    "count_after": 1,
+    "id_before": 16,
+    "id_after": 16,
+    "id_changed": false,
+    "values_equal": true,
+    "groupId_before": -1,
+    "groupId_after": -1,
+    "values_after": {
+     "tidyKey": "C5:d1:https://example.com/c5/d1",
+     "obj": {
+      "n": 1,
+      "nested": {
+       "a": [
+        1,
+        2,
+        null
+       ]
+      },
+      "s": "ünïcode ​⁣⁤ ✓",
+      "f": 1.5,
+      "b": false
+     }
+    }
+   }
+  ],
+  "missing_after": [],
+  "new_after": []
+ },
+ "finished": 1792904645.6974068
+}

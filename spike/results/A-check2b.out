@@ -1,0 +1,330 @@
+{
+ "font": [
+  "Segoe UI",
+  "14px"
+ ],
+ "nonzero": [
+  {
+   "case": [
+    "single",
+    "U+200B",
+    "after_arabic"
+   ],
+   "delta": -1.167
+  },
+  {
+   "case": [
+    "single",
+    "U+200C",
+    "after_arabic"
+   ],
+   "delta": -1.167
+  },
+  {
+   "case": [
+    "single",
+    "U+2060",
+    "after_arabic"
+   ],
+   "delta": -1.167
+  },
+  {
+   "case": [
+    "single",
+    "U+FEFF",
+    "after_arabic"
+   ],
+   "delta": -1.167
+  },
+  {
+   "case": [
+    "single",
+    "U+180E",
+    "after_arabic"
+   ],
+   "delta": -1.167
+  },
+  {
+   "case": [
+    "pairlead",
+    "U+200C",
+    "U+180E"
+   ],
+   "delta": 8.317
+  },
+  {
+   "case": [
+    "pair",
+    "U+FEFF",
+    "U+200D"
+   ],
+   "delta": 0.333
+  },
+  {
+   "case": [
+    "pairlead",
+    "U+FEFF",
+    "U+200D"
+   ],
+   "delta": 0.333
+  },
+  {
+   "case": [
+    "pair",
+    "U+180E",
+    "U+200C"
+   ],
+   "delta": 8.317
+  },
+  {
+   "case": [
+    "pairlead",
+    "U+180E",
+    "U+200C"
+   ],
+   "delta": 8.317
+  },
+  {
+   "case": [
+    "allprefix",
+    10,
+    "U+180E"
+   ],
+   "delta": 8.317
+  }
+ ],
+ "sets": {
+  "A": {
+   "sig": [
+    "U+2063",
+    "U+2062"
+   ],
+   "icon": [
+    "U+2060",
+    "U+2061",
+    "U+2064",
+    "U+200B",
+    "U+180E"
+   ],
+   "cases": 1250,
+   "nonzero_count": 125,
+   "sample": [
+    {
+     "code": "000",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "001",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "002",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "003",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "004",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "010",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "011",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "012",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "013",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "014",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "020",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "021",
+     "follower": "space",
+     "delta": 3.85
+    }
+   ]
+  },
+  "B": {
+   "sig": [
+    "U+2063",
+    "U+2062"
+   ],
+   "icon": [
+    "U+2060",
+    "U+2061",
+    "U+2064",
+    "U+200B",
+    "U+FEFF"
+   ],
+   "cases": 1250,
+   "nonzero_count": 125,
+   "sample": [
+    {
+     "code": "000",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "001",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "002",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "003",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "004",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "010",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "011",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "012",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "013",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "014",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "020",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "021",
+     "follower": "space",
+     "delta": 3.85
+    }
+   ]
+  },
+  "C": {
+   "sig": [
+    "U+2063",
+    "U+2062"
+   ],
+   "icon": [
+    "U+2060",
+    "U+2061",
+    "U+2064",
+    "U+200B",
+    "U+200C"
+   ],
+   "cases": 1250,
+   "nonzero_count": 186,
+   "sample": [
+    {
+     "code": "000",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "001",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "002",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "003",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "004",
+     "follower": "mongolian",
+     "delta": 8.317
+    },
+    {
+     "code": "004",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "010",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "011",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "012",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "013",
+     "follower": "space",
+     "delta": 3.85
+    },
+    {
+     "code": "014",
+     "follower": "mongolian",
+     "delta": 8.317
+    },
+    {
+     "code": "014",
+     "follower": "space",
+     "delta": 3.85
+    }
+   ]
+  }
+ }
+}
+saved C:\Users\Soulaymane\Documents\Projects\zen-tidy\spike\results\A-check2b-render.json

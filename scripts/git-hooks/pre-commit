@@ -1,0 +1,20 @@
+#!/bin/sh
+# zen-tidy pre-commit shim
+# Zen Tidy's pre-commit check (SPEC section 5, notes/m7-contracts.md "Pre-commit check"): refuses a commit whose
+# staged content holds an Anthropic key, AMO credentials, real tab data, a session file or a local-only path. The
+# rules are in scripts/lib/precommit-scan.js. `npm run hooks` (scripts/install-hooks.mjs) copies this file into the
+# repository's common hooks folder (`git rev-parse --git-common-dir`/hooks), which every branch and every linked
+# worktree shares, so it runs wherever a commit is made, a checkout without scripts/ included (M7-SEC-4).
+# POSIX sh, as Git for Windows runs it. Git starts hooks at the top of the working tree being committed, so the check
+# is that checkout's own; a checkout that has none refuses the commit instead of letting it through.
+
+if [ ! -f scripts/precommit-check.mjs ]; then
+  echo "pre-commit: this checkout has no scripts/precommit-check.mjs (it predates the check), so the commit was refused." >&2
+  echo "pre-commit: to commit here anyway, deliberately: git commit --no-verify" >&2
+  exit 1
+fi
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-commit: node is not on PATH, so the check could not run. The commit was refused." >&2
+  exit 1
+fi
+exec node scripts/precommit-check.mjs

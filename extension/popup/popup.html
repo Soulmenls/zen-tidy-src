@@ -1,0 +1,208 @@
+<!doctype html>
+<!-- Zen Tidy popup: start a tidy, edit the preview (with its extras to close), apply, undo, and the groups view.
+     All text is filled in by popup.js with textContent; the CSP forbids inline script and style, so this file has
+     neither.
+     Styled after Zen's own panels: notes/zen-design-system.md. Button stacks put the primary first,
+     so the visual order and the Tab order match. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zen Tidy</title>
+  <link rel="stylesheet" href="../shared/zen-tokens.css">
+  <link rel="stylesheet" href="../shared/icons.css">
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <section class="view view-center" data-view="no-key" hidden>
+    <span class="hero-icon zt-icon" data-icon="key" aria-hidden="true"></span>
+    <h1 class="view-title">Add your API key</h1>
+    <p class="view-text">Zen Tidy sorts your tabs with Claude, using your own Anthropic API key. It stays on this device.</p>
+    <!-- Undo needs no key: popup.js moves the last tidy's undo parts here from the idle view, so a tidy can still be
+         undone after the key was removed. -->
+    <div id="no-key-undo-slot" class="undo-slot"></div>
+    <div class="view-actions" id="no-key-actions"></div>
+    <div id="no-key-offer-slot" class="undo-slot"></div>
+  </section>
+
+  <section class="view view-center" data-view="idle" hidden>
+    <h1 class="view-title">Zen Tidy</h1>
+    <p class="view-text">Sort your loose tabs into topic groups. You review everything before it changes.</p>
+    <!-- Undo's parts are single elements (their ids are test hooks) that popup.js moves into the slots of the view
+         showing them: the no-key view takes them all, the applied view only the notice and the confirmation. -->
+    <div id="idle-undo-slot" class="undo-slot">
+      <!-- An apply (or an undo of it) that never finished: undo what it did. Secondary, as Tidy is this view's one
+           primary (and Try again the error view's). -->
+      <div id="undo-interrupted" class="banner banner-stack" hidden>
+        <p id="undo-interrupted-text" class="banner-text"></p>
+        <button id="undo-interrupted-button" type="button">Undo</button>
+      </div>
+      <p id="undo-notice" class="banner" role="alert" hidden></p>
+      <div id="undo-confirm" class="undo-confirm" hidden>
+        <p class="confirm-text" id="undo-confirm-text">More than one window is open. Undo may not put everything back. Undo anyway?</p>
+        <div class="foot-actions">
+          <button id="confirm-undo-multi" class="primary" type="button" aria-describedby="undo-confirm-text">Undo anyway</button>
+          <button id="confirm-undo-back" type="button">Go back</button>
+        </div>
+      </div>
+    </div>
+    <div class="view-actions" id="idle-actions">
+      <button id="tidy" class="primary" type="button">Tidy tabs</button>
+    </div>
+    <p id="idle-note" class="view-note" role="status"></p>
+    <div id="idle-offer-slot" class="undo-slot">
+      <p id="undo-offer" class="undo-offer" hidden>
+        <span id="undo-offer-text" class="undo-offer-text"></span>
+        <button id="undo-last" class="text-action always" type="button">Undo</button>
+      </p>
+    </div>
+    <div class="idle-links">
+      <button id="open-groups" class="text-action always" type="button">Groups</button>
+      <button id="idle-settings" class="text-action always" type="button">Settings</button>
+    </div>
+  </section>
+
+  <section class="view view-center" data-view="running" hidden>
+    <span id="running-loading" class="zt-loading" aria-hidden="true"></span>
+    <h1 class="view-status" id="phase">Getting started…</h1>
+    <p class="view-text"><span id="elapsed">0 s</span></p>
+    <p class="view-note">You can close this popup. Zen Tidy keeps working and the preview will be here when you come back.</p>
+  </section>
+
+  <section class="view view-editor" data-view="preview" hidden>
+    <header class="editor-head">
+      <h1 class="editor-title">Preview</h1>
+      <p id="preview-summary" class="editor-summary"></p>
+    </header>
+    <div class="editor-scroll" id="editor-scroll">
+      <div class="banners">
+        <p id="banner-other-window" class="banner" hidden>This preview is for another window. Apply tidies that window.</p>
+        <p id="banner-multi-window" class="banner" hidden><span class="zt-icon" data-icon="warning" aria-hidden="true"></span><span>More than one window is open. Zen may lose these groups after a restart.</span></p>
+        <p id="banner-glance" class="glance-note">Close any open Glance preview before you Apply.</p>
+        <p id="banner-refused" class="banner" hidden></p>
+      </div>
+      <p id="no-groups" class="empty-note" hidden>No groups to suggest. Your tabs stay as they are.</p>
+      <div id="groups" class="groups"></div>
+      <section id="leftovers" class="leftovers" aria-labelledby="leftovers-title">
+        <h2 class="section-title" id="leftovers-title">Stay loose <span id="leftovers-count" class="count"></span></h2>
+        <p id="leftovers-empty" class="empty-note">Drop a tab here to leave it loose.</p>
+        <div id="leftovers-list" class="tab-list" role="list"></div>
+      </section>
+      <!-- Extras (SPEC F4): duplicate and stale tabs offered for closing, all unticked. Rows by popup.js. -->
+      <div id="extras" class="extras" hidden>
+        <section id="extras-duplicates" class="extras-section" aria-labelledby="extras-duplicates-title" hidden>
+          <h2 class="section-title" id="extras-duplicates-title">Duplicates <span id="extras-duplicates-count" class="count"></span></h2>
+          <div id="extras-duplicates-list" class="tab-list" role="list"></div>
+        </section>
+        <section id="extras-stale" class="extras-section" aria-labelledby="extras-stale-title" hidden>
+          <h2 class="section-title" id="extras-stale-title"><span id="extras-stale-label">Not opened in 14 days</span> <span id="extras-stale-count" class="count"></span></h2>
+          <div id="extras-stale-list" class="tab-list" role="list"></div>
+        </section>
+      </div>
+    </div>
+    <footer class="editor-foot">
+      <p id="apply-notice" class="banner" role="alert" hidden></p>
+      <div class="foot-actions" id="foot-actions">
+        <button id="apply" class="primary" type="button">Apply</button>
+        <button id="cancel" type="button">Cancel</button>
+      </div>
+      <div class="foot-confirm" id="foot-confirm" hidden>
+        <p class="confirm-text" id="confirm-text">Groups may be lost after a restart while more than one window is open. Apply anyway?</p>
+        <div class="foot-actions">
+          <button id="confirm-multi-window" class="primary" type="button" aria-describedby="confirm-text">Apply anyway</button>
+          <button id="confirm-back" type="button">Go back</button>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- The tidy groups in this Space (m4-contracts, "Popup"). Rows by popup.js; the confirmations stand in for the
+       footer's button, as the editor's do. -->
+  <section class="view view-editor" data-view="groups" hidden>
+    <header class="editor-head groups-head">
+      <button id="groups-back" class="toolbar-button" type="button" title="Back" aria-label="Back"><span class="chevron chevron-back" aria-hidden="true"></span></button>
+      <h1 class="editor-title">Groups</h1>
+      <p id="groups-summary" class="editor-summary"></p>
+    </header>
+    <div class="editor-scroll" id="groups-scroll">
+      <p id="groups-empty" class="empty-note" hidden>No tidy groups in this Space yet.</p>
+      <div id="groups-list" class="groups" role="list" aria-label="Tidy groups"></div>
+    </div>
+    <footer class="editor-foot">
+      <p id="groups-notice" class="banner" role="alert" hidden></p>
+      <!-- Undo is described by its line ("Ungrouped "Recipes"."), which is a status: announced when it changes. -->
+      <p id="group-undo-notice" class="banner group-undo-notice" hidden><span id="group-undo-text" class="banner-text" role="status"></span> <button id="group-undo" class="text-action always" type="button" aria-describedby="group-undo-text">Undo</button></p>
+      <div class="foot-actions" id="groups-foot-actions">
+        <button id="groups-remove-all" type="button">Remove all tidy groups</button>
+      </div>
+      <div class="foot-confirm" id="remove-all-confirm" hidden>
+        <p class="confirm-text" id="remove-all-confirm-text"></p>
+        <div class="foot-actions">
+          <button id="confirm-remove-all" class="primary" type="button" aria-describedby="remove-all-confirm-text">Remove all</button>
+          <button id="confirm-remove-all-back" type="button">Go back</button>
+        </div>
+      </div>
+      <div class="foot-confirm" id="close-all-confirm" hidden>
+        <p class="confirm-text" id="close-all-confirm-text"></p>
+        <ul id="close-all-tabs" class="details confirm-list"></ul>
+        <div class="foot-actions">
+          <button id="confirm-close-all" class="primary" type="button" aria-describedby="close-all-confirm-text close-all-tabs">Close all</button>
+          <button id="confirm-close-all-back" type="button">Go back</button>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <section class="view view-center" data-view="applying" hidden>
+    <span id="applying-loading" class="zt-loading" aria-hidden="true"></span>
+    <h1 class="view-status">Applying your groups…</h1>
+    <p class="view-note">You can close this popup. Zen Tidy finishes in the background.</p>
+  </section>
+
+  <section class="view view-center" data-view="applied" hidden>
+    <h1 class="view-title" id="applied-title">All tidy</h1>
+    <p id="summary" class="view-text" role="status"></p>
+    <ul id="summary-details" class="details"></ul>
+    <div id="applied-undo-slot" class="undo-slot"></div>
+    <div class="view-actions" id="applied-actions">
+      <button id="done" class="primary" type="button">Done</button>
+      <button id="undo" type="button" hidden>Undo</button>
+    </div>
+  </section>
+
+  <section class="view view-center" data-view="undoing" hidden>
+    <span id="undoing-loading" class="zt-loading" aria-hidden="true"></span>
+    <h1 class="view-status">Putting your tabs back…</h1>
+    <p class="view-note">You can close this popup. Zen Tidy finishes in the background.</p>
+  </section>
+
+  <section class="view view-center" data-view="undone" hidden>
+    <h1 class="view-title" id="undone-title">Tabs put back</h1>
+    <p id="undo-summary" class="view-text" role="status"></p>
+    <ul id="undo-details" class="details"></ul>
+    <div class="view-actions">
+      <button id="undo-done" class="primary" type="button">Done</button>
+    </div>
+  </section>
+
+  <section class="view view-center" data-view="error" hidden>
+    <span class="hero-icon zt-icon" data-icon="warning" aria-hidden="true"></span>
+    <h1 class="view-title">That didn't work</h1>
+    <p id="error-message" class="view-text" role="alert"></p>
+    <!-- A tidy or apply the background found dead, with a journal still to undo: popup.js moves the interrupted
+         notice here, so its Undo is in reach before Try again starts a tidy whose Apply would replace that journal. -->
+    <div id="error-undo-slot" class="undo-slot"></div>
+    <div class="view-actions" id="error-actions">
+      <button id="retry" class="primary" type="button">Try again</button>
+      <button id="error-dismiss" type="button">Close</button>
+    </div>
+  </section>
+
+  <!-- One "Open settings" button, moved into the no-key or error view by popup.js, so the id stays unique. -->
+  <button id="open-options" type="button" hidden>Open settings</button>
+
+  <div id="icon-picker" class="popover icon-picker" role="dialog" aria-label="Choose an icon" hidden></div>
+  <div id="move-menu" class="popover move-menu" role="menu" aria-label="Move to" hidden></div>
+</body>
+</html>

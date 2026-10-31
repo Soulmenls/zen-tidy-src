@@ -1,0 +1,1068 @@
+{
+ "which": "variant",
+ "iters": 15,
+ "ops": [
+  "i0:group:noncontig_last_first",
+  "i0:update",
+  "i0:move_top:1792904830452094",
+  "i0:add_to_group",
+  "i1:group:contig",
+  "i1:update",
+  "i1:move_top:1792904831518022",
+  "i2:group:first_last",
+  "i2:update",
+  "i2:move_top:1792904832605022",
+  "i2:add_to_group",
+  "i3:group:noncontig_last_first",
+  "i3:update",
+  "i3:move_top:1792904833681068",
+  "i4:group:contig",
+  "i4:update",
+  "i4:move_top:1792904834746071",
+  "i4:add_to_group",
+  "i5:group:first_last",
+  "i5:update",
+  "i5:move_top:1792904835836019",
+  "i6:group:noncontig_last_first",
+  "i6:update",
+  "i6:move_top:1792904836914088",
+  "i6:add_to_group",
+  "i7:group:contig",
+  "i7:update",
+  "i7:move_top:1792904838010072",
+  "i8:group:first_last",
+  "i8:update",
+  "i8:move_top:1792904839116018",
+  "i8:add_to_group",
+  "i9:group:noncontig_last_first",
+  "i9:update",
+  "i9:move_top:1792904840212080",
+  "i10:group:contig",
+  "i10:update",
+  "i10:move_top:1792904841283045",
+  "i10:add_to_group",
+  "i11:group:first_last",
+  "i11:update",
+  "i11:move_top:1792904842370028",
+  "i12:group:noncontig_last_first",
+  "i12:update",
+  "i12:move_top:1792904843446023",
+  "i12:add_to_group",
+  "i13:group:contig",
+  "i13:update",
+  "i13:move_top:1792904844525043",
+  "i14:group:first_last",
+  "i14:update",
+  "i14:move_top:1792904845599099",
+  "i14:add_to_group"
+ ],
+ "log": [
+  {
+   "t": 1792904829994,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792904829997,
+   "event": "onInstalled",
+   "reason": "install"
+  },
+  {
+   "t": 1792904830449,
+   "event": "mark",
+   "label": "i0:group:noncontig_last_first"
+  },
+  {
+   "t": 1792904830455,
+   "event": "tabGroups.onCreated",
+   "id": 1792904830452094,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904830455,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792904830452094
+  },
+  {
+   "t": 1792904830455,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 6,
+   "groupId": 1792904830452094
+  },
+  {
+   "t": 1792904830459,
+   "event": "mark",
+   "label": "i0:update"
+  },
+  {
+   "t": 1792904830463,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904830452094,
+   "title": "R0",
+   "collapsed": false,
+   "sinceBg": 471,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904830468,
+   "event": "mark",
+   "label": "i0:move_top:1792904830452094"
+  },
+  {
+   "t": 1792904830471,
+   "event": "tabGroups.onMoved",
+   "id": 1792904830452094,
+   "title": "R0"
+  },
+  {
+   "t": 1792904830476,
+   "event": "mark",
+   "label": "i0:add_to_group"
+  },
+  {
+   "t": 1792904830479,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 5,
+   "groupId": 1792904830452094
+  },
+  {
+   "t": 1792904831515,
+   "event": "mark",
+   "label": "i1:group:contig"
+  },
+  {
+   "t": 1792904831520,
+   "event": "tabGroups.onCreated",
+   "id": 1792904831518022,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904831520,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 9,
+   "groupId": 1792904831518022
+  },
+  {
+   "t": 1792904831520,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 8,
+   "groupId": 1792904831518022
+  },
+  {
+   "t": 1792904831526,
+   "event": "mark",
+   "label": "i1:update"
+  },
+  {
+   "t": 1792904831529,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904831518022,
+   "title": "R1",
+   "collapsed": false,
+   "sinceBg": 1537,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904831535,
+   "event": "mark",
+   "label": "i1:move_top:1792904831518022"
+  },
+  {
+   "t": 1792904831539,
+   "event": "tabGroups.onMoved",
+   "id": 1792904831518022,
+   "title": "R1"
+  },
+  {
+   "t": 1792904832601,
+   "event": "mark",
+   "label": "i2:group:first_last"
+  },
+  {
+   "t": 1792904832606,
+   "event": "tabGroups.onCreated",
+   "id": 1792904832605022,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904832607,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 14,
+   "groupId": 1792904832605022
+  },
+  {
+   "t": 1792904832607,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 11,
+   "groupId": 1792904832605022
+  },
+  {
+   "t": 1792904832615,
+   "event": "mark",
+   "label": "i2:update"
+  },
+  {
+   "t": 1792904832618,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904832605022,
+   "title": "R2",
+   "collapsed": false,
+   "sinceBg": 2626,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904832624,
+   "event": "mark",
+   "label": "i2:move_top:1792904832605022"
+  },
+  {
+   "t": 1792904832633,
+   "event": "mark",
+   "label": "i2:add_to_group"
+  },
+  {
+   "t": 1792904832638,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 13,
+   "groupId": 1792904832605022
+  },
+  {
+   "t": 1792904833678,
+   "event": "mark",
+   "label": "i3:group:noncontig_last_first"
+  },
+  {
+   "t": 1792904833682,
+   "event": "tabGroups.onCreated",
+   "id": 1792904833681068,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904833683,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 15,
+   "groupId": 1792904833681068
+  },
+  {
+   "t": 1792904833683,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 18,
+   "groupId": 1792904833681068
+  },
+  {
+   "t": 1792904833689,
+   "event": "mark",
+   "label": "i3:update"
+  },
+  {
+   "t": 1792904833693,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904833681068,
+   "title": "R3",
+   "collapsed": false,
+   "sinceBg": 3701,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904833697,
+   "event": "mark",
+   "label": "i3:move_top:1792904833681068"
+  },
+  {
+   "t": 1792904833701,
+   "event": "tabGroups.onMoved",
+   "id": 1792904833681068,
+   "title": "R3"
+  },
+  {
+   "t": 1792904834744,
+   "event": "mark",
+   "label": "i4:group:contig"
+  },
+  {
+   "t": 1792904834748,
+   "event": "tabGroups.onCreated",
+   "id": 1792904834746071,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904834748,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 21,
+   "groupId": 1792904834746071
+  },
+  {
+   "t": 1792904834748,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 20,
+   "groupId": 1792904834746071
+  },
+  {
+   "t": 1792904834756,
+   "event": "mark",
+   "label": "i4:update"
+  },
+  {
+   "t": 1792904834759,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904834746071,
+   "title": "R4",
+   "collapsed": false,
+   "sinceBg": 4767,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904834764,
+   "event": "mark",
+   "label": "i4:move_top:1792904834746071"
+  },
+  {
+   "t": 1792904834767,
+   "event": "tabGroups.onMoved",
+   "id": 1792904834746071,
+   "title": "R4"
+  },
+  {
+   "t": 1792904834773,
+   "event": "mark",
+   "label": "i4:add_to_group"
+  },
+  {
+   "t": 1792904834779,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 22,
+   "groupId": 1792904834746071
+  },
+  {
+   "t": 1792904835832,
+   "event": "mark",
+   "label": "i5:group:first_last"
+  },
+  {
+   "t": 1792904835838,
+   "event": "tabGroups.onCreated",
+   "id": 1792904835836019,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904835838,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 26,
+   "groupId": 1792904835836019
+  },
+  {
+   "t": 1792904835838,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 23,
+   "groupId": 1792904835836019
+  },
+  {
+   "t": 1792904835844,
+   "event": "mark",
+   "label": "i5:update"
+  },
+  {
+   "t": 1792904835848,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904835836019,
+   "title": "R5",
+   "collapsed": false,
+   "sinceBg": 5856,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904835854,
+   "event": "mark",
+   "label": "i5:move_top:1792904835836019"
+  },
+  {
+   "t": 1792904836912,
+   "event": "mark",
+   "label": "i6:group:noncontig_last_first"
+  },
+  {
+   "t": 1792904836916,
+   "event": "tabGroups.onCreated",
+   "id": 1792904836914088,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904836916,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 27,
+   "groupId": 1792904836914088
+  },
+  {
+   "t": 1792904836917,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 30,
+   "groupId": 1792904836914088
+  },
+  {
+   "t": 1792904836929,
+   "event": "mark",
+   "label": "i6:update"
+  },
+  {
+   "t": 1792904836933,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904836914088,
+   "title": "R6",
+   "collapsed": false,
+   "sinceBg": 6941,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904836939,
+   "event": "mark",
+   "label": "i6:move_top:1792904836914088"
+  },
+  {
+   "t": 1792904836944,
+   "event": "tabGroups.onMoved",
+   "id": 1792904836914088,
+   "title": "R6"
+  },
+  {
+   "t": 1792904836951,
+   "event": "mark",
+   "label": "i6:add_to_group"
+  },
+  {
+   "t": 1792904836955,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 29,
+   "groupId": 1792904836914088
+  },
+  {
+   "t": 1792904838007,
+   "event": "mark",
+   "label": "i7:group:contig"
+  },
+  {
+   "t": 1792904838012,
+   "event": "tabGroups.onCreated",
+   "id": 1792904838010072,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904838012,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 33,
+   "groupId": 1792904838010072
+  },
+  {
+   "t": 1792904838012,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 32,
+   "groupId": 1792904838010072
+  },
+  {
+   "t": 1792904838036,
+   "event": "mark",
+   "label": "i7:update"
+  },
+  {
+   "t": 1792904838042,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904838010072,
+   "title": "R7",
+   "collapsed": false,
+   "sinceBg": 8050,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904838050,
+   "event": "mark",
+   "label": "i7:move_top:1792904838010072"
+  },
+  {
+   "t": 1792904838054,
+   "event": "tabGroups.onMoved",
+   "id": 1792904838010072,
+   "title": "R7"
+  },
+  {
+   "t": 1792904839113,
+   "event": "mark",
+   "label": "i8:group:first_last"
+  },
+  {
+   "t": 1792904839118,
+   "event": "tabGroups.onCreated",
+   "id": 1792904839116018,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904839118,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 38,
+   "groupId": 1792904839116018
+  },
+  {
+   "t": 1792904839118,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 35,
+   "groupId": 1792904839116018
+  },
+  {
+   "t": 1792904839130,
+   "event": "mark",
+   "label": "i8:update"
+  },
+  {
+   "t": 1792904839135,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904839116018,
+   "title": "R8",
+   "collapsed": false,
+   "sinceBg": 9143,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904839141,
+   "event": "mark",
+   "label": "i8:move_top:1792904839116018"
+  },
+  {
+   "t": 1792904839154,
+   "event": "mark",
+   "label": "i8:add_to_group"
+  },
+  {
+   "t": 1792904839158,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 37,
+   "groupId": 1792904839116018
+  },
+  {
+   "t": 1792904840208,
+   "event": "mark",
+   "label": "i9:group:noncontig_last_first"
+  },
+  {
+   "t": 1792904840214,
+   "event": "tabGroups.onCreated",
+   "id": 1792904840212080,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904840214,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 39,
+   "groupId": 1792904840212080
+  },
+  {
+   "t": 1792904840214,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 42,
+   "groupId": 1792904840212080
+  },
+  {
+   "t": 1792904840223,
+   "event": "mark",
+   "label": "i9:update"
+  },
+  {
+   "t": 1792904840227,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904840212080,
+   "title": "R9",
+   "collapsed": false,
+   "sinceBg": 10235,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904840235,
+   "event": "mark",
+   "label": "i9:move_top:1792904840212080"
+  },
+  {
+   "t": 1792904840239,
+   "event": "tabGroups.onMoved",
+   "id": 1792904840212080,
+   "title": "R9"
+  },
+  {
+   "t": 1792904841280,
+   "event": "mark",
+   "label": "i10:group:contig"
+  },
+  {
+   "t": 1792904841286,
+   "event": "tabGroups.onCreated",
+   "id": 1792904841283045,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904841286,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 45,
+   "groupId": 1792904841283045
+  },
+  {
+   "t": 1792904841286,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 44,
+   "groupId": 1792904841283045
+  },
+  {
+   "t": 1792904841293,
+   "event": "mark",
+   "label": "i10:update"
+  },
+  {
+   "t": 1792904841296,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904841283045,
+   "title": "R10",
+   "collapsed": false,
+   "sinceBg": 11304,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904841302,
+   "event": "mark",
+   "label": "i10:move_top:1792904841283045"
+  },
+  {
+   "t": 1792904841306,
+   "event": "tabGroups.onMoved",
+   "id": 1792904841283045,
+   "title": "R10"
+  },
+  {
+   "t": 1792904841311,
+   "event": "mark",
+   "label": "i10:add_to_group"
+  },
+  {
+   "t": 1792904841316,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 46,
+   "groupId": 1792904841283045
+  },
+  {
+   "t": 1792904842368,
+   "event": "mark",
+   "label": "i11:group:first_last"
+  },
+  {
+   "t": 1792904842372,
+   "event": "tabGroups.onCreated",
+   "id": 1792904842370028,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904842372,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 50,
+   "groupId": 1792904842370028
+  },
+  {
+   "t": 1792904842373,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 47,
+   "groupId": 1792904842370028
+  },
+  {
+   "t": 1792904842378,
+   "event": "mark",
+   "label": "i11:update"
+  },
+  {
+   "t": 1792904842382,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904842370028,
+   "title": "R11",
+   "collapsed": false,
+   "sinceBg": 12390,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904842388,
+   "event": "mark",
+   "label": "i11:move_top:1792904842370028"
+  },
+  {
+   "t": 1792904843444,
+   "event": "mark",
+   "label": "i12:group:noncontig_last_first"
+  },
+  {
+   "t": 1792904843448,
+   "event": "tabGroups.onCreated",
+   "id": 1792904843446023,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904843448,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 51,
+   "groupId": 1792904843446023
+  },
+  {
+   "t": 1792904843449,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 54,
+   "groupId": 1792904843446023
+  },
+  {
+   "t": 1792904843456,
+   "event": "mark",
+   "label": "i12:update"
+  },
+  {
+   "t": 1792904843460,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904843446023,
+   "title": "R12",
+   "collapsed": false,
+   "sinceBg": 13468,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904843464,
+   "event": "mark",
+   "label": "i12:move_top:1792904843446023"
+  },
+  {
+   "t": 1792904843468,
+   "event": "tabGroups.onMoved",
+   "id": 1792904843446023,
+   "title": "R12"
+  },
+  {
+   "t": 1792904843470,
+   "event": "mark",
+   "label": "i12:add_to_group"
+  },
+  {
+   "t": 1792904843477,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 53,
+   "groupId": 1792904843446023
+  },
+  {
+   "t": 1792904844522,
+   "event": "mark",
+   "label": "i13:group:contig"
+  },
+  {
+   "t": 1792904844527,
+   "event": "tabGroups.onCreated",
+   "id": 1792904844525043,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904844527,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 57,
+   "groupId": 1792904844525043
+  },
+  {
+   "t": 1792904844527,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 56,
+   "groupId": 1792904844525043
+  },
+  {
+   "t": 1792904844535,
+   "event": "mark",
+   "label": "i13:update"
+  },
+  {
+   "t": 1792904844538,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904844525043,
+   "title": "R13",
+   "collapsed": false,
+   "sinceBg": 14546,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904844545,
+   "event": "mark",
+   "label": "i13:move_top:1792904844525043"
+  },
+  {
+   "t": 1792904844548,
+   "event": "tabGroups.onMoved",
+   "id": 1792904844525043,
+   "title": "R13"
+  },
+  {
+   "t": 1792904845596,
+   "event": "mark",
+   "label": "i14:group:first_last"
+  },
+  {
+   "t": 1792904845601,
+   "event": "tabGroups.onCreated",
+   "id": 1792904845599099,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792904845601,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 62,
+   "groupId": 1792904845599099
+  },
+  {
+   "t": 1792904845601,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 59,
+   "groupId": 1792904845599099
+  },
+  {
+   "t": 1792904845608,
+   "event": "mark",
+   "label": "i14:update"
+  },
+  {
+   "t": 1792904845611,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904845599099,
+   "title": "R14",
+   "collapsed": false,
+   "sinceBg": 15619,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792904845617,
+   "event": "mark",
+   "label": "i14:move_top:1792904845599099"
+  },
+  {
+   "t": 1792904845627,
+   "event": "mark",
+   "label": "i14:add_to_group"
+  },
+  {
+   "t": 1792904845631,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 61,
+   "groupId": 1792904845599099
+  }
+ ],
+ "groups_end": [
+  {
+   "collapsed": false,
+   "color": "orange",
+   "id": 1792904845599099,
+   "title": "R14",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792904844525043,
+   "title": "R13",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792904843446023,
+   "title": "R12",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "purple",
+   "id": 1792904842370028,
+   "title": "R11",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "purple",
+   "id": 1792904841283045,
+   "title": "R10",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "pink",
+   "id": 1792904840212080,
+   "title": "R9",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "red",
+   "id": 1792904839116018,
+   "title": "R8",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "grey",
+   "id": 1792904838010072,
+   "title": "R7",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "green",
+   "id": 1792904836914088,
+   "title": "R6",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "pink",
+   "id": 1792904835836019,
+   "title": "R5",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "yellow",
+   "id": 1792904834746071,
+   "title": "R4",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "orange",
+   "id": 1792904833681068,
+   "title": "R3",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "cyan",
+   "id": 1792904832605022,
+   "title": "R2",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "purple",
+   "id": 1792904831518022,
+   "title": "R1",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792904830452094,
+   "title": "R0",
+   "windowId": 3
+  }
+ ],
+ "dom_groups_end": [
+  [
+   "1792904845599-99",
+   "R14",
+   3
+  ],
+  [
+   "1792904844525-43",
+   "R13",
+   2
+  ],
+  [
+   "1792904843446-23",
+   "R12",
+   3
+  ],
+  [
+   "1792904842370-28",
+   "R11",
+   2
+  ],
+  [
+   "1792904841283-45",
+   "R10",
+   3
+  ],
+  [
+   "1792904840212-80",
+   "R9",
+   2
+  ],
+  [
+   "1792904839116-18",
+   "R8",
+   3
+  ],
+  [
+   "1792904838010-72",
+   "R7",
+   2
+  ],
+  [
+   "1792904836914-88",
+   "R6",
+   3
+  ],
+  [
+   "1792904835836-19",
+   "R5",
+   2
+  ],
+  [
+   "1792904834746-71",
+   "R4",
+   3
+  ],
+  [
+   "1792904833681-68",
+   "R3",
+   2
+  ],
+  [
+   "1792904832605-22",
+   "R2",
+   3
+  ],
+  [
+   "1792904831518-22",
+   "R1",
+   2
+  ],
+  [
+   "1792904830452-94",
+   "R0",
+   3
+  ]
+ ],
+ "summary": {
+  "onRemoved": 0,
+  "attributed": [],
+  "groups_alive_end": 15,
+  "created": 15
+ }
+}

@@ -1,0 +1,266 @@
+{
+ "quit_in": "A",
+ "port": 2956,
+ "install": "zen-tidy-spike-b@local",
+ "page_to_essential": {
+  "spaceA": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}"
+ },
+ "warmup": {
+  "value": null
+ },
+ "A_warm_after_warmup": {
+  "value": {
+   "id": 6,
+   "index": 2,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 0,
+   "height": 0,
+   "lastAccessed": 1792905405424,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/ws/A_warm",
+   "title": "Tab A_warm"
+  }
+ },
+ "create_space_b": {
+  "uuid": "{9cae8695-796c-4228-936a-52b12ccde909}",
+  "active": "{9cae8695-796c-4228-936a-52b12ccde909}"
+ },
+ "space_a": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+ "space_b": "{9cae8695-796c-4228-936a-52b12ccde909}",
+ "ids": {
+  "A_disc": 2,
+  "A_live": 3,
+  "A_grp1": 4,
+  "A_grp2": 5,
+  "A_warm": 6,
+  "B_disc": 7
+ },
+ "switch_before_quit": {
+  "active": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}"
+ },
+ "before_quit": {
+  "active": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+  "tabs": {
+   "A_warm": {
+    "wsAttr": null,
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": null,
+    "groupLabel": null,
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "A_grp1": {
+    "wsAttr": null,
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": "1792905405431-44",
+    "groupLabel": "⁠⁣Group A",
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "A_grp2": {
+    "wsAttr": null,
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": "1792905405431-44",
+    "groupLabel": "⁠⁣Group A",
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "A_live": {
+    "wsAttr": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": null,
+    "groupLabel": null,
+    "pending": false,
+    "hasBrowserInserted": true,
+    "inVisibleTabs": true
+   },
+   "A_disc": {
+    "wsAttr": null,
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": null,
+    "groupLabel": null,
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "B_disc": {
+    "wsAttr": null,
+    "containerWs": "{9cae8695-796c-4228-936a-52b12ccde909}",
+    "group": null,
+    "groupLabel": null,
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": false
+   }
+  },
+  "session": [
+   {
+    "name": "A_warm",
+    "zenWorkspace": null,
+    "groupId": null
+   },
+   {
+    "name": "A_grp1",
+    "zenWorkspace": null,
+    "groupId": "1792905405431-44"
+   },
+   {
+    "name": "A_grp2",
+    "zenWorkspace": null,
+    "groupId": "1792905405431-44"
+   },
+   {
+    "name": "A_disc",
+    "zenWorkspace": null,
+    "groupId": null
+   },
+   {
+    "name": "B_disc",
+    "zenWorkspace": null,
+    "groupId": null
+   }
+  ],
+  "sessionGroups": [
+   {
+    "id": "1792905405431-44",
+    "name": "⁠⁣Group A",
+    "zenWorkspace": null
+   }
+  ]
+ },
+ "after_restart": {
+  "active": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+  "tabs": {
+   "A_warm": {
+    "wsAttr": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": null,
+    "groupLabel": null,
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "A_grp1": {
+    "wsAttr": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": "1792905405431-44",
+    "groupLabel": "⁠⁣Group A",
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "A_grp2": {
+    "wsAttr": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": "1792905405431-44",
+    "groupLabel": "⁠⁣Group A",
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "A_live": {
+    "wsAttr": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": null,
+    "groupLabel": null,
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "A_disc": {
+    "wsAttr": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": null,
+    "groupLabel": null,
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   },
+   "B_disc": {
+    "wsAttr": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "containerWs": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "group": null,
+    "groupLabel": null,
+    "pending": true,
+    "hasBrowserInserted": false,
+    "inVisibleTabs": true
+   }
+  },
+  "session": [
+   {
+    "name": "A_warm",
+    "zenWorkspace": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "groupId": null
+   },
+   {
+    "name": "A_grp1",
+    "zenWorkspace": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "groupId": "1792905405431-44"
+   },
+   {
+    "name": "A_grp2",
+    "zenWorkspace": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "groupId": "1792905405431-44"
+   },
+   {
+    "name": "A_live",
+    "zenWorkspace": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "groupId": null
+   },
+   {
+    "name": "A_disc",
+    "zenWorkspace": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "groupId": null
+   },
+   {
+    "name": "B_disc",
+    "zenWorkspace": "{9ad58ec7-d147-4a3c-843b-806df3ed686b}",
+    "groupId": null
+   }
+  ],
+  "sessionGroups": [
+   {
+    "id": "1792905405431-44",
+    "name": "⁠⁣Group A",
+    "zenWorkspace": null
+   }
+  ]
+ },
+ "after_restart_query_active_space": [
+  "spike.html",
+  "A_warm",
+  "A_grp1",
+  "A_grp2",
+  "A_live",
+  "A_disc",
+  "B_disc"
+ ],
+ "after_restart_query_other_space": [
+  "spike.html"
+ ],
+ "after_restart_other_space_id": "{9cae8695-796c-4228-936a-52b12ccde909}"
+}

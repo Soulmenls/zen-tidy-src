@@ -1,0 +1,451 @@
+{
+ "which": "base",
+ "iters": 15,
+ "ops": [
+  "i0:group:noncontig_last_first",
+  "i0:update",
+  "i0:move_top:1792904905635063",
+  "i0:add_to_group",
+  "i1:group:contig",
+  "i1:update",
+  "i1:move_top:1792904906697096",
+  "i2:group:first_last",
+  "i2:update",
+  "i2:move_top:1792904907750028",
+  "i2:add_to_group",
+  "i3:group:noncontig_last_first",
+  "i3:update",
+  "i3:move_top:1792904908813086",
+  "i4:group:contig",
+  "i4:update",
+  "i4:move_top:1792904909887013",
+  "i4:add_to_group",
+  "i5:group:first_last",
+  "i5:update",
+  "i5:move_top:1792904910989020",
+  "i6:group:noncontig_last_first",
+  "i6:update",
+  "i6:move_top:1792904912043022",
+  "i6:add_to_group",
+  "i7:group:contig",
+  "i7:update",
+  "i7:move_top:1792904913115073",
+  "i8:group:first_last",
+  "i8:update",
+  "i8:move_top:1792904914175018",
+  "i8:add_to_group",
+  "i9:group:noncontig_last_first",
+  "i9:update",
+  "i9:move_top:1792904915245082",
+  "i10:group:contig",
+  "i10:update",
+  "i10:move_top:1792904916323073",
+  "i10:add_to_group",
+  "i11:group:first_last",
+  "i11:update",
+  "i11:move_top:1792904917396044",
+  "i12:group:noncontig_last_first",
+  "i12:update",
+  "i12:move_top:1792904918454000",
+  "i12:add_to_group",
+  "i13:group:contig",
+  "i13:update",
+  "i13:move_top:1792904919516099",
+  "i14:group:first_last",
+  "i14:update",
+  "i14:move_top:1792904920597093",
+  "i14:add_to_group"
+ ],
+ "log": [
+  {
+   "t": 1792904905232,
+   "event": "onInstalled",
+   "reason": "install"
+  },
+  {
+   "t": 1792904905637,
+   "event": "tabGroups.onCreated",
+   "id": 1792904905635063,
+   "title": ""
+  },
+  {
+   "t": 1792904905643,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904905635063,
+   "title": "R0",
+   "collapsed": false
+  },
+  {
+   "t": 1792904906699,
+   "event": "tabGroups.onCreated",
+   "id": 1792904906697096,
+   "title": ""
+  },
+  {
+   "t": 1792904906705,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904906697096,
+   "title": "R1",
+   "collapsed": false
+  },
+  {
+   "t": 1792904907752,
+   "event": "tabGroups.onCreated",
+   "id": 1792904907750028,
+   "title": ""
+  },
+  {
+   "t": 1792904907759,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904907750028,
+   "title": "R2",
+   "collapsed": false
+  },
+  {
+   "t": 1792904908814,
+   "event": "tabGroups.onCreated",
+   "id": 1792904908813086,
+   "title": ""
+  },
+  {
+   "t": 1792904908822,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904908813086,
+   "title": "R3",
+   "collapsed": false
+  },
+  {
+   "t": 1792904909888,
+   "event": "tabGroups.onCreated",
+   "id": 1792904909887013,
+   "title": ""
+  },
+  {
+   "t": 1792904909928,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904909887013,
+   "title": "R4",
+   "collapsed": false
+  },
+  {
+   "t": 1792904910992,
+   "event": "tabGroups.onCreated",
+   "id": 1792904910989020,
+   "title": ""
+  },
+  {
+   "t": 1792904910998,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904910989020,
+   "title": "R5",
+   "collapsed": false
+  },
+  {
+   "t": 1792904912046,
+   "event": "tabGroups.onCreated",
+   "id": 1792904912043022,
+   "title": ""
+  },
+  {
+   "t": 1792904912052,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904912043022,
+   "title": "R6",
+   "collapsed": false
+  },
+  {
+   "t": 1792904913116,
+   "event": "tabGroups.onCreated",
+   "id": 1792904913115073,
+   "title": ""
+  },
+  {
+   "t": 1792904913123,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904913115073,
+   "title": "R7",
+   "collapsed": false
+  },
+  {
+   "t": 1792904914177,
+   "event": "tabGroups.onCreated",
+   "id": 1792904914175018,
+   "title": ""
+  },
+  {
+   "t": 1792904914183,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904914175018,
+   "title": "R8",
+   "collapsed": false
+  },
+  {
+   "t": 1792904915248,
+   "event": "tabGroups.onCreated",
+   "id": 1792904915245082,
+   "title": ""
+  },
+  {
+   "t": 1792904915254,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904915245082,
+   "title": "R9",
+   "collapsed": false
+  },
+  {
+   "t": 1792904916325,
+   "event": "tabGroups.onCreated",
+   "id": 1792904916323073,
+   "title": ""
+  },
+  {
+   "t": 1792904916336,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904916323073,
+   "title": "R10",
+   "collapsed": false
+  },
+  {
+   "t": 1792904917397,
+   "event": "tabGroups.onCreated",
+   "id": 1792904917396044,
+   "title": ""
+  },
+  {
+   "t": 1792904917404,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904917396044,
+   "title": "R11",
+   "collapsed": false
+  },
+  {
+   "t": 1792904918456,
+   "event": "tabGroups.onCreated",
+   "id": 1792904918454000,
+   "title": ""
+  },
+  {
+   "t": 1792904918463,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904918454000,
+   "title": "R12",
+   "collapsed": false
+  },
+  {
+   "t": 1792904919518,
+   "event": "tabGroups.onCreated",
+   "id": 1792904919516099,
+   "title": ""
+  },
+  {
+   "t": 1792904919525,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904919516099,
+   "title": "R13",
+   "collapsed": false
+  },
+  {
+   "t": 1792904920600,
+   "event": "tabGroups.onCreated",
+   "id": 1792904920597093,
+   "title": ""
+  },
+  {
+   "t": 1792904920614,
+   "event": "tabGroups.onUpdated",
+   "id": 1792904920597093,
+   "title": "R14",
+   "collapsed": false
+  }
+ ],
+ "groups_end": [
+  {
+   "collapsed": false,
+   "color": "cyan",
+   "id": 1792904920597093,
+   "title": "R14",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "grey",
+   "id": 1792904919516099,
+   "title": "R13",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "red",
+   "id": 1792904918454000,
+   "title": "R12",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "orange",
+   "id": 1792904917396044,
+   "title": "R11",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "pink",
+   "id": 1792904916323073,
+   "title": "R10",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "red",
+   "id": 1792904915245082,
+   "title": "R9",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "red",
+   "id": 1792904914175018,
+   "title": "R8",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "grey",
+   "id": 1792904913115073,
+   "title": "R7",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "green",
+   "id": 1792904912043022,
+   "title": "R6",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "pink",
+   "id": 1792904910989020,
+   "title": "R5",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "yellow",
+   "id": 1792904909887013,
+   "title": "R4",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "orange",
+   "id": 1792904908813086,
+   "title": "R3",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "cyan",
+   "id": 1792904907750028,
+   "title": "R2",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "purple",
+   "id": 1792904906697096,
+   "title": "R1",
+   "windowId": 3
+  },
+  {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792904905635063,
+   "title": "R0",
+   "windowId": 3
+  }
+ ],
+ "dom_groups_end": [
+  [
+   "1792904920597-93",
+   "R14",
+   3
+  ],
+  [
+   "1792904919516-99",
+   "R13",
+   2
+  ],
+  [
+   "1792904918454-0",
+   "R12",
+   3
+  ],
+  [
+   "1792904917396-44",
+   "R11",
+   2
+  ],
+  [
+   "1792904916323-73",
+   "R10",
+   3
+  ],
+  [
+   "1792904915245-82",
+   "R9",
+   2
+  ],
+  [
+   "1792904914175-18",
+   "R8",
+   3
+  ],
+  [
+   "1792904913115-73",
+   "R7",
+   2
+  ],
+  [
+   "1792904912043-22",
+   "R6",
+   3
+  ],
+  [
+   "1792904910989-20",
+   "R5",
+   2
+  ],
+  [
+   "1792904909887-13",
+   "R4",
+   3
+  ],
+  [
+   "1792904908813-86",
+   "R3",
+   2
+  ],
+  [
+   "1792904907750-28",
+   "R2",
+   3
+  ],
+  [
+   "1792904906697-96",
+   "R1",
+   2
+  ],
+  [
+   "1792904905635-63",
+   "R0",
+   3
+  ]
+ ],
+ "summary": {
+  "onRemoved": 0,
+  "attributed": [],
+  "groups_alive_end": 15,
+  "created": 15
+ }
+}

@@ -1,0 +1,2164 @@
+{
+ "css": "/* Zen Tidy spike (group A): SIG + 3-char ICON code + visible name */\ntab-group[label^=\"\\002063\\002062\"] > .tab-group-label-container {\n  flex-direction: row !important;\n  align-items: center;\n}\ntab-group[label^=\"\\002063\\002062\"] > .tab-group-label-container::before {\n  content: \"\";\n  display: block;\n  flex: 0 0 16px;\n  width: 16px;\n  height: 16px;\n  margin-inline-end: 6px;\n  background: url(chrome://browser/skin/zen-icons/selectable/folder.svg) center / 16px 16px no-repeat;\n  -moz-context-properties: fill, fill-opacity;\n  fill: currentColor;\n  fill-opacity: 1;\n}\ntab-group[label^=\"\\002063\\002062\\002060\\002060\\002060\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/folder.svg); }\ntab-group[label^=\"\\002063\\002062\\002060\\002060\\002061\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/code.svg); }\ntab-group[label^=\"\\002063\\002062\\002060\\002061\\002064\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/book.svg); }\ntab-group[label^=\"\\002063\\002062\\00180E\\00200B\\002064\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/star.svg); }\ntab-group[label^=\"\\002063\\002062\\00180E\\00180E\\00180E\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/globe.svg); }\n/* collapse fix: Firefox's rule targets direct children, Zen wraps tabs in .tab-group-container */\ntab-group[label^=\"\\002063\\002062\"][collapsed] > .tab-group-container > .tabbrowser-tab:not([selected],[multiselected]) {\n  display: none;\n}\n",
+ "steps": [
+  {
+   "step": "A0_expanded",
+   "t": 1792905980.8520193,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 3,
+     "hidden_tabs": 0
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   }
+  },
+  {
+   "step": "A1_collapsed",
+   "t": 1792905981.8918788,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   },
+   "user_collapse": {
+    "collapsed": true,
+    "attr": true
+   }
+  },
+  {
+   "step": "A2_selected_in_collapsed_beta",
+   "t": 1792905982.9750504,
+   "dom": {
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       true,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 1,
+     "hidden_tabs": 1
+    }
+   },
+   "api_beta": {
+    "collapsed": true,
+    "color": "purple",
+    "id": 1792905980811094,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 3
+   }
+  },
+  {
+   "step": "A3_after_reselect_page",
+   "t": 1792905983.4152412,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   }
+  },
+  {
+   "step": "A4_before_restart",
+   "t": 1792905983.4176297,
+   "session": [
+    [
+     {
+      "id": "1792905980832-92",
+      "name": "Plain",
+      "collapsed": true
+     },
+     {
+      "id": "1792905980811-94",
+      "name": "⁣⁢⁠⁡⁤Beta",
+      "collapsed": true
+     },
+     {
+      "id": "1792905980800-2",
+      "name": "⁣⁢⁠⁠⁡Alpha",
+      "collapsed": true
+     }
+    ]
+   ]
+  },
+  {
+   "step": "A5_after_restart_mode_off",
+   "t": 1792905988.288225,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "alpha-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "alpha-1",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "alpha-2",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 3,
+     "hidden_tabs": 0
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "beta-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "beta-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "plain-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "plain-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": false,
+    "beta": false,
+    "plain": false
+   },
+   "session": [
+    [
+     {
+      "id": "1792905980832-92",
+      "name": "Plain",
+      "collapsed": false
+     },
+     {
+      "id": "1792905980811-94",
+      "name": "⁣⁢⁠⁡⁤Beta",
+      "collapsed": false
+     },
+     {
+      "id": "1792905980800-2",
+      "name": "⁣⁢⁠⁠⁡Alpha",
+      "collapsed": false
+     }
+    ]
+   ]
+  },
+  {
+   "step": "B1_collapsed_saved",
+   "t": 1792905992.8452888,
+   "state": {
+    "value": {
+     "saved": {
+      "1792905980800002": true,
+      "1792905980832092": true,
+      "1792905980811094": true
+     },
+     "suppressUntil": 0,
+     "suppressReason": "",
+     "startupSeen": true,
+     "phase": "startup",
+     "now": 1792905992833
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   },
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "alpha-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-1",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-2",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "beta-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "plain-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "plain-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   }
+  },
+  {
+   "step": "B2_after_restart_early",
+   "t": 1792905998.078341,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "alpha-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-1",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-2",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "beta-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "plain-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "plain-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   }
+  },
+  {
+   "step": "B3_after_restart_settled",
+   "t": 1792906007.597027,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "alpha-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-1",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-2",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "beta-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "plain-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "plain-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   },
+   "state": {
+    "value": {
+     "saved": {
+      "1792905980800002": true,
+      "1792905980832092": true,
+      "1792905980811094": true
+     },
+     "suppressUntil": 1792906003911,
+     "suppressReason": "own-apply",
+     "startupSeen": true,
+     "phase": "startup",
+     "now": 1792906007596
+    }
+   }
+  },
+  {
+   "step": "C0_positions",
+   "t": 1792906007.6298022,
+   "new_tab_index": 3,
+   "alpha_first_index": 9
+  },
+  {
+   "step": "C1_retidy_alpha_with_recollapse",
+   "t": 1792906009.6868014,
+   "result": {
+    "value": {
+     "before": {
+      "collapsed": true,
+      "color": "blue",
+      "id": 1792905980800002,
+      "title": "⁣⁢⁠⁠⁡Alpha",
+      "windowId": 1
+     },
+     "mid": {
+      "collapsed": false,
+      "color": "blue",
+      "id": 1792905980800002,
+      "title": "⁣⁢⁠⁠⁡Alpha",
+      "windowId": 1
+     },
+     "after": {
+      "collapsed": true,
+      "color": "blue",
+      "id": 1792905980800002,
+      "title": "⁣⁢⁠⁠⁡Alpha",
+      "windowId": 1
+     }
+    }
+   },
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-1",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-2",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 4
+    }
+   },
+   "api_alpha": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905980800002,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "step": "C2_retidy_beta_no_recollapse",
+   "t": 1792906011.7396736,
+   "result": {
+    "value": {
+     "before": {
+      "collapsed": true,
+      "color": "purple",
+      "id": 1792905980811094,
+      "title": "⁣⁢⁠⁡⁤Beta",
+      "windowId": 1
+     },
+     "mid": {
+      "collapsed": false,
+      "color": "purple",
+      "id": 1792905980811094,
+      "title": "⁣⁢⁠⁡⁤Beta",
+      "windowId": 1
+     },
+     "after": null
+    }
+   },
+   "dom": {
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "beta-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "beta-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 3,
+     "hidden_tabs": 0
+    }
+   },
+   "api_beta": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905980811094,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "step": "C3_state_after_retidy",
+   "t": 1792906011.7437243,
+   "state": {
+    "value": {
+     "saved": {
+      "1792905980800002": true,
+      "1792905980832092": true,
+      "1792905980811094": true
+     },
+     "suppressUntil": 1792906011194,
+     "suppressReason": "own-retidy",
+     "startupSeen": true,
+     "phase": "startup",
+     "now": 1792906011742
+    }
+   }
+  }
+ ],
+ "G": {
+  "alpha": 1792905980800002,
+  "beta": 1792905980811094,
+  "plain": 1792905980832092
+ },
+ "user_collapse_beta": {
+  "collapsed": true,
+  "attr": true
+ },
+ "shot_A1": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\VA-check3-A1-collapsed.png",
+ "session_before_restartA": [
+  [
+   {
+    "id": "1792905980832-92",
+    "name": "Plain",
+    "collapsed": true
+   },
+   {
+    "id": "1792905980811-94",
+    "name": "⁣⁢⁠⁡⁤Beta",
+    "collapsed": true
+   },
+   {
+    "id": "1792905980800-2",
+    "name": "⁣⁢⁠⁠⁡Alpha",
+    "collapsed": true
+   }
+  ]
+ ],
+ "trace_A": [
+  {
+   "t": 1792905980342,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": null,
+   "label": null,
+   "collapsed": null,
+   "sameAsReal": null,
+   "connected": true,
+   "groupTabs": null,
+   "tabLabel": "02a8bdb6-6574-4b63-ae07-633c40798ba3/spike.html",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980800,
+   "type": "TabGroupCreate",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 0,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980801,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905980801,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980800-2",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980801,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905980801,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980800-2",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980801,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905980802,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980800-2",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980809,
+   "type": "TabGroupUpdate",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980811,
+   "type": "TabGroupCreate",
+   "tag": "tab-group",
+   "groupId": "1792905980811-94",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 0,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980812,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980811-94",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905980812,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980811-94",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980812,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980811-94",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905980812,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980811-94",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980827,
+   "type": "TabGroupUpdate",
+   "tag": "tab-group",
+   "groupId": "1792905980811-94",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980832,
+   "type": "TabGroupCreate",
+   "tag": "tab-group",
+   "groupId": "1792905980832-92",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 0,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980832,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980832-92",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905980832,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980832-92",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980832,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980832-92",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905980833,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980832-92",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980840,
+   "type": "TabGroupUpdate",
+   "tag": "tab-group",
+   "groupId": "1792905980832-92",
+   "label": "Plain",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980857,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980860,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905980832-92",
+   "label": "Plain",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905980865,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905980811-94",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905981909,
+   "type": "TabSelect",
+   "tag": "tab",
+   "groupId": "1792905980811-94",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": "beta-1",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905982980,
+   "type": "TabSelect",
+   "tag": "tab",
+   "groupId": null,
+   "label": null,
+   "collapsed": null,
+   "sameAsReal": null,
+   "connected": true,
+   "groupTabs": null,
+   "tabLabel": "Zen Tidy Spike",
+   "detailTabLabel": null,
+   "stack": null
+  }
+ ],
+ "session_after_restartA": [
+  [
+   {
+    "id": "1792905980832-92",
+    "name": "Plain",
+    "collapsed": false
+   },
+   {
+    "id": "1792905980811-94",
+    "name": "⁣⁢⁠⁡⁤Beta",
+    "collapsed": false
+   },
+   {
+    "id": "1792905980800-2",
+    "name": "⁣⁢⁠⁠⁡Alpha",
+    "collapsed": false
+   }
+  ]
+ ],
+ "trace_A_after": [
+  {
+   "t": 1792905987864,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": null,
+   "label": null,
+   "collapsed": null,
+   "sameAsReal": null,
+   "connected": true,
+   "groupTabs": null,
+   "tabLabel": "02a8bdb6-6574-4b63-ae07-633c40798ba3/spike.html",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905991813,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905991817,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905980832-92",
+   "label": "Plain",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905991821,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905980811-94",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  }
+ ],
+ "shot_B3": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\VA-check3-B3-restored.png",
+ "trace_C": [
+  {
+   "t": 1792905997654,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": null,
+   "label": null,
+   "collapsed": null,
+   "sameAsReal": null,
+   "connected": true,
+   "groupTabs": null,
+   "tabLabel": "02a8bdb6-6574-4b63-ae07-633c40798ba3/spike.html",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792906007639,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 4,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792906007639,
+   "type": "TabGroupExpand",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 4,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": "@[System Principal]:22:74 | set collapsed@chrome://browser/content/tabbrowser/tabgroup.mjs:411:10 | on_TabGrouped@chrome://browser/content/zen-components/ZenFolders.mjs:360:31 | handleEvent@chrome://browser/content/zen-components/ZenFolders.mjs:316:23 | #updateOnTabGrouped@chrome://browser/content/tabbrowser/tab.js:1054:20 | connectedCallback@chrome://browser/content/tabbrowser/tab.js:113:31 | #moveTabNextTo/<@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8443:39 | #handleTabMove@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8708:5 | #moveTabNextTo@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8439:24 | #moveTabsNextTo@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8476:24 | moveTabsBefore@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8317:25 | group@chrome://browser/content/parent/ext-tabs.js:1799:31"
+  },
+  {
+   "t": 1792906007644,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980800-2",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 4,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792906007653,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905980800-2",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 4,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792906009695,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905980811-94",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792906009695,
+   "type": "TabGroupExpand",
+   "tag": "tab-group",
+   "groupId": "1792905980811-94",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": "@[System Principal]:22:74 | set collapsed@chrome://browser/content/tabbrowser/tabgroup.mjs:411:10 | on_TabGrouped@chrome://browser/content/zen-components/ZenFolders.mjs:360:31 | handleEvent@chrome://browser/content/zen-components/ZenFolders.mjs:316:23 | #updateOnTabGrouped@chrome://browser/content/tabbrowser/tab.js:1054:20 | connectedCallback@chrome://browser/content/tabbrowser/tab.js:113:31 | #moveTabNextTo/<@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8443:39 | #handleTabMove@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8708:5 | #moveTabNextTo@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8439:24 | #moveTabsNextTo@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8476:24 | moveTabsBefore@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8317:25 | group@chrome://browser/content/parent/ext-tabs.js:1799:31"
+  },
+  {
+   "t": 1792906009698,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905980811-94",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  }
+ ],
+ "log": [
+  {
+   "t": 1792905980332,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792905980335,
+   "event": "onInstalled",
+   "reason": "install",
+   "flushed": 0
+  },
+  {
+   "t": 1792905980802,
+   "event": "tabGroups.onCreated",
+   "id": 1792905980800002,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905980803,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 2,
+   "groupId": 1792905980800002
+  },
+  {
+   "t": 1792905980803,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792905980800002
+  },
+  {
+   "t": 1792905980803,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 4,
+   "groupId": 1792905980800002
+  },
+  {
+   "t": 1792905980810,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980800002,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sinceBg": 479,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905980813,
+   "event": "tabGroups.onCreated",
+   "id": 1792905980811094,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905980813,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 5,
+   "groupId": 1792905980811094
+  },
+  {
+   "t": 1792905980813,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 6,
+   "groupId": 1792905980811094
+  },
+  {
+   "t": 1792905980827,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980811094,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sinceBg": 496,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905980834,
+   "event": "tabGroups.onCreated",
+   "id": 1792905980832092,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905980834,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 7,
+   "groupId": 1792905980832092
+  },
+  {
+   "t": 1792905980835,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 8,
+   "groupId": 1792905980832092
+  },
+  {
+   "t": 1792905980841,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980832092,
+   "title": "Plain",
+   "collapsed": false,
+   "sinceBg": 510,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905980855,
+   "event": "mark",
+   "label": "A1_collapse"
+  },
+  {
+   "t": 1792905980858,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980800002,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sinceBg": 527,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905980861,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980832092,
+   "title": "Plain",
+   "collapsed": true,
+   "sinceBg": 530,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905980865,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980811094,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sinceBg": 534,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905981901,
+   "event": "mark",
+   "label": "A2_select_in_collapsed"
+  },
+  {
+   "t": 1792905983537,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905980832092,
+   "title": "Plain",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905983537,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905980811094,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905983537,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905980800002,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905986295,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792905986313,
+   "event": "onStartup",
+   "sinceBg": 21,
+   "droppedBuffered": []
+  },
+  {
+   "t": 1792905986329,
+   "event": "startup.mode",
+   "mode": "off",
+   "sinceBg": 37,
+   "groups": [
+    {
+     "id": 1792905980832092,
+     "title": "Plain",
+     "collapsed": false
+    },
+    {
+     "id": 1792905980811094,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": false
+    },
+    {
+     "id": 1792905980800002,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": false
+    }
+   ]
+  },
+  {
+   "t": 1792905991809,
+   "event": "mark",
+   "label": "B1_collapse_mode_restore"
+  },
+  {
+   "t": 1792905991815,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980800002,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sinceBg": 5523,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905991818,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980832092,
+   "title": "Plain",
+   "collapsed": true,
+   "sinceBg": 5526,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905991822,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980811094,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sinceBg": 5530,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905992852,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905980832092,
+   "title": "Plain",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905992852,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905980811094,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905992852,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905980800002,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905995783,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792905995858,
+   "event": "onStartup",
+   "sinceBg": 76,
+   "droppedBuffered": []
+  },
+  {
+   "t": 1792905995911,
+   "event": "startup.mode",
+   "mode": "restore",
+   "sinceBg": 79,
+   "groups": [
+    {
+     "id": 1792905980832092,
+     "title": "Plain",
+     "collapsed": false
+    },
+    {
+     "id": 1792905980811094,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": false
+    },
+    {
+     "id": 1792905980800002,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": false
+    }
+   ]
+  },
+  {
+   "t": 1792905995923,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980800002,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sinceBg": 141,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792905995935,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980832092,
+   "title": "Plain",
+   "collapsed": true,
+   "sinceBg": 153,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792905995938,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980811094,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sinceBg": 156,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792905995938,
+   "event": "apply",
+   "label": "immediate",
+   "sinceBg": 156,
+   "out": [
+    {
+     "id": 1792905980800002,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792905980832092,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792905980811094,
+     "was": false,
+     "now": true
+    }
+   ]
+  },
+  {
+   "t": 1792905996192,
+   "event": "startup.check",
+   "ms": 250,
+   "sinceBg": 410,
+   "groups": [
+    {
+     "id": 1792905980832092,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980811094,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980800002,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905996195,
+   "event": "apply",
+   "label": "after-250",
+   "sinceBg": 413,
+   "out": [
+    {
+     "id": 1792905980800002,
+     "was": true
+    },
+    {
+     "id": 1792905980832092,
+     "was": true
+    },
+    {
+     "id": 1792905980811094,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792905996995,
+   "event": "startup.check",
+   "ms": 1000,
+   "sinceBg": 1210,
+   "groups": [
+    {
+     "id": 1792905980832092,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980811094,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980800002,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905996997,
+   "event": "apply",
+   "label": "after-1000",
+   "sinceBg": 1215,
+   "out": [
+    {
+     "id": 1792905980800002,
+     "was": true
+    },
+    {
+     "id": 1792905980832092,
+     "was": true
+    },
+    {
+     "id": 1792905980811094,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792905997942,
+   "event": "startup.check",
+   "ms": 2000,
+   "sinceBg": 2159,
+   "groups": [
+    {
+     "id": 1792905980832092,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980811094,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980800002,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905997943,
+   "event": "apply",
+   "label": "after-2000",
+   "sinceBg": 2161,
+   "out": [
+    {
+     "id": 1792905980800002,
+     "was": true
+    },
+    {
+     "id": 1792905980832092,
+     "was": true
+    },
+    {
+     "id": 1792905980811094,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792905999942,
+   "event": "startup.check",
+   "ms": 4000,
+   "sinceBg": 4159,
+   "groups": [
+    {
+     "id": 1792905980832092,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980811094,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980800002,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905999944,
+   "event": "apply",
+   "label": "after-4000",
+   "sinceBg": 4162,
+   "out": [
+    {
+     "id": 1792905980800002,
+     "was": true
+    },
+    {
+     "id": 1792905980832092,
+     "was": true
+    },
+    {
+     "id": 1792905980811094,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906002953,
+   "event": "startup.check",
+   "ms": 7000,
+   "sinceBg": 7171,
+   "groups": [
+    {
+     "id": 1792905980832092,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980811094,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905980800002,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792906002955,
+   "event": "apply",
+   "label": "after-7000",
+   "sinceBg": 7173,
+   "out": [
+    {
+     "id": 1792905980800002,
+     "was": true
+    },
+    {
+     "id": 1792905980832092,
+     "was": true
+    },
+    {
+     "id": 1792905980811094,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792906007632,
+   "event": "mark",
+   "label": "C1_retidy_alpha_recollapse"
+  },
+  {
+   "t": 1792906007639,
+   "event": "retidy.start",
+   "before": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905980800002,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906007646,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980800002,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sinceBg": 11864,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-retidy"
+  },
+  {
+   "t": 1792906007647,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792905980800002
+  },
+  {
+   "t": 1792906007652,
+   "event": "retidy.afterGroup",
+   "ms": 8,
+   "mid": {
+    "collapsed": false,
+    "color": "blue",
+    "id": 1792905980800002,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906007654,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980800002,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sinceBg": 11872,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-retidy"
+  },
+  {
+   "t": 1792906007654,
+   "event": "retidy.recollapsed",
+   "after": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905980800002,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906007756,
+   "event": "retidy.check",
+   "ms": 100,
+   "g": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905980800002,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906008165,
+   "event": "retidy.check",
+   "ms": 500,
+   "g": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905980800002,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906009184,
+   "event": "retidy.check",
+   "ms": 1500,
+   "g": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905980800002,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906009690,
+   "event": "mark",
+   "label": "C2_retidy_beta_no_recollapse"
+  },
+  {
+   "t": 1792906009694,
+   "event": "retidy.start",
+   "before": {
+    "collapsed": true,
+    "color": "purple",
+    "id": 1792905980811094,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906009699,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905980811094,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sinceBg": 13917,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-retidy"
+  },
+  {
+   "t": 1792906009700,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 4,
+   "groupId": 1792905980811094
+  },
+  {
+   "t": 1792906009705,
+   "event": "retidy.afterGroup",
+   "ms": 6,
+   "mid": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905980811094,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906009806,
+   "event": "retidy.check",
+   "ms": 100,
+   "g": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905980811094,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906010219,
+   "event": "retidy.check",
+   "ms": 500,
+   "g": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905980811094,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792906011241,
+   "event": "retidy.check",
+   "ms": 1500,
+   "g": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905980811094,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  }
+ ]
+}

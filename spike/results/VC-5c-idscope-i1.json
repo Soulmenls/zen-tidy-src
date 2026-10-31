@@ -1,0 +1,44 @@
+{
+ "check": "5c-idscope",
+ "tag": "i1",
+ "started": 1792907613.323114,
+ "install": {
+  "A": "zen-tidy-spike@local",
+  "B": "vc-other@local",
+  "T": "vc-temp@local"
+ },
+ "A_set": {
+  "value": null
+ },
+ "B_read_before": {
+  "value": null
+ },
+ "T_read_before": {
+  "value": null
+ },
+ "B_set": {
+  "value": null
+ },
+ "T_set": {
+  "value": null
+ },
+ "A_read_after": {
+  "value": "from-A"
+ },
+ "B_read_after": {
+  "value": "from-B"
+ },
+ "T_read_after": {
+  "value": "from-T"
+ },
+ "after_restart": {
+  "tab_found": true,
+  "A": {
+   "value": "from-A"
+  },
+  "B": {
+   "value": "from-B"
+  }
+ },
+ "finished": 1792907625.0534313
+}

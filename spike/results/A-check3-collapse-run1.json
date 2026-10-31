@@ -1,0 +1,2164 @@
+{
+ "css": "/* Zen Tidy spike (group A): SIG + 3-char ICON code + visible name */\ntab-group[label^=\"\\002063\\002062\"] > .tab-group-label-container {\n  flex-direction: row !important;\n  align-items: center;\n}\ntab-group[label^=\"\\002063\\002062\"] > .tab-group-label-container::before {\n  content: \"\";\n  display: block;\n  flex: 0 0 16px;\n  width: 16px;\n  height: 16px;\n  margin-inline-end: 6px;\n  background: url(chrome://browser/skin/zen-icons/selectable/folder.svg) center / 16px 16px no-repeat;\n  -moz-context-properties: fill, fill-opacity;\n  fill: currentColor;\n  fill-opacity: 1;\n}\ntab-group[label^=\"\\002063\\002062\\002060\\002060\\002060\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/folder.svg); }\ntab-group[label^=\"\\002063\\002062\\002060\\002060\\002061\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/code.svg); }\ntab-group[label^=\"\\002063\\002062\\002060\\002061\\002064\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/book.svg); }\ntab-group[label^=\"\\002063\\002062\\00180E\\00200B\\002064\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/star.svg); }\ntab-group[label^=\"\\002063\\002062\\00180E\\00180E\\00180E\"] > .tab-group-label-container::before { background-image: url(chrome://browser/skin/zen-icons/selectable/globe.svg); }\n/* collapse fix: Firefox's rule targets direct children, Zen wraps tabs in .tab-group-container */\ntab-group[label^=\"\\002063\\002062\"][collapsed] > .tab-group-container > .tabbrowser-tab:not([selected],[multiselected]) {\n  display: none;\n}\n",
+ "steps": [
+  {
+   "step": "A0_expanded",
+   "t": 1792905312.9645855,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 3,
+     "hidden_tabs": 0
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   }
+  },
+  {
+   "step": "A1_collapsed",
+   "t": 1792905314.00342,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   },
+   "user_collapse": {
+    "collapsed": true,
+    "attr": true
+   }
+  },
+  {
+   "step": "A2_selected_in_collapsed_beta",
+   "t": 1792905315.049351,
+   "dom": {
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       true,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 1,
+     "hidden_tabs": 1
+    }
+   },
+   "api_beta": {
+    "collapsed": true,
+    "color": "purple",
+    "id": 1792905312937049,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 3
+   }
+  },
+  {
+   "step": "A3_after_reselect_page",
+   "t": 1792905315.5130339,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   }
+  },
+  {
+   "step": "A4_before_restart",
+   "t": 1792905315.5157185,
+   "session": [
+    [
+     {
+      "id": "1792905312947-99",
+      "name": "Plain",
+      "collapsed": true
+     },
+     {
+      "id": "1792905312937-49",
+      "name": "⁣⁢⁠⁡⁤Beta",
+      "collapsed": true
+     },
+     {
+      "id": "1792905312923-52",
+      "name": "⁣⁢⁠⁠⁡Alpha",
+      "collapsed": true
+     }
+    ]
+   ]
+  },
+  {
+   "step": "A5_after_restart_mode_off",
+   "t": 1792905320.5859601,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "alpha-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "alpha-1",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "alpha-2",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 3,
+     "hidden_tabs": 0
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "beta-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "beta-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "plain-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "plain-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": false,
+    "beta": false,
+    "plain": false
+   },
+   "session": [
+    [
+     {
+      "id": "1792905312947-99",
+      "name": "Plain",
+      "collapsed": false
+     },
+     {
+      "id": "1792905312937-49",
+      "name": "⁣⁢⁠⁡⁤Beta",
+      "collapsed": false
+     },
+     {
+      "id": "1792905312923-52",
+      "name": "⁣⁢⁠⁠⁡Alpha",
+      "collapsed": false
+     }
+    ]
+   ]
+  },
+  {
+   "step": "B1_collapsed_saved",
+   "t": 1792905325.1441224,
+   "state": {
+    "value": {
+     "saved": {
+      "1792905312923052": true,
+      "1792905312947099": true,
+      "1792905312937049": true
+     },
+     "suppressUntil": 0,
+     "suppressReason": "",
+     "startupSeen": true,
+     "phase": "startup",
+     "now": 1792905325135
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   },
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "alpha-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-1",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-2",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "beta-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "plain-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "plain-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   }
+  },
+  {
+   "step": "B2_after_restart_early",
+   "t": 1792905329.93588,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "alpha-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-1",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-2",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "beta-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "plain-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "plain-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   }
+  },
+  {
+   "step": "B3_after_restart_settled",
+   "t": 1792905338.961876,
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "alpha-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-1",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-2",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 3
+    },
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "beta-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "beta-1",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 2
+    },
+    "plain": {
+     "label": "Plain",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "plain-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "plain-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 2,
+     "hidden_tabs": 0
+    }
+   },
+   "api": {
+    "alpha": true,
+    "beta": true,
+    "plain": true
+   },
+   "state": {
+    "value": {
+     "saved": {
+      "1792905312923052": true,
+      "1792905312947099": true,
+      "1792905312937049": true
+     },
+     "suppressUntil": 1792905335917,
+     "suppressReason": "own-apply",
+     "startupSeen": true,
+     "phase": "startup",
+     "now": 1792905338960
+    }
+   }
+  },
+  {
+   "step": "C0_positions",
+   "t": 1792905338.9859614,
+   "new_tab_index": 3,
+   "alpha_first_index": 9
+  },
+  {
+   "step": "C1_retidy_alpha_with_recollapse",
+   "t": 1792905341.0176265,
+   "result": {
+    "value": {
+     "before": {
+      "collapsed": true,
+      "color": "blue",
+      "id": 1792905312923052,
+      "title": "⁣⁢⁠⁠⁡Alpha",
+      "windowId": 1
+     },
+     "mid": {
+      "collapsed": false,
+      "color": "blue",
+      "id": 1792905312923052,
+      "title": "⁣⁢⁠⁠⁡Alpha",
+      "windowId": 1
+     },
+     "after": {
+      "collapsed": true,
+      "color": "blue",
+      "id": 1792905312923052,
+      "title": "⁣⁢⁠⁠⁡Alpha",
+      "windowId": 1
+     }
+    }
+   },
+   "dom": {
+    "alpha": {
+     "label": "⁣⁢⁠⁠⁡Alpha",
+     "collapsedAttr": true,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-0",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-1",
+       false,
+       "none",
+       0
+      ],
+      [
+       "alpha-2",
+       false,
+       "none",
+       0
+      ]
+     ],
+     "visible_tabs": 0,
+     "hidden_tabs": 4
+    }
+   },
+   "api_alpha": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905312923052,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "step": "C2_retidy_beta_no_recollapse",
+   "t": 1792905343.0553076,
+   "result": {
+    "value": {
+     "before": {
+      "collapsed": true,
+      "color": "purple",
+      "id": 1792905312937049,
+      "title": "⁣⁢⁠⁡⁤Beta",
+      "windowId": 1
+     },
+     "mid": {
+      "collapsed": false,
+      "color": "purple",
+      "id": 1792905312937049,
+      "title": "⁣⁢⁠⁡⁤Beta",
+      "windowId": 1
+     },
+     "after": null
+    }
+   },
+   "dom": {
+    "beta": {
+     "label": "⁣⁢⁠⁡⁤Beta",
+     "collapsedAttr": false,
+     "tabs": [
+      [
+       "New Tab",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "beta-0",
+       false,
+       "flex",
+       40
+      ],
+      [
+       "beta-1",
+       false,
+       "flex",
+       40
+      ]
+     ],
+     "visible_tabs": 3,
+     "hidden_tabs": 0
+    }
+   },
+   "api_beta": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905312937049,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "step": "C3_state_after_retidy",
+   "t": 1792905343.057729,
+   "state": {
+    "value": {
+     "saved": {
+      "1792905312923052": true,
+      "1792905312947099": true,
+      "1792905312937049": true
+     },
+     "suppressUntil": 1792905342523,
+     "suppressReason": "own-retidy",
+     "startupSeen": true,
+     "phase": "startup",
+     "now": 1792905343057
+    }
+   }
+  }
+ ],
+ "G": {
+  "alpha": 1792905312923052,
+  "beta": 1792905312937049,
+  "plain": 1792905312947099
+ },
+ "user_collapse_beta": {
+  "collapsed": true,
+  "attr": true
+ },
+ "shot_A1": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\A-check3-A1-collapsed.png",
+ "session_before_restartA": [
+  [
+   {
+    "id": "1792905312947-99",
+    "name": "Plain",
+    "collapsed": true
+   },
+   {
+    "id": "1792905312937-49",
+    "name": "⁣⁢⁠⁡⁤Beta",
+    "collapsed": true
+   },
+   {
+    "id": "1792905312923-52",
+    "name": "⁣⁢⁠⁠⁡Alpha",
+    "collapsed": true
+   }
+  ]
+ ],
+ "trace_A": [
+  {
+   "t": 1792905312471,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": null,
+   "label": null,
+   "collapsed": null,
+   "sameAsReal": null,
+   "connected": true,
+   "groupTabs": null,
+   "tabLabel": "86c7c70e-34b0-4358-9d2d-2ae123ee2429/spike.html",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312924,
+   "type": "TabGroupCreate",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 0,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312924,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905312924,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312923-52",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312925,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905312925,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312923-52",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312925,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905312925,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312923-52",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312933,
+   "type": "TabGroupUpdate",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312937,
+   "type": "TabGroupCreate",
+   "tag": "tab-group",
+   "groupId": "1792905312937-49",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 0,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312937,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312937-49",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905312938,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312937-49",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312938,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312937-49",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905312938,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312937-49",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312944,
+   "type": "TabGroupUpdate",
+   "tag": "tab-group",
+   "groupId": "1792905312937-49",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312947,
+   "type": "TabGroupCreate",
+   "tag": "tab-group",
+   "groupId": "1792905312947-99",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 0,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312947,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312947-99",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905312947,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312947-99",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 1,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312948,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312947-99",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905312948,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312947-99",
+   "label": "​",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312954,
+   "type": "TabGroupUpdate",
+   "tag": "tab-group",
+   "groupId": "1792905312947-99",
+   "label": "Plain",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312970,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312973,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905312947-99",
+   "label": "Plain",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905312976,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905312937-49",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905314020,
+   "type": "TabSelect",
+   "tag": "tab",
+   "groupId": "1792905312937-49",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": "beta-1",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905315055,
+   "type": "TabSelect",
+   "tag": "tab",
+   "groupId": null,
+   "label": null,
+   "collapsed": null,
+   "sameAsReal": null,
+   "connected": true,
+   "groupTabs": null,
+   "tabLabel": "Zen Tidy Spike",
+   "detailTabLabel": null,
+   "stack": null
+  }
+ ],
+ "session_after_restartA": [
+  [
+   {
+    "id": "1792905312947-99",
+    "name": "Plain",
+    "collapsed": false
+   },
+   {
+    "id": "1792905312937-49",
+    "name": "⁣⁢⁠⁡⁤Beta",
+    "collapsed": false
+   },
+   {
+    "id": "1792905312923-52",
+    "name": "⁣⁢⁠⁠⁡Alpha",
+    "collapsed": false
+   }
+  ]
+ ],
+ "trace_A_after": [
+  {
+   "t": 1792905320162,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": null,
+   "label": null,
+   "collapsed": null,
+   "sameAsReal": null,
+   "connected": true,
+   "groupTabs": null,
+   "tabLabel": "86c7c70e-34b0-4358-9d2d-2ae123ee2429/spike.html",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905324116,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905324120,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905312947-99",
+   "label": "Plain",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905324124,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905312937-49",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 2,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  }
+ ],
+ "shot_B3": "C:\\Users\\Soulaymane\\Documents\\Projects\\zen-tidy\\spike\\results\\A-check3-B3-restored.png",
+ "trace_C": [
+  {
+   "t": 1792905329509,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": null,
+   "label": null,
+   "collapsed": null,
+   "sameAsReal": null,
+   "connected": true,
+   "groupTabs": null,
+   "tabLabel": "86c7c70e-34b0-4358-9d2d-2ae123ee2429/spike.html",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905338993,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 4,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905338993,
+   "type": "TabGroupExpand",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 4,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": "@[System Principal]:22:74 | set collapsed@chrome://browser/content/tabbrowser/tabgroup.mjs:411:10 | on_TabGrouped@chrome://browser/content/zen-components/ZenFolders.mjs:360:31 | handleEvent@chrome://browser/content/zen-components/ZenFolders.mjs:316:23 | #updateOnTabGrouped@chrome://browser/content/tabbrowser/tab.js:1054:20 | connectedCallback@chrome://browser/content/tabbrowser/tab.js:113:31 | #moveTabNextTo/<@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8443:39 | #handleTabMove@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8708:5 | #moveTabNextTo@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8439:24 | #moveTabsNextTo@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8476:24 | moveTabsBefore@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8317:25 | group@chrome://browser/content/parent/ext-tabs.js:1799:31"
+  },
+  {
+   "t": 1792905338995,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312923-52",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 4,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905338998,
+   "type": "TabGroupCollapse",
+   "tag": "tab-group",
+   "groupId": "1792905312923-52",
+   "label": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 4,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": null
+  },
+  {
+   "t": 1792905341024,
+   "type": "TabGrouped",
+   "tag": "tab-group",
+   "groupId": "1792905312937-49",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": "New Tab",
+   "stack": null
+  },
+  {
+   "t": 1792905341024,
+   "type": "TabGroupExpand",
+   "tag": "tab-group",
+   "groupId": "1792905312937-49",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": null,
+   "detailTabLabel": null,
+   "stack": "@[System Principal]:22:74 | set collapsed@chrome://browser/content/tabbrowser/tabgroup.mjs:411:10 | on_TabGrouped@chrome://browser/content/zen-components/ZenFolders.mjs:360:31 | handleEvent@chrome://browser/content/zen-components/ZenFolders.mjs:316:23 | #updateOnTabGrouped@chrome://browser/content/tabbrowser/tab.js:1054:20 | connectedCallback@chrome://browser/content/tabbrowser/tab.js:113:31 | #moveTabNextTo/<@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8443:39 | #handleTabMove@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8708:5 | #moveTabNextTo@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8439:24 | #moveTabsNextTo@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8476:24 | moveTabsBefore@moz-src:///browser/components/tabbrowser/Tabbrowser.sys.mjs:8317:25 | group@chrome://browser/content/parent/ext-tabs.js:1799:31"
+  },
+  {
+   "t": 1792905341026,
+   "type": "TabMove",
+   "tag": "tab",
+   "groupId": "1792905312937-49",
+   "label": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sameAsReal": true,
+   "connected": true,
+   "groupTabs": 3,
+   "tabLabel": "New Tab",
+   "detailTabLabel": null,
+   "stack": null
+  }
+ ],
+ "log": [
+  {
+   "t": 1792905312462,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792905312465,
+   "event": "onInstalled",
+   "reason": "install",
+   "flushed": 0
+  },
+  {
+   "t": 1792905312926,
+   "event": "tabGroups.onCreated",
+   "id": 1792905312923052,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905312927,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 2,
+   "groupId": 1792905312923052
+  },
+  {
+   "t": 1792905312927,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792905312923052
+  },
+  {
+   "t": 1792905312927,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 4,
+   "groupId": 1792905312923052
+  },
+  {
+   "t": 1792905312934,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312923052,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sinceBg": 473,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905312938,
+   "event": "tabGroups.onCreated",
+   "id": 1792905312937049,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905312939,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 5,
+   "groupId": 1792905312937049
+  },
+  {
+   "t": 1792905312939,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 6,
+   "groupId": 1792905312937049
+  },
+  {
+   "t": 1792905312945,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312937049,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sinceBg": 484,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905312948,
+   "event": "tabGroups.onCreated",
+   "id": 1792905312947099,
+   "title": "",
+   "collapsed": false
+  },
+  {
+   "t": 1792905312948,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 7,
+   "groupId": 1792905312947099
+  },
+  {
+   "t": 1792905312948,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 8,
+   "groupId": 1792905312947099
+  },
+  {
+   "t": 1792905312955,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312947099,
+   "title": "Plain",
+   "collapsed": false,
+   "sinceBg": 494,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905312968,
+   "event": "mark",
+   "label": "A1_collapse"
+  },
+  {
+   "t": 1792905312971,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312923052,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sinceBg": 510,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905312973,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312947099,
+   "title": "Plain",
+   "collapsed": true,
+   "sinceBg": 512,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905312977,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312937049,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sinceBg": 516,
+   "phase": "running",
+   "startupSeen": false,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905314013,
+   "event": "mark",
+   "label": "A2_select_in_collapsed"
+  },
+  {
+   "t": 1792905315653,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905312947099,
+   "title": "Plain",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905315653,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905312937049,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905315653,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905312923052,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905318447,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792905318454,
+   "event": "onStartup",
+   "sinceBg": 9,
+   "droppedBuffered": []
+  },
+  {
+   "t": 1792905318463,
+   "event": "startup.mode",
+   "mode": "off",
+   "sinceBg": 17,
+   "groups": [
+    {
+     "id": 1792905312947099,
+     "title": "Plain",
+     "collapsed": false
+    },
+    {
+     "id": 1792905312937049,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": false
+    },
+    {
+     "id": 1792905312923052,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": false
+    }
+   ]
+  },
+  {
+   "t": 1792905324112,
+   "event": "mark",
+   "label": "B1_collapse_mode_restore"
+  },
+  {
+   "t": 1792905324118,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312923052,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sinceBg": 5673,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905324122,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312947099,
+   "title": "Plain",
+   "collapsed": true,
+   "sinceBg": 5677,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905324125,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312937049,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sinceBg": 5680,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": false,
+   "suppressReason": ""
+  },
+  {
+   "t": 1792905325150,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905312947099,
+   "title": "Plain",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905325151,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905312937049,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905325151,
+   "event": "tabGroups.onRemoved",
+   "id": 1792905312923052,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "info": {
+    "isWindowClosing": true
+   }
+  },
+  {
+   "t": 1792905327882,
+   "event": "bgLoaded"
+  },
+  {
+   "t": 1792905327905,
+   "event": "onStartup",
+   "sinceBg": 24,
+   "droppedBuffered": []
+  },
+  {
+   "t": 1792905327917,
+   "event": "startup.mode",
+   "mode": "restore",
+   "sinceBg": 26,
+   "groups": [
+    {
+     "id": 1792905312947099,
+     "title": "Plain",
+     "collapsed": false
+    },
+    {
+     "id": 1792905312937049,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": false
+    },
+    {
+     "id": 1792905312923052,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": false
+    }
+   ]
+  },
+  {
+   "t": 1792905327954,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312923052,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sinceBg": 74,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792905327956,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312947099,
+   "title": "Plain",
+   "collapsed": true,
+   "sinceBg": 76,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792905327961,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312937049,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": true,
+   "sinceBg": 81,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-apply"
+  },
+  {
+   "t": 1792905327961,
+   "event": "apply",
+   "label": "immediate",
+   "sinceBg": 81,
+   "out": [
+    {
+     "id": 1792905312923052,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792905312947099,
+     "was": false,
+     "now": true
+    },
+    {
+     "id": 1792905312937049,
+     "was": false,
+     "now": true
+    }
+   ]
+  },
+  {
+   "t": 1792905328218,
+   "event": "startup.check",
+   "ms": 250,
+   "sinceBg": 337,
+   "groups": [
+    {
+     "id": 1792905312947099,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312937049,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312923052,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905328219,
+   "event": "apply",
+   "label": "after-250",
+   "sinceBg": 339,
+   "out": [
+    {
+     "id": 1792905312923052,
+     "was": true
+    },
+    {
+     "id": 1792905312947099,
+     "was": true
+    },
+    {
+     "id": 1792905312937049,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792905328982,
+   "event": "startup.check",
+   "ms": 1000,
+   "sinceBg": 1101,
+   "groups": [
+    {
+     "id": 1792905312947099,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312937049,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312923052,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905328983,
+   "event": "apply",
+   "label": "after-1000",
+   "sinceBg": 1103,
+   "out": [
+    {
+     "id": 1792905312923052,
+     "was": true
+    },
+    {
+     "id": 1792905312947099,
+     "was": true
+    },
+    {
+     "id": 1792905312937049,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792905329967,
+   "event": "startup.check",
+   "ms": 2000,
+   "sinceBg": 2086,
+   "groups": [
+    {
+     "id": 1792905312947099,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312937049,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312923052,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905329968,
+   "event": "apply",
+   "label": "after-2000",
+   "sinceBg": 2088,
+   "out": [
+    {
+     "id": 1792905312923052,
+     "was": true
+    },
+    {
+     "id": 1792905312947099,
+     "was": true
+    },
+    {
+     "id": 1792905312937049,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792905331974,
+   "event": "startup.check",
+   "ms": 4000,
+   "sinceBg": 4093,
+   "groups": [
+    {
+     "id": 1792905312947099,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312937049,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312923052,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905331977,
+   "event": "apply",
+   "label": "after-4000",
+   "sinceBg": 4097,
+   "out": [
+    {
+     "id": 1792905312923052,
+     "was": true
+    },
+    {
+     "id": 1792905312947099,
+     "was": true
+    },
+    {
+     "id": 1792905312937049,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792905334977,
+   "event": "startup.check",
+   "ms": 7000,
+   "sinceBg": 7096,
+   "groups": [
+    {
+     "id": 1792905312947099,
+     "title": "Plain",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312937049,
+     "title": "⁣⁢⁠⁡⁤Beta",
+     "collapsed": true
+    },
+    {
+     "id": 1792905312923052,
+     "title": "⁣⁢⁠⁠⁡Alpha",
+     "collapsed": true
+    }
+   ]
+  },
+  {
+   "t": 1792905334979,
+   "event": "apply",
+   "label": "after-7000",
+   "sinceBg": 7099,
+   "out": [
+    {
+     "id": 1792905312923052,
+     "was": true
+    },
+    {
+     "id": 1792905312947099,
+     "was": true
+    },
+    {
+     "id": 1792905312937049,
+     "was": true
+    }
+   ]
+  },
+  {
+   "t": 1792905338987,
+   "event": "mark",
+   "label": "C1_retidy_alpha_recollapse"
+  },
+  {
+   "t": 1792905338992,
+   "event": "retidy.start",
+   "before": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905312923052,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905338996,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312923052,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": false,
+   "sinceBg": 11116,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-retidy"
+  },
+  {
+   "t": 1792905338996,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 3,
+   "groupId": 1792905312923052
+  },
+  {
+   "t": 1792905338998,
+   "event": "retidy.afterGroup",
+   "ms": 5,
+   "mid": {
+    "collapsed": false,
+    "color": "blue",
+    "id": 1792905312923052,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905338998,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312923052,
+   "title": "⁣⁢⁠⁠⁡Alpha",
+   "collapsed": true,
+   "sinceBg": 11118,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-retidy"
+  },
+  {
+   "t": 1792905338998,
+   "event": "retidy.recollapsed",
+   "after": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905312923052,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905339099,
+   "event": "retidy.check",
+   "ms": 100,
+   "g": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905312923052,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905339510,
+   "event": "retidy.check",
+   "ms": 500,
+   "g": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905312923052,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905340614,
+   "event": "retidy.check",
+   "ms": 1500,
+   "g": {
+    "collapsed": true,
+    "color": "blue",
+    "id": 1792905312923052,
+    "title": "⁣⁢⁠⁠⁡Alpha",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905341019,
+   "event": "mark",
+   "label": "C2_retidy_beta_no_recollapse"
+  },
+  {
+   "t": 1792905341023,
+   "event": "retidy.start",
+   "before": {
+    "collapsed": true,
+    "color": "purple",
+    "id": 1792905312937049,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905341027,
+   "event": "tabGroups.onUpdated",
+   "id": 1792905312937049,
+   "title": "⁣⁢⁠⁡⁤Beta",
+   "collapsed": false,
+   "sinceBg": 13147,
+   "phase": "startup",
+   "startupSeen": true,
+   "suppressed": true,
+   "suppressReason": "own-retidy"
+  },
+  {
+   "t": 1792905341028,
+   "event": "tabs.onUpdated.groupId",
+   "tabId": 4,
+   "groupId": 1792905312937049
+  },
+  {
+   "t": 1792905341030,
+   "event": "retidy.afterGroup",
+   "ms": 5,
+   "mid": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905312937049,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905341130,
+   "event": "retidy.check",
+   "ms": 100,
+   "g": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905312937049,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905341542,
+   "event": "retidy.check",
+   "ms": 500,
+   "g": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905312937049,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  },
+  {
+   "t": 1792905342547,
+   "event": "retidy.check",
+   "ms": 1500,
+   "g": {
+    "collapsed": false,
+    "color": "purple",
+    "id": 1792905312937049,
+    "title": "⁣⁢⁠⁡⁤Beta",
+    "windowId": 1
+   }
+  }
+ ]
+}

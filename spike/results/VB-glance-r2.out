@@ -1,0 +1,89 @@
+setup {"folder": "1792906455311-100", "essential": true, "win": [1366, 768]}
+open1 {"glanceExtId": 13, "selectedIsGlance": true, "glanceAttr": true, "glancePinnedAttr": false, "glanceParentEl": "tab-content", "parentPinned": false}
+resize {"before": [1366, 768], "after": [1000, 700]}
+switch_away {"glanceStillThere": true}
+back_to_parent {"selectedExtId": 13}
+close_cmd {"glanceRemoved": true, "selectedExtId": 7}
+select_E1 3
+discard_loose {"ids": [7, 8], "result": {"value": null}}
+open_ess {"glanceExtId": 14, "selectedIsGlance": true, "glanceAttr": true, "glancePinnedAttr": false, "glanceParentEl": "tab-content", "parentPinned": true}
+close_ess {"glanceRemoved": true}
+split_then_unsplit {"ok": true, "during": {"w1": 400, "w2": 400}, "after": {"w1": 806, "w2": 806, "g1": null, "g2": null}}
+open3 {"glanceExtId": 15, "selectedIsGlance": true, "glanceAttr": true, "glancePinnedAttr": false, "glanceParentEl": "tab-content", "parentPinned": false}
+group_glance {"value": 1792906494196009}
+after_group_glance_chrome {"glanceAttr": true, "glanceId": "{7d36b1e7-407e-4240-91fd-f1f0d2d197df}", "parentClass": "tab-group-container", "group": "1792906494196-9", "selected": true, "overlayOpen": true}
+open4 {"glanceExtId": 16, "selectedIsGlance": true, "glanceAttr": true, "glancePinnedAttr": false, "glanceParentEl": "tab-content", "parentPinned": false}
+group_parent {"value": 1792906500100089}
+after_group_parent_chrome {"glanceAttr": true, "glanceParentEl": "tab-content", "glanceInsideParent": true, "parentGroup": "1792906500100-89", "glanceGroup": null, "selected": 16}
+glance_ids {"g1": 13, "ge": 14, "g3": 15, "g4": 16}
+== 0_baseline_P_loaded: active=[7] chrome_sel=7 glances=[]
+   not_increasing=[] B_ref_max=1172 B_flagged=[] alt_ref_max=1172 alt_flagged=[]
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 7, "index": 7, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "loading", "url": "P"}
+== 1_glance_open: active=[13] chrome_sel=13 glances=[{'extId': 13, 'owner': 7, 'selected': True, 'parent': 'tab-content', 'pinned': False}]
+   not_increasing=[{'id': 13, 'index': 6, 'prev_index': 8}] B_ref_max=1172 B_flagged=[13] alt_ref_max=1172 alt_flagged=[13]
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 7, "index": 8, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "P"}
+      {"id": 13, "index": 6, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 938, "h": 752, "status": "loading", "url": "about:blank"}
+== 2_after_resize: active=[13] chrome_sel=13 glances=[{'extId': 13, 'owner': 7, 'selected': True, 'parent': 'tab-content', 'pinned': False}]
+   not_increasing=[{'id': 13, 'index': 6, 'prev_index': 8}] B_ref_max=806 B_flagged=[13] alt_ref_max=1172 alt_flagged=[7, 13]
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 7, "index": 8, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "P"}
+      {"id": 13, "index": 6, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 645, "h": 683, "status": "complete", "url": "G1"}
+== 3_switched_away: active=[8] chrome_sel=8 glances=[{'extId': 13, 'owner': 7, 'selected': False, 'parent': 'tab-content', 'pinned': False}]
+   not_increasing=[{'id': 13, 'index': 6, 'prev_index': 8}] B_ref_max=806 B_flagged=[13] alt_ref_max=1172 alt_flagged=[7, 13, 8]
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 7, "index": 8, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "P"}
+      {"id": 13, "index": 6, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 645, "h": 683, "status": "complete", "url": "G1"}
+      {"id": 8, "index": 9, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "loading", "url": "B"}
+== 4_back_to_parent: active=[13] chrome_sel=13 glances=[{'extId': 13, 'owner': 7, 'selected': True, 'parent': 'tab-content', 'pinned': False}]
+   not_increasing=[{'id': 13, 'index': 6, 'prev_index': 8}] B_ref_max=806 B_flagged=[13] alt_ref_max=1172 alt_flagged=[7, 13, 8]
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 7, "index": 8, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "P"}
+      {"id": 13, "index": 6, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 645, "h": 683, "status": "complete", "url": "G1"}
+      {"id": 8, "index": 9, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "B"}
+== 5_closed: active=[7] chrome_sel=7 glances=[]
+   not_increasing=[] B_ref_max=806 B_flagged=[] alt_ref_max=1172 alt_flagged=[7, 8]
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 7, "index": 7, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "P"}
+      {"id": 8, "index": 8, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "B"}
+== 6a_all_loose_discarded_E1_selected: active=[3] chrome_sel=3 glances=[]
+   not_increasing=[] B_ref_max=None B_flagged=[] alt_ref_max=1172 alt_flagged=[]
+      {"id": 3, "index": 0, "active": true, "pinned": true, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "loading", "url": "E1"}
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+== 6b_glance_from_essential: active=[14] chrome_sel=14 glances=[{'extId': 14, 'owner': 3, 'selected': True, 'parent': 'tab-content', 'pinned': False}]
+   not_increasing=[{'id': 5, 'index': 4, 'prev_index': 6}] B_ref_max=645 B_flagged=[] alt_ref_max=1172 alt_flagged=[14]
+      {"id": 3, "index": 0, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "E1"}
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 14, "index": 6, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 645, "h": 683, "status": "loading", "url": "about:blank"}
+== 7_after_unsplit_A_selected: active=[6] chrome_sel=6 glances=[]
+   not_increasing=[] B_ref_max=806 B_flagged=[] alt_ref_max=1172 alt_flagged=[6, 11, 12]
+      {"id": 3, "index": 0, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "E1"}
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 6, "index": 6, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "loading", "url": "A"}
+      {"id": 11, "index": 11, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "S1"}
+      {"id": 12, "index": 12, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "S2"}
+== 8a_after_group_glance: active=[15] chrome_sel=15 glances=[{'extId': 15, 'owner': 9, 'selected': True, 'parent': 'tab-group-container', 'pinned': False}]
+   not_increasing=[] B_ref_max=806 B_flagged=[] alt_ref_max=1172 alt_flagged=[6, 9, 11, 12]
+      {"id": 3, "index": 0, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "E1"}
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 6, "index": 6, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "A"}
+      {"id": 9, "index": 9, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "C"}
+      {"id": 15, "index": 10, "active": true, "pinned": false, "groupId": 1792906494196009, "discarded": false, "w": 645, "h": 683, "status": "loading", "url": "about:blank"}
+      {"id": 11, "index": 12, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "S1"}
+      {"id": 12, "index": 13, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "S2"}
+== 8b_after_group_parent: active=[16] chrome_sel=16 glances=[{'extId': 15, 'owner': 9, 'selected': False, 'parent': 'tab-group-container', 'pinned': False}, {'extId': 16, 'owner': 10, 'selected': True, 'parent': 'tab-content', 'pinned': False}]
+   not_increasing=[] B_ref_max=806 B_flagged=[16] alt_ref_max=1172 alt_flagged=[6, 9, 16, 11, 12]
+      {"id": 3, "index": 0, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "E1"}
+      {"id": 2, "index": 1, "active": false, "pinned": true, "groupId": -1, "discarded": false, "w": 1172, "h": 752, "status": "complete", "url": "spike.html"}
+      {"id": 6, "index": 6, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "A"}
+      {"id": 9, "index": 9, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "C"}
+      {"id": 15, "index": 10, "active": false, "pinned": false, "groupId": 1792906494196009, "discarded": false, "w": 645, "h": 683, "status": "complete", "url": "G3"}
+      {"id": 10, "index": 11, "active": false, "pinned": false, "groupId": 1792906500100089, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "D"}
+      {"id": 16, "index": 12, "active": true, "pinned": false, "groupId": -1, "discarded": false, "w": 645, "h": 683, "status": "loading", "url": "about:blank"}
+      {"id": 11, "index": 13, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "S1"}
+      {"id": 12, "index": 14, "active": false, "pinned": false, "groupId": -1, "discarded": false, "w": 806, "h": 683, "status": "complete", "url": "S2"}
+groups at 1: [{"id": 1792906455311100, "title": "Folder X", "color": "zen-workspace-color", "collapsed": false}]
+after_restart_urls [('E1', -1, True), ('F1', 1792906455311100, True), ('F2', 1792906455311100, True), ('spike.html', -1, True), ('A', -1, False), ('P', -1, False), ('B', -1, False), ('C', -1, False), ('D', 1792906500100089, False), ('S1', -1, False), ('S2', -1, False)]
+after_restart_groups [{"id": 1792906455311100, "title": "Folder X", "color": "zen-workspace-color"}, {"id": 1792906500100089, "title": "", "color": "purple"}]
+after_restart_chrome [{"u": "E1", "glance": false, "group": null}, {"u": "about:blank", "glance": false, "group": "1792906455311-100"}, {"u": "F1", "glance": false, "group": "1792906455311-100"}, {"u": "F2", "glance": false, "group": "1792906455311-100"}, {"u": "spike.html", "glance": false, "group": null}, {"u": "about:blank", "glance": false, "group": null}, {"u": "A", "glance": false, "group": null}, {"u": "P", "glance": false, "group": null}, {"u": "B", "glance": false, "group": null}, {"u": "C", "glance": false, "group": null}, {"u": "D", "glance": false, "group": "1792906500100-89"}, {"u": "S1", "glance": false, "group": null}, {"u": "S2", "glance": false, "group": null}]

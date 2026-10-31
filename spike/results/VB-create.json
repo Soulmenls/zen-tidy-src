@@ -1,0 +1,1746 @@
+{
+ "port": 2962,
+ "cases": {
+  "c01_loose_start": {
+   "requested_index": 6,
+   "create_result": {
+    "id": 15,
+    "index": 6,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 6,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "F2",
+    4,
+    1792906159991097
+   ],
+   "next": [
+    "A",
+    7,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c01_loose_start",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c01_loose_start"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 6,
+    "inSplitData": false
+   }
+  },
+  "c02_middle_A_B": {
+   "requested_index": 7,
+   "create_result": {
+    "id": 16,
+    "index": 7,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 7,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "A",
+    6,
+    -1
+   ],
+   "next": [
+    "B",
+    8,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c02_middle_A_B",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c02_middle_A_B"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 7,
+    "inSplitData": false
+   }
+  },
+  "c03_group_leading_edge": {
+   "requested_index": 8,
+   "create_result": {
+    "id": 17,
+    "index": 8,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 8,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "B",
+    7,
+    -1
+   ],
+   "next": [
+    "G1",
+    9,
+    1792906160999013
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c03_group_leading_edge",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c03_group_leading_edge"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 8,
+    "inSplitData": false
+   }
+  },
+  "c04_inside_group": {
+   "requested_index": 9,
+   "create_result": {
+    "id": 18,
+    "index": 9,
+    "groupId": 1792906160999013,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 9,
+    "groupId": 1792906160999013,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "G1",
+    8,
+    1792906160999013
+   ],
+   "next": [
+    "G2",
+    10,
+    1792906160999013
+   ],
+   "chrome": {
+    "parentClass": "tab-group-container",
+    "group": "1792906160999-13",
+    "groupIsSplit": false,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c04_inside_group",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c04_inside_group"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 9,
+    "inSplitData": false
+   }
+  },
+  "c05_group_trailing_edge": {
+   "requested_index": 10,
+   "create_result": {
+    "id": 20,
+    "index": 10,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 10,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "G2",
+    9,
+    1792906160999013
+   ],
+   "next": [
+    "C",
+    11,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c05_group_trailing_edge",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c05_group_trailing_edge"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 10,
+    "inSplitData": false
+   }
+  },
+  "c06_split_leading_edge": {
+   "requested_index": 11,
+   "create_result": {
+    "id": 21,
+    "index": 11,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 11,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "C",
+    10,
+    -1
+   ],
+   "next": [
+    "S1",
+    12,
+    1792906161015038
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c06_split_leading_edge",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c06_split_leading_edge"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 11,
+    "inSplitData": false
+   }
+  },
+  "c07_inside_split": {
+   "requested_index": 12,
+   "create_result": {
+    "id": 22,
+    "index": 12,
+    "groupId": 1792906161015038,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 12,
+    "groupId": 1792906161015038,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "S1",
+    11,
+    1792906161015038
+   ],
+   "next": [
+    "S2",
+    13,
+    1792906161015038
+   ],
+   "chrome": {
+    "parentClass": "tab-group-container",
+    "group": "1792906161015-38",
+    "groupIsSplit": true,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c07_inside_split",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c07_inside_split"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 12,
+    "inSplitData": false
+   }
+  },
+  "c08_split_trailing_edge": {
+   "requested_index": 13,
+   "create_result": {
+    "id": 24,
+    "index": 13,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 13,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "S2",
+    12,
+    1792906161015038
+   ],
+   "next": [
+    "D",
+    14,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c08_split_trailing_edge",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c08_split_trailing_edge"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 13,
+    "inSplitData": false
+   }
+  },
+  "c09_end": {
+   "requested_index": 15,
+   "create_result": {
+    "id": 25,
+    "index": 15,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 15,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "E",
+    14,
+    -1
+   ],
+   "next": null,
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c09_end",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c09_end"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 15,
+    "inSplitData": false
+   }
+  },
+  "c10_huge_9999": {
+   "requested_index": 9999,
+   "create_result": {
+    "id": 26,
+    "index": 15,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 15,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "E",
+    14,
+    -1
+   ],
+   "next": null,
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c10_huge_9999",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c10_huge_9999"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 15,
+    "inSplitData": false
+   }
+  },
+  "c11_no_index": {
+   "requested_index": null,
+   "create_result": {
+    "id": 27,
+    "index": 6,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 6,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "F2",
+    4,
+    1792906159991097
+   ],
+   "next": [
+    "A",
+    7,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c11_no_index",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c11_no_index"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 6,
+    "inSplitData": false
+   }
+  },
+  "c12_index_0": {
+   "requested_index": 0,
+   "create_result": {
+    "id": 28,
+    "index": 6,
+    "groupId": -1,
+    "discarded": true
+   },
+   "tabs_get": {
+    "index": 6,
+    "groupId": -1,
+    "discarded": true,
+    "pinned": false,
+    "status": "complete"
+   },
+   "prev": [
+    "F2",
+    4,
+    1792906159991097
+   ],
+   "next": [
+    "A",
+    7,
+    -1
+   ],
+   "chrome": {
+    "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+    "group": null,
+    "groupIsSplit": null,
+    "splitViewFlag": false,
+    "pinned": false,
+    "pending": true,
+    "ws": null,
+    "currentURI": "https://example.com/vbc/c12_index_0",
+    "label": "New Tab",
+    "ssEntries": [
+     "https://example.com/vbc/c12_index_0"
+    ],
+    "ssUserTyped": "",
+    "gbIndex": 6,
+    "inSplitData": false
+   }
+  }
+ },
+ "rejections": {
+  "r01_about_blank_discarded": {
+   "props": {
+    "url": "about:blank",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Cannot create a discarded new tab or \"about\" urls."
+   }
+  },
+  "r02_about_robots_discarded": {
+   "props": {
+    "url": "about:robots",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: about:robots"
+   }
+  },
+  "r03_about_blank_not_discarded_CONTROL": {
+   "props": {
+    "url": "about:blank",
+    "active": false
+   },
+   "result": {
+    "ok": true,
+    "url": "about:blank",
+    "discarded": false
+   }
+  },
+  "r04_file_discarded": {
+   "props": {
+    "url": "file:///C:/Windows/win.ini",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: file:///C:/Windows/win.ini"
+   }
+  },
+  "r05_file_not_discarded": {
+   "props": {
+    "url": "file:///C:/Windows/win.ini",
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: file:///C:/Windows/win.ini"
+   }
+  },
+  "r07_data_discarded": {
+   "props": {
+    "url": "data:text/html,hi",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: data:text/html,hi"
+   }
+  },
+  "r08_javascript_discarded": {
+   "props": {
+    "url": "javascript:void(0)",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: javascript:void(0)"
+   }
+  },
+  "r09_discarded_active_true": {
+   "props": {
+    "url": "https://example.com/vbc/r09",
+    "discarded": true,
+    "active": true
+   },
+   "result": {
+    "error": "Error: Active tabs cannot be created and discarded."
+   }
+  },
+  "r10_discarded_pinned_true": {
+   "props": {
+    "url": "https://example.com/vbc/r10",
+    "discarded": true,
+    "pinned": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Pinned tabs cannot be created and discarded."
+   }
+  },
+  "r11_http_localhost_discarded_CONTROL": {
+   "props": {
+    "url": "http://127.0.0.1:9/x",
+    "discarded": true,
+    "active": false,
+    "title": "local"
+   },
+   "result": {
+    "ok": true,
+    "url": "http://127.0.0.1:9/x",
+    "discarded": true
+   }
+  },
+  "r12_title_without_discarded": {
+   "props": {
+    "url": "https://example.com/vbc/r12",
+    "title": "x",
+    "active": false
+   },
+   "result": {
+    "error": "Error: Title may only be set for discarded tabs."
+   }
+  },
+  "r13_about_newtab_discarded": {
+   "props": {
+    "url": "about:newtab",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Illegal URL: about:newtab"
+   }
+  },
+  "r14_no_url_discarded": {
+   "props": {
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "error": "Error: Cannot create a discarded new tab or \"about\" urls."
+   }
+  },
+  "r15_moz_ext_other_discarded": {
+   "props": {
+    "url": "moz-extension://00000000-0000-0000-0000-000000000000/x.html",
+    "discarded": true,
+    "active": false
+   },
+   "result": {
+    "ok": true,
+    "url": "moz-extension://00000000-0000-0000-0000-000000000000/x.html",
+    "discarded": true
+   }
+  }
+ },
+ "install": "zen-tidy-spike-b@local",
+ "default_order_after_creates": [
+  [
+   "spike.html",
+   0,
+   "",
+   "P"
+  ],
+  [
+   "F2",
+   2,
+   "",
+   ""
+  ],
+  [
+   "F1",
+   3,
+   "",
+   ""
+  ],
+  [
+   "ESS",
+   4,
+   "",
+   ""
+  ],
+  [
+   "E",
+   5,
+   "",
+   ""
+  ],
+  [
+   "D",
+   6,
+   "",
+   ""
+  ],
+  [
+   "S2",
+   7,
+   "",
+   ""
+  ],
+  [
+   "S1",
+   8,
+   "",
+   ""
+  ],
+  [
+   "C",
+   9,
+   "",
+   ""
+  ],
+  [
+   "G2",
+   10,
+   "",
+   ""
+  ],
+  [
+   "G1",
+   11,
+   "",
+   ""
+  ],
+  [
+   "B",
+   12,
+   "",
+   ""
+  ],
+  [
+   "A",
+   13,
+   "",
+   ""
+  ]
+ ],
+ "setup_essential_folder": {
+  "folder": "1792906159991-97"
+ },
+ "setup_split": {
+  "ok": true,
+  "groupId": "1792906161015-38"
+ },
+ "ids": {
+  "A": 3,
+  "B": 4,
+  "G1": 5,
+  "G2": 6,
+  "C": 7,
+  "S1": 8,
+  "S2": 9,
+  "D": 10,
+  "E": 11,
+  "ESS": 12,
+  "F1": 13,
+  "F2": 14
+ },
+ "tidy_group": 1792906160999013,
+ "layout_before": [
+  [
+   "ESS",
+   0,
+   "",
+   "P"
+  ],
+  [
+   "spike.html",
+   1,
+   "",
+   "P"
+  ],
+  [
+   "F1",
+   3,
+   1792906159991097,
+   "P"
+  ],
+  [
+   "F2",
+   4,
+   1792906159991097,
+   "P"
+  ],
+  [
+   "A",
+   6,
+   "",
+   ""
+  ],
+  [
+   "B",
+   7,
+   "",
+   ""
+  ],
+  [
+   "G1",
+   8,
+   1792906160999013,
+   ""
+  ],
+  [
+   "G2",
+   9,
+   1792906160999013,
+   ""
+  ],
+  [
+   "C",
+   10,
+   "",
+   ""
+  ],
+  [
+   "S1",
+   11,
+   1792906161015038,
+   ""
+  ],
+  [
+   "S2",
+   12,
+   1792906161015038,
+   ""
+  ],
+  [
+   "D",
+   13,
+   "",
+   ""
+  ],
+  [
+   "E",
+   14,
+   "",
+   ""
+  ]
+ ],
+ "pref_newtab_top": true,
+ "layout_after_cases": [
+  [
+   "ESS",
+   0,
+   "",
+   "P"
+  ],
+  [
+   "spike.html",
+   1,
+   "",
+   "P"
+  ],
+  [
+   "F1",
+   3,
+   1792906159991097,
+   "P"
+  ],
+  [
+   "F2",
+   4,
+   1792906159991097,
+   "P"
+  ],
+  [
+   "A",
+   6,
+   "",
+   ""
+  ],
+  [
+   "B",
+   7,
+   "",
+   ""
+  ],
+  [
+   "G1",
+   8,
+   1792906160999013,
+   ""
+  ],
+  [
+   "G2",
+   9,
+   1792906160999013,
+   ""
+  ],
+  [
+   "C",
+   10,
+   "",
+   ""
+  ],
+  [
+   "S1",
+   11,
+   1792906161015038,
+   ""
+  ],
+  [
+   "S2",
+   12,
+   1792906161015038,
+   ""
+  ],
+  [
+   "D",
+   13,
+   "",
+   ""
+  ],
+  [
+   "E",
+   14,
+   "",
+   ""
+  ]
+ ],
+ "c11b_no_index_pref_off": {
+  "result_index": 15,
+  "layout": [
+   [
+    "ESS",
+    0,
+    "",
+    "P"
+   ],
+   [
+    "spike.html",
+    1,
+    "",
+    "P"
+   ],
+   [
+    "F1",
+    3,
+    1792906159991097,
+    "P"
+   ],
+   [
+    "F2",
+    4,
+    1792906159991097,
+    "P"
+   ],
+   [
+    "A",
+    6,
+    "",
+    ""
+   ],
+   [
+    "B",
+    7,
+    "",
+    ""
+   ],
+   [
+    "G1",
+    8,
+    1792906160999013,
+    ""
+   ],
+   [
+    "G2",
+    9,
+    1792906160999013,
+    ""
+   ],
+   [
+    "C",
+    10,
+    "",
+    ""
+   ],
+   [
+    "S1",
+    11,
+    1792906161015038,
+    ""
+   ],
+   [
+    "S2",
+    12,
+    1792906161015038,
+    ""
+   ],
+   [
+    "D",
+    13,
+    "",
+    ""
+   ],
+   [
+    "E",
+    14,
+    "",
+    ""
+   ],
+   [
+    "noindex_pref_off",
+    15,
+    "",
+    ""
+   ]
+  ]
+ },
+ "vs_discarded": {
+  "value": {
+   "id": 33,
+   "index": 6,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 1172,
+   "height": 752,
+   "lastAccessed": 1792906188497,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "view-source:https://example.com/vbc/vsd",
+   "title": "vsd"
+  }
+ },
+ "vs_not_discarded": {
+  "value": {
+   "id": 34,
+   "index": 6,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": false,
+   "incognito": false,
+   "width": 1172,
+   "height": 752,
+   "lastAccessed": 1792906188505,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "about:blank",
+   "title": "view-source:https://example.com/vbc/vsn"
+  }
+ },
+ "vs_discarded_truth": {
+  "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+  "group": null,
+  "groupIsSplit": null,
+  "splitViewFlag": false,
+  "pinned": false,
+  "pending": true,
+  "ws": null,
+  "currentURI": "view-source:https://example.com/vbc/vsd",
+  "label": "New Tab",
+  "ssEntries": [
+   "view-source:https://example.com/vbc/vsd"
+  ],
+  "ssUserTyped": "",
+  "gbIndex": 7,
+  "inSplitData": false
+ },
+ "vs_not_discarded_truth": {
+  "parentClass": "zen-workspace-tabs-section zen-workspace-normal-tabs-section",
+  "group": null,
+  "groupIsSplit": null,
+  "splitViewFlag": false,
+  "pinned": false,
+  "pending": false,
+  "ws": "{32652eaa-f8f2-4f35-a715-039b1a71197e}",
+  "currentURI": "about:blank",
+  "label": "view-source:https://example.com/vbc/vsn",
+  "ssEntries": [],
+  "ssUserTyped": "view-source:https://example.com/vbc/vsn",
+  "gbIndex": 6,
+  "inSplitData": false
+ },
+ "vs_not_discarded_get": {
+  "value": {
+   "id": 34,
+   "index": 6,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "loading",
+   "hidden": false,
+   "discarded": false,
+   "incognito": false,
+   "width": 1172,
+   "height": 752,
+   "lastAccessed": 1792906188505,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": -1,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "about:blank",
+   "title": "view-source:https://example.com/vbc/vsn"
+  }
+ },
+ "keep_inside_split": {
+  "value": {
+   "id": 35,
+   "index": 14,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 1172,
+   "height": 752,
+   "lastAccessed": 1792906190050,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906161015038,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbc/NEWSPLIT",
+   "title": "NS"
+  }
+ },
+ "keep_inside_group": {
+  "value": {
+   "id": 36,
+   "index": 11,
+   "windowId": 3,
+   "highlighted": false,
+   "active": false,
+   "attention": false,
+   "pinned": false,
+   "status": "complete",
+   "hidden": false,
+   "discarded": true,
+   "incognito": false,
+   "width": 1172,
+   "height": 752,
+   "lastAccessed": 1792906190061,
+   "audible": false,
+   "autoDiscardable": true,
+   "mutedInfo": {
+    "muted": false
+   },
+   "isInReaderMode": false,
+   "sharingState": {
+    "camera": false,
+    "microphone": false
+   },
+   "successorTabId": -1,
+   "groupId": 1792906160999013,
+   "splitViewId": -1,
+   "cookieStoreId": "firefox-default",
+   "url": "https://example.com/vbc/NEWGROUP",
+   "title": "NG"
+  }
+ },
+ "state_before_restart": {
+  "ESS": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 0,
+   "pending": true
+  },
+  "F1": {
+   "splitViewFlag": false,
+   "group": "1792906159991-97",
+   "groupIsSplit": false,
+   "groupLabel": "Folder F",
+   "inSplitData": false,
+   "gbIndex": 3,
+   "pending": true
+  },
+  "F2": {
+   "splitViewFlag": false,
+   "group": "1792906159991-97",
+   "groupIsSplit": false,
+   "groupLabel": "Folder F",
+   "inSplitData": false,
+   "gbIndex": 4,
+   "pending": true
+  },
+  "view-source:https://example.com/vbc/vsn": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 6,
+   "pending": false
+  },
+  "view-source:https://example.com/vbc/vsd": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 7,
+   "pending": true
+  },
+  "A": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 8,
+   "pending": true
+  },
+  "B": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 9,
+   "pending": true
+  },
+  "G1": {
+   "splitViewFlag": false,
+   "group": "1792906160999-13",
+   "groupIsSplit": false,
+   "groupLabel": "⁠⁣Tidy G",
+   "inSplitData": false,
+   "gbIndex": 10,
+   "pending": true
+  },
+  "NEWGROUP": {
+   "splitViewFlag": false,
+   "group": "1792906160999-13",
+   "groupIsSplit": false,
+   "groupLabel": "⁠⁣Tidy G",
+   "inSplitData": false,
+   "gbIndex": 11,
+   "pending": true
+  },
+  "G2": {
+   "splitViewFlag": false,
+   "group": "1792906160999-13",
+   "groupIsSplit": false,
+   "groupLabel": "⁠⁣Tidy G",
+   "inSplitData": false,
+   "gbIndex": 12,
+   "pending": true
+  },
+  "C": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 13,
+   "pending": true
+  },
+  "S1": {
+   "splitViewFlag": true,
+   "group": "1792906161015-38",
+   "groupIsSplit": true,
+   "groupLabel": "",
+   "inSplitData": true,
+   "gbIndex": 14,
+   "pending": true
+  },
+  "NEWSPLIT": {
+   "splitViewFlag": false,
+   "group": "1792906161015-38",
+   "groupIsSplit": true,
+   "groupLabel": "",
+   "inSplitData": false,
+   "gbIndex": 15,
+   "pending": true
+  },
+  "S2": {
+   "splitViewFlag": true,
+   "group": "1792906161015-38",
+   "groupIsSplit": true,
+   "groupLabel": "",
+   "inSplitData": true,
+   "gbIndex": 16,
+   "pending": true
+  },
+  "D": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 17,
+   "pending": true
+  },
+  "E": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 18,
+   "pending": true
+  },
+  "_splitData": [
+   {
+    "groupId": "1792906161015-38",
+    "tabs": [
+     "S1",
+     "S2"
+    ]
+   }
+  ]
+ },
+ "layout_before_restart": [
+  [
+   "ESS",
+   0,
+   "",
+   "P"
+  ],
+  [
+   "spike.html",
+   1,
+   "",
+   "P"
+  ],
+  [
+   "F1",
+   3,
+   1792906159991097,
+   "P"
+  ],
+  [
+   "F2",
+   4,
+   1792906159991097,
+   "P"
+  ],
+  [
+   "vsn",
+   6,
+   "",
+   ""
+  ],
+  [
+   "vsd",
+   7,
+   "",
+   ""
+  ],
+  [
+   "A",
+   8,
+   "",
+   ""
+  ],
+  [
+   "B",
+   9,
+   "",
+   ""
+  ],
+  [
+   "G1",
+   10,
+   1792906160999013,
+   ""
+  ],
+  [
+   "NEWGROUP",
+   11,
+   1792906160999013,
+   ""
+  ],
+  [
+   "G2",
+   12,
+   1792906160999013,
+   ""
+  ],
+  [
+   "C",
+   13,
+   "",
+   ""
+  ],
+  [
+   "S1",
+   14,
+   1792906161015038,
+   ""
+  ],
+  [
+   "NEWSPLIT",
+   15,
+   1792906161015038,
+   ""
+  ],
+  [
+   "S2",
+   16,
+   1792906161015038,
+   ""
+  ],
+  [
+   "D",
+   17,
+   "",
+   ""
+  ],
+  [
+   "E",
+   18,
+   "",
+   ""
+  ]
+ ],
+ "state_after_restart": {
+  "ESS": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 0,
+   "pending": true
+  },
+  "F1": {
+   "splitViewFlag": false,
+   "group": "1792906159991-97",
+   "groupIsSplit": false,
+   "groupLabel": "Folder F",
+   "inSplitData": false,
+   "gbIndex": 3,
+   "pending": true
+  },
+  "F2": {
+   "splitViewFlag": false,
+   "group": "1792906159991-97",
+   "groupIsSplit": false,
+   "groupLabel": "Folder F",
+   "inSplitData": false,
+   "gbIndex": 4,
+   "pending": true
+  },
+  "view-source:https://example.com/vbc/vsn": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 6,
+   "pending": true
+  },
+  "view-source:https://example.com/vbc/vsd": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 7,
+   "pending": true
+  },
+  "A": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 8,
+   "pending": true
+  },
+  "B": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 9,
+   "pending": true
+  },
+  "G1": {
+   "splitViewFlag": false,
+   "group": "1792906160999-13",
+   "groupIsSplit": false,
+   "groupLabel": "⁠⁣Tidy G",
+   "inSplitData": false,
+   "gbIndex": 10,
+   "pending": true
+  },
+  "NEWGROUP": {
+   "splitViewFlag": false,
+   "group": "1792906160999-13",
+   "groupIsSplit": false,
+   "groupLabel": "⁠⁣Tidy G",
+   "inSplitData": false,
+   "gbIndex": 11,
+   "pending": true
+  },
+  "G2": {
+   "splitViewFlag": false,
+   "group": "1792906160999-13",
+   "groupIsSplit": false,
+   "groupLabel": "⁠⁣Tidy G",
+   "inSplitData": false,
+   "gbIndex": 12,
+   "pending": true
+  },
+  "C": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 13,
+   "pending": true
+  },
+  "S1": {
+   "splitViewFlag": true,
+   "group": "1792906161015-38",
+   "groupIsSplit": true,
+   "groupLabel": "",
+   "inSplitData": true,
+   "gbIndex": 14,
+   "pending": true
+  },
+  "NEWSPLIT": {
+   "splitViewFlag": true,
+   "group": "1792906161015-38",
+   "groupIsSplit": true,
+   "groupLabel": "",
+   "inSplitData": true,
+   "gbIndex": 15,
+   "pending": true
+  },
+  "S2": {
+   "splitViewFlag": true,
+   "group": "1792906161015-38",
+   "groupIsSplit": true,
+   "groupLabel": "",
+   "inSplitData": true,
+   "gbIndex": 16,
+   "pending": true
+  },
+  "D": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 17,
+   "pending": true
+  },
+  "E": {
+   "splitViewFlag": false,
+   "group": null,
+   "groupIsSplit": null,
+   "groupLabel": null,
+   "inSplitData": false,
+   "gbIndex": 18,
+   "pending": true
+  },
+  "_splitData": [
+   {
+    "groupId": "1792906161015-38",
+    "tabs": [
+     "S1",
+     "NEWSPLIT",
+     "S2"
+    ]
+   }
+  ]
+ },
+ "layout_after_restart": [
+  [
+   "ESS",
+   0,
+   "",
+   "P"
+  ],
+  [
+   "F1",
+   2,
+   1792906159991097,
+   "P"
+  ],
+  [
+   "F2",
+   3,
+   1792906159991097,
+   "P"
+  ],
+  [
+   "spike.html",
+   4,
+   "",
+   "P"
+  ],
+  [
+   "vsn",
+   6,
+   "",
+   ""
+  ],
+  [
+   "vsd",
+   7,
+   "",
+   ""
+  ],
+  [
+   "A",
+   8,
+   "",
+   ""
+  ],
+  [
+   "B",
+   9,
+   "",
+   ""
+  ],
+  [
+   "G1",
+   10,
+   1792906160999013,
+   ""
+  ],
+  [
+   "NEWGROUP",
+   11,
+   1792906160999013,
+   ""
+  ],
+  [
+   "G2",
+   12,
+   1792906160999013,
+   ""
+  ],
+  [
+   "C",
+   13,
+   "",
+   ""
+  ],
+  [
+   "S1",
+   14,
+   1792906161015038,
+   ""
+  ],
+  [
+   "NEWSPLIT",
+   15,
+   1792906161015038,
+   ""
+  ],
+  [
+   "S2",
+   16,
+   1792906161015038,
+   ""
+  ],
+  [
+   "D",
+   17,
+   "",
+   ""
+  ],
+  [
+   "E",
+   18,
+   "",
+   ""
+  ]
+ ],
+ "query_after_restart_vs": [
+  {
+   "url": "view-source:https://example.com/vbc/vsn",
+   "discarded": true,
+   "title": "view-source:https://example.com/vbc/vsn"
+  },
+  {
+   "url": "view-source:https://example.com/vbc/vsd",
+   "discarded": true,
+   "title": "vsd"
+  }
+ ]
+}

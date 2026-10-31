@@ -1,0 +1,492 @@
+{
+ "port": 2962,
+ "steps": {
+  "S1a_loaded_B_C_P_at_1366": {
+   "loaded": [
+    {
+     "id": 2,
+     "index": 0,
+     "active": false,
+     "pinned": true,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "spike.html"
+    },
+    {
+     "id": 3,
+     "index": 2,
+     "active": true,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "P"
+    },
+    {
+     "id": 4,
+     "index": 3,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "B"
+    },
+    {
+     "id": 5,
+     "index": 4,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "C"
+    }
+   ],
+   "ref_max": 1172,
+   "width_flagged": [],
+   "index_not_increasing": [],
+   "order": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "S1b_resized_D_loaded_NO_GLANCE": {
+   "loaded": [
+    {
+     "id": 2,
+     "index": 0,
+     "active": false,
+     "pinned": true,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "spike.html"
+    },
+    {
+     "id": 3,
+     "index": 2,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 806,
+     "h": 683,
+     "url": "P"
+    },
+    {
+     "id": 4,
+     "index": 3,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "B"
+    },
+    {
+     "id": 5,
+     "index": 4,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "C"
+    },
+    {
+     "id": 6,
+     "index": 5,
+     "active": true,
+     "pinned": false,
+     "groupId": -1,
+     "w": 806,
+     "h": 683,
+     "url": "D"
+    }
+   ],
+   "ref_max": 1172,
+   "width_flagged": [
+    "P",
+    "D"
+   ],
+   "index_not_increasing": [],
+   "order": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "S2a_glance_open_1366": {
+   "loaded": [
+    {
+     "id": 2,
+     "index": 0,
+     "active": false,
+     "pinned": true,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "spike.html"
+    },
+    {
+     "id": 3,
+     "index": 3,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 806,
+     "h": 683,
+     "url": "P"
+    },
+    {
+     "id": 4,
+     "index": 4,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "B"
+    },
+    {
+     "id": 5,
+     "index": 5,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "C"
+    },
+    {
+     "id": 6,
+     "index": 6,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 751,
+     "url": "D"
+    },
+    {
+     "id": 8,
+     "index": 2,
+     "active": true,
+     "pinned": false,
+     "groupId": -1,
+     "w": 938,
+     "h": 751,
+     "url": "about:blank"
+    }
+   ],
+   "ref_max": 1172,
+   "width_flagged": [
+    "P",
+    "about:blank"
+   ],
+   "index_not_increasing": [
+    "about:blank"
+   ],
+   "order": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    2,
+    7
+   ]
+  },
+  "S2b_switched_to_E": {
+   "loaded": [
+    {
+     "id": 2,
+     "index": 0,
+     "active": false,
+     "pinned": true,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "spike.html"
+    },
+    {
+     "id": 3,
+     "index": 3,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 806,
+     "h": 683,
+     "url": "P"
+    },
+    {
+     "id": 4,
+     "index": 4,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "B"
+    },
+    {
+     "id": 5,
+     "index": 5,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "C"
+    },
+    {
+     "id": 6,
+     "index": 6,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 751,
+     "url": "D"
+    },
+    {
+     "id": 8,
+     "index": 2,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 938,
+     "h": 751,
+     "url": "GL"
+    },
+    {
+     "id": 7,
+     "index": 7,
+     "active": true,
+     "pinned": false,
+     "groupId": -1,
+     "w": 1172,
+     "h": 751,
+     "url": "E"
+    }
+   ],
+   "ref_max": 1172,
+   "width_flagged": [
+    "P",
+    "GL"
+   ],
+   "index_not_increasing": [
+    "GL"
+   ],
+   "order": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    2,
+    7
+   ]
+  },
+  "S3_glance_inactive_after_resize": {
+   "loaded": [
+    {
+     "id": 2,
+     "index": 0,
+     "active": false,
+     "pinned": true,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "spike.html"
+    },
+    {
+     "id": 8,
+     "index": 2,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 938,
+     "h": 751,
+     "url": "GL"
+    },
+    {
+     "id": 7,
+     "index": 7,
+     "active": true,
+     "pinned": false,
+     "groupId": -1,
+     "w": 806,
+     "h": 683,
+     "url": "E"
+    }
+   ],
+   "ref_max": 938,
+   "width_flagged": [
+    "E"
+   ],
+   "index_not_increasing": [
+    "GL"
+   ],
+   "order": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    2,
+    7
+   ]
+  },
+  "S4a_parent_reselected": {
+   "loaded": [
+    {
+     "id": 2,
+     "index": 0,
+     "active": false,
+     "pinned": true,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "spike.html"
+    },
+    {
+     "id": 8,
+     "index": 2,
+     "active": true,
+     "pinned": false,
+     "groupId": -1,
+     "w": 645,
+     "h": 683,
+     "url": "GL"
+    },
+    {
+     "id": 7,
+     "index": 7,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 806,
+     "h": 683,
+     "url": "E"
+    }
+   ],
+   "ref_max": 806,
+   "width_flagged": [
+    "GL"
+   ],
+   "index_not_increasing": [
+    "GL"
+   ],
+   "order": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    2,
+    7
+   ]
+  },
+  "S4b_expanded": {
+   "loaded": [
+    {
+     "id": 2,
+     "index": 0,
+     "active": false,
+     "pinned": true,
+     "groupId": -1,
+     "w": 1172,
+     "h": 752,
+     "url": "spike.html"
+    },
+    {
+     "id": 8,
+     "index": 6,
+     "active": true,
+     "pinned": false,
+     "groupId": -1,
+     "w": 806,
+     "h": 683,
+     "url": "GL"
+    },
+    {
+     "id": 7,
+     "index": 7,
+     "active": false,
+     "pinned": false,
+     "groupId": -1,
+     "w": 806,
+     "h": 683,
+     "url": "E"
+    }
+   ],
+   "ref_max": 806,
+   "width_flagged": [],
+   "index_not_increasing": [],
+   "order": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  }
+ },
+ "install": "zen-tidy-spike-b@local",
+ "ids": {
+  "P": 3,
+  "B": 4,
+  "C": 5,
+  "D": 6,
+  "E": 7
+ },
+ "resize1": [
+  1000,
+  700
+ ],
+ "resize2": [
+  1366,
+  768
+ ],
+ "open_glance": {
+  "glanceExtId": 8,
+  "selectedIsGlance": true
+ },
+ "discard": {
+  "ids": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "r": {
+   "value": null
+  }
+ },
+ "resize3": [
+  1000,
+  700
+ ],
+ "truth_S3": {
+  "glanceAttr": true,
+  "connected": true,
+  "lazyWidth": 938,
+  "clientWidth": 645
+ },
+ "reselect_parent": 8,
+ "expand": {
+  "glanceAttr": false,
+  "selected": true
+ }
+}

@@ -1,0 +1,46 @@
+resize1 [1000, 700]
+resize2 [1366, 768]
+open_glance {"glanceExtId": 7, "selectedIsGlance": true}
+discard {"ids": [2, 3, 4, 5], "r": {"value": null}}
+resize3 [1000, 700]
+truth_S3 {"glanceAttr": true, "connected": true, "lazyWidth": 938, "clientWidth": 645}
+reselect_parent 7
+expand {"glanceAttr": false, "selected": true}
+== S1a_loaded_B_C_P_at_1366: ref_max=1172 width_flagged=[] index_not_increasing=[]
+      {"id": 1, "index": 0, "active": false, "pinned": true, "groupId": -1, "w": 1172, "h": 752, "url": "spike.html"}
+      {"id": 2, "index": 2, "active": true, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "P"}
+      {"id": 3, "index": 3, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "B"}
+      {"id": 4, "index": 4, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "C"}
+== S1b_resized_D_loaded_NO_GLANCE: ref_max=1172 width_flagged=['P', 'D'] index_not_increasing=[]
+      {"id": 1, "index": 0, "active": false, "pinned": true, "groupId": -1, "w": 1172, "h": 752, "url": "spike.html"}
+      {"id": 2, "index": 2, "active": false, "pinned": false, "groupId": -1, "w": 806, "h": 683, "url": "P"}
+      {"id": 3, "index": 3, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "B"}
+      {"id": 4, "index": 4, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "C"}
+      {"id": 5, "index": 5, "active": true, "pinned": false, "groupId": -1, "w": 806, "h": 683, "url": "D"}
+== S2a_glance_open_1366: ref_max=1172 width_flagged=['P', 'about:blank'] index_not_increasing=['about:blank']
+      {"id": 1, "index": 0, "active": false, "pinned": true, "groupId": -1, "w": 1172, "h": 752, "url": "spike.html"}
+      {"id": 2, "index": 3, "active": false, "pinned": false, "groupId": -1, "w": 806, "h": 683, "url": "P"}
+      {"id": 3, "index": 4, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "B"}
+      {"id": 4, "index": 5, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "C"}
+      {"id": 5, "index": 6, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 751, "url": "D"}
+      {"id": 7, "index": 2, "active": true, "pinned": false, "groupId": -1, "w": 938, "h": 751, "url": "about:blank"}
+== S2b_switched_to_E: ref_max=1172 width_flagged=['P', 'GL'] index_not_increasing=['GL']
+      {"id": 1, "index": 0, "active": false, "pinned": true, "groupId": -1, "w": 1172, "h": 752, "url": "spike.html"}
+      {"id": 2, "index": 3, "active": false, "pinned": false, "groupId": -1, "w": 806, "h": 683, "url": "P"}
+      {"id": 3, "index": 4, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "B"}
+      {"id": 4, "index": 5, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 752, "url": "C"}
+      {"id": 5, "index": 6, "active": false, "pinned": false, "groupId": -1, "w": 1172, "h": 751, "url": "D"}
+      {"id": 7, "index": 2, "active": false, "pinned": false, "groupId": -1, "w": 938, "h": 751, "url": "GL"}
+      {"id": 6, "index": 7, "active": true, "pinned": false, "groupId": -1, "w": 1172, "h": 751, "url": "E"}
+== S3_glance_inactive_after_resize: ref_max=938 width_flagged=['E'] index_not_increasing=['GL']
+      {"id": 1, "index": 0, "active": false, "pinned": true, "groupId": -1, "w": 1172, "h": 752, "url": "spike.html"}
+      {"id": 7, "index": 2, "active": false, "pinned": false, "groupId": -1, "w": 938, "h": 751, "url": "GL"}
+      {"id": 6, "index": 7, "active": true, "pinned": false, "groupId": -1, "w": 806, "h": 683, "url": "E"}
+== S4a_parent_reselected: ref_max=806 width_flagged=['GL'] index_not_increasing=['GL']
+      {"id": 1, "index": 0, "active": false, "pinned": true, "groupId": -1, "w": 1172, "h": 752, "url": "spike.html"}
+      {"id": 7, "index": 2, "active": true, "pinned": false, "groupId": -1, "w": 645, "h": 683, "url": "GL"}
+      {"id": 6, "index": 7, "active": false, "pinned": false, "groupId": -1, "w": 806, "h": 683, "url": "E"}
+== S4b_expanded: ref_max=806 width_flagged=[] index_not_increasing=[]
+      {"id": 1, "index": 0, "active": false, "pinned": true, "groupId": -1, "w": 1172, "h": 752, "url": "spike.html"}
+      {"id": 7, "index": 6, "active": true, "pinned": false, "groupId": -1, "w": 806, "h": 683, "url": "GL"}
+      {"id": 6, "index": 7, "active": false, "pinned": false, "groupId": -1, "w": 806, "h": 683, "url": "E"}

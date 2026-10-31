@@ -1,0 +1,540 @@
+{
+ "install": "zen-tidy-spike@local",
+ "page": {
+  "handle": "d0e48b2c-4bde-4018-bf6c-13682aa3c3ec",
+  "url": "moz-extension://dab499d0-ff76-4624-bb2e-ade6fe950bbc/spike.html"
+ },
+ "created": [
+  {
+   "value": {
+    "id": 3,
+    "index": 2,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 1172,
+    "height": 752,
+    "lastAccessed": 1792904099894,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/0",
+    "title": "Smoke 0"
+   }
+  },
+  {
+   "value": {
+    "id": 4,
+    "index": 2,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 1172,
+    "height": 752,
+    "lastAccessed": 1792904099900,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/1",
+    "title": "Smoke 1"
+   }
+  },
+  {
+   "value": {
+    "id": 5,
+    "index": 2,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 1172,
+    "height": 752,
+    "lastAccessed": 1792904099905,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/2",
+    "title": "Smoke 2"
+   }
+  },
+  {
+   "value": {
+    "id": 6,
+    "index": 2,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 1172,
+    "height": 752,
+    "lastAccessed": 1792904099911,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/3",
+    "title": "Smoke 3"
+   }
+  }
+ ],
+ "group": {
+  "value": 1792904099916036
+ },
+ "update": {
+  "value": {
+   "collapsed": false,
+   "color": "blue",
+   "id": 1792904099916036,
+   "title": "Smoke group",
+   "windowId": 3
+  }
+ },
+ "query_before": {
+  "value": [
+   {
+    "id": 2,
+    "index": 0,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": true,
+    "status": "complete",
+    "hidden": false,
+    "discarded": false,
+    "incognito": false,
+    "width": 1172,
+    "height": 752,
+    "lastAccessed": 1792904099479,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "moz-extension://dab499d0-ff76-4624-bb2e-ade6fe950bbc/spike.html",
+    "title": "Zen Tidy Spike"
+   },
+   {
+    "id": 6,
+    "index": 2,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792904099911,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/3",
+    "title": "Smoke 3"
+   },
+   {
+    "id": 5,
+    "index": 3,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792904099905,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/2",
+    "title": "Smoke 2"
+   },
+   {
+    "id": 3,
+    "index": 4,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792904099894,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": 1792904099916036,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/0",
+    "title": "Smoke 0"
+   },
+   {
+    "id": 4,
+    "index": 5,
+    "windowId": 3,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792904099900,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": 1792904099916036,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/1",
+    "title": "Smoke 1"
+   }
+  ]
+ },
+ "groups_before": {
+  "value": [
+   {
+    "collapsed": false,
+    "color": "blue",
+    "id": 1792904099916036,
+    "title": "Smoke group",
+    "windowId": 3
+   }
+  ]
+ },
+ "query_after": {
+  "value": [
+   {
+    "id": 2,
+    "index": 0,
+    "windowId": 1,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": true,
+    "status": "complete",
+    "hidden": false,
+    "discarded": false,
+    "incognito": false,
+    "width": 1172,
+    "height": 752,
+    "lastAccessed": 1792904104580,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "moz-extension://dab499d0-ff76-4624-bb2e-ade6fe950bbc/spike.html",
+    "title": "Zen Tidy Spike"
+   },
+   {
+    "id": 3,
+    "index": 2,
+    "windowId": 1,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792904099911,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/3",
+    "title": "Smoke 3"
+   },
+   {
+    "id": 4,
+    "index": 3,
+    "windowId": 1,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792904099905,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": -1,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/2",
+    "title": "Smoke 2"
+   },
+   {
+    "id": 5,
+    "index": 4,
+    "windowId": 1,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792904099894,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": 1792904099916036,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/0",
+    "title": "Smoke 0"
+   },
+   {
+    "id": 6,
+    "index": 5,
+    "windowId": 1,
+    "highlighted": false,
+    "active": false,
+    "attention": false,
+    "pinned": false,
+    "status": "complete",
+    "hidden": false,
+    "discarded": true,
+    "incognito": false,
+    "width": 0,
+    "height": 0,
+    "lastAccessed": 1792904099900,
+    "audible": false,
+    "autoDiscardable": true,
+    "mutedInfo": {
+     "muted": false
+    },
+    "isInReaderMode": false,
+    "sharingState": {
+     "camera": false,
+     "microphone": false
+    },
+    "successorTabId": -1,
+    "groupId": 1792904099916036,
+    "splitViewId": -1,
+    "cookieStoreId": "firefox-default",
+    "url": "https://example.com/smoke/1",
+    "title": "Smoke 1"
+   }
+  ]
+ },
+ "groups_after": {
+  "value": [
+   {
+    "collapsed": false,
+    "color": "blue",
+    "id": 1792904099916036,
+    "title": "Smoke group",
+    "windowId": 1
+   }
+  ]
+ },
+ "log": {
+  "value": {
+   "spikeLog": [
+    {
+     "t": 1792904099513,
+     "event": "onInstalled",
+     "reason": "install"
+    },
+    {
+     "t": 1792904099918,
+     "event": "tabGroups.onCreated",
+     "id": 1792904099916036,
+     "title": ""
+    },
+    {
+     "t": 1792904099924,
+     "event": "tabGroups.onUpdated",
+     "id": 1792904099916036,
+     "title": "Smoke group",
+     "collapsed": false
+    },
+    {
+     "t": 1792904100047,
+     "event": "tabGroups.onRemoved",
+     "id": 1792904099916036
+    },
+    {
+     "t": 1792904102946,
+     "event": "onStartup"
+    }
+   ]
+  }
+ }
+}

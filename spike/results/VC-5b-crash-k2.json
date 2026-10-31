@@ -1,0 +1,164 @@
+{
+ "check": "5b-crash",
+ "tag": "k2",
+ "started": 1792907505.3078394,
+ "install": "zen-tidy-spike@local",
+ "prefs": {
+  "interval": 40000,
+  "resume": true,
+  "maxResumed": 1
+ },
+ "after_clean_restart": [
+  [
+   "https://example.com/vc5b/base",
+   "base"
+  ]
+ ],
+ "written": {
+  "m40": {
+   "at": 1792907514.5276685,
+   "before_kill_planned_s": 40,
+   "new_tab": 4,
+   "set_new": {
+    "value": null
+   },
+   "set_base": {
+    "value": null
+   },
+   "mtimes": {
+    "sessionstore.jsonlz4": 1792907508.77,
+    "zen-sessions.jsonlz4": 1792907508.76,
+    "sessionstore-backups/recovery.jsonlz4": null,
+    "sessionstore-backups/recovery.baklz4": null
+   }
+  },
+  "m20": {
+   "at": 1792907534.5654957,
+   "before_kill_planned_s": 20,
+   "new_tab": 5,
+   "set_new": {
+    "value": null
+   },
+   "set_base": {
+    "value": null
+   },
+   "mtimes": {
+    "sessionstore.jsonlz4": 1792907508.77,
+    "zen-sessions.jsonlz4": 1792907508.76,
+    "sessionstore-backups/recovery.jsonlz4": null,
+    "sessionstore-backups/recovery.baklz4": null
+   }
+  },
+  "m8": {
+   "at": 1792907546.5303972,
+   "before_kill_planned_s": 8,
+   "new_tab": 6,
+   "set_new": {
+    "value": null
+   },
+   "set_base": {
+    "value": null
+   },
+   "mtimes": {
+    "sessionstore.jsonlz4": 1792907508.77,
+    "zen-sessions.jsonlz4": 1792907508.76,
+    "sessionstore-backups/recovery.jsonlz4": null,
+    "sessionstore-backups/recovery.baklz4": null
+   }
+  },
+  "m2": {
+   "at": 1792907552.5304437,
+   "before_kill_planned_s": 2,
+   "new_tab": 7,
+   "set_new": {
+    "value": null
+   },
+   "set_base": {
+    "value": null
+   },
+   "mtimes": {
+    "sessionstore.jsonlz4": null,
+    "zen-sessions.jsonlz4": 1792907551.74,
+    "sessionstore-backups/recovery.jsonlz4": 1792907551.75,
+    "sessionstore-backups/recovery.baklz4": null
+   }
+  }
+ },
+ "mtimes_before_kill": {
+  "sessionstore.jsonlz4": null,
+  "zen-sessions.jsonlz4": 1792907551.74,
+  "sessionstore-backups/recovery.jsonlz4": 1792907551.75,
+  "sessionstore-backups/recovery.baklz4": null
+ },
+ "killed_pid": 37824,
+ "t_kill": 1792907554.5101392,
+ "taskkill": 0,
+ "mtimes_after_kill": {
+  "sessionstore.jsonlz4": null,
+  "zen-sessions.jsonlz4": 1792907551.74,
+  "sessionstore-backups/recovery.jsonlz4": 1792907551.75,
+  "sessionstore-backups/recovery.baklz4": null
+ },
+ "after_kill_restart": [
+  {
+   "index": 2,
+   "url": "https://example.com/vc5b/m8",
+   "discarded": true,
+   "values": {
+    "k": "m8"
+   }
+  },
+  {
+   "index": 3,
+   "url": "https://example.com/vc5b/m20",
+   "discarded": true,
+   "values": {
+    "k": "m20"
+   }
+  },
+  {
+   "index": 4,
+   "url": "https://example.com/vc5b/m40",
+   "discarded": true,
+   "values": {
+    "k": "m40"
+   }
+  },
+  {
+   "index": 5,
+   "url": "https://example.com/vc5b/base",
+   "discarded": true,
+   "values": {
+    "k": "base",
+    "m40": "on-base-m40",
+    "m20": "on-base-m20",
+    "m8": "on-base-m8"
+   }
+  }
+ ],
+ "windows_after_kill_restart": 1,
+ "verdict": {
+  "m40": {
+   "new_tab_present": true,
+   "new_tab_key": "m40",
+   "base_tab_key": "on-base-m40"
+  },
+  "m20": {
+   "new_tab_present": true,
+   "new_tab_key": "m20",
+   "base_tab_key": "on-base-m20"
+  },
+  "m8": {
+   "new_tab_present": true,
+   "new_tab_key": "m8",
+   "base_tab_key": "on-base-m8"
+  },
+  "m2": {
+   "new_tab_present": false,
+   "new_tab_key": null,
+   "base_tab_key": null
+  },
+  "base_present_with_k": "base"
+ },
+ "finished": 1792907562.5006313
+}

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Zen Tidy Spike D key</title>
+  <script type="module" src="key.js"></script>
+</head>
+<body>
+  <!-- Key field per implementation-notes "Key field": type=password, autocomplete=off, spellcheck=false,
+       not inside a <form>, no submit; save on a button click, then clear .value. -->
+  <label for="key">Anthropic API key</label>
+  <input id="key" type="password" autocomplete="off" spellcheck="false">
+  <button id="save" type="button">Save</button>
+  <p><a id="nav" href="next.html">Next page (page-triggered navigation)</a></p>
+  <button id="rm" type="button">Remove the key field (DOM removal)</button>
+  <p id="status"></p>
+</body>
+</html>
