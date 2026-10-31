@@ -151,7 +151,8 @@ deliberately, with `git commit --no-verify`.
 ## Releasing
 
 Releases are built and signed on this PC only, then published to the public, releases-only repository
-`Soulmenls/zen-tidy`: a README and the release assets, while the source, notes and tests stay here. Zen looks for
+`Soulmenls/zen-tidy`: a README and the release assets. The source is public at `Soulmenls/zen-tidy-src`; the notes
+and tests stay on this PC. Zen looks for
 updates at `https://github.com/Soulmenls/zen-tidy/releases/latest/download/updates.json` (the manifest's
 `update_url`), so the newest release must always be the one marked latest.
 
@@ -190,8 +191,9 @@ updates at `https://github.com/Soulmenls/zen-tidy/releases/latest/download/updat
 7. `node scripts/release.mjs publish --confirm X.Y.Z` **uploads to GitHub**. It checks the repository's settings,
    creates the release `vX.Y.Z` as a draft, uploads the xpi, `updates.json`, the CSS kit and `SHA256SUMS`,
    downloads them back to compare their hashes, and publishes the draft as latest. At once it records the release in
-   `%LOCALAPPDATA%\zen-tidy-dev\releases.json` and tags the source commit `vX.Y.Z` locally (the source repository has
-   no remote); then it checks that GitHub marks the release immutable and that the latest `updates.json` names X.Y.Z.
+   `%LOCALAPPDATA%\zen-tidy-dev\releases.json` and tags the source commit `vX.Y.Z` locally (it pushes nothing to
+   `Soulmenls/zen-tidy-src`); then it checks that GitHub marks the release immutable and that the latest
+   `updates.json` names X.Y.Z.
 
 `--confirm` must repeat the manifest's version, so an upload can't start by accident or for the wrong version.
 
