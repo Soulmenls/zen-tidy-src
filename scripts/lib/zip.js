@@ -14,7 +14,12 @@ export const DOS_DATE = ((2026 - 1980) << 9) | (1 << 5) | 1;
 const LOCAL_SIG = 0x04034b50;
 const CENTRAL_SIG = 0x02014b50;
 const END_SIG = 0x06054b50;
+const ZIP64_LOCATOR_SIG = 0x07064b50;
+const CRX_MAGIC = 0x34327243; // "Cr24"
 const UTF8_FLAG = 0x0800;
+
+// Strict UTF-8 that keeps a BOM, so an entry's name is exactly its bytes, as Firefox keys entries.
+const utf8 = new TextDecoder("utf-8", { fatal: true, ignoreBOM: true });
 
 // Forward-slash paths of the regular files below dir, sorted. Links and other non-files are skipped.
 export function listFiles(dir, prefix = "") {
@@ -110,9 +115,18 @@ export function zipDir(dir, { exclude = [], first = "manifest.json" } = {}) {
 }
 
 // buffer -> Map(name -> Buffer) through the central directory (so data descriptors don't matter). Stored and
-// deflate only; throws on anything else, on encryption, ZIP64, duplicate names or a CRC mismatch. Directory
-// entries (names ending in "/") are kept, with empty data.
+// deflate only; throws on anything else, on encryption, ZIP64, a name that is not UTF-8, duplicate names or a CRC
+// mismatch. Directory entries (names ending in "/") are kept, with whatever data they carry.
+// It also throws on any layout Firefox's reader could take for other entries, so the entries checked are the ones
+// Zen loads (M8-SEC-4). Firefox (nsZipHandle::findDataStart, nsZipArchive::BuildFileList) skips a CRX header at the
+// start, takes the last end record by scanning back from the end as readZip does, then walks central records from
+// the end record's offset for as long as their signature holds, whatever the count says; its parent process reads
+// them from offset 4 instead when a central signature sits there (the "optimized jar" layout). So a CRX header and
+// a central signature at offset 4 are refused, and the `count` central records must end exactly at the end record.
+// The other checks (the end record's comment reaching the last byte, disk 0 holding every entry, the central size,
+// no ZIP64 locator) refuse layouts that no writer the release flow meets produces.
 export function readZip(buffer) {
+  if (buffer.length > 16 && buffer.readUInt32LE(0) === CRX_MAGIC) throw new Error("zip: a CRX header, which Firefox skips before reading the zip");
   const searchFrom = Math.max(0, buffer.length - 22 - 0xffff);
   let endAt = -1;
   for (let at = buffer.length - 22; at >= searchFrom; at--) {
@@ -123,8 +137,18 @@ export function readZip(buffer) {
   }
   if (endAt < 0) throw new Error("zip: no end-of-central-directory record");
   const count = buffer.readUInt16LE(endAt + 10);
+  const centralSize = buffer.readUInt32LE(endAt + 12);
   let at = buffer.readUInt32LE(endAt + 16);
   if (count === 0xffff || at === 0xffffffff) throw new Error("zip: ZIP64 archives are not supported");
+  if (endAt >= 20 && buffer.readUInt32LE(endAt - 20) === ZIP64_LOCATOR_SIG) throw new Error("zip: ZIP64 archives are not supported");
+  const commentEnd = endAt + 22 + buffer.readUInt16LE(endAt + 20);
+  if (commentEnd > buffer.length) throw new Error("zip: the end record's comment runs past the end of the file");
+  if (commentEnd < buffer.length) throw new Error("zip: bytes after the end-of-central-directory record");
+  if (buffer.readUInt16LE(endAt + 4) !== 0 || buffer.readUInt16LE(endAt + 6) !== 0 || buffer.readUInt16LE(endAt + 8) !== count) {
+    throw new Error("zip: multi-disk archives are not supported");
+  }
+  if (at + centralSize !== endAt) throw new Error("zip: the central directory does not end at the end-of-central-directory record");
+  if (buffer.length > 46 && buffer.readUInt32LE(4) === CENTRAL_SIG) throw new Error("zip: a central directory signature at offset 4");
   const entries = new Map();
   for (let i = 0; i < count; i++) {
     if (at + 46 > buffer.length || buffer.readUInt32LE(at) !== CENTRAL_SIG) throw new Error("zip: bad central directory");
@@ -137,7 +161,12 @@ export function readZip(buffer) {
     const extraLength = buffer.readUInt16LE(at + 30);
     const commentLength = buffer.readUInt16LE(at + 32);
     const localAt = buffer.readUInt32LE(at + 42);
-    const name = buffer.toString("utf8", at + 46, at + 46 + nameLength);
+    let name;
+    try {
+      name = utf8.decode(buffer.subarray(at + 46, at + 46 + nameLength));
+    } catch {
+      throw new Error("zip: an entry name that is not UTF-8");
+    }
     if (flags & 1) throw new Error(`zip: ${name} is encrypted`);
     if (entries.has(name)) throw new Error(`zip: duplicate entry ${name}`);
     if (localAt + 30 > buffer.length || buffer.readUInt32LE(localAt) !== LOCAL_SIG) throw new Error(`zip: bad local header for ${name}`);
@@ -152,5 +181,6 @@ export function readZip(buffer) {
     entries.set(name, data);
     at += 46 + nameLength + extraLength + commentLength;
   }
+  if (at !== endAt) throw new Error("zip: the end record's count leaves central directory records unread, or they overrun it");
   return entries;
 }
