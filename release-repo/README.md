@@ -83,7 +83,8 @@ details.
   `proxy` permission and access to `api.anthropic.com`, TLS-intercepting certificates, and chrome-JS loaders in the
   profile (keep them out). The key is not encrypted on disk, so copies of your profile contain it.
 - **Releases:** signed on the maintainer's own computer, never in CI. Both accounts use two-factor authentication,
-  the Mozilla signing key is revoked between releases, and releases here are immutable.
+  the key that submits releases to Mozilla for signing is stored only on that computer, locked with a passphrase and
+  Windows' own encryption, and releases here are immutable.
 
 ## Uninstall
 

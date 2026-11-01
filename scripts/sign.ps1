@@ -1,12 +1,17 @@
 <#
 .SYNOPSIS
-  Sign an extension folder with Mozilla (AMO) using the stored, DPAPI-encrypted credentials.
+  Sign an extension folder with Mozilla (AMO) using the stored, passphrase-locked credentials.
 
 .DESCRIPTION
-  Decrypts the credentials saved by amo-credentials.ps1 and exposes them as WEB_EXT_API_KEY /
+  Unlocks the AMO API key saved by amo-credentials.ps1 and exposes it as WEB_EXT_API_KEY /
   WEB_EXT_API_SECRET only to the web-ext child process. They are removed from this process's
   environment afterwards and never printed. Uploads the extension to addons.mozilla.org, so run it
   only when you mean to submit.
+
+  The passphrase is asked in a Windows dialog, not on the console: release.mjs may have been started
+  by a tool that leaves this script no console input. It gets three tries; Cancel, closing the dialog
+  or five minutes without an answer stops the script before anything is sent. No key stored, or one
+  stored before the passphrase lock, is refused before the dialog shows.
 
   web-ext is the pinned one in tools\web-ext (installed from its committed lockfile by
   `npm run tools`), run with node: -WebExtBin, or that folder's bin next to this script's repo, and
@@ -31,6 +36,9 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+# The passphrase lock (lib\amo-key.ps1), shared with amo-credentials.ps1. It runs from the file's text: `. <path>` would
+# read a [ or ] in the repo's path as a wildcard in Windows PowerShell 5.1, and could load another folder's file.
+. ([scriptblock]::Create((Get-Content -LiteralPath (Join-Path $PSScriptRoot 'lib\amo-key.ps1') -Raw)))
 if (-not $WebExtBin) {
     $WebExtBin = Join-Path $PSScriptRoot '..\tools\web-ext\node_modules\web-ext\bin\web-ext.js'
 }
@@ -53,16 +61,43 @@ if (-not $NodeExe) {
 if (-not (Test-Path -LiteralPath $NodeExe -PathType Leaf)) {
     throw "node not found at $NodeExe"
 }
-
-$credFile = Join-Path $env:LOCALAPPDATA 'zen-tidy-dev\amo-credentials.xml'
-if (-not (Test-Path -LiteralPath $credFile)) {
-    throw "No AMO credentials stored. Run scripts\amo-credentials.ps1 first."
-}
-if (-not (Test-Path -LiteralPath (Join-Path $SourceDir 'manifest.json'))) {
+$manifest = Join-Path $SourceDir 'manifest.json'
+if (-not (Test-Path -LiteralPath $manifest)) {
     throw "No manifest.json in $SourceDir"
 }
+# Named in the dialog, so it says what the passphrase is being given for.
+$version = (Get-Content -LiteralPath $manifest -Raw | ConvertFrom-Json).version
 
-$cred = Import-Clixml -LiteralPath $credFile
+# Refused before any dialog: nothing stored, or a key stored before the passphrase lock (DPAPI alone).
+$credFile = Join-Path $env:LOCALAPPDATA 'zen-tidy-dev\amo-credentials.xml'
+$stored = Import-AmoKey -LiteralPath $credFile
+if ($null -eq $stored) {
+    throw "No AMO credentials stored. Run scripts\amo-credentials.ps1 first."
+}
+$problem = Get-AmoKeyProblem $stored
+if ($problem) {
+    throw "The stored AMO key $problem. Store it again with scripts\amo-credentials.ps1."
+}
+
+# Three tries, each wrong one shown in the next dialog. The passphrase goes from the dialog to Unprotect-AmoKey and
+# nowhere else: not to the output, the environment, a file or a command line.
+$cred = $null
+$retry = ''
+for ($attempt = 1; $attempt -le 3 -and $null -eq $cred; $attempt++) {
+    $passphrase = Read-AmoPassphrase -Subject "Zen Tidy $version" -Problem $retry
+    if ($null -eq $passphrase) {
+        throw 'Signing cancelled: no passphrase given.'
+    }
+    try {
+        $cred = Unprotect-AmoKey -Stored $stored -Passphrase $passphrase
+    } catch [System.Security.Cryptography.CryptographicException] {
+        if ($attempt -eq 3) { throw }
+        $retry = "That passphrase didn't unlock the key. Tries left: $(3 - $attempt)."
+    } finally {
+        $passphrase.Dispose()
+    }
+}
+
 New-Item -ItemType Directory -Force -Path $ArtifactsDir | Out-Null
 # Left in this session, a WEB_EXT_* option could send the signed request elsewhere or change what is signed,
 # NODE_OPTIONS or NODE_PATH load other code into the process that holds the secret, and web-ext's update check starts a

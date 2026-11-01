@@ -64,7 +64,9 @@ const OPTIONS = {
 const FLAGS = new Set(["--skip-tests"]);
 const VERSION_FIELD_RE = /^(\s*"version"\s*:\s*")([^"\\\r\n]*)(")/m;
 const LOCAL_URL_RE = /^http:\/\/(?:127\.0\.0\.1|localhost):([1-9]\d{0,4})\/[^\s"'<>\\]*$/;
-const AMO_KEY_REMINDER = "Now revoke the AMO API key on addons.mozilla.org (Developer Hub > Manage API Keys), then run: "
+// The key stays stored between releases, locked with its passphrase (scripts/lib/amo-key.ps1).
+const AMO_KEY_REMINDER = "The AMO API key stays stored on this PC, locked with its passphrase. If this PC or the passphrase may be "
+  + "compromised, revoke the key on addons.mozilla.org (Developer Hub > Manage API Keys), then run: "
   + "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\amo-credentials.ps1 -Remove";
 
 export class UsageError extends Error {}
@@ -383,7 +385,7 @@ async function sign(ctx, opts, ledgerPath) {
           + `${checked.length ? ` (${checked[0].name}: ${checked[0].problems.join("; ")})` : ""}`);
       }
     } catch (error) {
-      // sign.ps1 may have used the AMO key, whatever came of it.
+      // sign.ps1 may have unlocked the AMO key, whatever came of it.
       ctx.log(AMO_KEY_REMINDER);
       throw error;
     }

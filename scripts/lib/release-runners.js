@@ -56,16 +56,17 @@ export function lintCommand({ node, bin, env }) {
   };
 }
 
-// scripts/sign.ps1 with its six parameters: it decrypts the AMO credentials for the web-ext child only and UPLOADS
-// the folder to Mozilla, running `<node> <webExtBin> sign`: the same pinned web-ext as lint, with the same node (this
-// process's own, not whichever node.exe comes first on PATH), checked against WEB_EXT_VERSION (it refuses before
-// decrypting anything when either file is missing or web-ext is another version). Its environment, which sign.ps1
-// hands on to `web-ext sign`, is the parent's without the stripped variables and NODE_OPTIONS, plus
-// WEB_EXT_CONFIG_DISCOVERY=false, which is --no-config-discovery, so no web-ext config file in the repo (sign runs
-// there), in the home folder or in package.json can change what web-ext packages from the stage after the preflight
-// checked it, and NO_UPDATE_NOTIFIER, as for lint. sign.ps1 ensures the same itself, for a run started by hand: it
-// clears every WEB_EXT_* variable (this one included), NODE_OPTIONS and NODE_PATH, sets NO_UPDATE_NOTIFIER and passes
-// --no-config-discovery. Nothing on that path installs a package, so M7's npm_config_offline guard is gone.
+// scripts/sign.ps1 with its six parameters: it unlocks the stored AMO key (asking its passphrase in a dialog) for the
+// web-ext child only and UPLOADS the folder to Mozilla, running `<node> <webExtBin> sign`: the same pinned web-ext as
+// lint, with the same node (this process's own, not whichever node.exe comes first on PATH), checked against
+// WEB_EXT_VERSION (it refuses before asking for the passphrase when either file is missing or web-ext is another
+// version). Its environment, which sign.ps1 hands on to `web-ext sign`, is the parent's without the stripped variables
+// and NODE_OPTIONS, plus WEB_EXT_CONFIG_DISCOVERY=false, which is --no-config-discovery, so no web-ext config file in
+// the repo (sign runs there), in the home folder or in package.json can change what web-ext packages from the stage
+// after the preflight checked it, and NO_UPDATE_NOTIFIER, as for lint. sign.ps1 ensures the same itself, for a run
+// started by hand: it clears every WEB_EXT_* variable (this one included), NODE_OPTIONS and NODE_PATH, sets
+// NO_UPDATE_NOTIFIER and passes --no-config-discovery. Nothing on that path installs a package, so M7's
+// npm_config_offline guard is gone.
 export function signCommand({ script, sourceDir, artifactsDir, channel, webExtBin, node, platform, env }) {
   return {
     command: platform === "win32" ? "powershell.exe" : "pwsh",
@@ -109,6 +110,8 @@ export function createRunners({
     npmTest: ({ cwd }) => captured(tool(npmTestCommand({ env }), { cwd, stdio: "inherit" })),
     // node itself, not through a shell, on every platform.
     lint: ({ sourceDir, bin }) => captured(start(lintCommand({ node, bin, env }), { cwd: sourceDir, ...quiet })),
+    // Never windowsHide: Windows applies a hidden start to the first window the process shows, which would hide
+    // sign.ps1's passphrase dialog until it times out.
     sign: ({ script, sourceDir, artifactsDir, channel, webExtBin, cwd }) => captured(start(
       signCommand({ script, sourceDir, artifactsDir, channel, webExtBin, node, platform, env }), { cwd, stdio: "inherit" },
     )),

@@ -169,6 +169,12 @@ updates at `https://github.com/Soulmenls/zen-tidy/releases/latest/download/updat
   registry.npmjs.org tarball and sha512 hash the lockfile names, and no package runs code at install. It is the only
   step that reaches the network for web-ext. Run it again whenever that lockfile changes: `check` refuses a missing or
   stale install and says so.
+- Store the AMO API key once: `pwsh -ExecutionPolicy Bypass -File .\scripts\amo-credentials.ps1`, in a terminal, asks
+  for the JWT issuer and secret (addons.mozilla.org, Developer Hub > Manage API Keys) and a passphrase of at least 12
+  characters, and saves the key to `%LOCALAPPDATA%\zen-tidy-dev\amo-credentials.xml`, locked with that passphrase and
+  Windows DPAPI: only your Windows account on this PC, given the passphrase, can unlock it. It stays there between
+  releases. `-Check` says whether it is stored and locked, `-Test` whether a passphrase unlocks it; to change the
+  passphrase, store the key again.
 
 **Each release** (version `X.Y.Z`: digits only, higher than every earlier release)
 
@@ -183,13 +189,16 @@ updates at `https://github.com/Soulmenls/zen-tidy/releases/latest/download/updat
    whatever line endings git gave the working tree) into `dist/release/X.Y.Z/`, lints it, and writes the unsigned
    zip, a draft `updates.json`, `SHA256SUMS`, `RELEASE-NOTES.md` (with the user-facing changes from `<file>`) and the
    CSS kit, also from HEAD. Read the notes.
-4. Store a fresh AMO API key with `scripts\amo-credentials.ps1` (DPAPI: only your Windows account on this PC can
-   read it).
+4. If the AMO key isn't stored yet (`scripts\amo-credentials.ps1 -Check` says so), store it as under **Once**.
 5. `node scripts/release.mjs sign --confirm X.Y.Z --notes <file>` **uploads to Mozilla**. It builds again (same
-   notes file), signs the staged folder on the unlisted channel through `scripts\sign.ps1`, checks the signed xpi
-   offline against the staged files (byte for byte, except `manifest.json`: AMO writes it out again, so it must
-   parse to the same value), and finishes `updates.json`, `SHA256SUMS` and the notes with the signed xpi's hash.
-6. Right away, revoke that API key on addons.mozilla.org, then run `scripts\amo-credentials.ps1 -Remove`.
+   notes file), then `scripts\sign.ps1` asks for the key's passphrase in a Windows dialog (three tries; Cancel, or
+   five minutes without an answer, stops it before anything is sent), signs the staged folder on the unlisted channel,
+   checks the signed xpi offline against the staged files (byte for byte, except `manifest.json`: AMO writes it out
+   again, so it must parse to the same value), and finishes `updates.json`, `SHA256SUMS` and the notes with the
+   signed xpi's hash. The dialog works however `release.mjs` was started, by a tool with no console input too.
+6. Leave the key stored: it stays locked between releases. Revoke it on addons.mozilla.org (Developer Hub > Manage
+   API Keys) and run `scripts\amo-credentials.ps1 -Remove` only if this PC or the passphrase may be compromised, or
+   when you retire this PC.
 7. `node scripts/release.mjs publish --confirm X.Y.Z` **uploads to GitHub**. It checks the repository's settings,
    creates the release `vX.Y.Z` as a draft, uploads the xpi, `updates.json`, the CSS kit and `SHA256SUMS`,
    downloads them back to compare their hashes, and publishes the draft as latest. At once it records the release in
@@ -205,12 +214,12 @@ every file it packages is read from the commit. The commands it starts (npm, web
 `WEB_EXT_*` variable, `NODE_PATH` or a GitHub token or host (`GH_TOKEN`, `GITHUB_TOKEN`, `GH_HOST` and the enterprise
 ones) from your shell, so gh always uses its keyring login; `sign.ps1` doesn't get `NODE_OPTIONS` either, and clears
 the same variables itself when you start it by hand. The lint and `sign.ps1` run the same pinned web-ext from
-`tools/web-ext/` with the same node, the one running `release.mjs` (`sign.ps1` refuses before it decrypts anything
-when either is missing or web-ext is another version), and nothing is installed or resolved by version range on the
-way. The lockfile may only name registry.npmjs.org tarballs, each with one sha512 hash: no git, file, link or URL
-dependency, and no optional package npm could leave out. `check` runs these rules and compares the installed tree
-with the lockfile (npm's own record of what it installed, and each package's `package.json` on disk), and `sign`
-does both again right before the upload.
+`tools/web-ext/` with the same node, the one running `release.mjs` (`sign.ps1` refuses before it asks for the
+passphrase when either is missing or web-ext is another version), and nothing is installed or resolved by version
+range on the way. The lockfile may only name registry.npmjs.org tarballs, each with one sha512 hash: no git, file,
+link or URL dependency, and no optional package npm could leave out. `check` runs these rules and compares the
+installed tree with the lockfile (npm's own record of what it installed, and each package's `package.json` on disk),
+and `sign` does both again right before the upload.
 
 **When a step fails** it stops with one line naming the rule or the step.
 
