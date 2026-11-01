@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Zen Tidy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Sorts your open Zen tabs into topic groups with Claude, using your own Anthropic API key.",
   "browser_specific_settings": {
     "gecko": {
