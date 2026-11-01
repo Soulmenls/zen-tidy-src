@@ -9,8 +9,9 @@ groups with Claude, using your own Anthropic API key.
    sensitive send only the site. Then `claude-haiku-5-5` checks each larger group on its own and splits any that mixes
    subjects; how far it goes is the **Precision** setting, from 1 (no check, the most tabs grouped) to 5 (the
    default: one subject per group, a tab with nothing like it left ungrouped).
-3. The tabs go into unpinned tab groups at once, and the button reads **Undo** for 10 seconds: click it to put them
-   back. After that, Undo stays in the popup, even after a restart.
+3. The tabs go into unpinned tab groups at once. For the next 10 seconds a click on the button puts them back: next to
+   Clear it reads **Undo**, and elsewhere a badge on its icon shows **↶** (and **⋯** while a tidy runs). After that,
+   Undo stays in the popup, even after a restart.
 4. **Middle-click** the button for the popup instead. Its **Tidy** shows a **preview** first, to rename groups, change
    their icons, move or untick tabs before **Apply**; the popup also has the groups view and Settings.
 
@@ -127,16 +128,20 @@ in `about:config`.
 
 An extension can't add a button to Zen's sidebar, so the stylesheet moves Zen Tidy's own toolbar button there: into
 the row between your pinned and loose tabs, right before **Clear**, as "✨ Tidy". Like Clear, it shows only while the
-pointer is over the sidebar. No script is loaded into Zen for this.
+pointer is over the sidebar. There its label reads **Tidying…** and **Undo** in place of the icon's badge. No script
+is loaded into Zen for this.
 
 - **Put the button in the sidebar once:** right-click a toolbar, choose **Customize Toolbar…**, and drag Zen Tidy's
   button into the sidebar's bottom bar (next to the Spaces icons), then **Done**. It stays there when you collapse or
   expand the sidebar. A button that is only pinned to the toolbar works too, but after collapsing and expanding the
   sidebar it can end up in the Extensions menu, where it can't be moved next to Clear.
 - **Where Zen hides Clear's row** (a collapsed sidebar, a Space with no loose tabs) the button stays in its toolbar
-  spot, as an icon, and so it does in a right-to-left Zen. If you turned Clear off, Tidy takes its place at the end
-  of the row.
+  spot, as an icon with its badge, and so it does in a right-to-left Zen. If you turned Clear off, Tidy takes its
+  place at the end of the row.
 - **Not in the sidebar** (in the Extensions menu, say), the button is left where it is and Clear's row is untouched.
+- **While the tab list scrolls,** Tidy hides as soon as Clear's row starts to slide under the list's top edge, where
+  Clear slides away bit by bit; with the pointer over the sidebar, the row's line before Clear hides with it. With
+  more pinned tabs than fit, at the list's bottom edge Tidy shows whole once the row's top edge is in view.
 
 **Exit codes:** 0 done (or nothing to do, or partly done because you declined a `-Confirm` step), 1 unexpected error,
 or an argument PowerShell itself rejects before the script starts (a switch given a value, such as

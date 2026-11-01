@@ -85,7 +85,7 @@ const ready = runner.recover().catch((err) => log.error("could not recover the r
 api.runtime.onMessage.addListener((message, sender) => ready.then(() => router.handle(message, sender)));
 
 // The toolbar button (quick.js): a left click tidies at once unless the popup is needed, a middle click opens the
-// popup. Its popup and label follow the key, the run, the button's own state and the window count.
+// popup. Its popup, label and badge follow the key, the run, the button's own state and the window count.
 const quick = createQuickTidy({ api, store, runner, apply: router.apply, undo: router.undo, cancel: router.cancel, log });
 api.action.onClicked.addListener((tab, info) => {
   // Middle click first, untouched by ready: openPopup needs the click's user input, which waiting would lose.

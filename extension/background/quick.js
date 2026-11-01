@@ -8,7 +8,9 @@
 // decision: no key, other than exactly one window open (Apply asks twice then), a preview awaiting Apply, a run that
 // failed, a run the popup started, or an Undo that was refused. The button's label is the action's title, set per
 // window while it says something other than "Tidy". The user's CSS kit shows that label next to Zen's Clear
-// (scripts/gen-css.mjs).
+// (scripts/gen-css.mjs). Everywhere else Zen shows extension buttons as icons only and the title only on hover, so
+// while a tidy or an undo is at work, and while Undo is offered, the icon also carries a badge, set per window with
+// the title. The kit hides the badge next to Clear, where the label says it.
 //
 // What the button is doing lives in storage.session ("quick"), so an event page that restarts in the middle still
 // knows; the label itself lives in Firefox and outlasts the page.
@@ -18,8 +20,10 @@ import { canApply, extraTabIds, initEdits, toApplyRequest } from "../popup/popup
 
 export const POPUP_PATH = "popup/popup.html";
 export const UNDO_WINDOW_MS = 10000;
-// A click this soon after "Undo" ran out still undoes: the label goes only once sync has caught up.
-export const UNDO_GRACE_MS = 1500;
+// A click this soon after "Undo" ran out still undoes, though the button reads "Tidy" again by then: the label goes at
+// the end of UNDO_WINDOW_MS, once sync has caught up, and the stored phase only this much later, so a click on "Undo"
+// while it goes still finds it. Kept to about a reaction time, so a click aimed at the "Tidy" that replaced it tidies.
+export const UNDO_GRACE_MS = 300;
 export const NOTE_MS = 2500;
 export const QUICK_KEY = "quick";
 // The manifest's default_title is LABELS.idle; every other label is a window's own title.
@@ -34,11 +38,23 @@ export const LABELS = Object.freeze({
   undoFailed: "Undo failed",
   nothing: "Nothing to tidy",
 });
+// The badge a window's label brings, one glyph to read on a 16px icon: work at hand, or Undo. Every other label has
+// none. The midline ellipsis (U+22EF), since "…" sits on the baseline, at the foot of the badge.
+export const BADGES = Object.freeze({ [LABELS.tidying]: "⋯", [LABELS.undoing]: "⋯", [LABELS.undo]: "↶" });
+// One pair for Zen's light and dark toolbars alike, since an action's badge can't follow the theme; Firefox's default
+// is a warning red, a status colour Zen keeps out of its chrome. So Zen's accent at full strength: the default of
+// --zen-primary-color, AccentColor (zen-theme.css:11), resolved for Windows' default accent, with AccentColorText. It
+// stands over 3.5:1 against Zen's light and dark surfaces (#f4f4f4, #1f1f1f), and the glyph 4.5:1 on it. The primary
+// button's mixes, #10446e and #8898a4, each read on one scheme only.
+export const BADGE_COLORS = Object.freeze({ background: "#0078d4", text: "#ffffff" });
 const PHASES = Object.freeze(["tidying", "undo", "undoing", "note"]);
 const SILENT = Object.freeze({ debug() {}, info() {}, warn() {}, error() {} });
 
 const isWindowId = (value) => Number.isInteger(value) && value >= 0;
 const isObject = (value) => value !== null && typeof value === "object" && !Array.isArray(value);
+// How long a stored phase outlasts its label: only an Undo's does.
+const graceOf = (quick) => (quick?.phase === "undo" ? UNDO_GRACE_MS : 0);
+const badgeOf = (label) => (Object.hasOwn(BADGES, label) ? BADGES[label] : null);
 
 // The stored "quick" value, or null when it is missing, malformed or past its `until` (plus `grace`).
 export function liveQuick(quick, now, grace = 0) {
@@ -84,8 +100,9 @@ export function buttonView({ hasKey = false, windowCount = null, run = null, qui
 }
 
 // createQuickTidy(deps) returns { init, sync, onClicked }.
-// - init() clears every window's own title (one left by an earlier page) and syncs.
-// - sync() sets the popup and the labels from what is stored now. Calls run one after another.
+// - init() sets the badge's colours, clears every window's own title and badge (ones left by an earlier page) and
+//   syncs.
+// - sync() sets the popup, the labels and the badges from what is stored now. Calls run one after another.
 // - onClicked(tab, info) is action.onClicked's listener.
 // deps: { api, store, runner, apply, undo, cancel, log, now, undoWindowMs, noteMs, setTimer, clearTimer }.
 //   apply, undo and cancel are the router's own handlers (router.js), so a one-click tidy passes the same checks
@@ -96,7 +113,7 @@ export function createQuickTidy(deps) {
     noteMs = NOTE_MS, setTimer = setTimeout, clearTimer = clearTimeout,
   } = deps;
   const session = api.storage.session;
-  // The windows given a title of their own by this page.
+  // The windows given a title and a badge of their own by this page.
   const titled = new Set();
   let chain = Promise.resolve();
   let quickChain = Promise.resolve();
@@ -153,20 +170,43 @@ export function createQuickTidy(deps) {
     }
   }
 
-  // Wakes sync when a stored phase runs out, so its label goes without waiting for another change.
+  // text null clears the window's own badge, so it shows the global one, which is none.
+  async function setBadge(text, windowId) {
+    try {
+      await api.action.setBadgeText({ text, windowId });
+    } catch (err) {
+      log.debug("could not set the button's badge", { name: err?.name ?? null });
+    }
+  }
+
+  async function setBadgeColors() {
+    try {
+      await api.action.setBadgeBackgroundColor({ color: BADGE_COLORS.background });
+      await api.action.setBadgeTextColor({ color: BADGE_COLORS.text });
+    } catch (err) {
+      log.debug("could not set the badge's colours", { name: err?.name ?? null });
+    }
+  }
+
+  // Wakes sync when a stored phase runs out, so its label goes without waiting for another change, and again when an
+  // Undo's grace runs out, to remove it. A phase already past both wakes it at once, to be removed.
   function schedule(quick, at) {
     if (timer !== null) clearTimer(timer);
     timer = null;
-    if (!liveQuick(quick, at) || quick.until === undefined) return;
+    if (!isObject(quick) || quick.until === undefined) return;
+    const wake = quick.until > at ? quick.until : quick.until + graceOf(quick);
     timer = setTimer(() => {
       timer = null;
       sync();
-    }, Math.max(0, quick.until - at));
+    }, Math.max(0, wake - at));
   }
 
   async function syncNow() {
-    // A phase that ran out is removed, so a later page never reads it.
-    const quick = await updateQuick((current) => (current && !liveQuick(current, now()) ? null : undefined));
+    // A phase that ran out is removed, so a later page never reads it. An Undo is kept UNDO_GRACE_MS past its label,
+    // so a click on "Undo" while the label goes (setTitle below) still undoes rather than tidying again.
+    const quick = await updateQuick((current) => (
+      current && !liveQuick(current, now(), graceOf(current)) ? null : undefined
+    ));
     const [key, run, windowCount] = await Promise.all([store.getKeyStatus(), store.getRun(), countWindows()]);
     const at = now();
     const view = buttonView({ hasKey: key.saved, windowCount, run, quick, now: at });
@@ -175,10 +215,12 @@ export function createQuickTidy(deps) {
       if (windowId === view.windowId) continue;
       titled.delete(windowId);
       await setTitle(null, windowId);
+      await setBadge(null, windowId);
     }
     if (view.label !== null) {
       titled.add(view.windowId);
       await setTitle(view.label, view.windowId);
+      await setBadge(badgeOf(view.label), view.windowId);
     }
     schedule(quick, at);
   }
@@ -197,9 +239,12 @@ export function createQuickTidy(deps) {
     } catch (err) {
       log.warn("could not read the button's state", { name: err?.name ?? null });
     }
+    await setBadgeColors();
     try {
       for (const win of await api.windows.getAll({ windowTypes: ["normal"] })) {
-        if (isWindowId(win?.id)) await setTitle(null, win.id);
+        if (!isWindowId(win?.id)) continue;
+        await setTitle(null, win.id);
+        await setBadge(null, win.id);
       }
     } catch (err) {
       log.warn("could not reset the button's titles", { name: err?.name ?? null });
@@ -261,10 +306,11 @@ export function createQuickTidy(deps) {
     return note(windowId, LABELS.undoFailed, { popup: true, ms: undoWindowMs });
   }
 
-  async function click(windowId) {
+  // at: when the click came, so the reads below don't eat into Undo's grace.
+  async function click(windowId, at) {
     const [stored, run] = await Promise.all([readQuick(), store.getRun()]);
-    const at = now();
-    const undoable = liveQuick(stored, at, UNDO_GRACE_MS);
+    // An Undo whose label is going, or has just gone, still undoes: sync keeps it stored for its grace.
+    const undoable = liveQuick(stored, at, graceOf(stored));
     if (undoable?.phase === "undo" && undoable.windowId === windowId && run?.state === "applied" && run.id === undoable.runId) {
       return undoTidy(windowId);
     }
@@ -291,15 +337,18 @@ export function createQuickTidy(deps) {
       return;
     }
     if ((info?.button ?? 0) !== 0 || !isWindowId(windowId) || busy) return;
-    // With the popup open (a middle click opened it, and the popup is unset again since), a click on the button
-    // closes it, as it does for a button whose popup is set, and tidies nothing.
+    // With the popup open (a middle click opened it, and the popup is unset again since), Firefox keeps the click to
+    // itself: a real click rolls the popup's panel up, and one that reaches the button with the panel still open is
+    // dropped (PanelUI.showSubView skips a button whose panel is open), so onClicked never fires; the shortcut closes
+    // the popup itself (triggerAction in ext-browserAction.js). Should a click get here anyway, it closes the popup
+    // too, and tidies nothing.
     const popups = openPopups(windowId);
     if (popups.length > 0) {
       for (const view of popups) view.close();
       return;
     }
     busy = true;
-    click(windowId)
+    click(windowId, now())
       .catch(async (err) => {
         log.warn("one-click tidy failed", { name: err?.name ?? null });
         try {

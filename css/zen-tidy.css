@@ -226,43 +226,67 @@ tab-group[label^="\002063\002062"] > .tab-group-container > * {
  *    row between the pinned and the loose tabs. A WebExtension can't add to that row, so CSS anchor positioning
  *    moves the button there from wherever it sits in the sidebar; its label is the action's title (quick.js).
  *    - Placed only while Zen shows the row and the button is in the sidebar; otherwise it keeps its own place and
- *      Zen's row is untouched. Left-to-right Zen only. It covers the row from its
- *      start to Clear (to the row's end when Clear is turned off) and draws the row's line itself, so Zen's line
- *      is hidden under it. The box lets clicks through; only the icon and the label take them, once Clear's do.
+ *      Zen's row is untouched. Left-to-right Zen only. Its box covers the row from its start to Clear (to the row's
+ *      end when Clear is turned off) and lets clicks through. At its end the action button is laid out as Clear is,
+ *      and takes clicks once Clear does.
+ *    - At rest the row is Zen's own, line included. While Tidy shows (the pointer over the sidebar, or keyboard
+ *      focus) the box draws the row's line up to the button instead, so the line never runs through the label.
+ *    - The box hides as soon as the tab list clips the row's top edge (position-visibility on a 1px anchor there),
+ *      where Clear is clipped bit by bit; an anchored box can't be clipped by the list. Known limits, both while
+ *      Tidy shows: the row's line before Clear goes with it, and at the list's bottom edge, where pinned tabs fill
+ *      the list, Tidy stays whole until the row's top edge leaves the list.
  *    - Every declaration is !important, to win over Firefox's and Zen's own rules for toolbar and panel buttons.
  *    - Notes cite Zen 1.24b's omni.ja: vertical-tabs.css (zen-styles/zen-tabs), zen-workspaces.css,
- *      zen-toolbar.css (zen-styles) and icons.css (skin/classic/browser/zen-icons). */
-/* The anchors: the active Space's row and its Clear. */
+ *      zen-toolbar.css and zen-single-components.css (zen-styles), icons.css (skin/classic/browser/zen-icons),
+ *      toolbarbuttons.css and unified-extensions.css (skin/classic/browser), and toolkit's toolbarbutton.css
+ *      (skin/classic/global) and xul.css. */
+/* The anchors: the active Space's row, its top edge and its Clear. */
 zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section > .pinned-tabs-container-separator {
   anchor-name: --zen-tidy-row !important; /* not in Zen: the button's row, vertical-tabs.css:136 */
 }
 zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section > .pinned-tabs-container-separator > .zen-workspace-close-unpinned-tabs-button {
   anchor-name: --zen-tidy-clear !important; /* not in Zen: the button ends where Clear starts, vertical-tabs.css:192 */
 }
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section > .pinned-tabs-container-separator::before {
+  content: "" !important; /* not in Zen: a 1px anchor on the row's top edge, vertical-tabs.css:136 */
+  position: absolute !important; /* not in Zen: inside the row, which is position: relative (vertical-tabs.css:149) */
+  top: 0 !important; /* not in Zen: the row's top edge, vertical-tabs.css:136 */
+  left: 0 !important; /* not in Zen: the row's start, vertical-tabs.css:139 */
+  width: 1px !important; /* not in Zen: one pixel, inside the row's overflow: hidden (vertical-tabs.css:148) */
+  height: 1px !important; /* not in Zen: one pixel, which the list clips whole as soon as it clips the row (vertical-tabs.css:148) */
+  pointer-events: none !important; /* not in Zen: the row keeps its clicks, vertical-tabs.css:197 */
+  anchor-name: --zen-tidy-row-top !important; /* not in Zen: the box hides with the row's top edge, vertical-tabs.css:136 */
+}
 
 /* The button, out of its toolbar and over the row. */
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) {
   position: fixed !important; /* not in Zen: anchored to the row (vertical-tabs.css:136), wherever the toolbar is */
-  position-anchor: --zen-tidy-row !important; /* not in Zen: the row's box, vertical-tabs.css:136-139 */
+  position-anchor: --zen-tidy-row-top !important; /* not in Zen: it scrolls with the row's top edge, and position-visibility hides it once the list clips that edge (vertical-tabs.css:148) */
   top: anchor(top) !important; /* not in Zen: level with the row, vertical-tabs.css:136 */
-  left: anchor(left) !important; /* not in Zen: from the row's start, where its line starts (vertical-tabs.css:167) */
-  right: anchor(--zen-tidy-clear left, anchor(right)) !important; /* not in Zen: up to Clear (vertical-tabs.css:192), or the row's end while Clear is off (icons.css:410-412) */
+  left: anchor(--zen-tidy-row left) !important; /* not in Zen: from the row's start, where its line starts (vertical-tabs.css:167) */
+  right: anchor(--zen-tidy-clear left, anchor(--zen-tidy-row right)) !important; /* not in Zen: up to Clear (vertical-tabs.css:192), or the row's end while Clear is off (icons.css:410-412) */
   bottom: auto !important; /* not in Zen: the height below sets the size, vertical-tabs.css:137 */
   width: auto !important; /* not in Zen: left and right set it, vertical-tabs.css:139 */
-  height: anchor-size(height) !important; /* not in Zen: as tall as the row, vertical-tabs.css:137 */
+  height: anchor-size(--zen-tidy-row height) !important; /* not in Zen: as tall as the row, vertical-tabs.css:137 */
   min-width: 0 !important; /* not in Zen: a toolbar button's own minimum would push it past Clear (vertical-tabs.css:192) */
   max-width: none !important; /* not in Zen: the row's width wins, vertical-tabs.css:139 */
   margin: 0 !important; /* not in Zen: flush with the row, vertical-tabs.css:136 */
   padding: 0 !important; /* not in Zen: the line starts 4px in, as the row's does (vertical-tabs.css:167) */
+  overflow: hidden !important; /* vertical-tabs.css:148, which clips Clear's focus ring as this clips Tidy's */
   pointer-events: none !important; /* not in Zen: the row and its line take no clicks, vertical-tabs.css:197 */
   z-index: 1 !important; /* not in Zen: each Space is a stacking context (zen-workspaces.css:476), which would paint, and take clicks, over a button from a toolbar before it */
-}
-:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section > .pinned-tabs-container-separator > toolbarseparator {
-  visibility: hidden !important; /* not in Zen: the button draws this line itself, vertical-tabs.css:162-167 */
+  --zen-pinned-separator-color: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)) !important; /* vertical-tabs.css:157-160 */
 }
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper {
-  flex: 1 !important; /* not in Zen: the action button fills the box, vertical-tabs.css:139 */
+  flex: 1 !important; /* not in Zen: the row fills the box, vertical-tabs.css:139 */
   height: 100% !important; /* not in Zen: the row's height, vertical-tabs.css:137 */
+  align-items: center !important; /* vertical-tabs.css:151 */
+}
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper::before {
+  content: "" !important; /* not in Zen: the row's line up to the action button, vertical-tabs.css:162 */
+  flex: 1 !important; /* not in Zen: the line takes the row's free space, as Zen's does before Clear (vertical-tabs.css:162) */
+  height: 1px !important; /* vertical-tabs.css:163 */
+  margin-inline: 4px 0 !important; /* vertical-tabs.css:167 */
 }
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-menu-button {
   display: none !important; /* zen-toolbar.css:67-70, as in Zen's own extension row */
@@ -271,16 +295,17 @@ zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-s
   display: none !important; /* zen-toolbar.css:67-70, as in Zen's own extension row */
 }
 
-/* The action button: Clear's text and line (vertical-tabs.css:192-249), in the Space's text colour. */
+/* The action button: Clear (vertical-tabs.css:192-249), in the Space's text colour. As wide as its icon and label,
+ * with Clear's padding, so its hover, its clicks and its focus ring take the same strip as Clear's. */
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button {
   appearance: none !important; /* vertical-tabs.css:193 */
-  flex: 1 !important; /* not in Zen: the button fills the row up to Clear, vertical-tabs.css:192 */
-  height: 100% !important; /* not in Zen: the row's height, vertical-tabs.css:137 */
+  flex: none !important; /* not in Zen: as wide as Clear's content (vertical-tabs.css:192), where unified-extensions.css:124 stretches it */
+  height: auto !important; /* not in Zen: Clear's height, its text and padding (vertical-tabs.css:192); zen-toolbar.css:50 makes it 26px */
   min-height: 0 !important; /* not in Zen: a panel button's 24px would set it below Clear's text (vertical-tabs.css:137) */
   margin: 0 !important; /* not in Zen: flush with Clear, vertical-tabs.css:192 */
-  padding: 0 3px 0 0 !important; /* not in Zen: Clear's 3px toolbarbutton padding at the end; its 8px start (vertical-tabs.css:198) is the line's margin */
+  padding: 3px !important; /* toolbarbutton.css:11 */
+  padding-inline-start: 8px !important; /* vertical-tabs.css:198 */
   gap: 2px !important; /* vertical-tabs.css:196 */
-  justify-content: flex-start !important; /* not in Zen: the line fills the start, as Clear's row does (vertical-tabs.css:162) */
   align-items: center !important; /* vertical-tabs.css:151 */
   border-radius: 0 !important; /* not in Zen: no hover plate, as Clear has none (vertical-tabs.css:193) */
   font-size: 10px !important; /* vertical-tabs.css:194 */
@@ -289,18 +314,9 @@ zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-s
   pointer-events: none !important; /* vertical-tabs.css:197 */
   -moz-context-properties: fill, fill-opacity !important; /* icons.css:13 */
   fill: currentColor !important; /* icons.css:14 */
-  --zen-pinned-separator-color: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)) !important; /* vertical-tabs.css:157-160 */
-  background: linear-gradient(var(--zen-pinned-separator-color), var(--zen-pinned-separator-color)) 4px 50% / calc(100% - 4px) 1px no-repeat !important; /* not in Zen: Clear's line under the button (vertical-tabs.css:199-203), from 4px in, as the row's (:167) */
-}
-:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button::before {
-  content: "" !important; /* not in Zen: the row's line up to the icon, vertical-tabs.css:162 */
-  flex: 1000 1 0 !important; /* not in Zen: the line takes the free space; xul.css:684-686 keeps the label at flex: 1, so it gets a 1000th */
-  height: 1px !important; /* vertical-tabs.css:163 */
-  margin-inline: 4px 8px !important; /* not in Zen: the row's line starts 4px in (vertical-tabs.css:167) and ends 8px before the icon, as Clear's padding (:198) */
-  background: var(--zen-pinned-separator-color) !important; /* vertical-tabs.css:164 */
-}
-:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button {
-  background-image: none !important; /* vertical-tabs.css:213 */
+  background: none !important; /* not in Zen: Zen's own line runs under it at rest, as Clear's does under Clear (vertical-tabs.css:199-203); zen-toolbar.css:49 fills it */
+  transform: none !important; /* not in Zen: zen-single-components.css:202-204 shrinks a toolbar button to 95% on press; Clear stays (vertical-tabs.css:192) */
+  transition: none !important; /* not in Zen: zen-single-components.css:194-196 animates that and its fill; Clear has neither (vertical-tabs.css:192) */
 }
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button > .toolbarbutton-badge-stack {
   flex: none !important; /* not in Zen: Zen's extension row stretches the stack (zen-toolbar.css:39-45), which would squeeze the label */
@@ -310,7 +326,7 @@ zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-s
   padding: 0 !important; /* not in Zen: a toolbar button's icon padding would push the icon off Clear's line, vertical-tabs.css:192 */
   border-radius: 0 !important; /* not in Zen: no hover plate, as Clear has none (vertical-tabs.css:193) */
   background: none !important; /* not in Zen: no hover plate, as Clear has none (vertical-tabs.css:193) */
-  outline: none !important; /* not in Zen: Clear shows no ring, vertical-tabs.css:193 */
+  outline: none !important; /* not in Zen: the focus ring goes round the button, as Clear's (toolbarbutton.css:14) */
 }
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button > .toolbarbutton-badge-stack > .toolbarbutton-badge {
   display: none !important; /* not in Zen: Clear has no badge, vertical-tabs.css:192 */
@@ -332,6 +348,8 @@ zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-s
   min-height: 0 !important; /* not in Zen: Clear's label is as tall as its text, vertical-tabs.css:230 */
   padding: 0 !important; /* not in Zen: Clear's label has none, vertical-tabs.css:230 */
   margin: 0 !important; /* not in Zen: Clear's label has none, vertical-tabs.css:230 */
+  background-color: transparent !important; /* not in Zen: toolbarbuttons.css:248-261 fills a toolbar button's label on hover, press and [open]; Clear's has none (vertical-tabs.css:230) */
+  outline: none !important; /* not in Zen: the focus ring goes round the button, as Clear's (toolbarbutton.css:14) */
   opacity: 0 !important; /* vertical-tabs.css:207 */
   transition: opacity 0.15s !important; /* vertical-tabs.css:208 */
 }
@@ -339,15 +357,27 @@ zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-s
   display: none !important; /* zen-toolbar.css:67-70, as in Zen's own extension row */
 }
 
-/* While the pointer is over the sidebar: shown at half strength, and clickable on the icon and the label, while the
- * rest of the box still lets clicks through to the row. Full strength on hover, and the icon drops 2px when pressed. */
+/* While Tidy shows: the box draws the row's line up to the button, and Zen's, which would run under the label, hides. */
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is([zen-has-implicit-hover="true"], :has(toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:focus-visible)):is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section > .pinned-tabs-container-separator > toolbarseparator {
+  visibility: hidden !important; /* not in Zen: the box draws this line up to the button instead, vertical-tabs.css:162-167 */
+}
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is([zen-has-implicit-hover="true"], :has(toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:focus-visible)):is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper::before {
+  background: var(--zen-pinned-separator-color) !important; /* vertical-tabs.css:164 */
+}
+
+/* While the pointer is over the sidebar: shown at half strength, and clickable, while the rest of the box still
+ * lets clicks through to the row. Full strength on hover, and the icon drops 2px when pressed. On hover, on press
+ * and with its popup open, the text and icon take the system button colours, as Clear's do from toolkit's
+ * toolbarbutton.css:17-24, [open] after :hover as there. Toolkit sets them outside macOS only; the kit is for Zen on
+ * Windows, so they are copied without that @media. */
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button {
+  pointer-events: auto !important; /* vertical-tabs.css:212 */
+}
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button > .toolbarbutton-badge-stack > .toolbarbutton-icon {
   opacity: 0.5 !important; /* vertical-tabs.css:217 */
-  pointer-events: auto !important; /* vertical-tabs.css:212 */
 }
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button > .toolbarbutton-text {
   opacity: 0.5 !important; /* vertical-tabs.css:217 */
-  pointer-events: auto !important; /* vertical-tabs.css:212 */
 }
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:hover > .toolbarbutton-badge-stack > .toolbarbutton-icon {
   opacity: 1 !important; /* vertical-tabs.css:223 */
@@ -357,4 +387,25 @@ zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-s
 }
 :root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:active:hover > .toolbarbutton-badge-stack > .toolbarbutton-icon {
   transform: translateY(2px) !important; /* vertical-tabs.css:247 */
+}
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:hover {
+  color: -moz-buttonhovertext !important; /* toolbarbutton.css:19, Clear's on hover */
+}
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button[open] {
+  color: -moz-buttonactivetext !important; /* toolbarbutton.css:22, while the popup is open */
+}
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox[zen-has-implicit-hover="true"]:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:active:hover {
+  color: -moz-buttonactivetext !important; /* toolbarbutton.css:22, Clear's when pressed */
+}
+
+/* Focused from the keyboard (the sidebar's toolbar is arrow-key navigable): full strength wherever the pointer is,
+ * with Clear's focus ring round the button, where toolbarbuttons.css:212-221 would ring the label alone. */
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:focus-visible {
+  outline: auto !important; /* toolbarbutton.css:14 */
+}
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:focus-visible > .toolbarbutton-badge-stack > .toolbarbutton-icon {
+  opacity: 1 !important; /* vertical-tabs.css:223 */
+}
+:root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr) #navigator-toolbox:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"])), :root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]))):has(zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section:not([hide-separator])) toolbaritem:is([data-extensionid="zen-tidy@soulaymane"], [data-extensionid="zen-tidy-dev@soulaymane"]) > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button:focus-visible > .toolbarbutton-text {
+  opacity: 1 !important; /* vertical-tabs.css:223 */
 }
