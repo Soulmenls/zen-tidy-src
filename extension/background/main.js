@@ -18,6 +18,7 @@ import { createRunner } from "./run.js";
 import { createRouter } from "./router.js";
 import { createCollapseTracker } from "./collapse.js";
 import { createUpdateGate } from "./updates.js";
+import { createQuickTidy } from "./quick.js";
 
 // The dev build's gecko id (scripts/build-dev.mjs): only under it does the router admit the self-test page and its
 // dev-only message. The release id never matches, so a release build has neither.
@@ -83,6 +84,18 @@ const ready = runner.recover().catch((err) => log.error("could not recover the r
 
 api.runtime.onMessage.addListener((message, sender) => ready.then(() => router.handle(message, sender)));
 
+// The toolbar button (quick.js): a left click tidies at once unless the popup is needed, a middle click opens the
+// popup. Its popup and label follow the key, the run, the button's own state and the window count.
+const quick = createQuickTidy({ api, store, runner, apply: router.apply, undo: router.undo, cancel: router.cancel, log });
+api.action.onClicked.addListener((tab, info) => {
+  // Middle click first, untouched by ready: openPopup needs the click's user input, which waiting would lose.
+  if (info?.button === 1) quick.onClicked(tab, info);
+  else ready.then(() => quick.onClicked(tab, info));
+});
+api.windows.onCreated.addListener(() => ready.then(() => quick.sync()));
+api.windows.onRemoved.addListener(() => ready.then(() => quick.sync()));
+ready.then(() => quick.init());
+
 // An update waits for the runner to be idle and for no preview to await Apply, then applies through runtime.reload
 // (updates.js). Firefox postpones the update only while this listener exists, so it is added at load like the others.
 const isPreviewing = async () => (await store.getRun())?.state === "preview";
@@ -94,6 +107,8 @@ api.runtime.onUpdateAvailable.addListener((details) => ready.then(() => updates.
 api.storage.onChanged.addListener((changes, area) => {
   const run = area === "session" ? changes.run : undefined;
   if (run && run.oldValue?.state !== run.newValue?.state) ready.then(() => updates.onRunChanged());
+  // The button follows the run, its own state and the key (saved or cleared in Settings).
+  if (run || (area === "session" && changes.quick) || (area === "local" && changes.apiKey)) ready.then(() => quick.sync());
 });
 ready.then(() => updates.resume());
 

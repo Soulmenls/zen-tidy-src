@@ -3,13 +3,23 @@
 Zen Tidy is a Firefox WebExtension for [Zen Browser](https://zen-browser.app). It sorts your loose tabs into topic
 groups with Claude, using your own Anthropic API key.
 
-1. Click the Zen Tidy toolbar button.
+1. Click **Tidy**, Zen Tidy's toolbar button. With the [folder look](#folder-look-optional) installed and the button
+   in the sidebar, it sits next to Zen's **Clear**, above your loose tabs.
 2. It sends your loose tabs to Claude (`claude-sonnet-5-5` by default): title, site and a short path. Tabs that look
    sensitive send only the site. Then `claude-haiku-5-5` checks each larger group on its own and splits any that mixes
    subjects; how far it goes is the **Precision** setting, from 1 (no check, the most tabs grouped) to 5 (the
    default: one subject per group, a tab with nothing like it left ungrouped).
-3. You get a **preview** of the groups. Rename them, change their icons, move or untick tabs.
-4. **Apply** moves the tabs into unpinned tab groups. **Undo** puts them back, even after a restart.
+3. The tabs go into unpinned tab groups at once, and the button reads **Undo** for 10 seconds: click it to put them
+   back. After that, Undo stays in the popup, even after a restart.
+4. **Middle-click** the button for the popup instead. Its **Tidy** shows a **preview** first, to rename groups, change
+   their icons, move or untick tabs before **Apply**; the popup also has the groups view and Settings.
+
+A click opens the popup instead when it needs you: no key saved yet, more than one window open (Apply asks twice
+then), a preview waiting for Apply, a tidy that failed, or an Undo that couldn't run (in another Space, say; the
+popup still offers it). Duplicate and stale tabs are only ever closed from the preview.
+
+**Keyboard:** `about:addons` → gear → **Manage Extension Shortcuts** → Zen Tidy → **Tidy tabs** does what a click on
+the button does. It has no key until you give it one, so it never takes one of Zen's.
 
 Nothing runs unless you click. Essentials, pinned tabs, Zen folders and split views are never moved. The key is sent
 only to `https://api.anthropic.com`.
@@ -50,7 +60,8 @@ Tidy groups are plain Firefox tab groups. A small stylesheet, `css/zen-tidy.css`
 
 - each group shows the Zen folder icon it was given;
 - collapsing a group hides its tabs, except the selected one;
-- the label and the tab indent follow Zen's folder style.
+- the label and the tab indent follow Zen's folder style;
+- Zen Tidy's toolbar button moves next to Zen's **Clear**, drawn like it (see [Tidy next to Clear](#tidy-next-to-clear)).
 
 Zen loads it through the profile's `userChrome.css`. `scripts/setup-css.ps1` sets that up in one profile, and takes
 it out again. It works in Windows PowerShell 5.1 and PowerShell 7.
@@ -111,6 +122,21 @@ It removes exactly what the install added: the `@import` line, the `user.js` lin
 back, if the install replaced one) and `install.json`. Files it created are deleted once nothing else is in them, and
 the backups are kept. Zen may keep the stylesheet pref switched on in `prefs.js`, which is harmless; you can reset it
 in `about:config`.
+
+**Tidy next to Clear**
+
+An extension can't add a button to Zen's sidebar, so the stylesheet moves Zen Tidy's own toolbar button there: into
+the row between your pinned and loose tabs, right before **Clear**, as "✨ Tidy". Like Clear, it shows only while the
+pointer is over the sidebar. No script is loaded into Zen for this.
+
+- **Put the button in the sidebar once:** right-click a toolbar, choose **Customize Toolbar…**, and drag Zen Tidy's
+  button into the sidebar's bottom bar (next to the Spaces icons), then **Done**. It stays there when you collapse or
+  expand the sidebar. A button that is only pinned to the toolbar works too, but after collapsing and expanding the
+  sidebar it can end up in the Extensions menu, where it can't be moved next to Clear.
+- **Where Zen hides Clear's row** (a collapsed sidebar, a Space with no loose tabs) the button stays in its toolbar
+  spot, as an icon, and so it does in a right-to-left Zen. If you turned Clear off, Tidy takes its place at the end
+  of the row.
+- **Not in the sidebar** (in the Extensions menu, say), the button is left where it is and Clear's row is untouched.
 
 **Exit codes:** 0 done (or nothing to do, or partly done because you declined a `-Confirm` step), 1 unexpected error,
 or an argument PowerShell itself rejects before the script starts (a switch given a value, such as

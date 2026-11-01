@@ -232,7 +232,8 @@ function journalGroupIds(journal) {
 // The journal's startedAt, which tells one apply's journal from the next; null when it has none.
 const startedAtOf = (journal) => (isObject(journal) && Number.isFinite(journal.startedAt) ? journal.startedAt : null);
 
-// createRouter(deps) returns { handle(message, sender) }, which resolves to a JSON response.
+// createRouter(deps) returns { handle(message, sender) }, which resolves to a JSON response, and the apply, undo and
+// cancel handlers for the toolbar button's one-click tidy (quick.js), which runs in the background itself.
 // deps: { api, store, runner, validateApplyRequest, applyRequest, takeSnapshot, planUndo, undoTidy, listGroups,
 //   groupAction, undoGroupAction, testKey, apiBase, fetchImpl, now = Date.now, newId, log, blockedSince,
 //   allowSelftest = false, onOwnGroupChange, renameWaitMs = RENAME_WAIT_MS, wait = sleep }.
@@ -856,5 +857,7 @@ export function createRouter(deps) {
     }
   }
 
-  return { handle };
+  // apply, undo and cancel are also called from the background itself, by the toolbar button's one-click tidy
+  // (quick.js), with no sender to check. They may throw; handle is what turns a throw into an error response.
+  return { handle, apply: handlers.apply, undo: handlers.undo, cancel: handlers.cancel };
 }
