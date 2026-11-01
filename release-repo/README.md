@@ -4,10 +4,13 @@ Zen Tidy is a Firefox extension for [Zen Browser](https://zen-browser.app). It s
 groups with Claude, using your own Anthropic API key. This repository holds its releases only: the signed extension,
 the update manifest Zen reads, checksums, and an optional stylesheet kit.
 
-1. Click the Zen Tidy toolbar button.
+1. Click **Tidy**, Zen Tidy's toolbar button. With the folder look installed and the button in the sidebar, it sits
+   next to Zen's **Clear**, above your loose tabs.
 2. It sends your loose tabs to Claude: title, site and a short path. Tabs that look sensitive send only the site.
-3. You get a **preview** of the groups. Rename them, change their icons, move or untick tabs.
-4. **Apply** moves the tabs into tab groups. **Undo** puts them back, even after a restart.
+3. The tabs go into tab groups at once, and the button reads **Undo** for 10 seconds. After that, Undo stays in the
+   popup, even after a restart.
+4. **Middle-click** the button for the popup instead. Its **Tidy** shows a **preview** first: rename groups, change
+   their icons, move or untick tabs, then **Apply**.
 
 Nothing runs unless you click. Essentials, pinned tabs, Zen folders and split views are never moved.
 
@@ -49,8 +52,10 @@ can't be changed or replaced, and its tag can't be moved or deleted.
 ## Folder look (optional)
 
 Tidy groups are plain tab groups. `zen-tidy-css-<version>.zip` holds a small stylesheet that makes them look and
-behave like Zen folders (each group shows its icon; collapsing a group hides its tabs except the selected one), and
-the PowerShell script that installs it into one Zen profile.
+behave like Zen folders (each group shows its icon; collapsing a group hides its tabs except the selected one) and
+shows Zen Tidy's button as **Tidy** next to Zen's **Clear**, and the PowerShell script that installs it into one Zen
+profile. For the button, put it in the sidebar once: right-click a toolbar, **Customize Toolbar...**, and drag it
+into the sidebar's bottom bar.
 
 1. Unzip the kit into a folder of its own.
 2. In Zen, open `about:support` and copy the **Profile Folder** path, then close Zen.

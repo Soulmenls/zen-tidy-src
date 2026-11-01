@@ -17,13 +17,16 @@
   "incognito": "not_allowed",
   "background": { "scripts": ["background/main.js"], "type": "module" },
   "action": {
-    "default_title": "Zen Tidy",
+    "default_title": "Tidy",
     "default_popup": "popup/popup.html",
     "default_icon": "icons/app/tidy-dark.svg",
     "theme_icons": [
       { "light": "icons/app/tidy-light.svg", "dark": "icons/app/tidy-dark.svg", "size": 16 },
       { "light": "icons/app/tidy-light.svg", "dark": "icons/app/tidy-dark.svg", "size": 32 }
     ]
+  },
+  "commands": {
+    "_execute_action": { "description": "Tidy tabs" }
   },
   "options_ui": { "page": "options/options.html", "open_in_tab": true },
   "content_security_policy": {

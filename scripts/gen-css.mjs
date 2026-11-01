@@ -15,7 +15,12 @@ import { SIG, encodeIcon } from "../extension/background/markers.js";
 import { REPO_ROOT } from "./lib/dev-paths.js";
 
 export const ZEN_VERSION = "1.23.4b";
+// Section 5, the Tidy button, was built against Zen 1.24b, and cites the CSS shipped in its omni.ja.
+export const BUTTON_ZEN_VERSION = "1.24b";
 export const ICON_URL_BASE = "chrome://browser/skin/zen-icons/selectable/";
+// The add-on ids whose toolbar button section 5 places: the product's and the dev build's (scripts/build-dev.mjs).
+export const BUTTON_ADDON_IDS = Object.freeze(["zen-tidy@soulaymane", "zen-tidy-dev@soulaymane"]);
+export const SPARKLES_URL = "chrome://browser/skin/zen-icons/sparkles.svg";
 export const DEFAULT_OUT = path.join(REPO_ROOT, "css", "zen-tidy.css");
 
 const USAGE = "Usage: node scripts/gen-css.mjs [--out <file>] [--check]";
@@ -72,6 +77,9 @@ const HEADER = comment([
   "userChrome.css is a user-origin sheet. A normal declaration in it loses to any of Firefox's or Zen's own (author)",
   "declarations of that property on the same element, whatever their specificity; !important wins over those. Nothing",
   "here can beat a UA !important rule (xul.css), so this file never sets a property one of those decides.",
+  "",
+  "Section 5 is not about tidy groups: it places Zen Tidy's toolbar button next to Zen's Clear. It was built for",
+  `Zen ${BUTTON_ZEN_VERSION}, and its notes cite the CSS shipped in that version's omni.ja by file name and line.`,
 ]);
 
 const GENERIC = [
@@ -220,8 +228,183 @@ const FOLDER_LOOK = [[
   ]),
 ]].map((group) => group.join("\n")).join("\n\n");
 
+// The Tidy button's selectors. The widget is the add-on's toolbaritem, which Firefox marks with its id; the anchors are
+// in the active Space's row between the pinned and the loose tabs (ZenSpace.mjs's markup).
+const WIDGET = `toolbaritem:is(${BUTTON_ADDON_IDS.map((id) => `[data-extensionid="${id}"]`).join(", ")})`;
+const ACTION = `${WIDGET} > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button`;
+const ICON = `${ACTION} > .toolbarbutton-badge-stack > .toolbarbutton-icon`;
+const TEXT = `${ACTION} > .toolbarbutton-text`;
+const PINNED_SECTION = "zen-workspace[active] > .workspace-arrowscrollbox > .zen-workspace-pinned-tabs-section";
+const ROW = `${PINNED_SECTION} > .pinned-tabs-container-separator`;
+const CLEAR = `${ROW} > .zen-workspace-close-unpinned-tabs-button`;
+// While Zen shows the row: the sidebar expanded, not customizing, not an unsynced window (vertical-tabs.css:226-228,
+// 251-253), and the active Space with loose tabs (:186-190). Left to right only: the placement is drawn with physical
+// left and right. Anywhere else the button stays where the person put it.
+const SHOWN = ':root[zen-sidebar-expanded="true"]:not([customizing], [zen-unsynced-window="true"]):-moz-locale-dir(ltr)';
+const ROW_SHOWN = `:has(${PINNED_SECTION}:not([hide-separator]))`;
+// And while the button is where Zen draws it in the expanded sidebar: its bottom bar, its top bar, the URL bar in it,
+// or, in single-toolbar mode only, Zen's extension row (display: none otherwise, zen-toolbar.css:22-27). In the
+// Extensions menu, or with the add-on gone, nothing is placed and Zen's own line stays.
+const IN_SIDEBAR = `:is(:has(:is(#zen-sidebar-foot-buttons, #zen-sidebar-top-buttons-customization-target, #urlbar) ${WIDGET}), `
+  + `:root[zen-single-toolbar="true"] :has(#zen-overflow-extensions-list > ${WIDGET}))`;
+const PLACED = `${SHOWN} #navigator-toolbox${IN_SIDEBAR}${ROW_SHOWN}`;
+// The same, while the pointer is over the sidebar: Clear's text shows then (vertical-tabs.css:211-219).
+const PLACED_HOVER = `${SHOWN} #navigator-toolbox[zen-has-implicit-hover="true"]${IN_SIDEBAR}${ROW_SHOWN}`;
+// Clear's line colour (vertical-tabs.css:157-160), set on the separator row, which the button is not inside.
+const LINE = "var(--zen-pinned-separator-color)";
+
+const BUTTON = [[
+  comment([
+    "5. The Tidy button: Zen Tidy's own toolbar button, drawn as a twin of Zen's Clear and put right before it in the",
+    "   row between the pinned and the loose tabs. A WebExtension can't add to that row, so CSS anchor positioning",
+    "   moves the button there from wherever it sits in the sidebar; its label is the action's title (quick.js).",
+    "   - Placed only while Zen shows the row and the button is in the sidebar; otherwise it keeps its own place and",
+    "     Zen's row is untouched. Left-to-right Zen only. It covers the row from its",
+    "     start to Clear (to the row's end when Clear is turned off) and draws the row's line itself, so Zen's line",
+    "     is hidden under it. The box lets clicks through; only the icon and the label take them, once Clear's do.",
+    "   - Every declaration is !important, to win over Firefox's and Zen's own rules for toolbar and panel buttons.",
+    `   - Notes cite Zen ${BUTTON_ZEN_VERSION}'s omni.ja: vertical-tabs.css (zen-styles/zen-tabs), zen-workspaces.css,`,
+    "     zen-toolbar.css (zen-styles) and icons.css (skin/classic/browser/zen-icons).",
+  ]),
+  comment(["The anchors: the active Space's row and its Clear."]),
+  rule(ROW, [
+    ["anchor-name", "--zen-tidy-row !important", "not in Zen: the button's row, vertical-tabs.css:136"],
+  ]),
+  rule(CLEAR, [
+    ["anchor-name", "--zen-tidy-clear !important", "not in Zen: the button ends where Clear starts, vertical-tabs.css:192"],
+  ]),
+], [
+  comment(["The button, out of its toolbar and over the row."]),
+  rule(`${PLACED} ${WIDGET}`, [
+    ["position", "fixed !important", "not in Zen: anchored to the row (vertical-tabs.css:136), wherever the toolbar is"],
+    ["position-anchor", "--zen-tidy-row !important", "not in Zen: the row's box, vertical-tabs.css:136-139"],
+    ["top", "anchor(top) !important", "not in Zen: level with the row, vertical-tabs.css:136"],
+    ["left", "anchor(left) !important", "not in Zen: from the row's start, where its line starts (vertical-tabs.css:167)"],
+    ["right", "anchor(--zen-tidy-clear left, anchor(right)) !important",
+      "not in Zen: up to Clear (vertical-tabs.css:192), or the row's end while Clear is off (icons.css:410-412)"],
+    ["bottom", "auto !important", "not in Zen: the height below sets the size, vertical-tabs.css:137"],
+    ["width", "auto !important", "not in Zen: left and right set it, vertical-tabs.css:139"],
+    ["height", "anchor-size(height) !important", "not in Zen: as tall as the row, vertical-tabs.css:137"],
+    ["min-width", "0 !important", "not in Zen: a toolbar button's own minimum would push it past Clear (vertical-tabs.css:192)"],
+    ["max-width", "none !important", "not in Zen: the row's width wins, vertical-tabs.css:139"],
+    ["margin", "0 !important", "not in Zen: flush with the row, vertical-tabs.css:136"],
+    ["padding", "0 !important", "not in Zen: the line starts 4px in, as the row's does (vertical-tabs.css:167)"],
+    ["pointer-events", "none !important", "not in Zen: the row and its line take no clicks, vertical-tabs.css:197"],
+    ["z-index", "1 !important",
+      "not in Zen: each Space is a stacking context (zen-workspaces.css:476), which would paint, and take clicks, over a button from a toolbar before it"],
+  ]),
+  rule(`${PLACED} ${ROW} > toolbarseparator`, [
+    ["visibility", "hidden !important", "not in Zen: the button draws this line itself, vertical-tabs.css:162-167"],
+  ]),
+  rule(`${PLACED} ${WIDGET} > .unified-extensions-item-row-wrapper`, [
+    ["flex", "1 !important", "not in Zen: the action button fills the box, vertical-tabs.css:139"],
+    ["height", "100% !important", "not in Zen: the row's height, vertical-tabs.css:137"],
+  ]),
+  rule(`${PLACED} ${WIDGET} > .unified-extensions-item-row-wrapper > .unified-extensions-item-menu-button`, [
+    ["display", "none !important", "zen-toolbar.css:67-70, as in Zen's own extension row"],
+  ]),
+  rule(`${PLACED} ${WIDGET} > unified-extensions-item-messagebar-wrapper`, [
+    ["display", "none !important", "zen-toolbar.css:67-70, as in Zen's own extension row"],
+  ]),
+], [
+  comment(["The action button: Clear's text and line (vertical-tabs.css:192-249), in the Space's text colour."]),
+  rule(`${PLACED} ${ACTION}`, [
+    ["appearance", "none !important", "vertical-tabs.css:193"],
+    ["flex", "1 !important", "not in Zen: the button fills the row up to Clear, vertical-tabs.css:192"],
+    ["height", "100% !important", "not in Zen: the row's height, vertical-tabs.css:137"],
+    ["min-height", "0 !important", "not in Zen: a panel button's 24px would set it below Clear's text (vertical-tabs.css:137)"],
+    ["margin", "0 !important", "not in Zen: flush with Clear, vertical-tabs.css:192"],
+    ["padding", "0 3px 0 0 !important",
+      "not in Zen: Clear's 3px toolbarbutton padding at the end; its 8px start (vertical-tabs.css:198) is the line's margin"],
+    ["gap", "2px !important", "vertical-tabs.css:196"],
+    ["justify-content", "flex-start !important", "not in Zen: the line fills the start, as Clear's row does (vertical-tabs.css:162)"],
+    ["align-items", "center !important", "vertical-tabs.css:151"],
+    ["border-radius", "0 !important", "not in Zen: no hover plate, as Clear has none (vertical-tabs.css:193)"],
+    ["font-size", "10px !important", "vertical-tabs.css:194"],
+    ["font-weight", "500 !important", "vertical-tabs.css:195"],
+    ["color", "var(--toolbox-textcolor) !important", "zen-workspaces.css:474"],
+    ["pointer-events", "none !important", "vertical-tabs.css:197"],
+    ["-moz-context-properties", "fill, fill-opacity !important", "icons.css:13"],
+    ["fill", "currentColor !important", "icons.css:14"],
+    ["--zen-pinned-separator-color", "light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)) !important",
+      "vertical-tabs.css:157-160"],
+    ["background", `linear-gradient(${LINE}, ${LINE}) 4px 50% / calc(100% - 4px) 1px no-repeat !important`,
+      "not in Zen: Clear's line under the button (vertical-tabs.css:199-203), from 4px in, as the row's (:167)"],
+  ]),
+  rule(`${PLACED} ${ACTION}::before`, [
+    ["content", '"" !important', "not in Zen: the row's line up to the icon, vertical-tabs.css:162"],
+    ["flex", "1000 1 0 !important",
+      "not in Zen: the line takes the free space; xul.css:684-686 keeps the label at flex: 1, so it gets a 1000th"],
+    ["height", "1px !important", "vertical-tabs.css:163"],
+    ["margin-inline", "4px 8px !important",
+      "not in Zen: the row's line starts 4px in (vertical-tabs.css:167) and ends 8px before the icon, as Clear's padding (:198)"],
+    ["background", `${LINE} !important`, "vertical-tabs.css:164"],
+  ]),
+  rule(`${PLACED_HOVER} ${ACTION}`, [
+    ["background-image", "none !important", "vertical-tabs.css:213"],
+  ]),
+  rule(`${PLACED} ${ACTION} > .toolbarbutton-badge-stack`, [
+    ["flex", "none !important", "not in Zen: Zen's extension row stretches the stack (zen-toolbar.css:39-45), which would squeeze the label"],
+    ["width", "auto !important", "not in Zen: zen-toolbar.css:41 makes it 100%"],
+    ["height", "auto !important", "not in Zen: zen-toolbar.css:42 makes it 100%"],
+    ["margin", "0 !important", "zen-toolbar.css:40"],
+    ["padding", "0 !important", "not in Zen: a toolbar button's icon padding would push the icon off Clear's line, vertical-tabs.css:192"],
+    ["border-radius", "0 !important", "not in Zen: no hover plate, as Clear has none (vertical-tabs.css:193)"],
+    ["background", "none !important", "not in Zen: no hover plate, as Clear has none (vertical-tabs.css:193)"],
+    ["outline", "none !important", "not in Zen: Clear shows no ring, vertical-tabs.css:193"],
+  ]),
+  rule(`${PLACED} ${ACTION} > .toolbarbutton-badge-stack > .toolbarbutton-badge`, [
+    ["display", "none !important", "not in Zen: Clear has no badge, vertical-tabs.css:192"],
+  ]),
+  rule(`${PLACED} ${ICON}`, [
+    ["list-style-image", `url("${SPARKLES_URL}") !important`, "icons.css:948, Zen's own sparkles"],
+    ["width", "10px !important", "vertical-tabs.css:235"],
+    ["height", "10px !important", "not in Zen: Clear's icon is as tall as it is wide, vertical-tabs.css:235"],
+    ["padding", "0 !important", "not in Zen: Clear's icon has none, vertical-tabs.css:235"],
+    ["margin", "0 !important", "not in Zen: Clear's icon has none, vertical-tabs.css:235"],
+    ["opacity", "0 !important", "vertical-tabs.css:207"],
+    ["transition", "transform 0.15s ease-in-out, opacity 0.15s !important", "vertical-tabs.css:236-238"],
+    ["transform", "translateY(0) !important", "vertical-tabs.css:239"],
+  ]),
+  rule(`${PLACED} ${TEXT}`, [
+    ["display", "flex !important", "vertical-tabs.css:231"],
+    ["min-width", "min-content !important", "not in Zen: the label stays as wide as its text (xul.css:684-686 gives it flex: 1)"],
+    ["height", "auto !important", "not in Zen: Clear's label is as tall as its text, vertical-tabs.css:230"],
+    ["min-height", "0 !important", "not in Zen: Clear's label is as tall as its text, vertical-tabs.css:230"],
+    ["padding", "0 !important", "not in Zen: Clear's label has none, vertical-tabs.css:230"],
+    ["margin", "0 !important", "not in Zen: Clear's label has none, vertical-tabs.css:230"],
+    ["opacity", "0 !important", "vertical-tabs.css:207"],
+    ["transition", "opacity 0.15s !important", "vertical-tabs.css:208"],
+  ]),
+  rule(`${PLACED} ${ACTION} > .unified-extensions-item-contents`, [
+    ["display", "none !important", "zen-toolbar.css:67-70, as in Zen's own extension row"],
+  ]),
+], [
+  comment([
+    "While the pointer is over the sidebar: shown at half strength, and clickable on the icon and the label, while the",
+    "rest of the box still lets clicks through to the row. Full strength on hover, and the icon drops 2px when pressed.",
+  ]),
+  rule(`${PLACED_HOVER} ${ICON}`, [
+    ["opacity", "0.5 !important", "vertical-tabs.css:217"],
+    ["pointer-events", "auto !important", "vertical-tabs.css:212"],
+  ]),
+  rule(`${PLACED_HOVER} ${TEXT}`, [
+    ["opacity", "0.5 !important", "vertical-tabs.css:217"],
+    ["pointer-events", "auto !important", "vertical-tabs.css:212"],
+  ]),
+  rule(`${PLACED_HOVER} ${ACTION}:hover > .toolbarbutton-badge-stack > .toolbarbutton-icon`, [
+    ["opacity", "1 !important", "vertical-tabs.css:223"],
+  ]),
+  rule(`${PLACED_HOVER} ${ACTION}:hover > .toolbarbutton-text`, [
+    ["opacity", "1 !important", "vertical-tabs.css:223"],
+  ]),
+  rule(`${PLACED_HOVER} ${ACTION}:active:hover > .toolbarbutton-badge-stack > .toolbarbutton-icon`, [
+    ["transform", "translateY(2px) !important", "vertical-tabs.css:247"],
+  ]),
+]].map((group) => group.join("\n")).join("\n\n");
+
 export function buildCss() {
-  return [HEADER, GENERIC, CODES, COLLAPSE, FOLDER_LOOK].join("\n\n") + "\n";
+  return [HEADER, GENERIC, CODES, COLLAPSE, FOLDER_LOOK, BUTTON].join("\n\n") + "\n";
 }
 
 export function parseArgs(argv) {

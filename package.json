@@ -17,6 +17,7 @@
     "build:dev": "node scripts/build-dev.mjs",
     "gen:css": "node scripts/gen-css.mjs",
     "test:zen": "python test/integration/zen_flow.py",
+    "test:sidebar": "python test/integration/zen_sidebar.py",
     "test:update": "python test/integration/zen_update.py",
     "test:release": "python test/integration/zen_release.py",
     "release": "node scripts/release.mjs",
